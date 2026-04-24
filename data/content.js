@@ -16,7 +16,6 @@ export const navigation = [
   { label: "Inicio", href: "index.html", key: "home" },
   { label: "Analisis", href: "analysis.html", key: "analysis" },
   { label: "Opinion", href: "opinion.html", key: "opinion" },
-  { label: "Explicadores", href: "explainers.html", key: "explainers" },
   { label: "Radar semanal", href: "radar.html", key: "radar" },
   { label: "Regiones", href: "regions.html", key: "regions" },
   { label: "Sectores", href: "sectors.html", key: "sectors" },
@@ -281,7 +280,7 @@ export const articles = [
       "Nearshoring, friendshoring y seguridad economica abren oportunidades, pero tambien exigen estrategia industrial y coordinacion regional.",
     excerpt:
       "La fragmentacion del comercio global no implica una desglobalizacion total. Implica una geografia mas politica del comercio, donde America Latina puede ganar relevancia si evita una insercion puramente extractiva.",
-    type: "explainer",
+    type: "analysis",
     region: "america-latina",
     sectors: ["comercio-cadenas-logisticas", "economia-internacional"],
     author: "tomas-velez",
@@ -426,7 +425,7 @@ export const articles = [
       "Nuevas rutas, recursos, seguridad y clima convierten al norte extremo en una de las fronteras estrategicas mas sensibles.",
     excerpt:
       "El Artico se esta volviendo una zona de competencia simultaneamente energetica, comercial, militar y cientifica. Esa superposicion explica su creciente relevancia.",
-    type: "explainer",
+    type: "analysis",
     region: "europa",
     sectors: ["geopolitica", "energia"],
     author: "adrian-rivas",

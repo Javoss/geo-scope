@@ -7,18 +7,18 @@ import {
   regions,
   sectors,
   site,
-} from "../data/content.js";
+} from "../data/content.js?v=20260424b";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
 const header = document.getElementById("site-header");
 const footer = document.getElementById("site-footer");
 let query = new URLSearchParams(window.location.search);
+const brandLogoSrc = "assets/geoscope-logo.png";
 
 const articleTypeLabels = {
   analysis: "Analisis",
   opinion: "Opinion",
-  explainer: "Explicador",
   radar: "Radar semanal",
 };
 
@@ -34,12 +34,6 @@ const pageCopy = {
     title: "Opinion estrategica con voz propia.",
     description:
       "Columnas y argumentos para leer el sistema internacional desde intereses, capacidades y consecuencias.",
-  },
-  explainers: {
-    eyebrow: "Claves para entender",
-    title: "Explicadores para descifrar cambios globales.",
-    description:
-      "Preguntas complejas, respuestas claras y marcos utiles para entender implicaciones regionales y sectoriales.",
   },
   radar: {
     eyebrow: "Seguimiento semanal",
@@ -101,13 +95,13 @@ function renderPage() {
       });
       break;
     case "explainers":
-      document.title = `Explicadores | ${site.name}`;
+      document.title = `Analisis | ${site.name}`;
       app.innerHTML = renderArchivePage({
-        title: pageCopy.explainers.title,
-        eyebrow: pageCopy.explainers.eyebrow,
-        description: pageCopy.explainers.description,
-        lockedType: true,
-        defaultType: "explainer",
+        title: pageCopy.analysis.title,
+        eyebrow: pageCopy.analysis.eyebrow,
+        description: pageCopy.analysis.description,
+        lockedType: false,
+        defaultType: "all",
       });
       break;
     case "radar":
@@ -162,11 +156,7 @@ function renderHeader() {
   return `
     <div class="nav-frame">
       <a class="brand" href="index.html" aria-label="Geo Scope">
-        <span class="brand-mark">GS</span>
-        <span class="brand-copy">
-          <strong>Geo Scope</strong>
-          <span>Strategic editorial platform</span>
-        </span>
+        ${renderBrandLockup()}
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         Menu
@@ -183,18 +173,13 @@ function renderHeader() {
             )
             .join("")}
         </nav>
-        <form class="header-search" data-search-form>
-          <label class="sr-only" for="global-search">Buscar articulos</label>
-          <input
-            id="global-search"
-            type="search"
-            name="q"
-            placeholder="Buscar articulos, regiones o temas"
-            value="${escapeAttribute(query.get("q") || "")}"
-          />
-          <button class="btn btn-ghost" type="submit">Buscar</button>
-        </form>
-        <a class="btn btn-primary header-cta" href="subscription.html">Suscribirse</a>
+        <div class="header-utility" aria-label="Accesos">
+          <a class="header-utility__link" href="analysis.html">Buscar</a>
+          <span class="header-utility__divider" aria-hidden="true"></span>
+          <a class="header-utility__link" href="subscription.html">Suscripcion</a>
+          <span class="header-utility__divider" aria-hidden="true"></span>
+          <span class="header-utility__lang">ES</span>
+        </div>
       </div>
     </div>
   `;
@@ -214,11 +199,7 @@ function renderFooter() {
       <div class="container footer-grid">
         <div class="footer-brand">
           <a class="brand brand--footer" href="index.html">
-            <span class="brand-mark">GS</span>
-            <span class="brand-copy">
-              <strong>${site.name}</strong>
-              <span>Think tank digital y revista estrategica</span>
-            </span>
+            ${renderBrandLockup({ footer: true })}
           </a>
           <p>${site.description}</p>
           <div class="social-links">
@@ -248,7 +229,7 @@ function renderFooter() {
           </div>
           <div class="footer-contact">
             <span>${site.email}</span>
-            <span>Analisis, opinion y explicadores con enfoque internacional.</span>
+            <span>Analisis, opinion y radar semanal con enfoque internacional.</span>
           </div>
         </div>
         <div>
@@ -285,10 +266,9 @@ function renderHomePage() {
     <section class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow">Think tank editorial</span>
-          <h1 class="hero-title">Geo Scope</h1>
+          <h1 class="hero-lead">Analisis estrategico para interpretar el nuevo orden global.</h1>
           <p class="hero-subtitle">
-            Analisis estrategico sobre geopolitica, tecnologia, economia y el nuevo orden global.
+            Geopolitica, tecnologia, economia, energia y comercio internacional con una lectura clara, sobria y de largo plazo.
           </p>
           <p class="hero-text">
             Una plataforma para explicar el mundo con claridad y profundidad, desde las tensiones
@@ -298,11 +278,22 @@ function renderHomePage() {
             <a class="btn btn-primary" href="analysis.html">Explorar analisis</a>
             <a class="btn btn-secondary" href="subscription.html">Suscribirse</a>
           </div>
+          <div class="hero-trust-row">
+            <span>Plataforma editorial</span>
+            <span>Centro de analisis</span>
+            <span>Perspectiva internacional</span>
+          </div>
         </div>
         <aside class="hero-panel reveal">
           <div class="panel-header">
-            <span class="eyebrow">Briefing de apertura</span>
-            <span class="panel-index">GS / 01</span>
+            <span class="eyebrow">En foco</span>
+            <span class="panel-index">Edicion / 01</span>
+          </div>
+          <h2 class="hero-panel__title">${mainFeature.title}</h2>
+          <p class="hero-panel__text">${mainFeature.subtitle}</p>
+          <div class="meta-row">
+            <span class="meta-chip">${labelForType(mainFeature.type)}</span>
+            <span class="meta-chip">${nameForRegion(mainFeature.region)}</span>
           </div>
           <div class="metric-grid">
             <div class="metric-card">
@@ -1033,7 +1024,7 @@ function renderArticlePage() {
             compactPanel: true,
             title: "Recibe nuevas lecturas estrategicas en tu inbox.",
             description:
-              "Suscribete para seguir analisis, opinion y explicadores con una cadencia editorial clara.",
+              "Suscribete para seguir analisis, opinion y radar semanal con una cadencia editorial clara.",
           })}
         </aside>
       </div>
@@ -1144,7 +1135,7 @@ function renderContactPage() {
           </div>
           <div class="aside-line">
             <strong>Enfoque</strong>
-            <span>Analisis estrategico, opinion especializada y explicadores de alcance internacional.</span>
+            <span>Analisis estrategico, opinion especializada y seguimiento internacional de alta claridad.</span>
           </div>
         </div>
       </div>
@@ -1204,7 +1195,7 @@ function renderSubscriptionPage() {
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>Formato</strong>
-            <span>Analisis, opinion, explicadores y radar semanal.</span>
+            <span>Analisis, opinion y radar semanal.</span>
           </div>
           <div class="aside-line">
             <strong>Valor</strong>
@@ -1541,6 +1532,22 @@ function coverArt(article, modifier = "") {
   `;
 }
 
+function renderBrandLockup({ footer = false } = {}) {
+  if (!footer) {
+    return `
+      <span class="brand-mark brand-mark--header">
+        <img class="brand-logo" src="${brandLogoSrc}" alt="Geo Scope" />
+      </span>
+    `;
+  }
+
+  return `
+    <span class="brand-mark brand-mark--footer">
+      <img class="brand-logo brand-logo--footer" src="${brandLogoSrc}" alt="Geo Scope" />
+    </span>
+  `;
+}
+
 function bindShellInteractions() {
   const menuToggle = header.querySelector(".menu-toggle");
   const navStack = header.querySelector(".nav-stack");
@@ -1789,7 +1796,6 @@ function resolveActiveNavigationKey() {
     home: "home",
     analysis: "analysis",
     opinion: "opinion",
-    explainers: "explainers",
     radar: "radar",
     regions: "regions",
     about: "about",
@@ -1803,7 +1809,6 @@ function pageFromType(type) {
   return {
     analysis: "analysis",
     opinion: "opinion",
-    explainer: "explainers",
     radar: "radar",
   }[type];
 }
@@ -1856,7 +1861,6 @@ function renderTypeOptions(selectedType, omitAll = false) {
     omitAll ? null : { value: "all", label: "Todos los formatos" },
     { value: "analysis", label: "Analisis" },
     { value: "opinion", label: "Opinion" },
-    { value: "explainer", label: "Explicadores" },
     { value: "radar", label: "Radar semanal" },
   ].filter(Boolean);
 
@@ -1931,7 +1935,6 @@ function pagePath(currentPage) {
   return {
     analysis: "analysis.html",
     opinion: "opinion.html",
-    explainers: "explainers.html",
     radar: "radar.html",
     sectors: "sectors.html",
   }[currentPage] || `${currentPage}.html`;
@@ -1941,7 +1944,6 @@ function backLinkForArticle(article) {
   return {
     analysis: "analysis.html",
     opinion: "opinion.html",
-    explainer: "explainers.html",
     radar: "radar.html",
   }[article.type];
 }
