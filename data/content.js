@@ -4,7 +4,7 @@ export const site = {
     "Analisis estrategico sobre geopolitica, tecnologia, economia y el nuevo orden global.",
   description:
     "Plataforma editorial y think tank digital para interpretar los cambios globales con profundidad, criterio y claridad.",
-  email: "editorial@geoscope.world",
+  email: "info@geo-scope.online",
   social: [
     { label: "LinkedIn", href: "https://www.linkedin.com/company/geoscope" },
     { label: "X", href: "https://x.com/geoscope" },
@@ -57,9 +57,9 @@ export const about = {
 
 export const authors = [
   {
-    slug: "marina-leal",
-    name: "Marina Leal",
-    role: "Directora editorial",
+    slug: "javier-salazar-segales",
+    name: "Javier Salazar Segales",
+    role: "Director editorial",
   },
   {
     slug: "tomas-velez",
@@ -256,7 +256,7 @@ export const articles = [
       "multipolaridad-gobernanza-global",
       "inteligencia-artificial-poder-global",
     ],
-    author: "marina-leal",
+    author: "javier-salazar-segales",
     date: "2026-04-21",
     readTime: 11,
     homeFeature: 1,
@@ -393,7 +393,7 @@ export const articles = [
     type: "radar",
     region: "brics",
     sectors: ["multipolaridad-gobernanza-global", "diplomacia"],
-    author: "marina-leal",
+    author: "javier-salazar-segales",
     date: "2026-04-14",
     readTime: 5,
     tone: "steel",
@@ -532,7 +532,7 @@ export const articles = [
     type: "analysis",
     region: "estados-unidos-occidente",
     sectors: ["defensa-seguridad", "diplomacia"],
-    author: "marina-leal",
+    author: "javier-salazar-segales",
     date: "2026-04-09",
     readTime: 8,
     tone: "midnight",

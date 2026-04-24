@@ -7,7 +7,7 @@ import {
   regions,
   sectors,
   site,
-} from "../data/content.js?v=20260424b";
+} from "../data/content.js?v=20260424e";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -229,7 +229,7 @@ function renderFooter() {
           </div>
           <div class="footer-contact">
             <span>${site.email}</span>
-            <span>Analisis, opinion y radar semanal con enfoque internacional.</span>
+            <span>Informacion general y colaboraciones editoriales.</span>
           </div>
         </div>
         <div>
@@ -1130,7 +1130,7 @@ function renderContactPage() {
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
-            <strong>Email editorial</strong>
+            <strong>Informacion y colaboraciones</strong>
             <span>${site.email}</span>
           </div>
           <div class="aside-line">
@@ -1147,8 +1147,8 @@ function renderContactPage() {
           <span class="eyebrow">Canales</span>
           <h2>Hablemos.</h2>
           <p>
-            Puedes escribir por colaboraciones, sindicacion de contenidos, alianzas institucionales
-            o consultas sobre el desarrollo futuro de la plataforma.
+            Puedes escribir por informacion general, colaboraciones, sindicacion de contenidos,
+            alianzas institucionales o consultas sobre el desarrollo futuro de la plataforma.
           </p>
           <div class="footer-links">
             <a href="mailto:${site.email}">${site.email}</a>
