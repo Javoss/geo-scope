@@ -59,27 +59,27 @@ export const authors = [
   {
     slug: "javier-salazar-segales",
     name: "Javier Salazar Segales",
-    role: "Director editorial",
+    role: "Director General",
   },
   {
-    slug: "tomas-velez",
-    name: "Tomas Velez",
+    slug: "javier-salazar-segales",
+    name: "Javier Salazar Segales",
     role: "Editor de geoeconomia",
   },
   {
-    slug: "clara-ibanez",
-    name: "Clara Ibanez",
-    role: "Analista de tecnologia y poder",
+    slug: "javier-salazar-segales",
+    name: "Javier Salazar Segales",
+    role: "Analista de tecnologia",
   },
   {
-    slug: "adrian-rivas",
-    name: "Adrian Rivas",
-    role: "Investigador senior de seguridad internacional",
+    slug: "javier-salazar-segales",
+    name: "Javier Salazar Segales",
+    role: "Investigador de seguridad internacional",
   },
   {
-    slug: "lucia-ferrer",
-    name: "Lucia Ferrer",
-    role: "Editora de regiones y diplomacia",
+    slug: "javier-salazar-segales",
+    name: "Javier Salazar Segales",
+    role: "Especialista de regiones y diplomacia",
   },
 ];
 
