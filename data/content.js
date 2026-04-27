@@ -243,6 +243,47 @@ export const sectors = [
 
 export const articles = [
   {
+  slug: "china-produce-estados-unidos-se-endeuda-y-wall-street-gana",
+  title: "China produce, Estados Unidos se endeuda y Wall Street gana",
+  subtitle:
+    "La economia global funciona sobre una paradoja: los desequilibrios entre produccion, deuda y liquidez sostienen parte del orden financiero internacional.",
+  excerpt:
+    "China exporta excedentes, Estados Unidos absorbe ahorro global mediante deuda y Wall Street recibe una parte significativa de la liquidez internacional. La pregunta es cuanto tiempo puede sostenerse este modelo.",
+  type: "analysis",
+  region: "global",
+  sectors: [
+    "geoeconomia-global",
+    "mercados-financieros",
+    "multipolaridad-gobernanza-global",
+    "china-estados-unidos",
+  ],
+  author: "javier-salazar-segales",
+  date: "2026-04-27",
+  readTime: 12,
+  homeFeature: 1,
+  tone: "midnight",
+  tags: [
+    "China",
+    "Estados Unidos",
+    "Wall Street",
+    "dolar",
+    "BRICS",
+    "liquidez global",
+  ],
+  thesis:
+    "El sistema economico internacional se sostiene parcialmente sobre una relacion estructural entre el superavit comercial de China, el deficit fiscal de Estados Unidos y la capacidad de los mercados financieros estadounidenses para absorber ahorro global.",
+  whyItMatters: [
+    "El poder financiero de Estados Unidos no depende solo de su economia interna, sino de la profundidad de sus mercados, el rol internacional del dolar y la ausencia de una alternativa equivalente.",
+    "China mantiene una posicion central como potencia manufacturera, pero su dependencia de los mercados externos aumenta las tensiones comerciales y geopoliticas.",
+    "America Latina y otros mercados emergentes quedan expuestos a los ciclos de liquidez global, tasas de interes estadounidenses, demanda china y volatilidad de los precios de materias primas.",
+    "Para los BRICS, el desafio no es solamente cuestionar el dominio del dolar, sino construir mecanismos financieros confiables, liquidos y escalables.",
+  ],
+  regionalLens:
+    "America Latina se encuentra entre dos fuerzas estructurales: China como comprador de materias primas e inversor en infraestructura, y Estados Unidos como centro financiero, monetario y politico del hemisferio. La pregunta estrategica es si la region puede transformar esta rivalidad en una oportunidad de diversificacion productiva o si seguira reaccionando pasivamente a ciclos definidos por otros.",
+  outlook:
+    "El modelo actual puede continuar en el corto y mediano plazo si China mantiene excedentes comerciales, Estados Unidos conserva la confianza de los mercados y Wall Street sigue atrayendo liquidez global. Sin embargo, los riesgos fiscales, comerciales y geopoliticos aumentaran si no se corrigen gradualmente los desequilibrios que sostienen el sistema.",
+  }
+  {
     slug: "brics-y-el-nuevo-equilibrio-tecnologico-global",
     title: "BRICS y el nuevo equilibrio tecnologico global",
     subtitle:
