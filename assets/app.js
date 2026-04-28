@@ -1023,7 +1023,7 @@ function renderArticlePage() {
 
     <section class="section section-tight">
       <div class="container article-layout">
-        <article class="card prose-card reveal">
+        <article class="card prose-card reveal is-visible">
           <p class="article-lead">${article.excerpt}</p>
           ${
             article.type === "radar"
