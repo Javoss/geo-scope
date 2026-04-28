@@ -28,6 +28,7 @@ export const articleChinaProduceEstadosUnidosWallStreetGana = {
   ],
   bodySections: [
     {
+      heading: "¿Cuánto tiempo puede sostenerse una economía mundial basada en desequilibrios permanentes?",
       paragraphs: [
         "La economia global funciona sobre una paradoja: los principales desequilibrios del sistema no necesariamente lo debilitan en el corto plazo; muchas veces lo sostienen.",
         "China mantiene una enorme capacidad exportadora y acumula excedentes comerciales. Estados Unidos sostiene deficits fiscales elevados y financia su gasto mediante deuda. Entre ambos fenomenos se forma un circuito de liquidez internacional que termina favoreciendo a los mercados financieros, especialmente a Wall Street.",
@@ -51,6 +52,9 @@ export const articleChinaProduceEstadosUnidosWallStreetGana = {
         "El S&P 500 no es solo un indice bursatil. Es una representacion del centro corporativo, tecnologico y financiero de Estados Unidos. Alli estan muchas de las empresas que dominan sectores clave: inteligencia artificial, software, semiconductores, defensa, salud, energia, consumo y servicios financieros.",
         "Cuando la liquidez global es abundante, una parte importante se dirige hacia activos estadounidenses. Esto ayuda a sostener las valoraciones de mercado, especialmente en empresas consideradas estrategicas o lideres de largo plazo.",
         "Por eso, la bolsa estadounidense no debe analizarse unicamente desde los beneficios empresariales o la innovacion tecnologica. Tambien debe entenderse como parte de una arquitectura financiera global donde el dolar, la deuda publica estadounidense y los flujos internacionales de capital cumplen un papel central.",
+      ],
+      callouts: 
+      [
         "Sube Wall Street porque la economia estadounidense es fuerte, o porque el sistema financiero global no tiene una alternativa equivalente?",
       ],
     },
@@ -92,6 +96,8 @@ export const articleChinaProduceEstadosUnidosWallStreetGana = {
         "El sistema financiero internacional sigue profundamente vinculado al dolar. Las reservas, los mercados de deuda, el comercio global, los pagos internacionales y la liquidez de los activos estadounidenses continuan otorgando a Estados Unidos una ventaja estructural.",
         "La paradoja es que muchos paises que desean reducir su dependencia del dolar todavia interactuan con un sistema donde los activos mas liquidos y seguros estan denominados en dolares.",
         "Por eso, una arquitectura financiera multipolar no se construira solo con declaraciones politicas. Requiere mercados profundos, confianza institucional, mecanismos de pago eficientes, estabilidad monetaria y capacidad de absorber grandes volumenes de capital.",
+      ],
+        callouts: [
         "La pregunta para los BRICS no es unicamente si pueden desafiar al dolar. La pregunta es: pueden construir una alternativa suficientemente confiable para que el mundo la use?",
       ],
     },
