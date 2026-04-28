@@ -7,7 +7,7 @@ import {
   regions,
   sectors,
   site,
-} from "../data/content.js?v=20260424e";
+} from "../data/content.js?v=20260428b";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -255,15 +255,29 @@ function renderHomePage() {
   const mainFeature = featured[0];
   const secondaryFeatures = featured.slice(1, 4);
   const latestAnalyses = orderedArticles
-    .filter((article) => article.type === "analysis")
-    .slice(0, 4);
+    .filter((article) => article.type === "analysis" && !article.homeFeature)
+    .slice(0, 3);
   const radarItems = orderedArticles
     .filter((article) => article.type === "radar")
-    .slice(0, 3);
-  const leadSignals = radarItems[0]?.signals || [];
+    .slice(0, 2);
+  const leadSignal = radarItems[0]?.signals?.[0];
+  const homeSectors = [...sectors]
+    .sort(
+      (left, right) =>
+        countArticlesForSector(right.slug) - countArticlesForSector(left.slug) ||
+        left.name.localeCompare(right.name),
+    )
+    .slice(0, 6);
+  const homeRegions = [...regions]
+    .sort(
+      (left, right) =>
+        countArticlesForRegion(right.slug) - countArticlesForRegion(left.slug) ||
+        left.name.localeCompare(right.name),
+    )
+    .slice(0, 6);
 
   return `
-    <section class="hero section">
+    <section class="hero hero--home section">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <h1 class="hero-lead">Analisis estrategico para interpretar el nuevo orden global.</h1>
@@ -271,8 +285,7 @@ function renderHomePage() {
             Geopolitica, tecnologia, economia, energia y comercio internacional con una lectura clara, sobria y de largo plazo.
           </p>
           <p class="hero-text">
-            Una plataforma para explicar el mundo con claridad y profundidad, desde las tensiones
-            del poder hasta los cambios silenciosos que reordenan regiones, sectores y estrategias.
+            Una plataforma para leer el sistema internacional con criterio, contexto y foco estrategico.
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="analysis.html">Explorar analisis</a>
@@ -284,64 +297,62 @@ function renderHomePage() {
             <span>Perspectiva internacional</span>
           </div>
         </div>
-        <aside class="hero-panel reveal">
-          <div class="panel-header">
-            <span class="eyebrow">En foco</span>
-            <span class="panel-index">Edicion / 01</span>
-          </div>
-          <h2 class="hero-panel__title">${mainFeature.title}</h2>
-          <p class="hero-panel__text">${mainFeature.subtitle}</p>
-          <div class="meta-row">
-            <span class="meta-chip">${labelForType(mainFeature.type)}</span>
-            <span class="meta-chip">${nameForRegion(mainFeature.region)}</span>
-          </div>
-          <div class="metric-grid">
-            <div class="metric-card">
-              <strong>${articles.length}</strong>
-              <span>Dossiers editoriales</span>
+        <aside class="hero-panel hero-panel--home reveal">
+          <div class="hero-panel__main">
+            <div class="panel-header">
+              <span class="eyebrow">En foco</span>
+              <span class="panel-index">Edicion / 01</span>
             </div>
-            <div class="metric-card">
-              <strong>${regions.length}</strong>
-              <span>Regiones cubiertas</span>
-            </div>
-            <div class="metric-card">
-              <strong>${sectors.length}</strong>
-              <span>Sectores estrategicos</span>
+            <h2 class="hero-panel__title">${mainFeature.title}</h2>
+            <p class="hero-panel__text">${mainFeature.subtitle}</p>
+            <div class="meta-row hero-panel__meta">
+              <span class="meta-chip">${labelForType(mainFeature.type)}</span>
+              <span class="meta-chip">${nameForRegion(mainFeature.region)}</span>
             </div>
           </div>
-          <div class="signal-panel">
-            <h2>Radar global</h2>
-            <ul class="signal-list">
-              ${leadSignals
-                .map(
-                  (signal) => `
-                    <li>
-                      <strong>${signal.title}</strong>
-                      <span>${signal.detail}</span>
-                    </li>
-                  `,
-                )
-                .join("")}
-            </ul>
+          <div class="hero-panel__side">
+            <div class="metric-grid metric-grid--hero">
+              <div class="metric-card">
+                <strong>${articles.length}</strong>
+                <span>Dossiers</span>
+              </div>
+              <div class="metric-card">
+                <strong>${regions.length}</strong>
+                <span>Regiones</span>
+              </div>
+              <div class="metric-card">
+                <strong>${sectors.length}</strong>
+                <span>Sectores</span>
+              </div>
+            </div>
+            <div class="signal-panel signal-panel--compact">
+              <span class="eyebrow">Radar global</span>
+              <div class="signal-panel__card">
+                <strong>${leadSignal?.title || "Lectura prioritaria de la semana"}</strong>
+                <span>${leadSignal?.detail || "Movimientos breves con impacto acumulativo sobre liquidez, comercio y competencia estrategica."}</span>
+              </div>
+              <a class="inline-link" href="${radarItems[0] ? articleUrl(radarItems[0].slug) : "radar.html"}">Abrir radar semanal</a>
+            </div>
           </div>
         </aside>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--home-lead">
       <div class="container">
         ${sectionHeader({
           eyebrow: "Portada",
           title: "Una lectura principal y tres ejes de contexto.",
           text: "La home combina un articulo destacado con piezas complementarias para construir una lectura mas completa del tablero global.",
+          stacked: true,
         })}
-        <div class="feature-layout">
+        <div class="feature-layout feature-layout--home">
           <div class="feature-layout__main">
             ${renderArticleCard(mainFeature, "feature")}
           </div>
-          <div class="feature-layout__side">
+          <div class="home-preview-grid">
             ${secondaryFeatures
-              .map((article) => renderArticleCard(article, "compact"))
+              .map((article) => renderArticleCard(article, "standard"))
               .join("")}
           </div>
         </div>
@@ -356,8 +367,9 @@ function renderHomePage() {
           text: "Analisis de fondo para seguir la evolucion del poder, las cadenas de valor y la competencia tecnologica.",
           actionLabel: "Ver archivo",
           actionHref: "analysis.html",
+          stacked: true,
         })}
-        <div class="card-grid card-grid--four">
+        <div class="card-grid card-grid--three">
           ${latestAnalyses
             .map((article) => renderArticleCard(article, "standard"))
             .join("")}
@@ -373,8 +385,9 @@ function renderHomePage() {
           text: "Seguimiento semanal para detectar cambios discretos con implicaciones geopoliticas y geoeconomicas.",
           actionLabel: "Ver radar semanal",
           actionHref: "radar.html",
+          stacked: true,
         })}
-        <div class="radar-layout">
+        <div class="radar-layout radar-layout--home">
           <article class="card radar-card radar-card--lead reveal">
             <div class="radar-card__header">
               <span class="meta-chip">Lectura rapida</span>
@@ -414,9 +427,10 @@ function renderHomePage() {
           text: "Sectores pensados para seguir la interseccion entre tecnologia, economia, energia, diplomacia y poder estatal.",
           actionLabel: "Ver sectores",
           actionHref: "sectors.html",
+          stacked: true,
         })}
         <div class="sector-grid">
-          ${sectors.map((sector) => renderSectorCard(sector)).join("")}
+          ${homeSectors.map((sector) => renderSectorCard(sector)).join("")}
         </div>
       </div>
     </section>
@@ -429,9 +443,10 @@ function renderHomePage() {
           text: "Cada region cuenta con portada propia, articulo destacado, ultimos textos y claves para interpretar sus movimientos.",
           actionLabel: "Explorar regiones",
           actionHref: "regions.html",
+          stacked: true,
         })}
         <div class="region-grid">
-          ${regions.map((region) => renderRegionCard(region)).join("")}
+          ${homeRegions.map((region) => renderRegionCard(region)).join("")}
         </div>
       </div>
     </section>
@@ -952,8 +967,17 @@ function renderArticlePage() {
 
   document.title = `${article.title} | ${site.name}`;
 
-  const author = authorMap.get(article.author);
+  const author = authorMap.get(article.author) || {
+    name: "Equipo editorial",
+    role: "Geo Scope",
+  };
   const region = regionMap.get(article.region);
+  const regionName = region?.name || "Cobertura global";
+  const regionDescription =
+    region?.description ||
+    "Analisis vinculado a tendencias transversales del sistema internacional.";
+  const regionHref = region ? regionUrl(region.slug) : "regions.html";
+  const regionLinkLabel = region ? "Abrir portada regional" : "Abrir mapa regional";
   const related = findRelatedArticles(article);
   const favorite = isFavorite(article.slug);
 
@@ -964,7 +988,7 @@ function renderArticlePage() {
           <a class="back-link" href="${backLinkForArticle(article)}">Volver</a>
           <div class="meta-row">
             <span class="meta-chip">${labelForType(article.type)}</span>
-            <span class="meta-chip">${region.name}</span>
+            <span class="meta-chip">${regionName}</span>
             <span class="meta-chip">${article.readTime} min de lectura</span>
           </div>
           <h1 class="article-title">${article.title}</h1>
@@ -1004,15 +1028,17 @@ function renderArticlePage() {
           ${
             article.type === "radar"
               ? renderRadarBody(article)
-              : renderEssayBody(article)
+              : article.bodySections?.length
+                ? renderStructuredEssayBody(article)
+                : renderEssayBody(article)
           }
         </article>
         <aside class="article-aside reveal">
           <div class="card aside-card">
             <span class="eyebrow">Region relacionada</span>
-            <h2>${region.name}</h2>
-            <p>${region.description}</p>
-            <a class="inline-link" href="${regionUrl(region.slug)}">Abrir portada regional</a>
+            <h2>${regionName}</h2>
+            <p>${regionDescription}</p>
+            <a class="inline-link" href="${regionHref}">${regionLinkLabel}</a>
           </div>
           <div class="card aside-card">
             <span class="eyebrow">Etiquetas</span>
@@ -1233,7 +1259,7 @@ function renderEditorPage() {
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>Hoy</strong>
-            <span>Datos centralizados en <code>data/content.js</code>.</span>
+            <span>Metadatos en <code>data/content.js</code> y articulos modulares en <code>data/articles/</code>.</span>
           </div>
           <div class="aside-line">
             <strong>Despues</strong>
@@ -1356,6 +1382,7 @@ function renderArticleCard(article, variant = "standard") {
           </div>
           <h3>${article.title}</h3>
           <p>${article.excerpt}</p>
+          <span class="inline-link article-card__cta">Leer articulo</span>
           <div class="article-card__footer">
             <span>${formatDate(article.date)}</span>
             <span>${article.readTime} min</span>
@@ -1458,10 +1485,10 @@ function renderNewsletterForm({ compact = false, detailed = false, panel = false
   `;
 }
 
-function sectionHeader({ eyebrow, title, text, actionLabel, actionHref }) {
+function sectionHeader({ eyebrow, title, text, actionLabel, actionHref, stacked = false }) {
   return `
-    <div class="section-head reveal">
-      <div>
+    <div class="section-head ${stacked ? "section-head--stacked" : ""} reveal">
+      <div class="section-head__content">
         <span class="eyebrow">${eyebrow}</span>
         <h2>${title}</h2>
         <p>${text}</p>
@@ -1496,6 +1523,10 @@ function renderEssayBody(article) {
   `;
 }
 
+function renderStructuredEssayBody(article) {
+  return article.bodySections.map((section) => renderArticleSection(section, 2)).join("");
+}
+
 function renderRadarBody(article) {
   return `
     <section class="article-section">
@@ -1517,6 +1548,84 @@ function renderRadarBody(article) {
       <h2>Por que importa</h2>
       <p>${article.outlook}</p>
     </section>
+  `;
+}
+
+function renderArticleSection(section, level = 2) {
+  if (!section) {
+    return "";
+  }
+
+  const headingTag = `h${Math.min(level, 3)}`;
+  const hasHeading = Boolean(section.heading);
+  const sectionClass = hasHeading
+    ? "article-section"
+    : "article-section article-section--intro";
+
+  return `
+    <section class="${sectionClass}">
+      ${hasHeading ? `<${headingTag}>${section.heading}</${headingTag}>` : ""}
+      ${renderArticleParagraphs(section.paragraphs)}
+      ${renderArticleCallouts(section.callouts)}
+      ${renderArticleBullets(section.bullets)}
+      ${renderArticleSubsections(section.subsections, level + 1)}
+    </section>
+  `;
+}
+
+function renderArticleParagraphs(paragraphs = []) {
+  return paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
+}
+
+function renderArticleCallouts(callouts = []) {
+  if (!callouts.length) {
+    return "";
+  }
+
+  return `
+    <div class="article-callout-stack">
+      ${callouts
+        .map(
+          (callout) => `
+            <div class="article-callout">
+              <p>${callout}</p>
+            </div>
+          `,
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderArticleBullets(bullets = []) {
+  if (!bullets.length) {
+    return "";
+  }
+
+  return `
+    <ul class="article-list">
+      ${bullets.map((bullet) => `<li>${bullet}</li>`).join("")}
+    </ul>
+  `;
+}
+
+function renderArticleSubsections(subsections = [], level = 3) {
+  if (!subsections.length) {
+    return "";
+  }
+
+  return `
+    <div class="article-subsections">
+      ${subsections
+        .map(
+          (subsection) => `
+            <div class="article-subsection">
+              ${renderArticleSection(subsection, level)}
+            </div>
+          `,
+        )
+        .join("")}
+    </div>
   `;
 }
 
@@ -1725,6 +1834,15 @@ function bindPageInteractions() {
           region: previewArticle.region,
           sectors: previewArticle.sectors,
           readTime: previewArticle.readTime,
+          bodySections: [
+            {
+              paragraphs: ["Apertura del articulo."],
+            },
+            {
+              heading: "Primera seccion",
+              paragraphs: ["Desarrollo principal."],
+            },
+          ],
         };
         jsonBox.textContent = JSON.stringify(snippet, null, 2);
       }
@@ -1893,6 +2011,10 @@ function countArticlesForSector(slug, regionSlug = "") {
     const regionMatch = regionSlug ? article.region === regionSlug : true;
     return sectorMatch && regionMatch;
   }).length;
+}
+
+function countArticlesForRegion(slug) {
+  return orderedArticles.filter((article) => article.region === slug).length;
 }
 
 function countDistinctRegions(list) {
