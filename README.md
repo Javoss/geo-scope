@@ -18,7 +18,10 @@ Geo Scope es una plataforma editorial / think tank digital enfocada en geopoliti
 - `editor.html`: panel editorial demo
 - `assets/styles.css`: estilos principales
 - `assets/app.js`: logica de render, filtros y navegacion
-- `data/content.js`: datos demo de articulos, regiones, sectores y autores
+- `data/content.js`: metadatos globales, regiones, sectores, autores y archivo legado
+- `data/articles/`: articulos modulares en archivos independientes
+- `data/articles/_template.js`: plantilla base para publicar nuevos articulos
+- `MANUAL_PUBLICACION.md`: guia paso a paso para subir articulos nuevos
 
 ## Caracteristicas
 
@@ -31,9 +34,50 @@ Geo Scope es una plataforma editorial / think tank digital enfocada en geopoliti
 - Formularios demo de newsletter y contacto
 - Base simple para evolucionar a CMS o plataforma multi-autor
 
+## Nuevo sistema editorial
+
+La forma recomendada de publicar ahora es:
+
+1. Copiar `data/articles/_template.js`
+2. Crear un nuevo archivo dentro de `data/articles/`
+3. Completar metadatos y `bodySections`
+4. Importar ese archivo en `data/articles/index.js`
+
+El formato `bodySections` permite escribir articulos largos sin tocar el layout:
+
+```js
+bodySections: [
+  {
+    paragraphs: ["Apertura del articulo."],
+  },
+  {
+    heading: "Primera seccion",
+    paragraphs: ["Parrafo uno.", "Parrafo dos."],
+    callouts: ["Frase destacada."],
+  },
+  {
+    heading: "Segunda seccion",
+    bullets: ["Punto uno.", "Punto dos."],
+    subsections: [
+      {
+        heading: "Escenario",
+        paragraphs: ["Texto del escenario."],
+      },
+    ],
+  },
+];
+```
+
+Con este sistema:
+
+- cambias contenido sin tocar diseno
+- mantienes una estructura visual uniforme
+- cada articulo puede tener secciones largas, listas, citas y subsecciones
+- mas adelante sera facil migrar a CMS
+
 ## Como abrir el sitio
 
-Puedes abrir `index.html` directamente en el navegador o levantar un servidor local simple.
+No abras `index.html` con doble clic directo. El sitio usa modulos JS y debe correr con servidor local.
 
 Ejemplo:
 
@@ -49,4 +93,4 @@ http://127.0.0.1:4173/index.html
 
 ## Nota
 
-El proyecto esta construido como sitio estatico multipagina con datos centralizados para facilitar su escalado futuro.
+El proyecto esta construido como sitio estatico multipagina con una separacion clara entre diseno y contenido para facilitar su escalado futuro.

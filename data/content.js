@@ -1,3 +1,5 @@
+import { modularArticles } from "./articles/index.js?v=20260428b";
+
 export const site = {
   name: "Geo Scope",
   tagline:
@@ -59,31 +61,40 @@ export const authors = [
   {
     slug: "javier-salazar-segales",
     name: "Javier Salazar Segales",
-    role: "Director General",
+    role: "Director editorial",
   },
   {
-    slug: "javier-salazar-segales",
-    name: "Javier Salazar Segales",
+    slug: "tomas-velez",
+    name: "Tomas Velez",
     role: "Editor de geoeconomia",
   },
   {
-    slug: "javier-salazar-segales",
-    name: "Javier Salazar Segales",
-    role: "Analista de tecnologia",
+    slug: "clara-ibanez",
+    name: "Clara Ibanez",
+    role: "Analista de tecnologia y poder",
   },
   {
-    slug: "javier-salazar-segales",
-    name: "Javier Salazar Segales",
-    role: "Investigador de seguridad internacional",
+    slug: "adrian-rivas",
+    name: "Adrian Rivas",
+    role: "Investigador senior de seguridad internacional",
   },
   {
-    slug: "javier-salazar-segales",
-    name: "Javier Salazar Segales",
-    role: "Especialista de regiones y diplomacia",
+    slug: "lucia-ferrer",
+    name: "Lucia Ferrer",
+    role: "Editora de regiones y diplomacia",
   },
 ];
 
 export const regions = [
+  {
+    slug: "global",
+    name: "Global",
+    strap: "Flujos sistemicos, poder financiero y reordenamiento internacional.",
+    description:
+      "Lecturas transversales sobre las fuerzas que conectan grandes potencias, liquidez global, comercio, tecnologia y arquitectura de poder a escala mundial.",
+    tags: ["dolar", "liquidez", "flujos", "sistema internacional"],
+    accent: "midnight",
+  },
   {
     slug: "brics",
     name: "BRICS",
@@ -159,6 +170,30 @@ export const regions = [
 ];
 
 export const sectors = [
+  {
+    slug: "geoeconomia-global",
+    name: "Geoeconomia global",
+    description:
+      "Interaccion entre comercio, deuda, monedas, poder financiero y estrategia internacional.",
+    icon: "orbit",
+    accent: "midnight",
+  },
+  {
+    slug: "mercados-financieros",
+    name: "Mercados financieros",
+    description:
+      "Liquidez, tasas, bonos, bolsas y mecanismos de absorcion del ahorro global.",
+    icon: "bars",
+    accent: "steel",
+  },
+  {
+    slug: "china-estados-unidos",
+    name: "China y Estados Unidos",
+    description:
+      "Competencia estructural entre manufactura, finanzas, tecnologia y capacidad estatal.",
+    icon: "compass",
+    accent: "indigo",
+  },
   {
     slug: "geopolitica",
     name: "Geopolitica",
@@ -241,48 +276,7 @@ export const sectors = [
   },
 ];
 
-export const articles = [
-  {
-  slug: "china-produce-estados-unidos-se-endeuda-y-wall-street-gana",
-  title: "China produce, Estados Unidos se endeuda y Wall Street gana",
-  subtitle:
-    "La economia global funciona sobre una paradoja: los desequilibrios entre produccion, deuda y liquidez sostienen parte del orden financiero internacional.",
-  excerpt:
-    "China exporta excedentes, Estados Unidos absorbe ahorro global mediante deuda y Wall Street recibe una parte significativa de la liquidez internacional. La pregunta es cuanto tiempo puede sostenerse este modelo.",
-  type: "analysis",
-  region: "global",
-  sectors: [
-    "geoeconomia-global",
-    "mercados-financieros",
-    "multipolaridad-gobernanza-global",
-    "china-estados-unidos",
-  ],
-  author: "javier-salazar-segales",
-  date: "2026-04-27",
-  readTime: 12,
-  homeFeature: 1,
-  tone: "midnight",
-  tags: [
-    "China",
-    "Estados Unidos",
-    "Wall Street",
-    "dolar",
-    "BRICS",
-    "liquidez global",
-  ],
-  thesis:
-    "El sistema economico internacional se sostiene parcialmente sobre una relacion estructural entre el superavit comercial de China, el deficit fiscal de Estados Unidos y la capacidad de los mercados financieros estadounidenses para absorber ahorro global.",
-  whyItMatters: [
-    "El poder financiero de Estados Unidos no depende solo de su economia interna, sino de la profundidad de sus mercados, el rol internacional del dolar y la ausencia de una alternativa equivalente.",
-    "China mantiene una posicion central como potencia manufacturera, pero su dependencia de los mercados externos aumenta las tensiones comerciales y geopoliticas.",
-    "America Latina y otros mercados emergentes quedan expuestos a los ciclos de liquidez global, tasas de interes estadounidenses, demanda china y volatilidad de los precios de materias primas.",
-    "Para los BRICS, el desafio no es solamente cuestionar el dominio del dolar, sino construir mecanismos financieros confiables, liquidos y escalables.",
-  ],
-  regionalLens:
-    "America Latina se encuentra entre dos fuerzas estructurales: China como comprador de materias primas e inversor en infraestructura, y Estados Unidos como centro financiero, monetario y politico del hemisferio. La pregunta estrategica es si la region puede transformar esta rivalidad en una oportunidad de diversificacion productiva o si seguira reaccionando pasivamente a ciclos definidos por otros.",
-  outlook:
-    "El modelo actual puede continuar en el corto y mediano plazo si China mantiene excedentes comerciales, Estados Unidos conserva la confianza de los mercados y Wall Street sigue atrayendo liquidez global. Sin embargo, los riesgos fiscales, comerciales y geopoliticos aumentaran si no se corrigen gradualmente los desequilibrios que sostienen el sistema.",
-  }
+const legacyArticles = [
   {
     slug: "brics-y-el-nuevo-equilibrio-tecnologico-global",
     title: "BRICS y el nuevo equilibrio tecnologico global",
@@ -747,3 +741,5 @@ export const articles = [
       "La leccion comun es clara: tecnologia y finanzas ya operan como parte del mismo tablero estrategico.",
   },
 ];
+
+export const articles = [...modularArticles, ...legacyArticles];
