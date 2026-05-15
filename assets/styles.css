@@ -256,10 +256,31 @@ pre {
 }
 
 .header-utility__link,
-.header-utility__lang {
+.header-language__button {
   font-size: 0.96rem;
   font-weight: 500;
   color: inherit;
+}
+
+.header-language {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.header-language__button {
+  border: 0;
+  background: transparent;
+  padding: 6px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.header-language__button:hover,
+.header-language__button.is-active {
+  color: var(--blue-900);
+  background: rgba(33, 79, 191, 0.1);
 }
 
 .header-utility__divider {
@@ -359,6 +380,9 @@ pre {
 .article-title {
   font-size: clamp(3.3rem, 7vw, 5.4rem);
   margin-top: 16px;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .hero-title {
@@ -460,11 +484,19 @@ pre {
 .hero-panel__title {
   font-size: clamp(1.45rem, 2.15vw, 1.95rem);
   max-width: 14ch;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .hero-panel__text {
   margin-top: 8px;
   max-width: 34ch;
+}
+
+.hero-panel__link {
+  display: block;
+  color: inherit;
 }
 
 .hero-panel__meta {
@@ -714,8 +746,12 @@ pre {
 .radar-card h3,
 .prose-card h2,
 .region-insight h2 {
-  font-size: 1.65rem;
+  font-size: clamp(1.35rem, 1rem + 1.2vw, 1.65rem);
   margin-top: 12px;
+  line-height: 1.1;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .article-card p,
@@ -940,8 +976,11 @@ pre {
 
 .cover-art__info strong {
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.85rem + 0.8vw, 1.2rem);
   line-height: 1.1;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .cover-art__info span {
@@ -1613,7 +1652,7 @@ pre {
   }
 
   .header-utility__link,
-  .header-utility__lang {
+  .header-language__button {
     font-size: 0.9rem;
   }
 
@@ -1654,7 +1693,7 @@ pre {
   }
 
   .header-utility__link,
-  .header-utility__lang {
+  .header-language__button {
     font-size: 0.88rem;
   }
 

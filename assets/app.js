@@ -1,4 +1,33 @@
 import {
+  about as aboutBase,
+  articles as articlesBase,
+  authors as authorsBase,
+  navigation as navigationBase,
+  newsletterInterests as newsletterInterestsBase,
+  regions as regionsBase,
+  sectors as sectorsBase,
+  site as siteBase,
+} from "../data/content.js?v=20260515a";
+import {
+  contentTranslations,
+  defaultLocale,
+  localeOptions,
+  supportedLocales,
+  uiCopy,
+} from "../data/i18n.js?v=20260514b";
+
+const page = document.body.dataset.page;
+const app = document.getElementById("app");
+const header = document.getElementById("site-header");
+const footer = document.getElementById("site-footer");
+let query = new URLSearchParams(window.location.search);
+const currentLocale = resolveLocale(query);
+const ui = buildLocalizedUi(currentLocale);
+const localeMeta = localeOptions[currentLocale] || localeOptions[defaultLocale];
+const brandLogoSrc = "assets/geoscope-logo.png";
+document.documentElement.lang = currentLocale;
+
+const {
   about,
   articles,
   authors,
@@ -7,41 +36,10 @@ import {
   regions,
   sectors,
   site,
-} from "../data/content.js?v=20260428b";
+} = buildLocalizedData(currentLocale);
 
-const page = document.body.dataset.page;
-const app = document.getElementById("app");
-const header = document.getElementById("site-header");
-const footer = document.getElementById("site-footer");
-let query = new URLSearchParams(window.location.search);
-const brandLogoSrc = "assets/geoscope-logo.png";
-
-const articleTypeLabels = {
-  analysis: "Analisis",
-  opinion: "Opinion",
-  radar: "Radar semanal",
-};
-
-const pageCopy = {
-  analysis: {
-    eyebrow: "Archivo editorial",
-    title: "Analisis con contexto, escala y criterio.",
-    description:
-      "Explora el archivo completo de Geo Scope con filtros por region, sector y formato para detectar patrones, no solo titulares.",
-  },
-  opinion: {
-    eyebrow: "Punto de vista",
-    title: "Opinion estrategica con voz propia.",
-    description:
-      "Columnas y argumentos para leer el sistema internacional desde intereses, capacidades y consecuencias.",
-  },
-  radar: {
-    eyebrow: "Seguimiento semanal",
-    title: "Radar global para detectar senales antes del consenso.",
-    description:
-      "Lecturas breves sobre movimientos que anticipan cambios geopoliticos, geoeconomicos y tecnologicos.",
-  },
-};
+const articleTypeLabels = ui.articleTypes;
+const pageCopy = ui.pageCopy;
 
 const articleMap = new Map(articles.map((article) => [article.slug, article]));
 const authorMap = new Map(authors.map((author) => [author.slug, author]));
@@ -71,11 +69,11 @@ function renderPage() {
 
   switch (page) {
     case "home":
-      document.title = `${site.name} | Analisis estrategico global`;
+      document.title = `${site.name} | ${ui.pageTitles.home}`;
       app.innerHTML = renderHomePage();
       break;
     case "analysis":
-      document.title = `Analisis | ${site.name}`;
+      document.title = `${ui.pageTitles.analysis} | ${site.name}`;
       app.innerHTML = renderArchivePage({
         title: pageCopy.analysis.title,
         eyebrow: pageCopy.analysis.eyebrow,
@@ -85,7 +83,7 @@ function renderPage() {
       });
       break;
     case "opinion":
-      document.title = `Opinion | ${site.name}`;
+      document.title = `${ui.pageTitles.opinion} | ${site.name}`;
       app.innerHTML = renderArchivePage({
         title: pageCopy.opinion.title,
         eyebrow: pageCopy.opinion.eyebrow,
@@ -95,7 +93,7 @@ function renderPage() {
       });
       break;
     case "explainers":
-      document.title = `Analisis | ${site.name}`;
+      document.title = `${ui.pageTitles.analysis} | ${site.name}`;
       app.innerHTML = renderArchivePage({
         title: pageCopy.analysis.title,
         eyebrow: pageCopy.analysis.eyebrow,
@@ -105,18 +103,18 @@ function renderPage() {
       });
       break;
     case "radar":
-      document.title = `Radar semanal | ${site.name}`;
+      document.title = `${ui.pageTitles.radar} | ${site.name}`;
       app.innerHTML = renderRadarPage();
       break;
     case "regions":
-      document.title = `Regiones | ${site.name}`;
+      document.title = `${ui.pageTitles.regions} | ${site.name}`;
       app.innerHTML = renderRegionsPage();
       break;
     case "region":
       app.innerHTML = renderRegionDetailPage();
       break;
     case "sectors":
-      document.title = `Sectores | ${site.name}`;
+      document.title = `${ui.pageTitles.sectors} | ${site.name}`;
       app.innerHTML = renderSectorsPage();
       break;
     case "sector":
@@ -126,19 +124,19 @@ function renderPage() {
       app.innerHTML = renderArticlePage();
       break;
     case "about":
-      document.title = `Sobre Geo Scope`;
+      document.title = `${ui.pageTitles.about} | ${site.name}`;
       app.innerHTML = renderAboutPage();
       break;
     case "contact":
-      document.title = `Contacto | ${site.name}`;
+      document.title = `${ui.pageTitles.contact} | ${site.name}`;
       app.innerHTML = renderContactPage();
       break;
     case "subscription":
-      document.title = `Suscripcion | ${site.name}`;
+      document.title = `${ui.pageTitles.subscription} | ${site.name}`;
       app.innerHTML = renderSubscriptionPage();
       break;
     case "editor":
-      document.title = `Panel editorial | ${site.name}`;
+      document.title = `${ui.pageTitles.editor} | ${site.name}`;
       app.innerHTML = renderEditorPage();
       break;
     default:
@@ -155,30 +153,45 @@ function renderHeader() {
 
   return `
     <div class="nav-frame">
-      <a class="brand" href="index.html" aria-label="Geo Scope">
+      <a class="brand" href="${withLocale("index.html")}" aria-label="Geo Scope">
         ${renderBrandLockup()}
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        Menu
+        ${ui.header.menu}
       </button>
       <div class="nav-stack" id="site-nav">
-        <nav class="site-nav" aria-label="Principal">
+        <nav class="site-nav" aria-label="${ui.header.navAria}">
           ${navigation
             .map(
               (item) => `
-                <a class="nav-link ${item.key === activeKey ? "is-active" : ""}" href="${item.href}">
+                <a class="nav-link ${item.key === activeKey ? "is-active" : ""}" href="${withLocale(item.href)}">
                   ${item.label}
                 </a>
               `,
             )
             .join("")}
         </nav>
-        <div class="header-utility" aria-label="Accesos">
-          <a class="header-utility__link" href="analysis.html">Buscar</a>
+        <div class="header-utility" aria-label="${ui.header.utilityAria}">
+          <a class="header-utility__link" href="${withLocale("analysis.html")}">${ui.header.search}</a>
           <span class="header-utility__divider" aria-hidden="true"></span>
-          <a class="header-utility__link" href="subscription.html">Suscripcion</a>
+          <a class="header-utility__link" href="${withLocale("subscription.html")}">${ui.header.subscription}</a>
           <span class="header-utility__divider" aria-hidden="true"></span>
-          <span class="header-utility__lang">ES</span>
+          <div class="header-language" role="group" aria-label="${ui.header.languageAria}">
+            ${supportedLocales
+              .map(
+                (locale) => `
+                  <button
+                    class="header-language__button ${locale === currentLocale ? "is-active" : ""}"
+                    type="button"
+                    data-locale="${locale}"
+                    aria-pressed="${locale === currentLocale ? "true" : "false"}"
+                  >
+                    ${localeOptions[locale].label}
+                  </button>
+                `,
+              )
+              .join("")}
+          </div>
         </div>
       </div>
     </div>
@@ -188,17 +201,17 @@ function renderHeader() {
 function renderFooter() {
   const sectionLinks = navigation.slice(0, 7);
   const institutionalLinks = [
-    { label: "Sobre Geo Scope", href: "about.html" },
-    { label: "Contacto", href: "contact.html" },
-    { label: "Suscripcion", href: "subscription.html" },
-    { label: "Panel editorial", href: "editor.html" },
+    { label: navigation.find((item) => item.key === "about")?.label || ui.pageTitles.about, href: "about.html" },
+    { label: navigation.find((item) => item.key === "contact")?.label || ui.pageTitles.contact, href: "contact.html" },
+    { label: navigation.find((item) => item.key === "subscription")?.label || ui.pageTitles.subscription, href: "subscription.html" },
+    { label: ui.footer.editorialPanel, href: "editor.html" },
   ];
 
   return `
     <div class="footer-wrap">
       <div class="container footer-grid">
         <div class="footer-brand">
-          <a class="brand brand--footer" href="index.html">
+          <a class="brand brand--footer" href="${withLocale("index.html")}">
             ${renderBrandLockup({ footer: true })}
           </a>
           <p>${site.description}</p>
@@ -213,36 +226,35 @@ function renderFooter() {
           </div>
         </div>
         <div>
-          <h3>Secciones</h3>
+          <h3>${ui.footer.sections}</h3>
           <div class="footer-links">
             ${sectionLinks
-              .map((item) => `<a href="${item.href}">${item.label}</a>`)
+              .map((item) => `<a href="${withLocale(item.href)}">${item.label}</a>`)
               .join("")}
           </div>
         </div>
         <div>
-          <h3>Institucional</h3>
+          <h3>${ui.footer.institutional}</h3>
           <div class="footer-links">
             ${institutionalLinks
-              .map((item) => `<a href="${item.href}">${item.label}</a>`)
+              .map((item) => `<a href="${withLocale(item.href)}">${item.label}</a>`)
               .join("")}
           </div>
           <div class="footer-contact">
             <span>${site.email}</span>
-            <span>Informacion general y colaboraciones editoriales.</span>
+            <span>${ui.footer.contactNote}</span>
           </div>
         </div>
         <div>
-          <h3>Newsletter</h3>
+          <h3>${ui.footer.newsletter}</h3>
           <p class="footer-note">
-            Recibe analisis estrategicos y lecturas clave sobre el nuevo orden global.
+            ${ui.footer.newsletterNote}
           </p>
           ${renderNewsletterForm({ compact: true })}
         </div>
       </div>
       <div class="container footer-bottom">
-        <span>Copyright ${new Date().getFullYear()} ${site.name}. Todos los derechos reservados.</span>
-        <span>Estructura editorial lista para multi-autor, archivo y evolucion hacia CMS.</span>
+        <span>Copyright ${new Date().getFullYear()} ${site.name}. ${ui.footer.rightsReserved}</span>
       </div>
     </div>
   `;
@@ -280,31 +292,31 @@ function renderHomePage() {
     <section class="hero hero--home section">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <h1 class="hero-lead">Analisis estrategico para interpretar el nuevo orden global.</h1>
+          <h1 class="hero-lead">${ui.home.heroLead}</h1>
           <p class="hero-subtitle">
-            Geopolitica, tecnologia, economia, energia y comercio internacional con una lectura clara, sobria y de largo plazo.
+            ${ui.home.heroSubtitle}
           </p>
           <p class="hero-text">
-            Una plataforma para leer el sistema internacional con criterio, contexto y foco estrategico.
+            ${ui.home.heroText}
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="analysis.html">Explorar analisis</a>
-            <a class="btn btn-secondary" href="subscription.html">Suscribirse</a>
+            <a class="btn btn-primary" href="${withLocale("analysis.html")}">${ui.home.explore}</a>
+            <a class="btn btn-secondary" href="${withLocale("subscription.html")}">${ui.home.subscribe}</a>
           </div>
           <div class="hero-trust-row">
-            <span>Plataforma editorial</span>
-            <span>Centro de analisis</span>
-            <span>Perspectiva internacional</span>
+            ${ui.home.trust.map((item) => `<span>${item}</span>`).join("")}
           </div>
         </div>
         <aside class="hero-panel hero-panel--home reveal">
           <div class="hero-panel__main">
             <div class="panel-header">
-              <span class="eyebrow">En foco</span>
-              <span class="panel-index">Edicion / 01</span>
+              <span class="eyebrow">${ui.home.focus}</span>
+              <span class="panel-index">${ui.home.edition} / 01</span>
             </div>
-            <h2 class="hero-panel__title">${mainFeature.title}</h2>
-            <p class="hero-panel__text">${mainFeature.subtitle}</p>
+            <a class="hero-panel__link" href="${articleUrl(mainFeature.slug)}">
+              <h2 class="hero-panel__title">${mainFeature.title}</h2>
+              <p class="hero-panel__text">${mainFeature.subtitle}</p>
+            </a>
             <div class="meta-row hero-panel__meta">
               <span class="meta-chip">${labelForType(mainFeature.type)}</span>
               <span class="meta-chip">${nameForRegion(mainFeature.region)}</span>
@@ -314,24 +326,24 @@ function renderHomePage() {
             <div class="metric-grid metric-grid--hero">
               <div class="metric-card">
                 <strong>${articles.length}</strong>
-                <span>Dossiers</span>
+                <span>${ui.home.dossiers}</span>
               </div>
               <div class="metric-card">
                 <strong>${regions.length}</strong>
-                <span>Regiones</span>
+                <span>${ui.home.regions}</span>
               </div>
               <div class="metric-card">
                 <strong>${sectors.length}</strong>
-                <span>Sectores</span>
+                <span>${ui.home.sectors}</span>
               </div>
             </div>
             <div class="signal-panel signal-panel--compact">
-              <span class="eyebrow">Radar global</span>
+              <span class="eyebrow">${ui.home.globalRadar}</span>
               <div class="signal-panel__card">
-                <strong>${leadSignal?.title || "Lectura prioritaria de la semana"}</strong>
-                <span>${leadSignal?.detail || "Movimientos breves con impacto acumulativo sobre liquidez, comercio y competencia estrategica."}</span>
+                <strong>${leadSignal?.title || ui.home.weeklyPriority}</strong>
+                <span>${leadSignal?.detail || ui.home.weeklyPriorityFallback}</span>
               </div>
-              <a class="inline-link" href="${radarItems[0] ? articleUrl(radarItems[0].slug) : "radar.html"}">Abrir radar semanal</a>
+              <a class="inline-link" href="${radarItems[0] ? articleUrl(radarItems[0].slug) : withLocale("radar.html")}">${ui.home.openWeeklyRadar}</a>
             </div>
           </div>
         </aside>
@@ -341,9 +353,9 @@ function renderHomePage() {
     <section class="section section--home-lead">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Portada",
-          title: "Una lectura principal y tres ejes de contexto.",
-          text: "La home combina un articulo destacado con piezas complementarias para construir una lectura mas completa del tablero global.",
+          eyebrow: ui.home.frontpage.eyebrow,
+          title: ui.home.frontpage.title,
+          text: ui.home.frontpage.text,
           stacked: true,
         })}
         <div class="feature-layout feature-layout--home">
@@ -362,10 +374,10 @@ function renderHomePage() {
     <section class="section section-alt">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Ultimos analisis",
-          title: "Lecturas recientes con densidad estrategica.",
-          text: "Analisis de fondo para seguir la evolucion del poder, las cadenas de valor y la competencia tecnologica.",
-          actionLabel: "Ver archivo",
+          eyebrow: ui.home.latest.eyebrow,
+          title: ui.home.latest.title,
+          text: ui.home.latest.text,
+          actionLabel: ui.home.latest.action,
           actionHref: "analysis.html",
           stacked: true,
         })}
@@ -380,17 +392,17 @@ function renderHomePage() {
     <section class="section">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Radar global",
-          title: "Senales breves con impacto estrategico.",
-          text: "Seguimiento semanal para detectar cambios discretos con implicaciones geopoliticas y geoeconomicas.",
-          actionLabel: "Ver radar semanal",
+          eyebrow: ui.home.radar.eyebrow,
+          title: ui.home.radar.title,
+          text: ui.home.radar.text,
+          actionLabel: ui.home.radar.action,
           actionHref: "radar.html",
           stacked: true,
         })}
         <div class="radar-layout radar-layout--home">
           <article class="card radar-card radar-card--lead reveal">
             <div class="radar-card__header">
-              <span class="meta-chip">Lectura rapida</span>
+              <span class="meta-chip">${ui.home.radar.quickRead}</span>
               <span class="meta-chip">${formatDate(radarItems[0].date)}</span>
             </div>
             <h3>${radarItems[0].title}</h3>
@@ -407,7 +419,7 @@ function renderHomePage() {
                 )
                 .join("")}
             </div>
-            <a class="inline-link" href="${articleUrl(radarItems[0].slug)}">Abrir radar</a>
+            <a class="inline-link" href="${articleUrl(radarItems[0].slug)}">${ui.home.radar.open}</a>
           </article>
           <div class="card-stack">
             ${radarItems
@@ -422,10 +434,10 @@ function renderHomePage() {
     <section class="section section-alt">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Temas / Sectores",
-          title: "Una estructura editorial organizada por capacidades y tensiones.",
-          text: "Sectores pensados para seguir la interseccion entre tecnologia, economia, energia, diplomacia y poder estatal.",
-          actionLabel: "Ver sectores",
+          eyebrow: ui.home.sectors.eyebrow,
+          title: ui.home.sectors.title,
+          text: ui.home.sectors.text,
+          actionLabel: ui.home.sectors.action,
           actionHref: "sectors.html",
           stacked: true,
         })}
@@ -438,10 +450,10 @@ function renderHomePage() {
     <section class="section">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Regiones",
-          title: "Cobertura regional con enfoque comparado.",
-          text: "Cada region cuenta con portada propia, articulo destacado, ultimos textos y claves para interpretar sus movimientos.",
-          actionLabel: "Explorar regiones",
+          eyebrow: ui.home.regionsSection.eyebrow,
+          title: ui.home.regionsSection.title,
+          text: ui.home.regionsSection.text,
+          actionLabel: ui.home.regionsSection.action,
           actionHref: "regions.html",
           stacked: true,
         })}
@@ -454,9 +466,8 @@ function renderHomePage() {
     <section class="section">
       <div class="container">
         ${renderNewsletterPanel({
-          title: "Recibe analisis estrategicos y lecturas clave sobre el nuevo orden global.",
-          description:
-            "Un newsletter curado para seguir geopolitica, economia internacional, tecnologia, energia y reordenamiento global sin ruido innecesario.",
+          title: ui.home.newsletter.title,
+          description: ui.home.newsletter.description,
         })}
       </div>
     </section>
@@ -491,14 +502,14 @@ function renderArchivePage({ eyebrow, title, description, lockedType, defaultTyp
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>${results.length}</strong>
-            <span>resultados visibles con los filtros actuales.</span>
+            <span>${ui.archive.visibleResults}</span>
           </div>
           <div class="aside-line">
             <strong>${regions.length}</strong>
-            <span>regiones y ${sectors.length} sectores en la estructura editorial.</span>
+            <span>${formatStructureSummary(regions.length, sectors.length)}</span>
           </div>
           <a class="btn btn-secondary" href="${articleUrl(highlightedArticle.slug)}">
-            Abrir lectura destacada
+            ${ui.archive.openFeatured}
           </a>
         </div>
       </div>
@@ -509,15 +520,15 @@ function renderArchivePage({ eyebrow, title, description, lockedType, defaultTyp
         <form class="filter-shell reveal" id="archive-filters">
           <div class="filter-grid">
             <label class="field">
-              <span>Buscar</span>
-              <input type="search" name="q" value="${escapeAttribute(activeQuery)}" placeholder="Titulo, region, etiqueta o sector" />
+              <span>${ui.archive.search}</span>
+              <input type="search" name="q" value="${escapeAttribute(activeQuery)}" placeholder="${ui.archive.searchPlaceholder}" />
             </label>
             ${
               lockedType
-                ? `<div class="field field--locked"><span>Formato</span><strong>${articleTypeLabels[defaultType]}</strong></div>`
+                ? `<div class="field field--locked"><span>${ui.archive.lockedFormatLabel}</span><strong>${articleTypeLabels[defaultType]}</strong></div>`
                 : `
                   <label class="field">
-                    <span>Formato</span>
+                    <span>${ui.archive.format}</span>
                     <select name="type">
                       ${renderTypeOptions(activeType)}
                     </select>
@@ -525,9 +536,9 @@ function renderArchivePage({ eyebrow, title, description, lockedType, defaultTyp
                 `
             }
             <label class="field">
-              <span>Region</span>
+              <span>${ui.archive.region}</span>
               <select name="region">
-                <option value="">Todas las regiones</option>
+                <option value="">${ui.archive.allRegions}</option>
                 ${regions
                   .map(
                     (region) => `
@@ -540,9 +551,9 @@ function renderArchivePage({ eyebrow, title, description, lockedType, defaultTyp
               </select>
             </label>
             <label class="field">
-              <span>Sector</span>
+              <span>${ui.archive.sector}</span>
               <select name="sector">
-                <option value="">Todos los sectores</option>
+                <option value="">${ui.archive.allSectors}</option>
                 ${sectors
                   .map(
                     (sector) => `
@@ -556,13 +567,13 @@ function renderArchivePage({ eyebrow, title, description, lockedType, defaultTyp
             </label>
           </div>
           <div class="filter-actions">
-            <button class="btn btn-primary" type="submit">Aplicar filtros</button>
-            <a class="btn btn-ghost" href="${lockedType ? pagePath(page) : "analysis.html"}">Limpiar</a>
+            <button class="btn btn-primary" type="submit">${ui.archive.applyFilters}</button>
+            <a class="btn btn-ghost" href="${lockedType ? pagePath(page) : withLocale("analysis.html")}">${ui.archive.clear}</a>
           </div>
         </form>
 
         <div class="results-meta">
-          <strong>${results.length} articulos</strong>
+          <strong>${ui.meta.articles(results.length)}</strong>
           <span>
             ${buildResultsDescription({ type: activeType, region: activeRegion, sector: activeSector, term: activeQuery })}
           </span>
@@ -579,9 +590,9 @@ function renderArchivePage({ eyebrow, title, description, lockedType, defaultTyp
             `
             : `
               <div class="empty-state">
-                <h2>No hay resultados para esta combinacion.</h2>
-                <p>Prueba con otra region, otro sector o un termino de busqueda mas amplio.</p>
-                <a class="btn btn-secondary" href="${lockedType ? pagePath(page) : "analysis.html"}">Restablecer filtros</a>
+                <h2>${ui.archive.noResultsTitle}</h2>
+                <p>${ui.archive.noResultsText}</p>
+                <a class="btn btn-secondary" href="${lockedType ? pagePath(page) : withLocale("analysis.html")}">${ui.archive.resetFilters}</a>
               </div>
             `
         }
@@ -605,11 +616,11 @@ function renderRadarPage() {
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>${radarItems.length}</strong>
-            <span>entregas demo del radar semanal para seguimiento editorial.</span>
+            <span>${ui.radarPage.demoDeliveries}</span>
           </div>
           <div class="aside-line">
             <strong>3-5</strong>
-            <span>senales clave por entrega para una lectura rapida y util.</span>
+            <span>${ui.radarPage.keySignals}</span>
           </div>
         </div>
       </div>
@@ -637,7 +648,7 @@ function renderRadarPage() {
                 )
                 .join("")}
             </div>
-            <a class="btn btn-secondary" href="${articleUrl(lead.slug)}">Abrir lectura</a>
+            <a class="btn btn-secondary" href="${articleUrl(lead.slug)}">${ui.radarPage.openReading}</a>
           </article>
           <div class="card-stack">
             ${radarItems
@@ -656,21 +667,20 @@ function renderRegionsPage() {
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Mapa regional</span>
-          <h1 class="page-title">Regiones con portadas propias y enfoque estrategico.</h1>
+          <span class="eyebrow">${ui.regionsPage.eyebrow}</span>
+          <h1 class="page-title">${ui.regionsPage.title}</h1>
           <p class="page-text">
-            Navega por BRICS, America Latina, Rusia y Eurasia, China y Asia, Europa,
-            Medio Oriente, Africa y Estados Unidos y Occidente.
+            ${ui.regionsPage.text}
           </p>
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>${regions.length}</strong>
-            <span>regiones trazadas para lectura comparada.</span>
+            <span>${ui.regionsPage.mapped}</span>
           </div>
           <div class="aside-line">
-            <strong>Portadas</strong>
-            <span>cada region combina descripcion, destacado, archivo y etiquetas.</span>
+            <strong>${ui.regionsPage.covers}</strong>
+            <span>${ui.regionsPage.coversText}</span>
           </div>
         </div>
       </div>
@@ -700,7 +710,7 @@ function renderRegionDetailPage() {
   const region = regionMap.get(slug);
 
   if (!region) {
-    document.title = `Region no encontrada | ${site.name}`;
+    document.title = `${ui.pageTitles.regionNotFound} | ${site.name}`;
     return renderNotFound();
   }
 
@@ -723,11 +733,11 @@ function renderRegionDetailPage() {
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>${regionArticles.length}</strong>
-            <span>articulos demo relacionados con la region.</span>
+            <span>${ui.regionsPage.regionArticles}</span>
           </div>
           <div class="aside-line">
             <strong>${relatedSectors.length}</strong>
-            <span>sectores clave conectados con esta cobertura.</span>
+            <span>${ui.regionsPage.keySectors}</span>
           </div>
         </div>
       </div>
@@ -751,7 +761,7 @@ function renderRegionDetailPage() {
             ${renderArticleCard(featuredArticle, "feature")}
           </div>
           <aside class="card region-insight reveal">
-            <span class="eyebrow">Descripcion estrategica</span>
+            <span class="eyebrow">${ui.regionsPage.strategicDescription}</span>
             <h2>${region.strap}</h2>
             <p>${region.description}</p>
             <div class="tag-list">
@@ -773,9 +783,9 @@ function renderRegionDetailPage() {
     <section class="section">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Ultimos articulos",
-          title: `Lecturas recientes sobre ${region.name}.`,
-          text: "Una seleccion de piezas para seguir tendencias, riesgos y oportunidades en esta region.",
+          eyebrow: ui.regionsPage.latestEyebrow,
+          title: ui.regionsPage.latestTitle(region.name),
+          text: ui.regionsPage.latestText,
         })}
         <div class="card-grid card-grid--three">
           ${latest.map((article) => renderArticleCard(article, "standard")).join("")}
@@ -792,21 +802,20 @@ function renderSectorsPage() {
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Sectores</span>
-          <h1 class="page-title">Categorias editoriales con lectura transversal.</h1>
+          <span class="eyebrow">${ui.sectorsPage.eyebrow}</span>
+          <h1 class="page-title">${ui.sectorsPage.title}</h1>
           <p class="page-text">
-            Organiza el archivo por geoeconomia, tecnologia, energia, seguridad,
-            diplomacia e infraestructura para seguir el poder donde realmente opera.
+            ${ui.sectorsPage.text}
           </p>
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>${sectors.length}</strong>
-            <span>sectores curados para una plataforma magazine + think tank.</span>
+            <span>${ui.sectorsPage.curated}</span>
           </div>
           <div class="aside-line">
-            <strong>Filtro regional</strong>
-            <span>cada categoria permite leer el cruce entre tema y geografia.</span>
+            <strong>${ui.sectorsPage.filterLabel}</strong>
+            <span>${ui.sectorsPage.filterText}</span>
           </div>
         </div>
       </div>
@@ -817,9 +826,9 @@ function renderSectorsPage() {
         <form class="filter-shell reveal" id="sector-overview-filter">
           <div class="filter-grid filter-grid--simple">
             <label class="field">
-              <span>Filtrar por region</span>
+              <span>${ui.sectorsPage.filterByRegion}</span>
               <select name="region">
-                <option value="">Todas las regiones</option>
+                <option value="">${ui.archive.allRegions}</option>
                 ${regions
                   .map(
                     (region) => `
@@ -833,8 +842,8 @@ function renderSectorsPage() {
             </label>
           </div>
           <div class="filter-actions">
-            <button class="btn btn-primary" type="submit">Aplicar</button>
-            <a class="btn btn-ghost" href="sectors.html">Limpiar</a>
+            <button class="btn btn-primary" type="submit">${ui.sectorsPage.apply}</button>
+            <a class="btn btn-ghost" href="${withLocale("sectors.html")}">${ui.sectorsPage.clear}</a>
           </div>
         </form>
         <div class="sector-grid sector-grid--full">
@@ -860,7 +869,7 @@ function renderSectorDetailPage() {
   const sector = sectorMap.get(slug);
 
   if (!sector) {
-    document.title = `Sector no encontrado | ${site.name}`;
+    document.title = `${ui.pageTitles.sectorNotFound} | ${site.name}`;
     return renderNotFound();
   }
 
@@ -876,7 +885,7 @@ function renderSectorDetailPage() {
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Sector</span>
+          <span class="eyebrow">${ui.sectorsPage.sector}</span>
           <div class="sector-heading">
             <span class="icon-badge">${iconMarkup(sector.icon)}</span>
             <h1 class="page-title">${sector.name}</h1>
@@ -886,11 +895,11 @@ function renderSectorDetailPage() {
         <div class="page-hero__aside reveal">
           <div class="aside-line">
             <strong>${relatedArticles.length}</strong>
-            <span>articulos asociados con el filtro actual.</span>
+            <span>${ui.sectorsPage.sectorArticles}</span>
           </div>
           <div class="aside-line">
             <strong>${countDistinctRegions(relatedArticles)}</strong>
-            <span>regiones conectadas con esta categoria.</span>
+            <span>${ui.sectorsPage.connectedRegions}</span>
           </div>
         </div>
       </div>
@@ -913,9 +922,9 @@ function renderSectorDetailPage() {
           <input type="hidden" name="slug" value="${slug}" />
           <div class="filter-grid filter-grid--simple">
             <label class="field">
-              <span>Filtrar por region</span>
+              <span>${ui.sectorsPage.filterByRegion}</span>
               <select name="region">
-                <option value="">Todas las regiones</option>
+                <option value="">${ui.archive.allRegions}</option>
                 ${regions
                   .map(
                     (region) => `
@@ -929,8 +938,8 @@ function renderSectorDetailPage() {
             </label>
           </div>
           <div class="filter-actions">
-            <button class="btn btn-primary" type="submit">Aplicar filtro</button>
-            <a class="btn btn-ghost" href="${sectorUrl(slug)}">Ver todo</a>
+            <button class="btn btn-primary" type="submit">${ui.sectorsPage.applyFilter}</button>
+            <a class="btn btn-ghost" href="${sectorUrl(slug)}">${ui.sectorsPage.viewAll}</a>
           </div>
         </form>
 
@@ -945,9 +954,9 @@ function renderSectorDetailPage() {
             `
             : `
               <div class="empty-state">
-                <h2>No hay articulos para esta combinacion.</h2>
-                <p>Prueba otra region o vuelve a la vista completa del sector.</p>
-                <a class="btn btn-secondary" href="${sectorUrl(slug)}">Restablecer vista</a>
+                <h2>${ui.sectorsPage.noArticlesTitle}</h2>
+                <p>${ui.sectorsPage.noArticlesText}</p>
+                <a class="btn btn-secondary" href="${sectorUrl(slug)}">${ui.sectorsPage.resetView}</a>
               </div>
             `
         }
@@ -961,23 +970,23 @@ function renderArticlePage() {
   const article = articleMap.get(slug);
 
   if (!article) {
-    document.title = `Articulo no encontrado | ${site.name}`;
+    document.title = `${ui.pageTitles.articleNotFound} | ${site.name}`;
     return renderNotFound();
   }
 
   document.title = `${article.title} | ${site.name}`;
 
   const author = authorMap.get(article.author) || {
-    name: "Equipo editorial",
-    role: "Geo Scope",
+    name: ui.articlePage.fallbackAuthorName,
+    role: ui.articlePage.fallbackAuthorRole,
   };
   const region = regionMap.get(article.region);
-  const regionName = region?.name || "Cobertura global";
+  const regionName = region?.name || ui.articlePage.fallbackRegionName;
   const regionDescription =
     region?.description ||
-    "Analisis vinculado a tendencias transversales del sistema internacional.";
-  const regionHref = region ? regionUrl(region.slug) : "regions.html";
-  const regionLinkLabel = region ? "Abrir portada regional" : "Abrir mapa regional";
+    ui.articlePage.fallbackRegionDescription;
+  const regionHref = region ? regionUrl(region.slug) : withLocale("regions.html");
+  const regionLinkLabel = region ? ui.articlePage.openRegionalCover : ui.articlePage.openRegionalMap;
   const related = findRelatedArticles(article);
   const favorite = isFavorite(article.slug);
 
@@ -985,11 +994,11 @@ function renderArticlePage() {
     <section class="article-hero section">
       <div class="container article-hero__grid">
         <div class="article-hero__copy reveal">
-          <a class="back-link" href="${backLinkForArticle(article)}">Volver</a>
+          <a class="back-link" href="${backLinkForArticle(article)}">${ui.articlePage.back}</a>
           <div class="meta-row">
             <span class="meta-chip">${labelForType(article.type)}</span>
             <span class="meta-chip">${regionName}</span>
-            <span class="meta-chip">${article.readTime} min de lectura</span>
+            <span class="meta-chip">${ui.meta.readTime(article.readTime)}</span>
           </div>
           <h1 class="article-title">${article.title}</h1>
           <p class="article-subtitle">${article.subtitle}</p>
@@ -1005,10 +1014,10 @@ function renderArticlePage() {
           ${coverArt(article, "cover-art--article")}
           <div class="article-tools">
             <button class="btn btn-secondary" data-favorite="${article.slug}">
-              ${favorite ? "Guardado" : "Guardar"}
+              ${favorite ? ui.articlePage.saved : ui.articlePage.save}
             </button>
             <button class="btn btn-ghost" data-share="copy" data-slug="${article.slug}">
-              Copiar enlace
+              ${ui.articlePage.copyLink}
             </button>
             <button class="btn btn-ghost" data-share="linkedin" data-slug="${article.slug}">
               LinkedIn
@@ -1035,22 +1044,21 @@ function renderArticlePage() {
         </article>
         <aside class="article-aside reveal">
           <div class="card aside-card">
-            <span class="eyebrow">Region relacionada</span>
+            <span class="eyebrow">${ui.articlePage.relatedRegion}</span>
             <h2>${regionName}</h2>
             <p>${regionDescription}</p>
             <a class="inline-link" href="${regionHref}">${regionLinkLabel}</a>
           </div>
           <div class="card aside-card">
-            <span class="eyebrow">Etiquetas</span>
+            <span class="eyebrow">${ui.articlePage.tags}</span>
             <div class="tag-list">
               ${article.tags.map((tag) => `<span class="tag">${tag}</span>`).join("")}
             </div>
           </div>
           ${renderNewsletterPanel({
             compactPanel: true,
-            title: "Recibe nuevas lecturas estrategicas en tu inbox.",
-            description:
-              "Suscribete para seguir analisis, opinion y radar semanal con una cadencia editorial clara.",
+            title: ui.articlePage.newsletterTitle,
+            description: ui.articlePage.newsletterDescription,
           })}
         </aside>
       </div>
@@ -1059,9 +1067,9 @@ function renderArticlePage() {
     <section class="section">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Relacionados",
-          title: "Sigue leyendo en esta misma agenda.",
-          text: "Articulos conectados por region, sector o formato editorial.",
+          eyebrow: ui.articlePage.relatedEyebrow,
+          title: ui.articlePage.relatedTitle,
+          text: ui.articlePage.relatedText,
         })}
         <div class="card-grid card-grid--three">
           ${related.map((item) => renderArticleCard(item, "standard")).join("")}
@@ -1076,19 +1084,19 @@ function renderAboutPage() {
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Sobre Geo Scope</span>
-          <h1 class="page-title">Un proyecto editorial para interpretar cambios globales con profundidad, criterio y claridad.</h1>
+          <span class="eyebrow">${ui.aboutPage.eyebrow}</span>
+          <h1 class="page-title">${ui.aboutPage.title}</h1>
           <p class="page-text">
-            Geo Scope combina la disciplina de un think tank independiente con la lectura cuidada de una revista estrategica.
+            ${ui.aboutPage.text}
           </p>
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
-            <strong>Mision</strong>
+            <strong>${ui.aboutPage.mission}</strong>
             <span>${about.mission}</span>
           </div>
           <div class="aside-line">
-            <strong>Vision</strong>
+            <strong>${ui.aboutPage.vision}</strong>
             <span>${about.vision}</span>
           </div>
         </div>
@@ -1099,17 +1107,14 @@ function renderAboutPage() {
       <div class="container">
         <div class="card-grid card-grid--two">
           <article class="card manifesto-card reveal">
-            <span class="eyebrow">Mision</span>
+            <span class="eyebrow">${ui.aboutPage.mission}</span>
             <h2>${about.mission}</h2>
             <p>${about.vision}</p>
           </article>
           <article class="card manifesto-card reveal">
-            <span class="eyebrow">Enfoque</span>
-            <h2>Think tank independiente y plataforma de analisis.</h2>
-            <p>
-              Geo Scope busca explicar el mundo con una voz analitica, sobria y profesional,
-              evitando el tono sensacionalista y la logica de portal de noticias rapidas.
-            </p>
+            <span class="eyebrow">${ui.aboutPage.approach}</span>
+            <h2>${ui.aboutPage.approachTitle}</h2>
+            <p>${ui.aboutPage.approachText}</p>
           </article>
         </div>
       </div>
@@ -1118,16 +1123,16 @@ function renderAboutPage() {
     <section class="section">
       <div class="container">
         ${sectionHeader({
-          eyebrow: "Manifiesto editorial",
-          title: "Por que existe Geo Scope.",
-          text: "Un medio para pensar mejor el poder, no para amplificar ruido.",
+          eyebrow: ui.aboutPage.manifestoEyebrow,
+          title: ui.aboutPage.manifestoTitle,
+          text: ui.aboutPage.manifestoText,
         })}
         <div class="manifesto-grid">
           ${about.manifesto
             .map(
               (item, index) => `
                 <article class="card manifesto-card reveal">
-                  <span class="eyebrow">Punto 0${index + 1}</span>
+                  <span class="eyebrow">${ui.aboutPage.manifestoPoint(index)}</span>
                   <p>${item}</p>
                 </article>
               `,
@@ -1147,21 +1152,20 @@ function renderContactPage() {
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Contacto</span>
-          <h1 class="page-title">Colaboraciones, consultas institucionales y propuestas editoriales.</h1>
+          <span class="eyebrow">${ui.contactPage.eyebrow}</span>
+          <h1 class="page-title">${ui.contactPage.title}</h1>
           <p class="page-text">
-            Geo Scope esta pensado para crecer hacia una plataforma con mas autores, mas categorias
-            y posibles capas premium. Este espacio sirve como punto de contacto inicial.
+            ${ui.contactPage.text}
           </p>
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
-            <strong>Informacion y colaboraciones</strong>
+            <strong>${ui.contactPage.information}</strong>
             <span>${site.email}</span>
           </div>
           <div class="aside-line">
-            <strong>Enfoque</strong>
-            <span>Analisis estrategico, opinion especializada y seguimiento internacional de alta claridad.</span>
+            <strong>${ui.contactPage.approach}</strong>
+            <span>${ui.contactPage.approachText}</span>
           </div>
         </div>
       </div>
@@ -1170,37 +1174,34 @@ function renderContactPage() {
     <section class="section section-tight">
       <div class="container contact-grid">
         <div class="card contact-card reveal">
-          <span class="eyebrow">Canales</span>
-          <h2>Hablemos.</h2>
-          <p>
-            Puedes escribir por informacion general, colaboraciones, sindicacion de contenidos,
-            alianzas institucionales o consultas sobre el desarrollo futuro de la plataforma.
-          </p>
+          <span class="eyebrow">${ui.contactPage.channels}</span>
+          <h2>${ui.contactPage.headline}</h2>
+          <p>${ui.contactPage.body}</p>
           <div class="footer-links">
             <a href="mailto:${site.email}">${site.email}</a>
-            <a href="subscription.html">Suscripcion</a>
-            <a href="editor.html">Panel editorial</a>
+            <a href="${withLocale("subscription.html")}">${navigation.find((item) => item.key === "subscription")?.label || ui.pageTitles.subscription}</a>
+            <a href="${withLocale("editor.html")}">${ui.footer.editorialPanel}</a>
           </div>
         </div>
         <form class="card contact-form reveal" id="contact-form">
-          <span class="eyebrow">Formulario</span>
+          <span class="eyebrow">${ui.contactPage.form}</span>
           <label class="field">
-            <span>Nombre</span>
-            <input type="text" name="name" placeholder="Tu nombre" required />
+            <span>${ui.contactPage.name}</span>
+            <input type="text" name="name" placeholder="${ui.contactPage.namePlaceholder}" required />
           </label>
           <label class="field">
-            <span>Email</span>
-            <input type="email" name="email" placeholder="tu@email.com" required />
+            <span>${ui.contactPage.email}</span>
+            <input type="email" name="email" placeholder="${ui.contactPage.emailPlaceholder}" required />
           </label>
           <label class="field">
-            <span>Asunto</span>
-            <input type="text" name="subject" placeholder="Tema de contacto" required />
+            <span>${ui.contactPage.subject}</span>
+            <input type="text" name="subject" placeholder="${ui.contactPage.subjectPlaceholder}" required />
           </label>
           <label class="field">
-            <span>Mensaje</span>
-            <textarea name="message" rows="6" placeholder="Cuentanos en que podemos ayudarte." required></textarea>
+            <span>${ui.contactPage.message}</span>
+            <textarea name="message" rows="6" placeholder="${ui.contactPage.messagePlaceholder}" required></textarea>
           </label>
-          <button class="btn btn-primary" type="submit">Enviar consulta</button>
+          <button class="btn btn-primary" type="submit">${ui.contactPage.send}</button>
         </form>
       </div>
     </section>
@@ -1212,20 +1213,20 @@ function renderSubscriptionPage() {
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Newsletter / Suscripcion</span>
-          <h1 class="page-title">Recibe analisis estrategicos y lecturas clave sobre el nuevo orden global.</h1>
+          <span class="eyebrow">${ui.subscriptionPage.eyebrow}</span>
+          <h1 class="page-title">${ui.subscriptionPage.title}</h1>
           <p class="page-text">
-            Una suscripcion pensada para lectores que necesitan claridad, profundidad y una mirada internacional sobre geopolitica, economia, tecnologia, energia y comercio.
+            ${ui.subscriptionPage.text}
           </p>
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
-            <strong>Formato</strong>
-            <span>Analisis, opinion y radar semanal.</span>
+            <strong>${ui.subscriptionPage.format}</strong>
+            <span>${ui.subscriptionPage.formatText}</span>
           </div>
           <div class="aside-line">
-            <strong>Valor</strong>
-            <span>Menos ruido, mas criterio y mejor arquitectura de lectura.</span>
+            <strong>${ui.subscriptionPage.value}</strong>
+            <span>${ui.subscriptionPage.valueText}</span>
           </div>
         </div>
       </div>
@@ -1234,9 +1235,8 @@ function renderSubscriptionPage() {
     <section class="section section-tight">
       <div class="container">
         ${renderNewsletterPanel({
-          title: "Suscripcion editorial",
-          description:
-            "Elige tus intereses tematicos y construye una experiencia mas afin con tu agenda de lectura.",
+          title: ui.subscriptionPage.panelTitle,
+          description: ui.subscriptionPage.panelDescription,
           detailed: true,
         })}
       </div>
@@ -1249,21 +1249,20 @@ function renderEditorPage() {
     <section class="page-hero section">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Panel editorial demo</span>
-          <h1 class="page-title">Una base simple para publicar nuevos contenidos en el futuro.</h1>
+          <span class="eyebrow">${ui.editorPage.eyebrow}</span>
+          <h1 class="page-title">${ui.editorPage.title}</h1>
           <p class="page-text">
-            Esta vista funciona como paso intermedio hacia un CMS: permite preparar un articulo,
-            ver una previsualizacion local y generar una estructura base reutilizable.
+            ${ui.editorPage.text}
           </p>
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
-            <strong>Hoy</strong>
-            <span>Metadatos en <code>data/content.js</code> y articulos modulares en <code>data/articles/</code>.</span>
+            <strong>${ui.editorPage.today}</strong>
+            <span>${ui.editorPage.todayText}</span>
           </div>
           <div class="aside-line">
-            <strong>Despues</strong>
-            <span>Futura migracion sencilla a headless CMS o panel multi-autor.</span>
+            <strong>${ui.editorPage.later}</strong>
+            <span>${ui.editorPage.laterText}</span>
           </div>
         </div>
       </div>
@@ -1272,29 +1271,29 @@ function renderEditorPage() {
     <section class="section section-tight">
       <div class="container editor-grid">
         <form class="card editor-form reveal" id="editor-form">
-          <span class="eyebrow">Nuevo borrador</span>
+          <span class="eyebrow">${ui.editorPage.draft}</span>
           <label class="field">
-            <span>Titulo</span>
-            <input type="text" name="title" value="Nuevo analisis sobre corredores energeticos" required />
+            <span>${ui.editorPage.titleLabel}</span>
+            <input type="text" name="title" value="${ui.editorPage.draftTitle}" required />
           </label>
           <label class="field">
-            <span>Subtitulo</span>
+            <span>${ui.editorPage.subtitleLabel}</span>
             <input
               type="text"
               name="subtitle"
-              value="Un borrador para medir tono, jerarquia visual y consistencia editorial."
+              value="${ui.editorPage.draftSubtitle}"
               required
             />
           </label>
           <div class="editor-form__row">
             <label class="field">
-              <span>Formato</span>
+              <span>${ui.editorPage.typeLabel}</span>
               <select name="type">
                 ${renderTypeOptions("analysis", true)}
               </select>
             </label>
             <label class="field">
-              <span>Region</span>
+              <span>${ui.editorPage.regionLabel}</span>
               <select name="region">
                 ${regions
                   .map(
@@ -1308,7 +1307,7 @@ function renderEditorPage() {
           </div>
           <div class="editor-form__row">
             <label class="field">
-              <span>Sector</span>
+              <span>${ui.editorPage.sectorLabel}</span>
               <select name="sector">
                 ${sectors
                   .map(
@@ -1320,20 +1319,20 @@ function renderEditorPage() {
               </select>
             </label>
             <label class="field">
-              <span>Tiempo de lectura</span>
+              <span>${ui.editorPage.readTimeLabel}</span>
               <input type="number" min="3" max="25" name="readTime" value="8" />
             </label>
           </div>
           <label class="field">
-            <span>Extracto</span>
-            <textarea name="excerpt" rows="4">Una plantilla simple para convertir ideas editoriales en nuevas piezas dentro de la arquitectura de Geo Scope.</textarea>
+            <span>${ui.editorPage.excerptLabel}</span>
+            <textarea name="excerpt" rows="4">${ui.editorPage.draftExcerpt}</textarea>
           </label>
         </form>
 
         <div class="editor-preview reveal">
           <div class="card editor-preview__card" id="editor-preview-card"></div>
           <div class="card editor-preview__json">
-            <span class="eyebrow">Estructura sugerida</span>
+            <span class="eyebrow">${ui.editorPage.previewStructure}</span>
             <pre id="editor-json"></pre>
           </div>
         </div>
@@ -1347,11 +1346,11 @@ function renderNotFound() {
     <section class="section">
       <div class="container">
         <div class="empty-state">
-          <h1>La pagina que buscas no esta disponible.</h1>
-          <p>Vuelve al inicio o abre el archivo editorial para seguir explorando Geo Scope.</p>
+          <h1>${ui.notFound.title}</h1>
+          <p>${ui.notFound.text}</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="index.html">Ir al inicio</a>
-            <a class="btn btn-secondary" href="analysis.html">Abrir archivo</a>
+            <a class="btn btn-primary" href="${withLocale("index.html")}">${ui.notFound.home}</a>
+            <a class="btn btn-secondary" href="${withLocale("analysis.html")}">${ui.notFound.archive}</a>
           </div>
         </div>
       </div>
@@ -1382,10 +1381,10 @@ function renderArticleCard(article, variant = "standard") {
           </div>
           <h3>${article.title}</h3>
           <p>${article.excerpt}</p>
-          <span class="inline-link article-card__cta">Leer articulo</span>
+          <span class="inline-link article-card__cta">${ui.articlePage.readArticle}</span>
           <div class="article-card__footer">
             <span>${formatDate(article.date)}</span>
-            <span>${article.readTime} min</span>
+            <span>${ui.meta.shortMinutes(article.readTime)}</span>
           </div>
         </div>
       </a>
@@ -1400,8 +1399,8 @@ function renderRegionCard(region, expanded = false) {
     <article class="card region-card reveal">
       <a class="region-card__link" href="${regionUrl(region.slug)}">
         <div class="region-card__head">
-          <span class="eyebrow">Region</span>
-          <span class="meta-chip">${regionArticles.length} articulos</span>
+          <span class="eyebrow">${ui.regionsPage.region}</span>
+          <span class="meta-chip">${ui.meta.articles(regionArticles.length)}</span>
         </div>
         <h3>${region.name}</h3>
         <p>${expanded ? region.description : region.strap}</p>
@@ -1419,11 +1418,11 @@ function renderSectorCard(sector, counter = countArticlesForSector(sector.slug))
       <a class="sector-card__link" href="${sectorUrl(sector.slug)}">
         <div class="sector-card__head">
           <span class="icon-badge">${iconMarkup(sector.icon)}</span>
-          <span class="meta-chip">${counter} articulos</span>
+          <span class="meta-chip">${ui.meta.articles(counter)}</span>
         </div>
         <h3>${sector.name}</h3>
         <p>${sector.description}</p>
-        <span class="inline-link">Abrir sector</span>
+        <span class="inline-link">${ui.articlePage.openSector}</span>
       </a>
     </article>
   `;
@@ -1433,7 +1432,7 @@ function renderNewsletterPanel({ title, description, detailed = false, compactPa
   return `
     <div class="newsletter-panel ${compactPanel ? "newsletter-panel--compact" : ""}">
       <div class="newsletter-panel__copy">
-        <span class="eyebrow">Newsletter</span>
+        <span class="eyebrow">${ui.newsletter.eyebrow}</span>
         <h2>${title}</h2>
         <p>${description}</p>
       </div>
@@ -1450,20 +1449,20 @@ function renderNewsletterForm({ compact = false, detailed = false, panel = false
           ? ""
           : `
             <label class="field">
-              <span>Nombre</span>
-              <input type="text" name="name" placeholder="Tu nombre" ${detailed ? "required" : ""} />
+              <span>${ui.newsletter.name}</span>
+              <input type="text" name="name" placeholder="${ui.newsletter.namePlaceholder}" ${detailed ? "required" : ""} />
             </label>
           `
       }
       <label class="field">
-        <span>Email</span>
-        <input type="email" name="email" placeholder="tu@email.com" required />
+        <span>${ui.newsletter.email}</span>
+        <input type="email" name="email" placeholder="${ui.newsletter.emailPlaceholder}" required />
       </label>
       ${
         detailed
           ? `
             <fieldset class="interest-fieldset">
-              <legend>Intereses tematicos</legend>
+              <legend>${ui.newsletter.interests}</legend>
               <div class="interest-grid">
                 ${newsletterInterests
                   .map(
@@ -1480,7 +1479,7 @@ function renderNewsletterForm({ compact = false, detailed = false, panel = false
           `
           : ""
       }
-      <button class="btn btn-primary" type="submit">${compact ? "Unirme" : "Suscribirme"}</button>
+      <button class="btn btn-primary" type="submit">${compact ? ui.newsletter.join : ui.newsletter.subscribe}</button>
     </form>
   `;
 }
@@ -1495,7 +1494,7 @@ function sectionHeader({ eyebrow, title, text, actionLabel, actionHref, stacked 
       </div>
       ${
         actionLabel && actionHref
-          ? `<a class="btn btn-ghost" href="${actionHref}">${actionLabel}</a>`
+          ? `<a class="btn btn-ghost" href="${withLocale(actionHref)}">${actionLabel}</a>`
           : ""
       }
     </div>
@@ -1505,19 +1504,19 @@ function sectionHeader({ eyebrow, title, text, actionLabel, actionHref, stacked 
 function renderEssayBody(article) {
   return `
     <section class="article-section">
-      <h2>Tesis central</h2>
+      <h2>${ui.essaySections.thesis}</h2>
       <p>${article.thesis}</p>
     </section>
     <section class="article-section">
-      <h2>Por que importa</h2>
+      <h2>${ui.essaySections.why}</h2>
       ${article.whyItMatters.map((paragraph) => `<p>${paragraph}</p>`).join("")}
     </section>
     <section class="article-section">
-      <h2>Lectura regional</h2>
+      <h2>${ui.essaySections.regional}</h2>
       <p>${article.regionalLens}</p>
     </section>
     <section class="article-section">
-      <h2>Lo que viene</h2>
+      <h2>${ui.essaySections.outlook}</h2>
       <p>${article.outlook}</p>
     </section>
   `;
@@ -1530,7 +1529,7 @@ function renderStructuredEssayBody(article) {
 function renderRadarBody(article) {
   return `
     <section class="article-section">
-      <h2>Senales clave</h2>
+      <h2>${ui.essaySections.signals}</h2>
       <div class="signal-stack">
         ${article.signals
           .map(
@@ -1545,7 +1544,7 @@ function renderRadarBody(article) {
       </div>
     </section>
     <section class="article-section">
-      <h2>Por que importa</h2>
+      <h2>${ui.essaySections.why}</h2>
       <p>${article.outlook}</p>
     </section>
   `;
@@ -1669,6 +1668,27 @@ function bindShellInteractions() {
     });
   }
 
+  header.querySelectorAll("[data-locale]").forEach((button) => {
+    button.addEventListener("click", () => {
+      const locale = normalizeLocale(button.getAttribute("data-locale"));
+
+      if (!locale || locale === currentLocale) {
+        return;
+      }
+
+      setStoredLocale(locale);
+      const url = new URL(window.location.href);
+
+      if (locale === defaultLocale) {
+        url.searchParams.delete("lang");
+      } else {
+        url.searchParams.set("lang", locale);
+      }
+
+      window.location.href = url.toString();
+    });
+  });
+
   header.querySelectorAll("[data-search-form]").forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -1680,7 +1700,7 @@ function bindShellInteractions() {
         params.set("q", term);
       }
 
-      window.location.href = `analysis.html${params.toString() ? `?${params.toString()}` : ""}`;
+      window.location.href = localizedUrl("analysis.html", params);
     });
   });
 
@@ -1714,7 +1734,7 @@ function bindPageInteractions() {
         params.set("q", term);
       }
 
-      window.history.replaceState({}, "", `${pagePath(page)}${params.toString() ? `?${params.toString()}` : ""}`);
+      window.history.replaceState({}, "", localizedUrl(basePathForPage(page), params));
       renderPage();
     });
   }
@@ -1731,7 +1751,7 @@ function bindPageInteractions() {
         params.set("region", region);
       }
 
-      window.history.replaceState({}, "", `sectors.html${params.toString() ? `?${params.toString()}` : ""}`);
+      window.history.replaceState({}, "", localizedUrl("sectors.html", params));
       renderPage();
     });
   }
@@ -1749,7 +1769,7 @@ function bindPageInteractions() {
         params.set("region", region);
       }
 
-      window.history.replaceState({}, "", `sector.html?${params.toString()}`);
+      window.history.replaceState({}, "", localizedUrl("sector.html", params));
       renderPage();
     });
   }
@@ -1759,8 +1779,8 @@ function bindPageInteractions() {
     favoriteButton.addEventListener("click", () => {
       const slug = favoriteButton.getAttribute("data-favorite");
       toggleFavorite(slug);
-      favoriteButton.textContent = isFavorite(slug) ? "Guardado" : "Guardar";
-      toast(isFavorite(slug) ? "Articulo guardado en favoritos." : "Articulo eliminado de favoritos.");
+      favoriteButton.textContent = isFavorite(slug) ? ui.articlePage.saved : ui.articlePage.save;
+      toast(isFavorite(slug) ? ui.toasts.favoriteSaved : ui.toasts.favoriteRemoved);
     });
   }
 
@@ -1774,13 +1794,13 @@ function bindPageInteractions() {
 
   const contactForm = app.querySelector("#contact-form");
   if (contactForm) {
-    contactForm.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const formData = new FormData(contactForm);
-      persistSubmission("geoScope:contact", Object.fromEntries(formData.entries()));
-      contactForm.reset();
-      toast("Consulta registrada localmente. Lista para conectar con un backend.");
-    });
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const formData = new FormData(contactForm);
+        persistSubmission("geoScope:contact", Object.fromEntries(formData.entries()));
+        contactForm.reset();
+        toast(ui.toasts.contactSaved);
+      });
   }
 
   const editorForm = app.querySelector("#editor-form");
@@ -1818,7 +1838,7 @@ function bindPageInteractions() {
             <p class="editor-preview__excerpt">${escapeHtml(previewArticle.excerpt)}</p>
             <div class="article-card__footer">
               <span>${sector?.name || ""}</span>
-              <span>${previewArticle.readTime} min</span>
+              <span>${ui.meta.shortMinutes(previewArticle.readTime)}</span>
             </div>
           </div>
         `;
@@ -1836,11 +1856,11 @@ function bindPageInteractions() {
           readTime: previewArticle.readTime,
           bodySections: [
             {
-              paragraphs: ["Apertura del articulo."],
+              paragraphs: [ui.editorPage.snippetIntro],
             },
             {
-              heading: "Primera seccion",
-              paragraphs: ["Desarrollo principal."],
+              heading: ui.editorPage.snippetHeading,
+              paragraphs: [ui.editorPage.snippetBody],
             },
           ],
         };
@@ -1867,7 +1887,7 @@ function bindNewsletterForm(form) {
 
     persistSubmission("geoScope:newsletter", payload);
     form.reset();
-    toast("Suscripcion registrada localmente. Lista para integrar con newsletter real.");
+    toast(ui.toasts.newsletterSaved);
   });
 }
 
@@ -1931,6 +1951,316 @@ function pageFromType(type) {
   }[type];
 }
 
+function localizedUrl(path, params = null) {
+  const [basePath, search = ""] = String(path).split("?");
+  const nextParams =
+    params instanceof URLSearchParams
+      ? new URLSearchParams(params)
+      : params
+        ? new URLSearchParams(params)
+        : new URLSearchParams(search);
+
+  if (currentLocale === defaultLocale) {
+    nextParams.delete("lang");
+  } else {
+    nextParams.set("lang", currentLocale);
+  }
+
+  const serialized = nextParams.toString();
+  return `${basePath}${serialized ? `?${serialized}` : ""}`;
+}
+
+function withLocale(href) {
+  if (!href || /^(https?:|mailto:|#)/.test(href)) {
+    return href;
+  }
+
+  const [path, hash = ""] = href.split("#");
+  const localized = localizedUrl(path);
+  return `${localized}${hash ? `#${hash}` : ""}`;
+}
+
+function buildLocalizedData(locale) {
+  const overridesSource = contentTranslations[locale] || {};
+  const overrides = locale === "ru" ? cyrillicizeValue(overridesSource) : overridesSource;
+
+  return {
+    site: mergeLocalized(siteBase, overrides.site),
+    navigation: navigationBase.map((item) => ({
+      ...item,
+      label: overrides.navigation?.[item.key] || item.label,
+    })),
+    newsletterInterests: overrides.newsletterInterests || newsletterInterestsBase,
+    about: mergeLocalized(aboutBase, overrides.about),
+    authors: authorsBase.map((author) =>
+      mergeLocalized(author, overrides.authors?.[author.slug]),
+    ),
+    regions: regionsBase.map((region) =>
+      mergeLocalized(region, overrides.regions?.[region.slug]),
+    ),
+    sectors: sectorsBase.map((sector) =>
+      mergeLocalized(sector, overrides.sectors?.[sector.slug]),
+    ),
+    articles: articlesBase.map((article) =>
+      mergeLocalized(article, overrides.articles?.[article.slug]),
+    ),
+  };
+}
+
+function buildLocalizedUi(locale) {
+  const source = uiCopy[locale] || uiCopy[defaultLocale];
+  return locale === "ru" ? cyrillicizeValue(source) : source;
+}
+
+function mergeLocalized(base, override) {
+  if (!override) {
+    return base;
+  }
+
+  const next = { ...base };
+
+  Object.entries(override).forEach(([key, value]) => {
+    if (isPlainObject(value) && isPlainObject(base[key])) {
+      next[key] = mergeLocalized(base[key], value);
+      return;
+    }
+
+    next[key] = value;
+  });
+
+  return next;
+}
+
+function isPlainObject(value) {
+  return Boolean(value) && typeof value === "object" && !Array.isArray(value);
+}
+
+function cyrillicizeValue(value) {
+  if (Array.isArray(value)) {
+    return value.map((item) => cyrillicizeValue(item));
+  }
+
+  if (typeof value === "function") {
+    return (...args) => cyrillicizeValue(value(...args));
+  }
+
+  if (isPlainObject(value)) {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, entry]) => [key, cyrillicizeValue(entry)]),
+    );
+  }
+
+  if (typeof value === "string") {
+    return transliterateRussianString(value);
+  }
+
+  return value;
+}
+
+function transliterateRussianString(text) {
+  let output = String(text);
+  const protectedTokens = [];
+  const protect = (pattern, transform) => {
+    output = output.replace(pattern, (match) => {
+      const token = `¤${protectedTokens.length}¤`;
+      protectedTokens.push(transform ? transform(match) : match);
+      return token;
+    });
+  };
+
+  protect(/\bGeo Scope\b/g);
+  protect(/\bLinkedIn\b/g);
+  protect(/\bRSS\b/g);
+  protect(/\bheadless CMS\b/g);
+  protect(/\bCMS\b/g);
+  protect(/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g);
+  protect(/\bdata\/[\w./-]+\b/g);
+  protect(/\bS&P 500\b/g);
+  protect(/\bWall Street\b/g, () => "Уолл-стрит");
+
+  output = output.replace(/\bBRICS\b/g, "БРИКС");
+  output = output.replace(/\bAI\b/g, "ИИ");
+
+  output = output.replace(/[A-Za-z][A-Za-z'-]*/g, (word) => transliterateRussianWord(word));
+
+  protectedTokens.forEach((value, index) => {
+    output = output.replace(`¤${index}¤`, value);
+  });
+
+  return output;
+}
+
+function transliterateRussianWord(word) {
+  const isAllCaps = /^[A-Z]+$/.test(word);
+  const isCapitalized = /^[A-Z]/.test(word);
+  let next = word.toLowerCase();
+
+  const replacements = [
+    [/shch/g, "щ"],
+    [/skiy\b/g, "ский"],
+    [/skaya\b/g, "ская"],
+    [/skie\b/g, "ские"],
+    [/skikh\b/g, "ских"],
+    [/skogo\b/g, "ского"],
+    [/skomu\b/g, "скому"],
+    [/tsiya\b/g, "ция"],
+    [/tsii\b/g, "ции"],
+    [/tsiyu\b/g, "цию"],
+    [/tsiey\b/g, "цией"],
+    [/lnyy\b/g, "льный"],
+    [/lnaya\b/g, "льная"],
+    [/lnoe\b/g, "льное"],
+    [/lnye\b/g, "льные"],
+    [/lnogo\b/g, "льного"],
+    [/lnomu\b/g, "льному"],
+    [/lnom\b/g, "льном"],
+    [/naya\b/g, "ная"],
+    [/nyy\b/g, "ный"],
+    [/ogo\b/g, "ого"],
+    [/omu\b/g, "ому"],
+    [/emu\b/g, "ему"],
+    [/uyu\b/g, "ую"],
+    [/iya\b/g, "ия"],
+    [/iy\b/g, "ий"],
+    [/yy\b/g, "ый"],
+    [/oy\b/g, "ой"],
+    [/ey\b/g, "ей"],
+    [/ay\b/g, "ай"],
+    [/uy\b/g, "уй"],
+    [/zh/g, "ж"],
+    [/kh/g, "х"],
+    [/ts/g, "ц"],
+    [/ch/g, "ч"],
+    [/sh/g, "ш"],
+    [/yu/g, "ю"],
+    [/ya/g, "я"],
+    [/yo/g, "ё"],
+    [/ye/g, "е"],
+  ];
+
+  replacements.forEach(([pattern, replacement]) => {
+    next = next.replace(pattern, replacement);
+  });
+
+  const singleMap = {
+    a: "а",
+    b: "б",
+    c: "к",
+    d: "д",
+    e: "е",
+    f: "ф",
+    g: "г",
+    h: "х",
+    i: "и",
+    j: "дж",
+    k: "к",
+    l: "л",
+    m: "м",
+    n: "н",
+    o: "о",
+    p: "п",
+    q: "к",
+    r: "р",
+    s: "с",
+    t: "т",
+    u: "у",
+    v: "в",
+    w: "в",
+    x: "кс",
+    y: "ы",
+    z: "з",
+  };
+
+  next = next
+    .split("")
+    .map((character) => singleMap[character] || character)
+    .join("");
+
+  next = next
+    .replace(/ъи/g, "ьи")
+    .replace(/лны/g, "льны")
+    .replace(/лна/g, "льна")
+    .replace(/лно/g, "льно")
+    .replace(/тх/g, "тх")
+    .replace(/йы/g, "ый");
+
+  if (isAllCaps) {
+    return next.toUpperCase();
+  }
+
+  if (isCapitalized) {
+    return next.charAt(0).toUpperCase() + next.slice(1);
+  }
+
+  return next;
+}
+
+function resolveLocale(currentQuery = new URLSearchParams(window.location.search)) {
+  const localeFromQuery = normalizeLocale(currentQuery.get("lang"));
+
+  if (localeFromQuery) {
+    setStoredLocale(localeFromQuery);
+    return localeFromQuery;
+  }
+
+  const storedLocale = normalizeLocale(readStoredLocale());
+  if (storedLocale) {
+    return storedLocale;
+  }
+
+  const browserLocale = normalizeLocale(navigator.language || navigator.languages?.[0]);
+  return browserLocale || defaultLocale;
+}
+
+function normalizeLocale(value) {
+  if (!value) {
+    return "";
+  }
+
+  const normalized = String(value).toLowerCase();
+
+  if (normalized.startsWith("es")) {
+    return "es";
+  }
+
+  if (normalized.startsWith("en")) {
+    return "en";
+  }
+
+  if (normalized.startsWith("ru")) {
+    return "ru";
+  }
+
+  return supportedLocales.includes(normalized) ? normalized : "";
+}
+
+function readStoredLocale() {
+  try {
+    return window.localStorage.getItem("geoScope:locale") || "";
+  } catch {
+    return "";
+  }
+}
+
+function setStoredLocale(locale) {
+  try {
+    window.localStorage.setItem("geoScope:locale", locale);
+  } catch {
+    // Ignore storage failures in restricted contexts.
+  }
+}
+
+function formatStructureSummary(regionCount, sectorCount) {
+  switch (currentLocale) {
+    case "en":
+      return `${regionCount} regions and ${sectorCount} sectors in the editorial structure.`;
+    case "ru":
+      return `${regionCount} регионов и ${sectorCount} секторов в редакционной структуре.`;
+    default:
+      return `${regionCount} regiones y ${sectorCount} sectores en la estructura editorial.`;
+  }
+}
+
 function buildResultsDescription({ type, region, sector, term }) {
   const parts = [];
 
@@ -1944,10 +2274,10 @@ function buildResultsDescription({ type, region, sector, term }) {
     parts.push(nameForSector(sector));
   }
   if (term) {
-    parts.push(`busqueda: "${term}"`);
+    parts.push(`${ui.archive.searchLabel}: "${term}"`);
   }
 
-  return parts.length ? parts.join(" / ") : "Vista completa del archivo editorial.";
+  return parts.length ? parts.join(" / ") : ui.archive.fullView;
 }
 
 function matchesArchiveFilters(article, filters) {
@@ -1976,10 +2306,10 @@ function articleSearchText(article) {
 
 function renderTypeOptions(selectedType, omitAll = false) {
   const options = [
-    omitAll ? null : { value: "all", label: "Todos los formatos" },
-    { value: "analysis", label: "Analisis" },
-    { value: "opinion", label: "Opinion" },
-    { value: "radar", label: "Radar semanal" },
+    omitAll ? null : { value: "all", label: ui.typeOptions.all },
+    { value: "analysis", label: ui.articleTypes.analysis },
+    { value: "opinion", label: ui.articleTypes.opinion },
+    { value: "radar", label: ui.articleTypes.radar },
   ].filter(Boolean);
 
   return options
@@ -1994,15 +2324,15 @@ function renderTypeOptions(selectedType, omitAll = false) {
 }
 
 function labelForType(type) {
-  return articleTypeLabels[type] || "Lectura";
+  return articleTypeLabels[type] || ui.generic.readingFallback;
 }
 
 function nameForRegion(slug) {
-  return regionMap.get(slug)?.name || "Region";
+  return regionMap.get(slug)?.name || ui.generic.regionFallback;
 }
 
 function nameForSector(slug) {
-  return sectorMap.get(slug)?.name || "Sector";
+  return sectorMap.get(slug)?.name || ui.generic.sectorFallback;
 }
 
 function countArticlesForSector(slug, regionSlug = "") {
@@ -2042,18 +2372,22 @@ function sharedCount(left, right) {
 }
 
 function articleUrl(slug) {
-  return `article.html?slug=${slug}`;
+  return localizedUrl("article.html", { slug });
 }
 
 function regionUrl(slug) {
-  return `region.html?slug=${slug}`;
+  return localizedUrl("region.html", { slug });
 }
 
 function sectorUrl(slug) {
-  return `sector.html?slug=${slug}`;
+  return localizedUrl("sector.html", { slug });
 }
 
 function pagePath(currentPage) {
+  return localizedUrl(basePathForPage(currentPage));
+}
+
+function basePathForPage(currentPage) {
   return {
     analysis: "analysis.html",
     opinion: "opinion.html",
@@ -2063,15 +2397,15 @@ function pagePath(currentPage) {
 }
 
 function backLinkForArticle(article) {
-  return {
+  return localizedUrl({
     analysis: "analysis.html",
     opinion: "opinion.html",
     radar: "radar.html",
-  }[article.type];
+  }[article.type]);
 }
 
 function formatDate(dateString) {
-  return new Intl.DateTimeFormat("es-ES", {
+  return new Intl.DateTimeFormat(localeMeta.dateLocale, {
     day: "numeric",
     month: "long",
     year: "numeric",
@@ -2119,7 +2453,7 @@ function shareArticle(slug, mode) {
 
   if (mode === "copy") {
     copyToClipboard(absoluteUrl);
-    toast("Enlace copiado.");
+    toast(ui.toasts.linkCopied);
     return;
   }
 
