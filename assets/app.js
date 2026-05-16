@@ -7,14 +7,14 @@ import {
   regions as regionsBase,
   sectors as sectorsBase,
   site as siteBase,
-} from "../data/content.js?v=20260515a";
+} from "../data/content.js?v=20260516b";
 import {
   contentTranslations,
   defaultLocale,
   localeOptions,
   supportedLocales,
   uiCopy,
-} from "../data/i18n.js?v=20260514b";
+} from "../data/i18n.js?v=20260516b";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -1400,7 +1400,7 @@ function renderRegionCard(region, expanded = false) {
       <a class="region-card__link" href="${regionUrl(region.slug)}">
         <div class="region-card__head">
           <span class="eyebrow">${ui.regionsPage.region}</span>
-          <span class="meta-chip">${ui.meta.articles(regionArticles.length)}</span>
+          <span class="meta-chip">${formatArticleCount(regionArticles.length)}</span>
         </div>
         <h3>${region.name}</h3>
         <p>${expanded ? region.description : region.strap}</p>
@@ -1418,7 +1418,7 @@ function renderSectorCard(sector, counter = countArticlesForSector(sector.slug))
       <a class="sector-card__link" href="${sectorUrl(sector.slug)}">
         <div class="sector-card__head">
           <span class="icon-badge">${iconMarkup(sector.icon)}</span>
-          <span class="meta-chip">${ui.meta.articles(counter)}</span>
+          <span class="meta-chip">${formatArticleCount(counter)}</span>
         </div>
         <h3>${sector.name}</h3>
         <p>${sector.description}</p>
@@ -2256,9 +2256,23 @@ function formatStructureSummary(regionCount, sectorCount) {
       return `${regionCount} regions and ${sectorCount} sectors in the editorial structure.`;
     case "ru":
       return `${regionCount} регионов и ${sectorCount} секторов в редакционной структуре.`;
+    case "zh":
+      return `编辑结构中共有 ${regionCount} 个地区和 ${sectorCount} 个板块。`;
     default:
       return `${regionCount} regiones y ${sectorCount} sectores en la estructura editorial.`;
   }
+}
+
+function formatArticleCount(count) {
+  const formatter = ui?.meta?.articles;
+  const fallback = `${count}`;
+
+  if (typeof formatter === "function") {
+    const result = formatter(count);
+    return typeof result === "string" ? result : fallback;
+  }
+
+  return typeof formatter === "string" ? `${count} ${formatter}` : fallback;
 }
 
 function buildResultsDescription({ type, region, sector, term }) {
