@@ -1,7 +1,7 @@
 export const articleTemplate = {
   slug: "titulo-del-articulo",
-  title: "Titulo del articulo",
-  subtitle: "Subtitulo del articulo",
+  title: "Título del articulo",
+  subtitle: "Subtítulo del articulo",
   excerpt: "Resumen corto para tarjetas, portada y metadescripcion.",
   type: "analysis",
   region: "global",
@@ -18,26 +18,26 @@ export const articleTemplate = {
       ],
     },
     {
-      heading: "Primera seccion",
+      heading: "Primera sección",
       paragraphs: [
-        "Primer parrafo de la seccion.",
-        "Segundo parrafo de la seccion.",
+        "Primer parrafo de la sección.",
+        "Segundo parrafo de la sección.",
       ],
       callouts: [
         "Frase destacada, idea de sintesis o bloque de alto impacto visual.",
       ],
     },
     {
-      heading: "Segunda seccion",
+      heading: "Segunda sección",
       bullets: [
         "Punto clave uno.",
         "Punto clave dos.",
       ],
       subsections: [
         {
-          heading: "Subseccion",
+          heading: "Subsección",
           paragraphs: [
-            "Texto de apoyo dentro de una subseccion.",
+            "Texto de apoyo dentro de una subsección.",
           ],
         },
       ],
