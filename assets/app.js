@@ -24,7 +24,7 @@ let query = new URLSearchParams(window.location.search);
 const currentLocale = resolveLocale(query);
 const ui = buildLocalizedUi(currentLocale);
 const localeMeta = localeOptions[currentLocale] || localeOptions[defaultLocale];
-const brandLogoSrc = "assets/geoscope-logo.png";
+const brandLogoSrc = "/assets/geoscope-logo.png";
 document.documentElement.lang = currentLocale;
 
 const {
@@ -40,6 +40,16 @@ const {
 
 const articleTypeLabels = ui.articleTypes;
 const pageCopy = ui.pageCopy;
+const siteBaseUrl = normalizeSiteBaseUrl(site.url || window.location.origin);
+
+const defaultKeywordSeed = [site.name, ...newsletterInterests.slice(0, 6)];
+const socialImagePath = site.socialImage || brandLogoSrc;
+const ogLocaleMap = {
+  es: "es_ES",
+  en: "en_US",
+  ru: "ru_RU",
+  zh: "zh_CN",
+};
 
 const articleMap = new Map(articles.map((article) => [article.slug, article]));
 const authorMap = new Map(authors.map((author) => [author.slug, author]));
@@ -52,6 +62,317 @@ const orderedArticles = [...articles].sort(
 
 renderShell();
 renderPage();
+
+function ensureMetaTag(attribute, value) {
+  let tag = document.head.querySelector(`meta[${attribute}="${value}"]`);
+
+  if (!tag) {
+    tag = document.createElement("meta");
+    tag.setAttribute(attribute, value);
+    document.head.appendChild(tag);
+  }
+
+  return tag;
+}
+
+function ensureLinkTag(attribute, value) {
+  let tag = document.head.querySelector(`link[${attribute}="${value}"]`);
+
+  if (!tag) {
+    tag = document.createElement("link");
+    tag.setAttribute(attribute, value);
+    document.head.appendChild(tag);
+  }
+
+  return tag;
+}
+
+function normalizeSiteBaseUrl(url) {
+  return String(url || "").replace(/\/+$/, "");
+}
+
+function absoluteSiteUrl(localUrl = "") {
+  const next = new URL(localUrl || "/", `${siteBaseUrl}/`);
+
+  if (next.pathname.endsWith("/index.html")) {
+    next.pathname = next.pathname.replace(/\/index\.html$/, "/");
+  }
+
+  return next.toString();
+}
+
+function applyCanonicalUrl(localUrl = "index.html") {
+  const canonicalTag = ensureLinkTag("rel", "canonical");
+  canonicalTag.setAttribute("href", absoluteSiteUrl(localUrl));
+}
+
+function clearAlternateLinks() {
+  document.head
+    .querySelectorAll('link[data-hreflang-link="true"]')
+    .forEach((tag) => tag.remove());
+}
+
+function appendAlternateLink(hreflang, href) {
+  const tag = document.createElement("link");
+  tag.setAttribute("rel", "alternate");
+  tag.setAttribute("hreflang", hreflang);
+  tag.setAttribute("href", absoluteSiteUrl(href));
+  tag.dataset.hreflangLink = "true";
+  document.head.appendChild(tag);
+}
+
+function localizedUrlForLocale(path, locale, params = null) {
+  const [basePath, search = ""] = String(path).split("?");
+  const nextParams =
+    params instanceof URLSearchParams
+      ? new URLSearchParams(params)
+      : params
+        ? new URLSearchParams(params)
+        : new URLSearchParams(search);
+
+  const cleanPath = cleanLocalizedPath(basePath, locale, nextParams);
+
+  if (cleanPath) {
+    return cleanPath;
+  }
+
+  if (locale === defaultLocale) {
+    nextParams.delete("lang");
+  } else {
+    nextParams.set("lang", locale);
+  }
+
+  const serialized = nextParams.toString();
+  return `${basePath}${serialized ? `?${serialized}` : ""}`;
+}
+
+function applyAlternateLocaleLinks(path, params = null) {
+  clearAlternateLinks();
+
+  supportedLocales.forEach((locale) => {
+    appendAlternateLink(locale, localizedUrlForLocale(path, locale, params));
+  });
+
+  appendAlternateLink("x-default", localizedUrlForLocale(path, defaultLocale, params));
+}
+
+function socialHandleFromSite() {
+  const profile = site.social.find(
+    (item) =>
+      /^(x|twitter)$/i.test(item.label || "") ||
+      /(?:^|\.)x\.com|twitter\.com/.test(item.href || ""),
+  );
+
+  if (!profile?.href) {
+    return "";
+  }
+
+  try {
+    const url = new URL(profile.href);
+    const handle = url.pathname.replace(/^\/+/, "").split("/")[0];
+    return handle ? `@${handle}` : "";
+  } catch {
+    return "";
+  }
+}
+
+function normalizeKeywords(values = []) {
+  const seen = new Set();
+
+  return values
+    .flatMap((value) => (Array.isArray(value) ? value : [value]))
+    .flatMap((value) => String(value || "").split(","))
+    .map((value) => value.trim())
+    .filter(Boolean)
+    .filter((value) => {
+      const key = value.toLowerCase();
+
+      if (seen.has(key)) {
+        return false;
+      }
+
+      seen.add(key);
+      return true;
+    });
+}
+
+function applyHeadMeta({ description, keywords = [] }) {
+  const descriptionTag = ensureMetaTag("name", "description");
+  const keywordsTag = ensureMetaTag("name", "keywords");
+
+  descriptionTag.setAttribute("content", description || site.description);
+  keywordsTag.setAttribute(
+    "content",
+    normalizeKeywords(keywords.length ? keywords : defaultKeywordSeed).join(", "),
+  );
+}
+
+function applySocialMeta({
+  title,
+  description,
+  type = "website",
+  image = socialImagePath,
+  path = "index.html",
+  params = null,
+  imageAlt = site.name,
+}) {
+  const resolvedDescription = description || site.description;
+  const localizedPath = localizedUrlForLocale(path, currentLocale, params);
+  const twitterHandle = socialHandleFromSite();
+
+  ensureMetaTag("property", "og:site_name").setAttribute("content", site.name);
+  ensureMetaTag("property", "og:title").setAttribute("content", title || site.name);
+  ensureMetaTag("property", "og:description").setAttribute("content", resolvedDescription);
+  ensureMetaTag("property", "og:type").setAttribute("content", type);
+  ensureMetaTag("property", "og:url").setAttribute(
+    "content",
+    absoluteSiteUrl(localizedPath),
+  );
+  ensureMetaTag("property", "og:image").setAttribute(
+    "content",
+    absoluteSiteUrl(image),
+  );
+  ensureMetaTag("property", "og:image:alt").setAttribute("content", imageAlt || site.name);
+  ensureMetaTag("property", "og:locale").setAttribute(
+    "content",
+    ogLocaleMap[currentLocale] || ogLocaleMap[defaultLocale],
+  );
+
+  ensureMetaTag("name", "twitter:card").setAttribute("content", "summary_large_image");
+  ensureMetaTag("name", "twitter:title").setAttribute("content", title || site.name);
+  ensureMetaTag("name", "twitter:description").setAttribute("content", resolvedDescription);
+  ensureMetaTag("name", "twitter:image").setAttribute(
+    "content",
+    absoluteSiteUrl(image),
+  );
+
+  if (twitterHandle) {
+    ensureMetaTag("name", "twitter:site").setAttribute("content", twitterHandle);
+  }
+
+  applyCanonicalUrl(localizedPath);
+  applyAlternateLocaleLinks(path, params);
+}
+
+function pageKeywords(pageKey, extra = []) {
+  return normalizeKeywords([site.name, ui.pageTitles[pageKey], defaultKeywordSeed, extra]);
+}
+
+function applyStaticPageMeta(pageKey, description, extraKeywords = []) {
+  applyHeadMeta({
+    description,
+    keywords: pageKeywords(pageKey, extraKeywords),
+  });
+  applySocialMeta({
+    title: document.title,
+    description,
+    path: pageKey === "home" ? "index.html" : `${pageKey}.html`,
+  });
+}
+
+function routeValue(name) {
+  return query.get(name) || document.body.dataset[name] || "";
+}
+
+function localeSegments(locale = currentLocale) {
+  return locale && locale !== defaultLocale ? [locale] : [];
+}
+
+function buildCleanPath(segments = [], locale = currentLocale) {
+  const route = [...localeSegments(locale), ...segments]
+    .filter(Boolean)
+    .map((segment) => String(segment).replace(/^\/+|\/+$/g, ""))
+    .join("/");
+
+  return route ? `/${route}/` : "/";
+}
+
+function appendRouteQuery(path, params = new URLSearchParams()) {
+  const serialized = params.toString();
+  return `${path}${serialized ? `?${serialized}` : ""}`;
+}
+
+function pickParams(params, keys = []) {
+  const next = new URLSearchParams();
+
+  keys.forEach((key) => {
+    const value = params.get(key);
+    if (value) {
+      next.set(key, value);
+    }
+  });
+
+  return next;
+}
+
+function buildStaticRoutePath(pageKey, locale = currentLocale, params = new URLSearchParams()) {
+  const routeMap = {
+    home: [],
+    analysis: ["analysis"],
+    opinion: ["opinion"],
+    radar: ["radar"],
+    regions: ["regions"],
+    sectors: ["sectors"],
+    about: ["about"],
+    contact: ["contact"],
+    subscription: ["subscription"],
+    editor: ["editor"],
+  };
+  const path = buildCleanPath(routeMap[pageKey] || [], locale);
+
+  if (pageKey === "analysis") {
+    return appendRouteQuery(path, pickParams(params, ["type", "region", "sector", "q"]));
+  }
+
+  if (pageKey === "opinion") {
+    return appendRouteQuery(path, pickParams(params, ["region", "sector", "q"]));
+  }
+
+  if (pageKey === "sectors") {
+    return appendRouteQuery(path, pickParams(params, ["region"]));
+  }
+
+  return path;
+}
+
+function buildArticleRoutePath(slug, locale = currentLocale) {
+  return buildCleanPath(["article", slug], locale);
+}
+
+function buildRegionRoutePath(slug, locale = currentLocale) {
+  return buildCleanPath(["regions", slug], locale);
+}
+
+function buildSectorRoutePath(slug, locale = currentLocale, region = "") {
+  return appendRouteQuery(
+    buildCleanPath(["sectors", slug], locale),
+    pickParams(new URLSearchParams(region ? { region } : {}), ["region"]),
+  );
+}
+
+function currentRouteParams() {
+  switch (page) {
+    case "analysis":
+      return pickParams(query, ["type", "region", "sector", "q"]);
+    case "opinion":
+      return pickParams(query, ["region", "sector", "q"]);
+    case "sectors":
+      return pickParams(query, ["region"]);
+    case "region":
+      return new URLSearchParams(routeValue("slug") ? { slug: routeValue("slug") } : {});
+    case "sector": {
+      const params = new URLSearchParams(routeValue("slug") ? { slug: routeValue("slug") } : {});
+      if (routeValue("region")) {
+        params.set("region", routeValue("region"));
+      }
+      return params;
+    }
+    case "article":
+      return new URLSearchParams(routeValue("slug") ? { slug: routeValue("slug") } : {});
+    default:
+      return new URLSearchParams();
+  }
+}
 
 function renderShell() {
   header.innerHTML = renderHeader();
@@ -70,10 +391,19 @@ function renderPage() {
   switch (page) {
     case "home":
       document.title = `${site.name} | ${ui.pageTitles.home}`;
+      applyStaticPageMeta("home", site.description, [
+        ui.home.heroLead,
+        ui.home.heroSubtitle,
+      ]);
       app.innerHTML = renderHomePage();
       break;
     case "analysis":
       document.title = `${ui.pageTitles.analysis} | ${site.name}`;
+      applyStaticPageMeta("analysis", pageCopy.analysis.description, [
+        ui.pageTitles.analysis,
+        ui.archive.allRegions,
+        ui.archive.allSectors,
+      ]);
       app.innerHTML = renderArchivePage({
         title: pageCopy.analysis.title,
         eyebrow: pageCopy.analysis.eyebrow,
@@ -84,6 +414,9 @@ function renderPage() {
       break;
     case "opinion":
       document.title = `${ui.pageTitles.opinion} | ${site.name}`;
+      applyStaticPageMeta("opinion", pageCopy.opinion.description, [
+        ui.pageTitles.opinion,
+      ]);
       app.innerHTML = renderArchivePage({
         title: pageCopy.opinion.title,
         eyebrow: pageCopy.opinion.eyebrow,
@@ -94,6 +427,9 @@ function renderPage() {
       break;
     case "explainers":
       document.title = `${ui.pageTitles.analysis} | ${site.name}`;
+      applyStaticPageMeta("analysis", pageCopy.analysis.description, [
+        ui.pageTitles.analysis,
+      ]);
       app.innerHTML = renderArchivePage({
         title: pageCopy.analysis.title,
         eyebrow: pageCopy.analysis.eyebrow,
@@ -104,10 +440,15 @@ function renderPage() {
       break;
     case "radar":
       document.title = `${ui.pageTitles.radar} | ${site.name}`;
+      applyStaticPageMeta("radar", pageCopy.radar.description, [
+        ui.pageTitles.radar,
+        ui.home.globalRadar,
+      ]);
       app.innerHTML = renderRadarPage();
       break;
     case "regions":
       document.title = `${ui.pageTitles.regions} | ${site.name}`;
+      applyStaticPageMeta("regions", ui.regionsPage.text, regions.map((region) => region.name));
       app.innerHTML = renderRegionsPage();
       break;
     case "region":
@@ -115,6 +456,7 @@ function renderPage() {
       break;
     case "sectors":
       document.title = `${ui.pageTitles.sectors} | ${site.name}`;
+      applyStaticPageMeta("sectors", ui.sectorsPage.text, sectors.map((sector) => sector.name));
       app.innerHTML = renderSectorsPage();
       break;
     case "sector":
@@ -125,21 +467,42 @@ function renderPage() {
       break;
     case "about":
       document.title = `${ui.pageTitles.about} | ${site.name}`;
+      applyStaticPageMeta("about", about.mission, about.principles);
       app.innerHTML = renderAboutPage();
       break;
     case "contact":
       document.title = `${ui.pageTitles.contact} | ${site.name}`;
+      applyStaticPageMeta("contact", ui.contactPage.body, [
+        site.email,
+        ui.contactPage.channels,
+      ]);
       app.innerHTML = renderContactPage();
       break;
     case "subscription":
       document.title = `${ui.pageTitles.subscription} | ${site.name}`;
+      applyStaticPageMeta("subscription", ui.subscriptionPage.text, [
+        ui.subscriptionPage.panelTitle,
+        ui.subscriptionPage.value,
+      ]);
       app.innerHTML = renderSubscriptionPage();
       break;
     case "editor":
       document.title = `${ui.pageTitles.editor} | ${site.name}`;
+      applyStaticPageMeta("editor", ui.editorPage.text, [
+        ui.editorPage.title,
+      ]);
       app.innerHTML = renderEditorPage();
       break;
     default:
+      applyHeadMeta({
+        description: site.description,
+        keywords: defaultKeywordSeed,
+      });
+      applySocialMeta({
+        title: `${site.name} | ${ui.pageTitles.home}`,
+        description: site.description,
+        path: "index.html",
+      });
       app.innerHTML = renderNotFound();
       break;
   }
@@ -706,15 +1069,35 @@ function renderRegionsPage() {
 }
 
 function renderRegionDetailPage() {
-  const slug = query.get("slug") || regions[0].slug;
+  const slug = routeValue("slug") || regions[0].slug;
   const region = regionMap.get(slug);
 
   if (!region) {
     document.title = `${ui.pageTitles.regionNotFound} | ${site.name}`;
+    applyHeadMeta({
+      description: site.description,
+      keywords: defaultKeywordSeed,
+    });
+    applySocialMeta({
+      title: document.title,
+      description: site.description,
+      path: "regions.html",
+    });
     return renderNotFound();
   }
 
   document.title = `${region.name} | ${site.name}`;
+  applyHeadMeta({
+    description: region.description,
+    keywords: pageKeywords("regions", [region.name, region.strap, region.tags]),
+  });
+  applySocialMeta({
+    title: document.title,
+    description: region.description,
+    path: "region.html",
+    params: { slug: region.slug },
+    imageAlt: region.name,
+  });
 
   const regionArticles = orderedArticles.filter((article) => article.region === slug);
   const featuredArticle = regionArticles[0];
@@ -864,16 +1247,36 @@ function renderSectorsPage() {
 }
 
 function renderSectorDetailPage() {
-  const slug = query.get("slug") || sectors[0].slug;
-  const activeRegion = query.get("region") || "";
+  const slug = routeValue("slug") || sectors[0].slug;
+  const activeRegion = routeValue("region") || "";
   const sector = sectorMap.get(slug);
 
   if (!sector) {
     document.title = `${ui.pageTitles.sectorNotFound} | ${site.name}`;
+    applyHeadMeta({
+      description: site.description,
+      keywords: defaultKeywordSeed,
+    });
+    applySocialMeta({
+      title: document.title,
+      description: site.description,
+      path: "sectors.html",
+    });
     return renderNotFound();
   }
 
   document.title = `${sector.name} | ${site.name}`;
+  applyHeadMeta({
+    description: sector.description,
+    keywords: pageKeywords("sectors", [sector.name, activeRegion && nameForRegion(activeRegion)]),
+  });
+  applySocialMeta({
+    title: document.title,
+    description: sector.description,
+    path: "sector.html",
+    params: { slug },
+    imageAlt: sector.name,
+  });
 
   const relatedArticles = orderedArticles.filter((article) => {
     const sectorMatch = article.sectors.includes(slug);
@@ -966,11 +1369,20 @@ function renderSectorDetailPage() {
 }
 
 function renderArticlePage() {
-  const slug = query.get("slug") || orderedArticles[0].slug;
+  const slug = routeValue("slug") || orderedArticles[0].slug;
   const article = articleMap.get(slug);
 
   if (!article) {
     document.title = `${ui.pageTitles.articleNotFound} | ${site.name}`;
+    applyHeadMeta({
+      description: site.description,
+      keywords: defaultKeywordSeed,
+    });
+    applySocialMeta({
+      title: document.title,
+      description: site.description,
+      path: "analysis.html",
+    });
     return renderNotFound();
   }
 
@@ -989,6 +1401,30 @@ function renderArticlePage() {
   const regionLinkLabel = region ? ui.articlePage.openRegionalCover : ui.articlePage.openRegionalMap;
   const related = findRelatedArticles(article);
   const favorite = isFavorite(article.slug);
+  const sectorNames = article.sectors
+    .map((sectorSlug) => sectorMap.get(sectorSlug)?.name)
+    .filter(Boolean);
+
+  applyHeadMeta({
+    description: article.excerpt || article.subtitle || site.description,
+    keywords: normalizeKeywords([
+      site.name,
+      article.title,
+      labelForType(article.type),
+      regionName,
+      sectorNames,
+      article.tags,
+      author.name,
+    ]),
+  });
+  applySocialMeta({
+    title: document.title,
+    description: article.excerpt || article.subtitle || site.description,
+    type: "article",
+    path: "article.html",
+    params: { slug: article.slug },
+    imageAlt: article.title,
+  });
 
   return `
     <section class="article-hero section">
@@ -1677,15 +2113,11 @@ function bindShellInteractions() {
       }
 
       setStoredLocale(locale);
-      const url = new URL(window.location.href);
-
-      if (locale === defaultLocale) {
-        url.searchParams.delete("lang");
-      } else {
-        url.searchParams.set("lang", locale);
-      }
-
-      window.location.href = url.toString();
+      window.location.href = localizedUrlForLocale(
+        basePathForPage(page),
+        locale,
+        currentRouteParams(),
+      );
     });
   });
 
@@ -1952,22 +2384,50 @@ function pageFromType(type) {
 }
 
 function localizedUrl(path, params = null) {
-  const [basePath, search = ""] = String(path).split("?");
-  const nextParams =
-    params instanceof URLSearchParams
-      ? new URLSearchParams(params)
-      : params
-        ? new URLSearchParams(params)
-        : new URLSearchParams(search);
+  return localizedUrlForLocale(path, currentLocale, params);
+}
 
-  if (currentLocale === defaultLocale) {
-    nextParams.delete("lang");
-  } else {
-    nextParams.set("lang", currentLocale);
+function cleanLocalizedPath(basePath, locale, params) {
+  switch (basePath || "index.html") {
+    case "":
+    case "index.html":
+      return buildStaticRoutePath("home", locale, params);
+    case "analysis.html":
+      return buildStaticRoutePath("analysis", locale, params);
+    case "opinion.html":
+      return buildStaticRoutePath("opinion", locale, params);
+    case "radar.html":
+      return buildStaticRoutePath("radar", locale, params);
+    case "regions.html":
+      return buildStaticRoutePath("regions", locale, params);
+    case "sectors.html":
+      return buildStaticRoutePath("sectors", locale, params);
+    case "about.html":
+      return buildStaticRoutePath("about", locale, params);
+    case "contact.html":
+      return buildStaticRoutePath("contact", locale, params);
+    case "subscription.html":
+      return buildStaticRoutePath("subscription", locale, params);
+    case "editor.html":
+      return buildStaticRoutePath("editor", locale, params);
+    case "article.html": {
+      const slug = params.get("slug") || routeValue("slug");
+      return slug ? buildArticleRoutePath(slug, locale) : buildStaticRoutePath("analysis", locale);
+    }
+    case "region.html": {
+      const slug = params.get("slug") || routeValue("slug");
+      return slug ? buildRegionRoutePath(slug, locale) : buildStaticRoutePath("regions", locale);
+    }
+    case "sector.html": {
+      const slug = params.get("slug") || routeValue("slug");
+      const region = params.get("region") || "";
+      return slug
+        ? buildSectorRoutePath(slug, locale, region)
+        : buildStaticRoutePath("sectors", locale, params);
+    }
+    default:
+      return "";
   }
-
-  const serialized = nextParams.toString();
-  return `${basePath}${serialized ? `?${serialized}` : ""}`;
 }
 
 function withLocale(href) {
@@ -2203,6 +2663,14 @@ function resolveLocale(currentQuery = new URLSearchParams(window.location.search
     return localeFromQuery;
   }
 
+  const localeFromDocument = normalizeLocale(
+    document.body?.dataset.locale || document.documentElement.lang,
+  );
+
+  if (localeFromDocument) {
+    return localeFromDocument;
+  }
+
   const storedLocale = normalizeLocale(readStoredLocale());
   if (storedLocale) {
     return storedLocale;
@@ -2229,6 +2697,10 @@ function normalizeLocale(value) {
 
   if (normalized.startsWith("ru")) {
     return "ru";
+  }
+
+  if (normalized.startsWith("zh")) {
+    return "zh";
   }
 
   return supportedLocales.includes(normalized) ? normalized : "";
@@ -2403,10 +2875,19 @@ function pagePath(currentPage) {
 
 function basePathForPage(currentPage) {
   return {
+    home: "index.html",
     analysis: "analysis.html",
     opinion: "opinion.html",
     radar: "radar.html",
+    regions: "regions.html",
+    region: "region.html",
     sectors: "sectors.html",
+    sector: "sector.html",
+    article: "article.html",
+    about: "about.html",
+    contact: "contact.html",
+    subscription: "subscription.html",
+    editor: "editor.html",
   }[currentPage] || `${currentPage}.html`;
 }
 

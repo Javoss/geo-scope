@@ -9,6 +9,8 @@ La web ahora funciona con este sistema:
 - El diseno vive en `assets/app.js` y `assets/styles.css`
 - Los datos generales viven en `data/content.js`
 - Los articulos nuevos viven en `data/articles/`
+- El SEO estatico se genera con `scripts/generate-prerender.mjs`
+- El sitemap se genera con `scripts/generate-sitemap.mjs`
 
 La regla mas importante es esta:
 
@@ -285,15 +287,21 @@ python3 -m http.server 8000
 
 Luego abre:
 
-`http://127.0.0.1:8000/index.html`
+`http://127.0.0.1:8000/`
 
 Para probar el articulo directamente:
 
-`http://127.0.0.1:8000/article.html?slug=tu-slug`
+`http://127.0.0.1:8000/article/tu-slug/`
 
 Ejemplo:
 
-`http://127.0.0.1:8000/article.html?slug=china-produce-estados-unidos-se-endeuda-y-wall-street-gana`
+`http://127.0.0.1:8000/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/`
+
+Tambien puedes probar otros idiomas:
+
+- `http://127.0.0.1:8000/en/article/tu-slug/`
+- `http://127.0.0.1:8000/ru/article/tu-slug/`
+- `http://127.0.0.1:8000/zh/article/tu-slug/`
 
 Si no ves cambios:
 
@@ -307,12 +315,23 @@ Si no ves cambios:
 
 Cuando ya lo hayas probado:
 
-1. Sube los archivos modificados a tu hosting
-2. Asegurate de subir:
+1. Regenera el HTML SEO y el sitemap:
+
+```bash
+node scripts/generate-prerender.mjs
+node scripts/generate-sitemap.mjs
+```
+
+2. Sube los archivos modificados a tu hosting
+3. Asegurate de subir:
    - `data/content.js` si cambiaste autores, sectores o regiones
    - `data/articles/` si agregaste articulos nuevos
    - `data/articles/index.js`
-3. Sube tambien los HTML si hubo cambio de version de `app.js` o `styles.css`
+   - `scripts/` si quieres conservar el flujo de regeneracion dentro del proyecto
+4. Sube tambien:
+   - los `.html` principales regenerados
+   - las carpetas nuevas como `article/`, `regions/`, `sectors/`, `en/`, `ru/`, `zh/`
+   - `sitemap.xml`
 
 ---
 
@@ -362,7 +381,14 @@ La forma mas segura para publicar es esta:
 3. Creas el archivo en `data/articles/`
 4. Lo registras en `data/articles/index.js`
 5. Lo pruebas en local
-6. Lo subes al hosting
+6. Ejecutas:
+
+```bash
+node scripts/generate-prerender.mjs
+node scripts/generate-sitemap.mjs
+```
+
+7. Lo subes al hosting
 
 ---
 

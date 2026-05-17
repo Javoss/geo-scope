@@ -2,6 +2,7 @@ import { modularArticles } from "./articles/index.js?v=20260516b";
 
 export const site = {
   name: "Geo Scope",
+  url: "https://geo-scope.online",
   tagline:
     "Análisis estratégico sobre geopolítica, tecnología, economía y el nuevo orden global.",
   description:
