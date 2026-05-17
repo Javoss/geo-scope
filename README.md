@@ -21,6 +21,8 @@ Geo Scope es una plataforma editorial / think tank digital enfocada en geopoliti
 - `data/content.js`: metadatos globales, regiones, sectores, autores y archivo legado
 - `data/articles/`: articulos modulares en archivos independientes
 - `data/articles/_template.js`: plantilla base para publicar nuevos articulos
+- `scripts/generate-prerender.mjs`: genera paginas HTML pre-renderizadas y rutas limpias por idioma
+- `scripts/generate-sitemap.mjs`: genera el sitemap XML con las URLs canónicas limpias
 - `MANUAL_PUBLICACION.md`: guia paso a paso para subir articulos nuevos
 
 ## Caracteristicas
@@ -33,6 +35,7 @@ Geo Scope es una plataforma editorial / think tank digital enfocada en geopoliti
 - Favoritos guardados en `localStorage`
 - Formularios demo de newsletter y contacto
 - Base simple para evolucionar a CMS o plataforma multi-autor
+- Base SEO con `canonical`, `hreflang`, `Open Graph`, `Twitter Cards`, `robots.txt`, `sitemap.xml` y pre-render HTML
 
 ## Nuevo sistema editorial
 
@@ -88,8 +91,32 @@ python3 -m http.server 4173
 Luego abre:
 
 ```text
-http://127.0.0.1:4173/index.html
+http://127.0.0.1:4173/
 ```
+
+Tambien puedes probar las nuevas rutas limpias, por ejemplo:
+
+```text
+http://127.0.0.1:4173/analysis/
+http://127.0.0.1:4173/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/
+http://127.0.0.1:4173/en/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/
+```
+
+## Regenerar SEO estatico
+
+Cada vez que publiques o actualices contenido, ejecuta:
+
+```bash
+node scripts/generate-prerender.mjs
+node scripts/generate-sitemap.mjs
+```
+
+Esto actualiza:
+
+- `index.html`, `analysis.html`, `about.html`, etc.
+- las rutas limpias pre-renderizadas como `/analysis/`, `/regions/`, `/article/slug/`
+- las versiones por idioma `en`, `ru` y `zh`
+- `sitemap.xml`
 
 ## Nota
 
