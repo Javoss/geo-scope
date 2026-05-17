@@ -24,7 +24,7 @@ let query = new URLSearchParams(window.location.search);
 const currentLocale = resolveLocale(query);
 const ui = buildLocalizedUi(currentLocale);
 const localeMeta = localeOptions[currentLocale] || localeOptions[defaultLocale];
-const brandLogoSrc = "assets/geoscope-logo.png";
+const brandLogoSrc = "/assets/geoscope-logo.png";
 document.documentElement.lang = currentLocale;
 
 const {

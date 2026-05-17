@@ -20,7 +20,7 @@ import {
 } from "../data/i18n.js";
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
-const appVersion = "20260517a";
+const appVersion = "20260517b";
 const stylesVersion = "20260428b";
 const faviconVersion = "20260428c";
 const siteBaseUrl = String(siteBase.url || "https://geo-scope.online").replace(/\/+$/, "");
