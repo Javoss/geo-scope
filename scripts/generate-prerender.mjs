@@ -21,7 +21,7 @@ import {
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
 const appVersion = "20260517b";
-const stylesVersion = "20260428b";
+const stylesVersion = "20260517c";
 const faviconVersion = "20260428c";
 const siteBaseUrl = String(siteBase.url || "https://geo-scope.online").replace(/\/+$/, "");
 const ogLocaleMap = {
@@ -807,6 +807,8 @@ function renderDocument({
 }
 
 function renderHeader(context, activeKey, routeFactory) {
+  const headerNavigation = context.navigation.filter((item) => item.key !== "subscription");
+
   return `
     <div class="nav-frame">
       <a class="brand" href="${pageRoute("home", context.locale)}" aria-label="Geo Scope">
@@ -816,7 +818,7 @@ function renderHeader(context, activeKey, routeFactory) {
       </a>
       <div class="nav-stack is-open" id="site-nav">
         <nav class="site-nav" aria-label="${context.ui.header.navAria}">
-          ${context.navigation
+          ${headerNavigation
             .map(
               (item) => `
                 <a class="nav-link ${item.key === activeKey ? "is-active" : ""}" href="${pageRoute(item.key === "home" ? "home" : item.key, context.locale)}">

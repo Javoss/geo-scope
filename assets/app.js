@@ -513,6 +513,7 @@ function renderPage() {
 
 function renderHeader() {
   const activeKey = resolveActiveNavigationKey();
+  const headerNavigation = navigation.filter((item) => item.key !== "subscription");
 
   return `
     <div class="nav-frame">
@@ -524,7 +525,7 @@ function renderHeader() {
       </button>
       <div class="nav-stack" id="site-nav">
         <nav class="site-nav" aria-label="${ui.header.navAria}">
-          ${navigation
+          ${headerNavigation
             .map(
               (item) => `
                 <a class="nav-link ${item.key === activeKey ? "is-active" : ""}" href="${withLocale(item.href)}">
