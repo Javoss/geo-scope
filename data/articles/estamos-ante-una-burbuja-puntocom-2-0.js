@@ -16,7 +16,7 @@ export const articleEstamosAnteUnaBurbujaPuntocom20 = {
   author: "javier-salazar-segales",
   date: "2026-05-13",
   readTime: 10,
-  homeFeature: 3,
+  homeFeature: 4,
   tone: "midnight",
   tags: ["IA", "mercados", "Nvidia", "puntocom", "productividad", "BRICS"],
   bodySections: [

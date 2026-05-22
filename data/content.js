@@ -1,4 +1,4 @@
-import { modularArticles } from "./articles/index.js?v=20260516b";
+import { modularArticles } from "./articles/index.js?v=20260522a";
 
 export const site = {
   name: "Geo Scope",
@@ -295,7 +295,7 @@ const legacyArticles = [
     author: "javier-salazar-segales",
     date: "2026-04-21",
     readTime: 11,
-    homeFeature: 5,
+    homeFeature: 6,
     tone: "midnight",
     tags: ["BRICS", "IA", "estándares", "capacidad industrial"],
     thesis:
@@ -322,7 +322,7 @@ const legacyArticles = [
     author: "tomas-velez",
     date: "2026-04-20",
     readTime: 9,
-    homeFeature: 6,
+    homeFeature: 7,
     tone: "jade",
     tags: ["nearshoring", "América Latina", "logística", "industria"],
     thesis:
@@ -349,7 +349,7 @@ const legacyArticles = [
     author: "adrian-rivas",
     date: "2026-04-18",
     readTime: 10,
-    homeFeature: 7,
+    homeFeature: 8,
     tone: "indigo",
     tags: ["Eurasia", "seguridad", "sanciones", "corredores"],
     thesis:
@@ -376,7 +376,7 @@ const legacyArticles = [
     author: "lucia-ferrer",
     date: "2026-04-16",
     readTime: 8,
-    homeFeature: 8,
+    homeFeature: 9,
     tone: "gold",
     tags: ["energia", "corredores", "geoeconomía", "puertos"],
     thesis:

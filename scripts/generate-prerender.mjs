@@ -20,8 +20,8 @@ import {
 } from "../data/i18n.js";
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
-const appVersion = "20260517b";
-const stylesVersion = "20260517c";
+const appVersion = "20260522a";
+const stylesVersion = "20260522b";
 const faviconVersion = "20260428c";
 const siteBaseUrl = String(siteBase.url || "https://geo-scope.online").replace(/\/+$/, "");
 const ogLocaleMap = {
@@ -830,8 +830,6 @@ function renderHeader(context, activeKey, routeFactory) {
         </nav>
         <div class="header-utility" aria-label="${context.ui.header.utilityAria}">
           <a class="header-utility__link" href="${pageRoute("analysis", context.locale)}">${context.ui.header.search}</a>
-          <span class="header-utility__divider" aria-hidden="true"></span>
-          <a class="header-utility__link" href="${pageRoute("subscription", context.locale)}">${context.ui.header.subscription}</a>
           <span class="header-utility__divider" aria-hidden="true"></span>
           <div class="header-language" role="group" aria-label="${context.ui.header.languageAria}">
             ${supportedLocales
