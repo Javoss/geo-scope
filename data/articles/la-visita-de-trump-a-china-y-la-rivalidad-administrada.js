@@ -12,7 +12,7 @@ export const articleLaVisitaDeTrumpAChinaYLaRivalidadAdministrada = {
   author: "javier-salazar-segales",
   date: "2026-05-16",
   readTime: 18,
-  homeFeature: 1,
+  homeFeature: 2,
   tone: "indigo",
   tags: [
     "Trump",

@@ -139,7 +139,7 @@ export const uiCopy = {
       edition: "Edición",
       dossiers: "Dossiers",
       regions: "Regiones",
-      sectors: "Sectores",
+      sectorsMetric: "Sectores",
       globalRadar: "Radar global",
       weeklyPriority: "Lectura prioritaria de la semana",
       weeklyPriorityFallback:
@@ -487,7 +487,7 @@ export const uiCopy = {
       edition: "Edition",
       dossiers: "Dossiers",
       regions: "Regions",
-      sectors: "Sectors",
+      sectorsMetric: "Sectors",
       globalRadar: "Global radar",
       weeklyPriority: "Priority reading of the week",
       weeklyPriorityFallback:
@@ -832,7 +832,7 @@ export const uiCopy = {
       edition: "Vypusk",
       dossiers: "Dosye",
       regions: "Regiony",
-      sectors: "Sektory",
+      sectorsMetric: "Sektory",
       globalRadar: "Globalnyy radar",
       weeklyPriority: "Prioritetnyy material nedeli",
       weeklyPriorityFallback:
@@ -1178,7 +1178,7 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
     edition: "期数",
     dossiers: "专题",
     regions: "地区",
-    sectors: "板块",
+    sectorsMetric: "板块",
     globalRadar: "全球雷达",
     weeklyPriority: "本周重点阅读",
     weeklyPriorityFallback:
@@ -1432,6 +1432,532 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
     all: "所有格式",
   },
 });
+
+const xiPutinArticleTranslations = {
+  en: {
+    title:
+      "Xi and Putin in Beijing: the strategic cooperation reshaping the global balance",
+    subtitle:
+      "After receiving Trump, China reaffirmed its coordination with Russia. The diplomatic sequence shows that Beijing is not choosing between Washington and Moscow: it negotiates with both to widen its room for maneuver.",
+    excerpt:
+      "Vladimir Putin's visit to Beijing confirmed that China wants to manage rivalry with the United States without abandoning its strategic partnership with Russia. That combination helps explain the new global balance.",
+    tags: [
+      "Xi Jinping",
+      "Vladimir Putin",
+      "China",
+      "Russia",
+      "Beijing",
+      "energy",
+      "multipolarity",
+      "diplomacy",
+    ],
+    bodySections: [
+      {
+        paragraphs: [
+          "The meeting between Xi Jinping and Vladimir Putin in Beijing was not just another bilateral visit. It was the public confirmation of a strategic cooperation that China and Russia want to present as stable, durable, and useful for an international order less centered on the West.",
+          "The sequence matters. Beijing first received Donald Trump to manage rivalry with the United States and, days later, received Putin to reaffirm that any stabilization with Washington does not imply abandoning coordination with Moscow.",
+          "The central thesis is clear: China is not choosing between Trump and Putin. It is using its relationship with both to expand its diplomatic, economic, and strategic margin. With the United States it manages competition. With Russia it consolidates coordination. With the Global South it projects multipolar leadership.",
+        ],
+        callouts: [
+          "Beijing wants to show that it can talk to Washington without weakening its strategic link with Moscow.",
+        ],
+      },
+      {
+        heading: "Two visits, two messages",
+        paragraphs: [
+          "Comparing Trump's and Putin's visits helps clarify China's strategy. With Trump, the meeting was framed by managed rivalry: diplomatic gestures, business presence, commercial expectations, and a need to reduce uncertainty.",
+          "With Putin, the density was different: a broad joint statement, cooperation documents, longer bilateral talks, and a stagecraft designed to confirm strategic continuity.",
+          "That does not mean Trump matters less than Putin to China. It means Beijing uses different formats depending on the interlocutor. With the United States it needs to avoid rupture. With Russia it needs to show that the strategic partnership remains intact.",
+        ],
+      },
+      {
+        heading: "The diplomacy of closeness",
+        paragraphs: [
+          "Putin's visit had a distinct symbolic dimension. Beyond protocol, it included gestures of personal closeness: tea, references to enduring friendship, cultural elements, and a narrative of confidence between leaders.",
+          "In Chinese diplomacy, those details are not ornamental. Tea, shared cuisine, and historical symbols communicate calm, continuity, and political proximity. With Trump, Beijing managed a rivalry. With Putin, it staged a relationship of trust.",
+          "That contrast reinforces the idea that China speaks different strategic languages depending on the board. With Washington it combines negotiation and containment. With Moscow it adds political memory, personal bond, and long-term projection.",
+        ],
+        callouts: [
+          "With Trump the logic was transactional; with Putin it was relational and strategic.",
+        ],
+      },
+      {
+        heading: "The official Chinese narrative",
+        paragraphs: [
+          "From China's perspective, the visit was presented as confirmation of friendship, political trust, and strategic coordination. Beijing emphasized the historical continuity of the relationship, the extension of the bilateral treaty, and the intention to deepen cooperation.",
+          "The language matters. China does not describe its relationship with Russia as a tactical response to the West, but as a stable architecture with its own institutional basis.",
+          "That point is central to Beijing's external projection: to show that its link with Moscow does not depend only on Ukraine, sanctions, or the deterioration of ties with the United States.",
+        ],
+      },
+      {
+        heading: "The Russian narrative: Moscow is not isolated",
+        paragraphs: [
+          "For Russia, the visit had obvious strategic value. Putin traveled to Beijing to show that Moscow still has direct access to the Chinese leadership and that Western isolation does not equal global isolation.",
+          "In the Kremlin's reading, the relationship with China is key to sustaining energy exports, deepening technological cooperation, and reinforcing the narrative of a multipolar world.",
+          "The message to the West is straightforward: Russia may have lost part of its access to European markets, but it has strengthened its Eurasian orientation and still has a partner of enormous economic and diplomatic weight.",
+        ],
+        callouts: [
+          "The open question is whether Russia is consolidating a balanced partnership or becoming ever more dependent on China.",
+        ],
+      },
+      {
+        heading: "Energy: deep cooperation, but not symmetrical",
+        paragraphs: [
+          "The China-Russia relationship rests on a very concrete material base: energy, trade, infrastructure, and supply security. Russia needs to sell oil and gas to Asia. China needs diversified suppliers and stable energy flows.",
+          "That complementarity explains why energy and trade remain at the center of the relationship. But the relationship is not symmetrical: Russia needs China more urgently than China needs Russia.",
+          "That is why, even in strategic gas projects, Beijing negotiates from a stronger position. China buys, but it sets timing, terms, and conditions with more room than Moscow.",
+        ],
+        callouts: [
+          "Energy cooperation is deep, but bargaining power inside the relationship is unevenly distributed.",
+        ],
+      },
+      {
+        heading: "Technology, artificial intelligence, and strategic autonomy",
+        paragraphs: [
+          "China-Russia coordination is not limited to energy. It also reaches technology, artificial intelligence, digital innovation, cybersecurity, and defense capabilities.",
+          "This dimension matters because it connects directly to competition with the United States. Washington retains advantages in advanced semiconductors, software, digital platforms, and financial capital. China seeks technological autonomy. Russia, despite sanctions, still retains capabilities in defense, cybersecurity, and strategic systems.",
+          "Their technological cooperation does not mean they can quickly replace the Western ecosystem, but it can reduce vulnerabilities to sanctions, export controls, and dependence on infrastructure dominated by the United States.",
+        ],
+      },
+      {
+        heading: "Defense, security, and Golden Dome",
+        paragraphs: [
+          "One common analytical mistake is to describe the China-Russia relationship as a classic military alliance. It is not. China avoids formal commitments that would reduce its room for maneuver. But it is not merely an economic relationship either.",
+          "The most accurate formula is deep strategic coordination without a full formal alliance. That is visible in issues such as missile defense, nuclear stability, the Asia-Pacific, and Western pressure.",
+          "The U.S. Golden Dome project captures that convergence well. For Washington it is a national-defense bet. For Moscow and Beijing, a system on that scale could affect strategic balance by altering the credibility of nuclear deterrence.",
+        ],
+        callouts: [
+          "China and Russia do not need a formal military alliance to coordinate when they perceive common threats.",
+        ],
+      },
+      {
+        heading: "The Middle East and Iran",
+        paragraphs: [
+          "The meeting must also be read through the Middle East. China and Russia have ties with Iran, energy interests in the Gulf, and a direct concern with the stability of the Strait of Hormuz.",
+          "China does not want to fully assume the role of regional security guarantor, but it does want to shape outcomes. Russia, for its part, wants to preserve diplomatic relevance in a region where the United States has long held dominant weight.",
+          "Both converge around the idea of a regional order less exclusively defined by Western pressure and around linking regional stability to global energy security. For Beijing, that is part of a diplomacy of influence without overexposure.",
+        ],
+      },
+      {
+        heading: "Implications for Latin America",
+        paragraphs: [
+          "For Latin America, this meeting is not a distant issue. China-Russia coordination affects energy, food, fertilizers, finance, technology, defense, and global governance.",
+          "China is a key trade partner for several Latin American countries. Russia still has a presence in energy, defense, fertilizers, and diplomacy. The United States remains the hemisphere's financial, political, and technological center.",
+          "If rivalry among these poles deepens, the region could gain more bargaining room, but it could also face stronger pressure to align. Multipolarity does not guarantee autonomy when there is no strategy of its own.",
+        ],
+        callouts: [
+          "Latin America's opportunity lies in negotiating with more room, not in becoming trapped between external agendas.",
+        ],
+      },
+      {
+        heading: "BRICS and the Global South",
+        paragraphs: [
+          "The Xi-Putin meeting reinforces the multipolar narrative. China and Russia seek to present themselves as defenders of a more balanced international order, with greater weight for the Global South and less Western predominance.",
+          "But narrative is not enough. The challenge for the BRICS and the Global South is to turn discourse into institutions: payment systems, financing, infrastructure, technological cooperation, and governance mechanisms.",
+          "The China-Russia relationship may help drive that agenda, but it also raises questions. Multipolarity can open space for emerging actors, but it can also reproduce new hierarchies if it revolves too heavily around Beijing and Moscow.",
+        ],
+      },
+      {
+        heading: "Possible scenarios",
+        subsections: [
+          {
+            heading: "1. Deeper China-Russia coordination",
+            paragraphs: [
+              "Beijing and Moscow deepen cooperation in energy, defense, technology, alternative payments, and global diplomacy. The China-Russia axis gains structural weight inside the multipolar order.",
+            ],
+          },
+          {
+            heading: "2. Pragmatic cooperation with limits",
+            paragraphs: [
+              "The relationship strengthens, but China avoids excessive commitments to Russia and preserves room to negotiate with the United States, Europe, and other poles.",
+            ],
+          },
+          {
+            heading: "3. Stronger Western pressure and faster alignment",
+            paragraphs: [
+              "If Washington and its allies harden sanctions, technology controls, or military pressure, China and Russia could accelerate their strategic coordination even further.",
+            ],
+          },
+          {
+            heading: "4. China as mediator between blocs",
+            paragraphs: [
+              "Beijing maintains dialogue with both Washington and Moscow, projecting itself as a balancing center among major powers without breaking with either side.",
+            ],
+          },
+          {
+            heading: "5. Fragmented multipolarity",
+            paragraphs: [
+              "The international system moves toward partially separated technological, financial, and military blocs. Emerging countries face stronger pressure to choose partners and frameworks of insertion.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Conclusion",
+        paragraphs: [
+          "The Xi-Putin meeting in Beijing was a confirmation of strategic cooperation. It was not just a display of personal friendship or a temporary reaction to the United States. It was a signal of institutionalization in a relationship that both countries want to present as a pillar of the new global balance.",
+          "But it was also a sign of asymmetry. Russia needs China to sell energy, sustain markets, and resist isolation. China needs Russia as a strategic partner, energy supplier, and counterweight to the West, but it retains greater room for maneuver.",
+          "The diplomatic sequence is revealing: first Trump, then Putin. Beijing manages rivalry with Washington and confirms coordination with Moscow. China does not choose between them. It negotiates with both.",
+        ],
+      },
+      {
+        heading: "Open questions",
+        bullets: [
+          "Is China mediating among major powers or maximizing its own room for maneuver?",
+          "Is Russia a strategic partner for China or an increasingly dependent one?",
+          "Can the United States stabilize its relationship with China without accepting the permanence of the China-Russia axis?",
+          "Can the Global South benefit from this multipolarity, or will it only receive more pressure?",
+        ],
+      },
+    ],
+  },
+
+  ru: {
+    title:
+      "Си и Путин в Пекине: стратегическое сотрудничество, меняющее глобальный баланс",
+    subtitle:
+      "После приема Трампа Китай вновь подтвердил координацию с Россией. Эта дипломатическая последовательность показывает: Пекин не выбирает между Вашингтоном и Москвой, а ведет переговоры с обоими, чтобы расширить собственный маневр.",
+    excerpt:
+      "Визит Владимира Путина в Пекин подтвердил, что Китай хочет управлять соперничеством с Соединенными Штатами, не отказываясь от стратегического партнерства с Россией. Именно эта комбинация помогает объяснить новый глобальный баланс.",
+    tags: [
+      "Си Цзиньпин",
+      "Владимир Путин",
+      "Китай",
+      "Россия",
+      "Пекин",
+      "энергия",
+      "многополярность",
+      "дипломатия",
+    ],
+    bodySections: [
+      {
+        paragraphs: [
+          "Встреча Си Цзиньпина и Владимира Путина в Пекине не была очередным двусторонним визитом. Она стала публичным подтверждением стратегического сотрудничества, которое Китай и Россия хотят представить как устойчивое, долговременное и полезное для международного порядка, менее сосредоточенного на Западе.",
+          "Последовательность важна. Сначала Пекин принял Дональда Трампа, чтобы управлять соперничеством с Соединенными Штатами, а спустя несколько дней принял Путина, чтобы подчеркнуть: любая стабилизация с Вашингтоном не означает отказа от координации с Москвой.",
+          "Главный тезис ясен: Китай не выбирает между Трампом и Путиным. Он использует отношения с обоими для расширения собственного дипломатического, экономического и стратегического пространства. С США он управляет конкуренцией. С Россией укрепляет координацию. Для Глобального Юга он проецирует образ лидера многополярности.",
+        ],
+        callouts: [
+          "Пекин хочет показать, что может разговаривать с Вашингтоном, не ослабляя стратегическую связку с Москвой.",
+        ],
+      },
+      {
+        heading: "Два визита, два сигнала",
+        paragraphs: [
+          "Сопоставление визитов Трампа и Путина помогает понять китайскую стратегию. В случае Трампа логика была логикой управляемого соперничества: дипломатические жесты, бизнес-делегация, торговые ожидания и необходимость снизить неопределенность.",
+          "С Путиным плотность была иной: широкое совместное заявление, документы о сотрудничестве, более длинные двусторонние переговоры и постановка, направленная на подтверждение стратегической непрерывности.",
+          "Это не значит, что Трамп для Китая менее важен, чем Путин. Это значит, что Пекин использует разные форматы в зависимости от собеседника. С Соединенными Штатами нужно избежать разрыва. С Россией нужно показать, что стратегическое партнерство остается целым.",
+        ],
+      },
+      {
+        heading: "Дипломатия близости",
+        paragraphs: [
+          "Визит Путина имел особое символическое измерение. Помимо протокола, в нем присутствовали жесты личной близости: чаепитие, ссылки на долговременную дружбу, культурная программа и нарратив доверия между лидерами.",
+          "В китайской дипломатии такие детали не являются украшением. Чай, совместная кухня и исторические символы передают спокойствие, преемственность и политическую близость. С Трампом Пекин управлял соперничеством. С Путиным он инсценировал отношения доверия.",
+          "Этот контраст усиливает мысль о том, что Китай говорит на разных стратегических языках в зависимости от доски. С Вашингтоном он сочетает переговоры и сдерживание. С Москвой добавляет политическую память, личную связь и долгосрочную проекцию.",
+        ],
+        callouts: [
+          "С Трампом преобладала транзакционная логика; с Путиным — логика отношений и стратегии.",
+        ],
+      },
+      {
+        heading: "Официальный китайский нарратив",
+        paragraphs: [
+          "С китайской точки зрения визит был представлен как подтверждение дружбы, политического доверия и стратегической координации. Пекин подчеркнул историческую непрерывность связи, продление двустороннего договора и намерение углублять сотрудничество.",
+          "Язык здесь важен. Китай описывает отношения с Россией не как тактический ответ на Запад, а как устойчивую архитектуру с собственной институциональной базой.",
+          "Это ключевой элемент внешней проекции Пекина: показать, что связь с Москвой не зависит только от Украины, санкций или ухудшения отношений с Соединенными Штатами.",
+        ],
+      },
+      {
+        heading: "Российский нарратив: Москва не изолирована",
+        paragraphs: [
+          "Для России визит имел очевидную стратегическую ценность. Путин приехал в Пекин, чтобы показать: у Москвы сохраняется прямой доступ к китайскому руководству, а западная изоляция не равна глобальной изоляции.",
+          "В интерпретации Кремля отношения с Китаем являются ключом к поддержанию энергетического экспорта, углублению технологического сотрудничества и укреплению нарратива о многополярном мире.",
+          "Послание Западу прямое: Россия могла потерять часть доступа к европейским рынкам, но усилила евразийскую ориентацию и по-прежнему имеет партнера огромного экономического и дипломатического веса.",
+        ],
+        callouts: [
+          "Открытый вопрос состоит в том, укрепляет ли Россия сбалансированное партнерство или становится все более зависимой от Китая.",
+        ],
+      },
+      {
+        heading: "Энергетика: глубокое сотрудничество, но не симметрия",
+        paragraphs: [
+          "У отношений Китая и России есть очень конкретная материальная основа: энергия, торговля, инфраструктура и надежность поставок. России нужно продавать нефть и газ в Азию. Китаю нужны диверсифицированные поставщики и стабильные энергетические потоки.",
+          "Именно эта взаимодополняемость объясняет, почему энергетика и торговля остаются в центре связи. Но эта связь несимметрична: России Китай нужен срочнее, чем Китаю Россия.",
+          "Поэтому даже в стратегических газовых проектах Пекин ведет переговоры с более сильной позиции. Китай покупает, но способен задавать сроки, условия и параметры сделки в большей степени, чем Москва.",
+        ],
+        callouts: [
+          "Энергетическое сотрудничество глубоко, но переговорная сила внутри отношений распределена неравномерно.",
+        ],
+      },
+      {
+        heading: "Технологии, искусственный интеллект и стратегическая автономия",
+        paragraphs: [
+          "Координация Китая и России не ограничивается энергетикой. Она распространяется и на технологии, искусственный интеллект, цифровые инновации, кибербезопасность и оборонные возможности.",
+          "Это важно, потому что напрямую связано с конкуренцией с Соединенными Штатами. Вашингтон сохраняет преимущества в передовых полупроводниках, программном обеспечении, цифровых платформах и финансовом капитале. Китай стремится к технологической автономии. Россия, несмотря на санкции, все еще сохраняет потенциал в обороне, кибербезопасности и стратегических системах.",
+          "Такое технологическое сотрудничество не означает, что они быстро заменят западную экосистему, но оно может сократить уязвимости перед санкциями, экспортным контролем и зависимостью от инфраструктуры, контролируемой США.",
+        ],
+      },
+      {
+        heading: "Оборона, безопасность и Golden Dome",
+        paragraphs: [
+          "Одна из самых распространенных аналитических ошибок — описывать отношения Китая и России как классический военный союз. Это не так. Китай избегает формальных обязательств, которые ограничили бы свободу маневра. Но и чисто экономическими эти отношения не являются.",
+          "Самая точная формула — глубокая стратегическая координация без полноценного формального союза. Это особенно заметно в вопросах противоракетной обороны, ядерной стабильности, Индо-Тихоокеанского региона и западного давления.",
+          "Американский проект Golden Dome хорошо отражает эту конвергенцию. Для Вашингтона это ставка на усиление национальной защиты. Для Москвы и Пекина система такого масштаба способна затронуть стратегический баланс, повлияв на достоверность ядерного сдерживания.",
+        ],
+        callouts: [
+          "Китаю и России не нужен формальный военный союз, чтобы координироваться там, где они видят общие угрозы.",
+        ],
+      },
+      {
+        heading: "Ближний Восток и Иран",
+        paragraphs: [
+          "Эту встречу также нужно читать через Ближний Восток. Китай и Россия имеют связи с Ираном, энергетические интересы в Персидском заливе и прямую заинтересованность в стабильности Ормузского пролива.",
+          "Китай не хочет полностью брать на себя роль гаранта региональной безопасности, но хочет влиять на исходы. Россия, со своей стороны, стремится сохранить дипломатическую значимость в регионе, где Соединенные Штаты долгое время обладали доминирующим весом.",
+          "Обе стороны сходятся в том, что региональный порядок не должен определяться исключительно западным давлением, и связывают региональную стабильность с глобальной энергетической безопасностью. Для Пекина это часть дипломатии влияния без чрезмерного самововлечения.",
+        ],
+      },
+      {
+        heading: "Последствия для Латинской Америки",
+        paragraphs: [
+          "Для Латинской Америки эта встреча не является далеким вопросом. Координация Китая и России влияет на энергетику, продовольствие, удобрения, финансы, технологии, оборону и глобальное управление.",
+          "Китай — ключевой торговый партнер для ряда стран региона. Россия сохраняет присутствие в энергетике, обороне, удобрениях и дипломатии. Соединенные Штаты остаются финансовым, политическим и технологическим центром полушария.",
+          "Если соперничество между этими полюсами углубится, регион может получить больше пространства для торга, но также столкнуться с более сильным давлением в пользу выравнивания. Многополярность не гарантирует автономию, если у региона нет собственной стратегии.",
+        ],
+        callouts: [
+          "Шанс Латинской Америки — в более широком пространстве для переговоров, а не в том, чтобы оказаться зажатой между чужими повестками.",
+        ],
+      },
+      {
+        heading: "БРИКС и Глобальный Юг",
+        paragraphs: [
+          "Встреча Си и Путина усиливает многополярный нарратив. Китай и Россия стремятся представить себя защитниками более сбалансированного международного порядка, с большим весом Глобального Юга и меньшим западным доминированием.",
+          "Но одного нарратива недостаточно. Вызов для БРИКС и Глобального Юга состоит в том, чтобы превратить дискурс в институты: платежные системы, финансирование, инфраструктуру, технологическое сотрудничество и механизмы управления.",
+          "Связка Китай-Россия может продвинуть эту повестку, но одновременно порождает вопросы. Многополярность может открыть пространство для новых игроков, но также способна воспроизводить новые иерархии, если будет слишком сильно вращаться вокруг Пекина и Москвы.",
+        ],
+      },
+      {
+        heading: "Возможные сценарии",
+        subsections: [
+          {
+            heading: "1. Более глубокая координация Китая и России",
+            paragraphs: [
+              "Пекин и Москва усиливают сотрудничество в энергетике, обороне, технологиях, альтернативных платежах и глобальной дипломатии. Ось Китай-Россия приобретает структурный вес внутри многополярного порядка.",
+            ],
+          },
+          {
+            heading: "2. Прагматичное сотрудничество с ограничениями",
+            paragraphs: [
+              "Отношения укрепляются, но Китай избегает чрезмерных обязательств перед Россией и сохраняет пространство для переговоров с США, Европой и другими полюсами.",
+            ],
+          },
+          {
+            heading: "3. Усиление западного давления и ускоренное сближение",
+            paragraphs: [
+              "Если Вашингтон и его союзники ужесточат санкции, технологический контроль или военное давление, Китай и Россия могут еще быстрее углубить стратегическую координацию.",
+            ],
+          },
+          {
+            heading: "4. Китай как посредник между блоками",
+            paragraphs: [
+              "Пекин поддерживает диалог и с Вашингтоном, и с Москвой, проецируя себя как центр баланса между крупными державами, не разрывая связи ни с одной из сторон.",
+            ],
+          },
+          {
+            heading: "5. Фрагментированная многополярность",
+            paragraphs: [
+              "Международная система движется к частично разделенным технологическим, финансовым и военным блокам. На страны с формирующимися рынками оказывается более сильное давление при выборе партнеров и моделей встраивания.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "Заключение",
+        paragraphs: [
+          "Встреча Си и Путина в Пекине стала подтверждением стратегического сотрудничества. Это было не просто проявление личной дружбы и не временная реакция на Соединенные Штаты. Это был сигнал институционализации отношений, которые обе страны хотят представить как опору нового глобального баланса.",
+          "Но это был и сигнал асимметрии. России нужен Китай, чтобы продавать энергию, поддерживать рынки и сопротивляться изоляции. Китаю нужна Россия как стратегический партнер, энергетический поставщик и противовес Западу, но у него сохраняется большая свобода маневра.",
+          "Дипломатическая последовательность показательная: сначала Трамп, затем Путин. Пекин управляет соперничеством с Вашингтоном и подтверждает координацию с Москвой. Китай не выбирает между ними. Он ведет переговоры с обоими.",
+        ],
+      },
+      {
+        heading: "Открытые вопросы",
+        bullets: [
+          "Посредничает ли Китай между великими державами или просто максимизирует собственный маневр?",
+          "Является ли Россия стратегическим партнером Китая или все более зависимым партнером?",
+          "Могут ли Соединенные Штаты стабилизировать отношения с Китаем, не принимая долговременность оси Китай-Россия?",
+          "Сможет ли Глобальный Юг выиграть от этой многополярности или получит лишь больше давления?",
+        ],
+      },
+    ],
+  },
+
+  zh: {
+    title: "习近平与普京在北京：重塑全球格局的战略协作",
+    subtitle:
+      "在接待特朗普之后，中国再次确认了与俄罗斯的协调。这一外交顺序表明，北京并未在华盛顿与莫斯科之间二选一，而是在与两方同时谈判，以扩大自身的战略回旋空间。",
+    excerpt:
+      "普京对北京的访问表明，中国希望在管理与美国竞争的同时，不放弃与俄罗斯的战略伙伴关系。正是这种组合，解释了新的全球平衡正在如何形成。",
+    tags: ["习近平", "普京", "中国", "俄罗斯", "北京", "能源", "多极化", "外交"],
+    bodySections: [
+      {
+        paragraphs: [
+          "习近平与普京在北京的会晤，并不是一次普通的双边访问，而是一次公开确认：中俄希望把双方合作呈现为稳定、持久，并且适用于一个不再完全以西方为中心的国际秩序。",
+          "这一时间顺序非常重要。北京先接待特朗普，以管理与美国的竞争；几天后又接待普京，以强调与华盛顿关系的阶段性稳定，并不意味着放弃与莫斯科的战略协调。",
+          "核心判断很清楚：中国并不是在特朗普与普京之间做选择。它是在利用与两方的关系来扩大自身的外交、经济与战略空间。对美国，它管理竞争；对俄罗斯，它巩固协调；对全球南方，它投射多极领导力。",
+        ],
+        callouts: [
+          "北京想要展示的是：它可以同华盛顿对话，而不必削弱与莫斯科的战略联系。",
+        ],
+      },
+      {
+        heading: "两次访问，两种信号",
+        paragraphs: [
+          "比较特朗普与普京的访问，有助于理解中国的战略。面对特朗普，北京采取的是“受控竞争”的逻辑：外交姿态、企业随行、经贸预期，以及降低不确定性的需要。",
+          "而面对普京，整场访问的密度完全不同：更完整的联合声明、合作文件、更长时间的双边会谈，以及一套旨在确认战略连续性的外交舞台。",
+          "这并不意味着特朗普对中国不如普京重要，而是说明北京会根据谈判对象使用不同格式。对美国，中国要避免断裂；对俄罗斯，中国要证明战略伙伴关系依然牢固。",
+        ],
+      },
+      {
+        heading: "亲近外交",
+        paragraphs: [
+          "普京此次访华具有明显的象征维度。除了正式礼宾之外，还出现了更多“亲密”元素：共饮茶、关于长期友谊的表述、文化安排，以及关于领导人互信的叙事。",
+          "在中国外交中，这些细节并非装饰。茶、共餐与历史性象征，传递的是平静、连续性与政治亲近。面对特朗普，北京管理的是竞争；面对普京，北京展现的是信任关系。",
+          "这种对比进一步说明，中国会根据不同战略场景使用不同语言。对华盛顿，它结合谈判与约束；对莫斯科，它则加入政治记忆、个人纽带与长期投射。",
+        ],
+        callouts: [
+          "面对特朗普，逻辑更偏交易性；面对普京，则更偏关系性与战略性。",
+        ],
+      },
+      {
+        heading: "中国官方叙事",
+        paragraphs: [
+          "从中国视角看，这次访问被定义为友谊、政治信任与战略协调的再次确认。北京强调了双边关系的历史连续性、条约延续以及进一步深化合作的意愿。",
+          "这里的语言非常关键。中国并不把对俄关系描述为对西方的临时回应，而是描述为一套拥有自身制度基础的稳定架构。",
+          "这一点对北京的外部投射至关重要：它要表明，中俄关系并不只是由乌克兰、制裁或中美关系恶化所决定。",
+        ],
+      },
+      {
+        heading: "俄罗斯的叙事：莫斯科并未被孤立",
+        paragraphs: [
+          "对俄罗斯而言，这次访问具有明显的战略价值。普京前往北京，是为了表明莫斯科仍然能够直接接触中国最高领导层，而西方孤立并不等于全球孤立。",
+          "在克里姆林宫的叙事中，对华关系是维持能源出口、深化技术合作以及强化多极世界论述的关键支柱。",
+          "它向西方传递的信息很直接：俄罗斯或许失去了部分欧洲市场，但它强化了欧亚转向，同时仍然拥有一个经济和外交分量都极大的伙伴。",
+        ],
+        callouts: [
+          "真正的问题在于：俄罗斯是在巩固一段相对平衡的伙伴关系，还是正变得越来越依赖中国？",
+        ],
+      },
+      {
+        heading: "能源：合作很深，但并不对称",
+        paragraphs: [
+          "中俄关系有着非常具体的物质基础：能源、贸易、基础设施与供应安全。俄罗斯需要把石油和天然气卖向亚洲，中国则需要更分散的供应来源与更稳定的能源流。",
+          "正是这种互补性，使能源与贸易始终处于双边关系的中心。但这种关系并不对称：俄罗斯对中国的需要，比中国对俄罗斯的需要更迫切。",
+          "因此，即便是在重大战略性天然气项目上，北京也往往处于更强势的位置。中国购买资源，但在时间、条件与节奏设定上拥有更大空间。",
+        ],
+        callouts: [
+          "能源合作确实很深，但关系内部的议价权并没有被平均分配。",
+        ],
+      },
+      {
+        heading: "技术、人工智能与战略自主",
+        paragraphs: [
+          "中俄协调并不局限于能源，还延伸到技术、人工智能、数字创新、网络安全与防务能力。",
+          "这一维度之所以重要，是因为它直接连接到与美国的竞争。华盛顿仍然在先进芯片、软件、数字平台和金融资本方面占据优势。中国追求技术自主。俄罗斯虽受制裁限制，但在防务、网络安全与战略系统上仍保有能力。",
+          "这种合作并不意味着中俄可以迅速替代西方技术生态，但它确实能够降低双方在制裁、出口管制以及对美主导基础设施依赖上的脆弱性。",
+        ],
+      },
+      {
+        heading: "防务、安全与 Golden Dome",
+        paragraphs: [
+          "一个常见误判，是把中俄关系描述成传统意义上的军事同盟。事实并非如此。中国并不愿接受会压缩自身回旋余地的正式军事承诺，但这种关系也绝非纯经济关系。",
+          "更准确的定义是：深度战略协调，但尚未形成完整的正式同盟。这一点在导弹防御、核稳定、亚太格局与西方压力等议题上表现得尤为清楚。",
+          "美国的 Golden Dome 计划正好反映了这种共同关切。对华盛顿而言，它是强化本土防御的项目；对北京和莫斯科而言，这种规模的系统可能改变战略平衡，因为它会影响核威慑的可信度。",
+        ],
+        callouts: [
+          "中俄并不需要正式军事同盟，也能在感知到共同威胁时形成协同立场。",
+        ],
+      },
+      {
+        heading: "中东与伊朗",
+        paragraphs: [
+          "这次会晤也必须放在中东背景下理解。中国和俄罗斯都与伊朗保持联系，在海湾拥有能源利益，并直接关切霍尔木兹海峡的稳定。",
+          "中国不愿完全承担地区安全担保者的角色，但它确实希望影响局势。俄罗斯则希望维持自己在这个长期由美国主导的地区中的外交分量。",
+          "双方都倾向于推动一种不完全由西方压力定义的地区秩序，并把地区稳定与全球能源安全联系起来。对北京而言，这是一种“有影响力但不过度暴露”的外交方式。",
+        ],
+      },
+      {
+        heading: "对拉丁美洲的影响",
+        paragraphs: [
+          "对拉丁美洲而言，这次会晤绝不是遥远议题。中俄协调会影响能源、粮食、化肥、融资、技术、防务以及全球治理。",
+          "中国已是多个拉美国家的关键贸易伙伴。俄罗斯在能源、防务、化肥和外交方面仍保有存在。美国则继续是本半球的金融、政治与技术中心。",
+          "如果这些权力中心之间的竞争继续加深，拉丁美洲可能获得更大的谈判空间，但也会承受更强的选边压力。没有自身战略，多极化并不自动等于自主性。",
+        ],
+        callouts: [
+          "拉丁美洲真正的机会，在于利用竞争扩大谈判空间，而不是被困在外部力量的议程之间。",
+        ],
+      },
+      {
+        heading: "金砖国家与全球南方",
+        paragraphs: [
+          "习近平与普京的会晤强化了多极化叙事。中国和俄罗斯希望把自己呈现为更平衡国际秩序的支持者，让全球南方拥有更大权重，并减少西方的单边主导。",
+          "但叙事本身并不够。对金砖国家和全球南方而言，真正的挑战在于把话语转化为制度：支付系统、融资安排、基础设施、技术合作与治理机制。",
+          "中俄关系可以推动这条议程，但也会带来疑问。多极化可能为新兴行为体打开空间，但如果其结构过度围绕北京和莫斯科，也可能复制新的等级关系。",
+        ],
+      },
+      {
+        heading: "可能情景",
+        subsections: [
+          {
+            heading: "1. 中俄协调进一步加深",
+            paragraphs: [
+              "北京与莫斯科在能源、防务、技术、替代支付与全球外交上的合作继续加深，中俄轴心在多极秩序中的结构性分量进一步上升。",
+            ],
+          },
+          {
+            heading: "2. 有边界的务实合作",
+            paragraphs: [
+              "双边关系持续加强，但中国避免对俄罗斯承担过度承诺，同时保留与美国、欧洲及其他力量谈判的空间。",
+            ],
+          },
+          {
+            heading: "3. 西方压力加大，中俄靠拢加速",
+            paragraphs: [
+              "如果华盛顿及其盟友进一步加强制裁、技术限制或军事压力，中俄可能更快推进战略协调。",
+            ],
+          },
+          {
+            heading: "4. 中国成为板块之间的调节者",
+            paragraphs: [
+              "北京同时保持与华盛顿和莫斯科的对话，把自己投射为大国之间的平衡中心，而不与任何一方决裂。",
+            ],
+          },
+          {
+            heading: "5. 碎片化的多极秩序",
+            paragraphs: [
+              "国际体系向部分分离的技术、金融和军事板块演变，新兴国家在选择伙伴和嵌入框架时面临更大压力。",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "结论",
+        paragraphs: [
+          "习近平与普京在北京的会晤，是对战略合作的再次确认。它不仅是个人友谊的展示，也不是对美国的临时性反应，而是双方试图把这段关系制度化，并将其塑造成新全球平衡的支柱。",
+          "但它同时也暴露出不对称性。俄罗斯需要中国来出售能源、维持市场并抵抗孤立；中国需要俄罗斯作为战略伙伴、能源供应者和对冲西方的力量，但它保留着更大的战略回旋空间。",
+          "这组外交顺序本身已经说明问题：先是特朗普，后是普京。北京一边管理与华盛顿的竞争，一边确认与莫斯科的协调。中国并不在两者之间做选择，而是在与两者同时谈判。",
+        ],
+      },
+      {
+        heading: "开放问题",
+        bullets: [
+          "中国是在大国之间进行调解，还是在最大化自身的战略机动空间？",
+          "俄罗斯对中国而言是战略伙伴，还是一个越来越依赖北京的伙伴？",
+          "美国能否在不接受中俄轴心持续存在的前提下稳定对华关系？",
+          "全球南方能否从这种多极化中获益，还是只会承受更多压力？",
+        ],
+      },
+    ],
+  },
+};
 
 export const contentTranslations = {
   en: {
@@ -4767,3 +5293,10 @@ contentTranslations.zh = mergeLocaleData(contentTranslations.en, {
     },
   },
 });
+
+contentTranslations.en.articles["xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global"] =
+  xiPutinArticleTranslations.en;
+contentTranslations.ru.articles["xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global"] =
+  xiPutinArticleTranslations.ru;
+contentTranslations.zh.articles["xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global"] =
+  xiPutinArticleTranslations.zh;

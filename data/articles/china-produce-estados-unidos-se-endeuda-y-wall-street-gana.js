@@ -16,7 +16,7 @@ export const articleChinaProduceEstadosUnidosWallStreetGana = {
   author: "javier-salazar-segales",
   date: "2026-04-27",
   readTime: 12,
-  homeFeature: 4,
+  homeFeature: 5,
   tone: "midnight",
   tags: [
     "China",

@@ -20,8 +20,8 @@ import {
 } from "../data/i18n.js";
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
-const appVersion = "20260517b";
-const stylesVersion = "20260428b";
+const appVersion = "20260522a";
+const stylesVersion = "20260522b";
 const faviconVersion = "20260428c";
 const siteBaseUrl = String(siteBase.url || "https://geo-scope.online").replace(/\/+$/, "");
 const ogLocaleMap = {
@@ -807,6 +807,8 @@ function renderDocument({
 }
 
 function renderHeader(context, activeKey, routeFactory) {
+  const headerNavigation = context.navigation.filter((item) => item.key !== "subscription");
+
   return `
     <div class="nav-frame">
       <a class="brand" href="${pageRoute("home", context.locale)}" aria-label="Geo Scope">
@@ -816,7 +818,7 @@ function renderHeader(context, activeKey, routeFactory) {
       </a>
       <div class="nav-stack is-open" id="site-nav">
         <nav class="site-nav" aria-label="${context.ui.header.navAria}">
-          ${context.navigation
+          ${headerNavigation
             .map(
               (item) => `
                 <a class="nav-link ${item.key === activeKey ? "is-active" : ""}" href="${pageRoute(item.key === "home" ? "home" : item.key, context.locale)}">
@@ -828,8 +830,6 @@ function renderHeader(context, activeKey, routeFactory) {
         </nav>
         <div class="header-utility" aria-label="${context.ui.header.utilityAria}">
           <a class="header-utility__link" href="${pageRoute("analysis", context.locale)}">${context.ui.header.search}</a>
-          <span class="header-utility__divider" aria-hidden="true"></span>
-          <a class="header-utility__link" href="${pageRoute("subscription", context.locale)}">${context.ui.header.subscription}</a>
           <span class="header-utility__divider" aria-hidden="true"></span>
           <div class="header-language" role="group" aria-label="${context.ui.header.languageAria}">
             ${supportedLocales

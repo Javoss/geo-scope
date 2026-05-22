@@ -15,7 +15,7 @@ export const articleLaNuevaCarreraLunarYaComenzo = {
   author: "javier-salazar-segales",
   date: "2026-05-14",
   readTime: 11,
-  homeFeature: 2,
+  homeFeature: 3,
   tone: "indigo",
   tags: ["Luna", "Estados Unidos", "China", "Artemis", "espacio", "BRICS"],
   bodySections: [

@@ -7,14 +7,14 @@ import {
   regions as regionsBase,
   sectors as sectorsBase,
   site as siteBase,
-} from "../data/content.js?v=20260516b";
+} from "../data/content.js?v=20260522a";
 import {
   contentTranslations,
   defaultLocale,
   localeOptions,
   supportedLocales,
   uiCopy,
-} from "../data/i18n.js?v=20260516b";
+} from "../data/i18n.js?v=20260522a";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -513,6 +513,7 @@ function renderPage() {
 
 function renderHeader() {
   const activeKey = resolveActiveNavigationKey();
+  const headerNavigation = navigation.filter((item) => item.key !== "subscription");
 
   return `
     <div class="nav-frame">
@@ -524,7 +525,7 @@ function renderHeader() {
       </button>
       <div class="nav-stack" id="site-nav">
         <nav class="site-nav" aria-label="${ui.header.navAria}">
-          ${navigation
+          ${headerNavigation
             .map(
               (item) => `
                 <a class="nav-link ${item.key === activeKey ? "is-active" : ""}" href="${withLocale(item.href)}">
@@ -536,8 +537,6 @@ function renderHeader() {
         </nav>
         <div class="header-utility" aria-label="${ui.header.utilityAria}">
           <a class="header-utility__link" href="${withLocale("analysis.html")}">${ui.header.search}</a>
-          <span class="header-utility__divider" aria-hidden="true"></span>
-          <a class="header-utility__link" href="${withLocale("subscription.html")}">${ui.header.subscription}</a>
           <span class="header-utility__divider" aria-hidden="true"></span>
           <div class="header-language" role="group" aria-label="${ui.header.languageAria}">
             ${supportedLocales
@@ -636,6 +635,30 @@ function renderHomePage() {
     .filter((article) => article.type === "radar")
     .slice(0, 2);
   const leadSignal = radarItems[0]?.signals?.[0];
+  const heroFeatureText = summarizeText(mainFeature.excerpt || mainFeature.subtitle, 210);
+  const heroGuides = [
+    {
+      eyebrow: ui.home.latest.eyebrow,
+      title: ui.home.latest.title,
+      text: ui.home.latest.text,
+      href: withLocale("analysis.html"),
+      action: ui.home.latest.action,
+    },
+    {
+      eyebrow: ui.home.regionsSection.eyebrow,
+      title: ui.home.regionsSection.title,
+      text: ui.home.regionsSection.text,
+      href: withLocale("regions.html"),
+      action: ui.home.regionsSection.action,
+    },
+    {
+      eyebrow: ui.home.radar.eyebrow,
+      title: ui.home.radar.title,
+      text: ui.home.radar.text,
+      href: withLocale("radar.html"),
+      action: ui.home.radar.action,
+    },
+  ];
   const homeSectors = [...sectors]
     .sort(
       (left, right) =>
@@ -669,6 +692,20 @@ function renderHomePage() {
           <div class="hero-trust-row">
             ${ui.home.trust.map((item) => `<span>${item}</span>`).join("")}
           </div>
+          <div class="hero-context-grid">
+            ${heroGuides
+              .map(
+                (guide) => `
+                  <a class="hero-context-card" href="${guide.href}">
+                    <span class="hero-context-card__eyebrow">${guide.eyebrow}</span>
+                    <strong>${guide.title}</strong>
+                    <p>${guide.text}</p>
+                    <span class="inline-link">${guide.action}</span>
+                  </a>
+                `,
+              )
+              .join("")}
+          </div>
         </div>
         <aside class="hero-panel hero-panel--home reveal">
           <div class="hero-panel__main">
@@ -678,7 +715,7 @@ function renderHomePage() {
             </div>
             <a class="hero-panel__link" href="${articleUrl(mainFeature.slug)}">
               <h2 class="hero-panel__title">${mainFeature.title}</h2>
-              <p class="hero-panel__text">${mainFeature.subtitle}</p>
+              <p class="hero-panel__text">${heroFeatureText}</p>
             </a>
             <div class="meta-row hero-panel__meta">
               <span class="meta-chip">${labelForType(mainFeature.type)}</span>
@@ -697,7 +734,7 @@ function renderHomePage() {
               </div>
               <div class="metric-card">
                 <strong>${sectors.length}</strong>
-                <span>${ui.home.sectors}</span>
+                <span>${ui.home.sectorsMetric}</span>
               </div>
             </div>
             <div class="signal-panel signal-panel--compact">
