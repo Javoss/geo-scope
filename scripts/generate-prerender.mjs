@@ -20,7 +20,7 @@ import {
 } from "../data/i18n.js";
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
-const appVersion = "20260602b";
+const appVersion = "20260602c";
 const stylesVersion = "20260601d";
 const faviconVersion = "20260428c";
 const siteBaseUrl = String(siteBase.url || "https://geo-scope.online").replace(/\/+$/, "");
@@ -212,6 +212,7 @@ function transliterateRussianString(text) {
   protect(/\bdata\/[\w./-]+\b/g);
   protect(/\bS&P 500\b/g);
   protect(/\bWall Street\b/g, () => "Уолл-стрит");
+  protect(/\b[IVXLCDM]{2,}\b/g);
 
   output = output.replace(/\bBRICS\b/g, "БРИКС");
   output = output.replace(/\bAI\b/g, "ИИ");

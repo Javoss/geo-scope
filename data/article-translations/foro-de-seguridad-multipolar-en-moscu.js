@@ -3,9 +3,9 @@ export const foroSeguridadMultipolarMoscuTranslations = {
     title:
       "Multipolar Security Forum in Moscow: the majority world facing a changing global agenda",
     subtitle:
-      "The International Security Forum showed that Russia not only wants to resist Western pressure; it seeks to position itself as an articulator of an alternative agenda on stability, sovereignty, and multipolar order.",
+      "The International Security Forum installed an alternative agenda on stability, sovereignty, and multipolar order, with the majority world as its central interlocutor.",
     excerpt:
-      "The gathering held in the Moscow region projected a central idea: international security can no longer be defined solely from Western institutions. Moscow wants to turn that debate into a platform of multipolar legitimacy.",
+      "The forum held in the Moscow region consolidated Russia as an articulator of an alternative conversation on international security, with the majority world at the center of the debate.",
     tags: [
       "Moscow",
       "Russia",
@@ -22,7 +22,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
           "The First International Security Forum held in the Moscow region was more than a technical meeting on global threats. It was a political demonstration. Russia sought to show that it retains convening capacity, that Western isolation does not amount to global isolation, and that there is a space of countries interested in discussing international security from a perspective different from that of Washington, Brussels, or NATO.",
           "The forum took place between May 26 and May 29, 2026, and one of its central moments was the 14th international meeting of high representatives responsible for security affairs, held on May 28. In that context, Vladimir Putin addressed the participants, emphasizing the importance of international cooperation in the face of common threats and the need to strengthen regional and global stability.",
           "The forum's agenda was broad. It did not stop at military defense or terrorism. It included international security, regional stability, cooperation against transnational threats, cybersecurity, artificial intelligence, critical technologies, water, energy, food, infrastructure, traditional values, neocolonialism, reform of global governance, and the role of the so-called majority world.",
-          "The central thesis is clear: Moscow is trying to turn international security into a platform of multipolar legitimacy. This is not only about talking about threats. It is about disputing who has the right to define them, which actors participate in that definition, and under what rules global security will be organized.",
+          "The central thesis is clear: Russia has installed international security as a platform of multipolar legitimacy. This is not only about talking about threats. It is about disputing who has the right to define them, which actors participate in that definition, and under what rules global security will be organized.",
         ],
       },
       {
@@ -30,7 +30,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
         paragraphs: [
           "Vladimir Putin addressed the participants of the International Security Forum on May 28, 2026. The gesture served a political function: to place the forum within a broader agenda of international cooperation, regional stability, and global security.",
           "The central idea of the message is that security can no longer be understood in isolation. A regional crisis, a terrorist threat, a technological escalation, a rupture in supply chains, or a food crisis can affect the entire international system. Contemporary security is interdependent.",
-          "That framing allows Russia to shift the conversation. Moscow does not want the international discussion on security to be reduced to Ukraine, sanctions, or confrontation with the West. It seeks to broaden the debate toward transnational threats: terrorism, extremism, organized crime, drug trafficking, nuclear proliferation, cybercrime, information security, media manipulation, and the vulnerability of critical infrastructure.",
+          "That framing allows Russia to shift the conversation. The international discussion on security is no longer reduced to Ukraine, sanctions, or confrontation with the West; it broadens toward transnational threats: terrorism, extremism, organized crime, drug trafficking, nuclear proliferation, cybercrime, information security, media manipulation, and the vulnerability of critical infrastructure.",
           "Security, in this reading, is not only military. It is also technological, informational, biological, food-related, water-related, cultural, energy-related, and civilizational.",
         ],
       },
@@ -39,8 +39,8 @@ export const foroSeguridadMultipolarMoscuTranslations = {
         paragraphs: [
           "The International Security Forum was designed as a broad platform. The 14th meeting of high representatives was not an isolated event, but part of a larger framework that combined official meetings, political debates, thematic conferences, and discussions on new threats.",
           "That difference matters. A technical meeting exchanges diagnoses. An international forum seeks to build language, networks, agenda, and legitimacy.",
-          "Moscow is trying to present this space as a platform where non-Western actors can debate security issues without necessarily going through institutions dominated by the United States or Europe. This does not mean that Russia is creating a complete alternative to the UN, the OSCE, or the Euro-Atlantic architecture. But it does mean that it is trying to build parallel spaces of strategic conversation.",
-          "International security is no longer discussed only in Western forums. Moscow wants to be the host, moderator, and central actor of an alternative conversation.",
+          "This space functions as a platform where non-Western actors can debate security issues without necessarily going through institutions dominated by the United States or Europe. This does not mean that Russia is creating a complete alternative to the UN, the OSCE, or the Euro-Atlantic architecture. But it does consolidate parallel spaces of strategic conversation.",
+          "International security is no longer discussed only in Western forums. Moscow acts as host, moderator, and central actor of an alternative conversation.",
         ],
       },
       {
@@ -57,7 +57,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
         heading: "The majority world and collective responsibility for security",
         paragraphs: [
           "One of the forum's most important concepts was the idea of collective responsibility for world security. The meeting was presented as a space where the countries of the majority world recognized the inevitability of changes in international relations and expressed a willingness to participate in shaping that new environment on equal terms.",
-          "This idea is central to understanding Russian strategy. Moscow does not want to present multipolar security as an exclusively Russian agenda. It seeks to show it as a shared demand from emerging countries that claim greater participation in global governance.",
+          "This idea is central to understanding Russian strategy. Multipolar security appears here as a shared demand from emerging countries claiming greater participation in global governance, not only as a specifically Russian national agenda.",
           "The presence of representatives from Russia, China, India, South Africa, Brazil, Kazakhstan, Vietnam, and other actors made it possible to project a broader narrative: the international system can no longer be managed by a small group of Western powers. Economic, demographic, technological, and political power is shifting, and that change should also be reflected in the rules of security.",
           "This point allows the forum to be read as something more than a security meeting. It is a proposal for order: collective security, not security at the expense of others; multipolarity, not unipolar hierarchy; cooperation between platforms such as BRICS and the Shanghai Cooperation Organization, not exclusive dependence on Western institutions.",
         ],
@@ -70,10 +70,11 @@ export const foroSeguridadMultipolarMoscuTranslations = {
         paragraphs: [
           "The forum showed that the discussion on multipolar security is not limited to Russia. The 14th international meeting of high representatives responsible for security affairs brought together representatives from Russia, China, India, South Africa, Brazil, Kazakhstan, and Vietnam, who discussed the formation of a multipolar world, the strengthening of trust among states, and the elaboration of common rules for new technologies.",
           "This allows the forum to be read as a platform of the so-called majority world. It was not merely a Russian critique of the Western order, but a space where different actors presented their own priorities on sovereignty, security, technology, development, and reform of international governance.",
-          "Russia advanced an agenda of coordination among the countries of the Global South and the East. Sergei Shoigu proposed strengthening the UN's central role, supporting the group of friends in defense of the UN Charter, avoiding the provocation of contradictions among the countries of the Global South and the East, advancing the Greater Eurasian Partnership, building a collective security architecture in Eurasia, and working on resource reserves, including agricultural products, fertilizers, and hydrocarbons. He also called for not strengthening one's own security at the expense of the security of other states, and for deepening coordination in BRICS, the Shanghai Cooperation Organization, and other majority-world formats.",
+          "Russia presented an agenda of coordination among the countries of the Global South and the East. Sergei Shoigu proposed strengthening the UN's central role, supporting the group of friends in defense of the UN Charter, avoiding the provocation of contradictions among the countries of the Global South and the East, advancing the Greater Eurasian Partnership, building a collective security architecture in Eurasia, and working on resource reserves, including agricultural products, fertilizers, and hydrocarbons. He also called for not strengthening one's own security at the expense of the security of other states, and for deepening coordination in BRICS, the Shanghai Cooperation Organization, and other majority-world formats.",
           "China, through Chen Wenqing, linked the forum to Xi Jinping's global initiatives on development, security, civilization, and governance. The Chinese position defended multilateralism, respect for international law, the five principles of peaceful coexistence, and the idea of a shared future for humanity. In that framework, Beijing seeks to present security as a process of adaptation to an international architecture in transformation, where traditional and non-traditional threats must be confronted through cooperation rather than closed blocs.",
           "India, represented by Ajit Doval, placed the emphasis on UN reform, the fight against terrorism, and the need to recognize the new weight of emerging economies. Its message was that power is no longer concentrated in a small group of countries and that the Global South demands equal participation in the management of world affairs. This position is relevant because India does not want a unipolar order, but neither does it want a multipolarity dominated by a single alternative center. Its bet is on a more representative architecture in which emerging powers have a real voice.",
           "South Africa linked security to sovereignty, artificial intelligence, cybersecurity, energy, and African integration. Khumbudzo Ntshavheni argued that the formation of a multipolar world opens new opportunities for Global South countries, but that those opportunities must be translated into concrete capabilities: modernization of security, development of artificial intelligence, strengthening of cybersecurity, energy security, and expansion of economic ties through the African Continental Free Trade Area. This reading connects security with development, infrastructure, and African regional capacity.",
+          "The importance of the African component is that these concerns appeared with an unusual centrality in forums dominated by Western agendas. In this space, African countries could present their own concerns about energy security, connectivity, cybersecurity, industrialization, regional integration, food, and infrastructure not as secondary themes, but as part of the global architecture of stability. That difference matters: in many traditional forums, Africa is usually treated as an object of assistance or a scene of crisis; here it appears as an actor that defines priorities and claims its own capacities.",
           "Brazil, through Celso Amorim, introduced a key idea: multipolarity must not become a simple division of the world into spheres of influence. His approach points to a multipolarity based on the right of sovereign states to diversify their alliances, defend their national interests, and participate in processes of sustainable development. This position is especially important for Latin America because it avoids presenting multipolarity as automatic alignment with one bloc against another.",
           "Kazakhstan presented a modern security agenda that combines interstate relations, the economy, the natural environment, and the digital environment. Its proposal to create an international water security organization under UN auspices shows that fresh water is entering the center of strategic security. It also defended universal norms of responsible behavior in cyberspace and warned that artificial intelligence is moving from being an auxiliary tool to becoming an active subject within contemporary systems of decision and security.",
           "Malaysia added a technological dimension to the debate by warning that the world appears to be moving toward a division of high technologies, especially in artificial intelligence. Its proposal for a common platform among BRICS countries to facilitate cooperation in AI connects directly with the discussion on technological sovereignty, digital fragmentation, and closed technological systems. In this approach, security no longer depends only on defense or diplomacy, but on the ability to cooperate in critical technologies before the world becomes divided into incompatible ecosystems.",
@@ -164,10 +165,10 @@ export const foroSeguridadMultipolarMoscuTranslations = {
         heading: "The Global South as the main audience",
         paragraphs: [
           "The forum is not designed primarily for the West. It is designed for the rest of the world.",
-          "Moscow seeks to speak to actors who do not want to be trapped between rigid blocs, who want to diversify relations, or who distrust an international order defined exclusively by Western powers.",
+          "The forum speaks to actors who do not want to be trapped between rigid blocs, who want to diversify relations, or who distrust an international order defined exclusively by Western powers.",
           "Asia, Africa, the Middle East, and Latin America are key audiences. For those spaces, Russia seeks to project three messages.",
           "First, that it remains a relevant power.",
-          "Second, that it can offer cooperation in security, defense, intelligence, energy, cybersecurity, and the fight against transnational threats.",
+          "Second, that it can offer cooperation in security, defense, intelligence, energy, food security, cybersecurity, and the fight against transnational threats.",
           "Third, that multipolarity can open room for maneuver in the face of structures dominated by the West.",
           "The challenge is that many Global South countries do not want to replace one dependency with another. They do not necessarily seek to align with Moscow. They seek options.",
         ],
@@ -226,11 +227,11 @@ export const foroSeguridadMultipolarMoscuTranslations = {
       {
         heading: "Conclusion",
         paragraphs: [
-          "The International Security Forum in Moscow was more than a meeting of experts or officials. It was an attempt by Russia to reinsert itself as an organizing actor in the global debate on security.",
-          "Putin's message, the agenda of the Russian Security Council, and the 14th meeting of high representatives show a clear strategy: Moscow wants to dispute the very definition of international security.",
+          "The International Security Forum in Moscow was more than a meeting of experts or officials. It was the consolidation of Russia as an organizing actor in the global debate on security.",
+          "Putin's message, the agenda of the Russian Security Council, and the 14th meeting of high representatives show a clear strategy: Russia has installed a multipolar security agenda that disputes the very definition of international security.",
           "For Russia, security can no longer be defined solely by the West. It must include sovereignty, non-interference, regional stability, information security, protection against manipulation, traditional values, the struggle against neocolonialism, cooperation against transnational threats, and control over critical infrastructure.",
           "But the forum also showed something broader: multipolar security is not an exclusively Russian agenda. China, India, South Africa, Brazil, Kazakhstan, Malaysia, and other actors of the majority world placed on the table their own priorities: UN reform, multilateralism, counterterrorism, AI, cybersecurity, water, energy, regional integration, new technologies, and multipolarity without rigid spheres of influence.",
-          "The question is not whether Moscow can replace the Western security architecture. It cannot do so alone. The question is whether these spaces can become attractive enough platforms for the Global South to use them as instruments of negotiation, diversification, and autonomy.",
+          "The question is not whether Moscow can replace the Western security architecture. It cannot do so alone. The issue is that Russia has already installed a dynamic of alternative dialogue and, if it maintains institutional continuity, participation by the majority world, and links to concrete issues such as AI, water, food, energy, and cybersecurity, it has the conditions to sustain it over time as a platform of negotiation, diversification, and autonomy for the Global South.",
         ],
       },
       {
@@ -250,9 +251,9 @@ export const foroSeguridadMultipolarMoscuTranslations = {
     title:
       "Форум многополярной безопасности в Москве: мировое большинство перед меняющейся глобальной повесткой",
     subtitle:
-      "Международный форум по безопасности показал, что Россия не только стремится выдержать западное давление, но и хочет позиционировать себя как артикулятора альтернативной повестки о стабильности, суверенитете и многополярном порядке.",
+      "Международный форум по безопасности утвердил альтернативную повестку о стабильности, суверенитете и многополярном порядке, где мировое большинство выступает центральным собеседником.",
     excerpt:
-      "Встреча, прошедшая в Московской области, продвинула одну центральную идею: международную безопасность больше нельзя определять исключительно через западные институты. Москва хочет превратить этот спор в платформу многополярной легитимности.",
+      "Форум, прошедший в Московской области, закрепил Россию в роли организатора альтернативного разговора о международной безопасности, в центре которого находится мировое большинство.",
     tags: [
       "Москва",
       "Россия",
@@ -269,7 +270,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
           "Первый Международный форум по безопасности, прошедший в Московской области, стал не просто технической встречей по глобальным угрозам. Это была политическая демонстрация. Россия стремилась показать, что сохраняет способность собирать партнеров, что западная изоляция не равна глобальной изоляции и что существует круг стран, заинтересованных в обсуждении международной безопасности с иной точки зрения, чем у Вашингтона, Брюсселя или НАТО.",
           "Форум проходил с 26 по 29 мая 2026 года, и одним из его ключевых моментов стала XIV международная встреча высоких представителей, отвечающих за вопросы безопасности, состоявшаяся 28 мая. В этом контексте Владимир Путин обратился к участникам, подчеркнув важность международного сотрудничества перед лицом общих угроз и необходимость укрепления региональной и глобальной стабильности.",
           "Повестка форума была широкой. Она не ограничивалась военной обороной или терроризмом. В нее вошли международная безопасность, региональная стабильность, сотрудничество против транснациональных угроз, кибербезопасность, искусственный интеллект, критические технологии, вода, энергия, продовольствие, инфраструктура, традиционные ценности, неоколониализм, реформа глобального управления и роль так называемого мирового большинства.",
-          "Главный тезис ясен: Москва пытается превратить международную безопасность в платформу многополярной легитимности. Речь идет не только о разговорах об угрозах. Речь идет о споре о том, кто имеет право их определять, какие акторы участвуют в этом определении и по каким правилам будет организована глобальная безопасность.",
+          "Главный тезис ясен: Россия превратила международную безопасность в платформу многополярной легитимности. Речь идет не только о разговорах об угрозах. Речь идет о споре о том, кто имеет право их определять, какие акторы участвуют в этом определении и по каким правилам будет организована глобальная безопасность.",
         ],
       },
       {
@@ -321,6 +322,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
           "Китай, через Чэнь Вэньцина, связал форум с глобальными инициативами Си Цзиньпина: развитием, безопасностью, цивилизацией и управлением. Китайская позиция отстаивала многосторонность, уважение к международному праву, пять принципов мирного сосуществования и идею сообщества общей судьбы человечества. В этой рамке Пекин стремится представить безопасность как процесс адаптации к меняющейся международной архитектуре, где традиционные и нетрадиционные угрозы должны преодолеваться через сотрудничество, а не через закрытые блоки.",
           "Индия, представленная Аджитом Довалом, сделала акцент на реформе ООН, борьбе с терроризмом и необходимости признания нового веса развивающихся экономик. Ее послание состояло в том, что власть больше не сосредоточена в небольшой группе стран и что Глобальный Юг требует равноправного участия в управлении мировыми делами. Эта позиция важна, поскольку Индия не хочет ни однополярного порядка, ни многополярности, доминируемой одним альтернативным центром. Ее ставка — на более представительную архитектуру, в которой у развивающихся держав будет реальный голос.",
           "Южная Африка связала безопасность с суверенитетом, искусственным интеллектом, кибербезопасностью, энергетикой и африканской интеграцией. Хумбудзо Нтшавхени заявила, что формирование многополярного мира открывает новые возможности для стран Глобального Юга, но эти возможности должны быть превращены в конкретные способности: модернизацию безопасности, развитие искусственного интеллекта, укрепление кибербезопасности, энергетическую безопасность и расширение экономических связей через Африканскую континентальную зону свободной торговли. Это прочтение связывает безопасность с развитием, инфраструктурой и региональной способностью Африки.",
+          "Значение африканского компонента состоит в том, что эти вопросы прозвучали с необычной центральностью для форумов, обычно формируемых западной повесткой. В этом пространстве африканские страны смогли представить собственные тревоги по поводу энергетической безопасности, связности, кибербезопасности, индустриализации, региональной интеграции, продовольствия и инфраструктуры не как второстепенные темы, а как часть глобальной архитектуры стабильности. Это существенное отличие: на многих традиционных площадках Африка обычно рассматривается как объект помощи или пространство кризиса; здесь она выступает как актор, формирующий приоритеты и заявляющий о собственных возможностях.",
           "Бразилия, через Селсу Аморима, внесла ключевую идею: многополярность не должна превращаться в простое разделение мира на сферы влияния. Его подход указывает на многополярность, основанную на праве суверенных государств диверсифицировать свои союзы, защищать национальные интересы и участвовать в устойчивом развитии. Эта позиция особенно важна для Латинской Америки, потому что она не сводит многополярность к автоматическому выравниванию с одним блоком против другого.",
           "Казахстан представил современную повестку безопасности, сочетающую межгосударственные отношения, экономику, природную среду и цифровое пространство. Его предложение создать международную организацию по водной безопасности под эгидой ООН показывает, что пресная вода входит в центр стратегической безопасности. Казахстан также выступил за универсальные нормы ответственного поведения в киберпространстве и предупредил, что искусственный интеллект переходит из разряда вспомогательных инструментов в разряд активного субъекта в современных системах принятия решений и безопасности.",
           "Малайзия добавила к дискуссии технологическое измерение, предупредив, что мир, похоже, движется к разделению высоких технологий, особенно в области искусственного интеллекта. Ее предложение создать общую платформу между странами БРИКС для содействия сотрудничеству в сфере ИИ напрямую связано с обсуждением технологического суверенитета, цифровой фрагментации и закрытых технологических экосистем. В таком подходе безопасность больше не зависит только от обороны или дипломатии, а от способности сотрудничать в критических технологиях до того, как мир окончательно разделится на несовместимые системы.",
@@ -414,7 +416,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
           "Москва стремится говорить с акторами, которые не хотят оказаться зажатыми между жесткими блоками, которые хотят диверсифицировать отношения или которые не доверяют международному порядку, определяемому исключительно западными державами.",
           "Азия, Африка, Ближний Восток и Латинская Америка являются ключевыми аудиториями. Для этих пространств Россия пытается транслировать три сообщения.",
           "Во-первых, что она остается значимой державой.",
-          "Во-вторых, что она может предложить сотрудничество в сфере безопасности, обороны, разведки, энергетики, кибербезопасности и борьбы с транснациональными угрозами.",
+          "Во-вторых, что она может предложить сотрудничество в сфере безопасности, обороны, разведки, энергетики, продовольственной безопасности, кибербезопасности и борьбы с транснациональными угрозами.",
           "В-третьих, что многополярность может открыть пространство для маневра перед лицом структур, доминируемых Западом.",
           "Проблема в том, что многие страны Глобального Юга не хотят заменять одну зависимость другой. Они не обязательно стремятся выровняться по Москве. Они ищут варианты.",
         ],
@@ -473,11 +475,11 @@ export const foroSeguridadMultipolarMoscuTranslations = {
       {
         heading: "Заключение",
         paragraphs: [
-          "Московский Международный форум по безопасности был больше, чем встреча экспертов или чиновников. Это была попытка России вновь занять место организующего актора в глобальной дискуссии о безопасности.",
-          "Послание Путина, повестка Совета безопасности России и XIV встреча высоких представителей показывают ясную стратегию: Москва хочет оспорить само определение международной безопасности.",
+          "Московский Международный форум по безопасности был больше, чем встреча экспертов или чиновников. Он стал подтверждением того, что Россия закрепляется как организующий актор глобальной дискуссии о безопасности.",
+          "Послание Путина, повестка Совета безопасности России и XIV встреча высоких представителей показывают ясную стратегию: Россия уже утвердила многополярную повестку безопасности, которая оспаривает само определение международной безопасности.",
           "Для России безопасность больше не может определяться исключительно Западом. Она должна включать суверенитет, невмешательство, региональную стабильность, информационную безопасность, защиту от манипуляции, традиционные ценности, борьбу с неоколониализмом, сотрудничество против транснациональных угроз и контроль над критической инфраструктурой.",
           "Но форум показал и нечто более широкое: многополярная безопасность не является исключительно российской повесткой. Китай, Индия, Южная Африка, Бразилия, Казахстан, Малайзия и другие акторы мирового большинства вынесли на стол собственные приоритеты: реформу ООН, многосторонность, борьбу с терроризмом, ИИ, кибербезопасность, воду, энергию, региональную интеграцию, новые технологии и многополярность без жестких сфер влияния.",
-          "Вопрос не в том, может ли Москва заменить западную архитектуру безопасности. В одиночку — нет. Вопрос в том, смогут ли эти площадки стать достаточно привлекательными, чтобы Глобальный Юг использовал их как инструменты переговоров, диверсификации и автономии.",
+          "Вопрос не в том, может ли Москва заменить западную архитектуру безопасности. В одиночку — нет. Суть в том, что Россия уже запустила динамику альтернативного диалога и, если сумеет сохранить институциональную непрерывность, участие мирового большинства и связь с конкретными темами вроде ИИ, воды, продовольствия, энергии и кибербезопасности, она сможет поддерживать эту платформу как пространство переговоров, диверсификации и автономии для Глобального Юга.",
         ],
       },
       {
@@ -497,9 +499,9 @@ export const foroSeguridadMultipolarMoscuTranslations = {
     title:
       "莫斯科多极安全论坛：多数世界面对正在变化的全球议程",
     subtitle:
-      "国际安全论坛表明，俄罗斯不仅希望顶住西方压力，也试图把自己定位为一套关于稳定、主权与多极秩序的替代性议程的组织者。",
+      "国际安全论坛确立了一套关于稳定、主权与多极秩序的替代性议程，而多数世界被置于这一讨论的核心位置。",
     excerpt:
-      "在莫斯科州举行的这场会议传递出一个核心思想：国际安全已不能只由西方机构来定义。莫斯科希望把这场讨论转化为多极合法性的平台。",
+      "在莫斯科州举行的这场论坛巩固了俄罗斯作为国际安全替代性讨论组织者的角色，而多数世界处于这场讨论的中心。",
     tags: [
       "莫斯科",
       "俄罗斯",
@@ -516,7 +518,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
           "在莫斯科州举行的首届国际安全论坛，并不只是一次关于全球威胁的技术性会议。它是一场政治展示。俄罗斯希望表明，它仍然保有召集能力，西方孤立并不等于全球孤立，而且确实存在一批国家，愿意从不同于华盛顿、布鲁塞尔或北约的视角讨论国际安全。",
           "论坛于2026年5月26日至29日举行，其中一个核心时刻是5月28日召开的第十四次负责安全事务高级代表国际会议。在这一框架下，弗拉基米尔·普京向与会者发表讲话，强调在共同威胁面前开展国际合作的重要性，以及加强地区和全球稳定的必要性。",
           "论坛议程十分广泛。它并不局限于军事防务或恐怖主义，而是涵盖国际安全、地区稳定、应对跨国威胁的合作、网络安全、人工智能、关键技术、水、能源、粮食、基础设施、传统价值、新殖民主义、全球治理改革以及所谓“多数世界”的作用。",
-          "核心论点十分明确：莫斯科试图把国际安全转化为一个多极合法性的平台。这不仅是讨论威胁本身，更是在争夺谁有权定义威胁、哪些行为体能够参与这种定义，以及全球安全将按照什么规则来组织。",
+          "核心论点十分明确：俄罗斯已经把国际安全塑造成一个多极合法性的平台。这不仅是讨论威胁本身，更是在争夺谁有权定义威胁、哪些行为体能够参与这种定义，以及全球安全将按照什么规则来组织。",
         ],
       },
       {
@@ -568,6 +570,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
           "中国通过陈文清把论坛与习近平提出的发展、安全、文明和治理全球倡议联系起来。中方立场强调多边主义、尊重国际法、和平共处五项原则以及人类命运共同体理念。在这一框架下，北京试图把安全呈现为一种适应正在变化的国际架构的过程，在这一过程中，传统与非传统威胁都应通过合作而非封闭阵营来应对。",
           "印度由阿吉特·多瓦尔代表，重点强调联合国改革、打击恐怖主义以及承认新兴经济体新权重的必要性。其核心信息是，权力已不再集中于少数国家，全球南方要求以平等身份参与世界事务管理。这个立场之所以重要，是因为印度既不希望回到单极秩序，也不希望出现由单一替代中心主导的多极化。它押注的是一种更具代表性的架构，使新兴大国拥有真实话语权。",
           "南非把安全与主权、人工智能、网络安全、能源和非洲一体化联系起来。库姆布佐·恩察夫赫尼指出，多极世界的形成给全球南方国家带来了新机会，但这些机会必须转化为具体能力：安全现代化、人工智能发展、网络安全强化、能源安全以及通过非洲大陆自由贸易区扩大经济联系。这种理解把安全与发展、基础设施和非洲地区能力联系在一起。",
+          "非洲维度的重要性在于，这些关切以一种在西方议程主导的论坛中并不常见的中心位置被提出。在这个空间里，非洲国家能够把自身关于能源安全、互联互通、网络安全、工业化、区域一体化、粮食和基础设施的担忧，不是作为次要议题，而是作为全球稳定架构的一部分来表达。这一点很关键：在许多传统论坛中，非洲通常被当作援助对象或危机场景；而在这里，它作为能够界定优先事项、主张自身能力的行为体出现。",
           "巴西通过塞尔索·阿莫林提出了一个关键思想：多极化不能沦为简单的势力范围划分。他的立场指向一种基于主权国家有权多元化其联盟、捍卫国家利益并参与可持续发展进程的多极化。这一立场对拉丁美洲尤其重要，因为它避免把多极化解释成自动站队某一阵营对抗另一阵营。",
           "哈萨克斯坦提出了一套现代安全议程，把国家间关系、经济、自然环境和数字环境结合起来。其关于在联合国主持下建立国际水安全组织的提议表明，淡水正在进入战略安全的核心。它还主张建立网络空间负责任行为的普遍规范，并警告说，人工智能正从辅助工具转变为当代决策与安全体系中的“主动主体”。",
           "马来西亚则为辩论加入了技术维度，警告世界似乎正在走向高技术分裂，尤其是在人工智能领域。其建议在金砖国家之间建立共同平台以便利人工智能合作，这与技术主权、数字碎片化和封闭技术系统的讨论直接相关。在这种理解中，安全不再只取决于防务或外交，而取决于各国能否在世界被分裂为不兼容生态系统之前，在关键技术上展开合作。",
@@ -661,7 +664,7 @@ export const foroSeguridadMultipolarMoscuTranslations = {
           "莫斯科希望与那些不愿被夹在僵硬阵营之间、希望关系多元化，或不信任由西方国家单独定义国际秩序的行为体对话。",
           "亚洲、非洲、中东和拉丁美洲是关键受众。针对这些空间，俄罗斯试图传递三条信息。",
           "第一，它仍然是一个重要大国。",
-          "第二，它能够在安全、防务、情报、能源、网络安全以及打击跨国威胁方面提供合作。",
+          "第二，它能够在安全、防务、情报、能源、粮食安全、网络安全以及打击跨国威胁方面提供合作。",
           "第三，多极化能够在西方主导的结构面前，打开更大的操作空间。",
           "问题在于，许多全球南方国家并不想用一种依赖替代另一种依赖。它们未必寻求与莫斯科结盟，而是在寻找更多选项。",
         ],
@@ -720,11 +723,11 @@ export const foroSeguridadMultipolarMoscuTranslations = {
       {
         heading: "结论",
         paragraphs: [
-          "莫斯科国际安全论坛不仅仅是一场专家或官员会议。它是俄罗斯试图重新把自己置于全球安全讨论组织者位置上的一次努力。",
-          "普京的信息、俄罗斯安全会议的议程以及第十四次高级代表会议表明了一项清晰战略：莫斯科希望争夺国际安全定义权本身。",
+          "莫斯科国际安全论坛不仅仅是一场专家或官员会议。它标志着俄罗斯作为全球安全讨论组织性行为体的地位得到进一步巩固。",
+          "普京的信息、俄罗斯安全会议的议程以及第十四次高级代表会议表明了一项清晰战略：俄罗斯已经确立了一套多极安全议程，并正在争夺国际安全定义权本身。",
           "对俄罗斯而言，安全不能继续仅由西方来定义。它必须包括主权、不干涉、地区稳定、信息安全、防范操控、传统价值、反新殖民主义、应对跨国威胁的合作以及对关键基础设施的控制。",
           "但论坛也展示了更广阔的一面：多极安全并非俄罗斯独有的议程。中国、印度、南非、巴西、哈萨克斯坦、马来西亚以及其他多数世界行为体，都把自己的优先事项摆上台面：联合国改革、多边主义、反恐、人工智能、网络安全、水、能源、区域一体化、新技术以及没有僵硬势力范围的多极化。",
-          "问题不在于莫斯科能否取代西方安全架构。它单独做不到。真正的问题在于，这些平台能否变得足够有吸引力，让全球南方把它们当作谈判、分散风险和扩大自主性的工具。",
+          "问题不在于莫斯科能否取代西方安全架构。它单独做不到。关键在于，俄罗斯已经启动了一种替代性对话的动力机制；如果它能够维持制度连续性、保持多数世界的参与，并持续把议题与人工智能、水、粮食、能源和网络安全等具体问题连接起来，它就具备把这一平台长期维持为全球南方谈判、分散风险与扩大自主性的工具的条件。",
         ],
       },
       {

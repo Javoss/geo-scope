@@ -7,14 +7,14 @@ import {
   regions as regionsBase,
   sectors as sectorsBase,
   site as siteBase,
-} from "../data/content.js?v=20260602a";
+} from "../data/content.js?v=20260602c";
 import {
   contentTranslations,
   defaultLocale,
   localeOptions,
   supportedLocales,
   uiCopy,
-} from "../data/i18n.js?v=20260602b";
+} from "../data/i18n.js?v=20260602c";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -2574,6 +2574,7 @@ function transliterateRussianString(text) {
   protect(/\bdata\/[\w./-]+\b/g);
   protect(/\bS&P 500\b/g);
   protect(/\bWall Street\b/g, () => "Уолл-стрит");
+  protect(/\b[IVXLCDM]{2,}\b/g);
 
   output = output.replace(/\bBRICS\b/g, "БРИКС");
   output = output.replace(/\bAI\b/g, "ИИ");
