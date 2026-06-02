@@ -1,4 +1,4 @@
-import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js";
+import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260602b";
 
 function russianPlural(count, one, few, many) {
   const mod10 = count % 10;
