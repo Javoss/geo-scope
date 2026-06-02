@@ -472,7 +472,7 @@ pre {
 
 .hero-panel--home {
   display: grid;
-  grid-template-columns: minmax(0, 1.18fr) minmax(240px, 0.82fr);
+  grid-template-columns: minmax(0, 1.42fr) minmax(220px, 0.72fr);
   gap: 18px;
   align-items: start;
 }
@@ -493,16 +493,18 @@ pre {
 }
 
 .hero-panel__title {
-  font-size: clamp(1.45rem, 2.15vw, 1.95rem);
-  max-width: 14ch;
-  text-wrap: balance;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  font-size: clamp(1.35rem, 1.85vw, 1.78rem);
+  max-width: none;
+  line-height: 1.06;
+  text-wrap: pretty;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .hero-panel__text {
   margin-top: 8px;
-  max-width: 34ch;
+  max-width: none;
 }
 
 .hero-panel__link {

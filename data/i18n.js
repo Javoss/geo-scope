@@ -1,3 +1,5 @@
+import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js";
+
 function russianPlural(count, one, few, many) {
   const mod10 = count % 10;
   const mod100 = count % 100;
@@ -5300,3 +5302,9 @@ contentTranslations.ru.articles["xi-y-putin-en-beijing-y-la-cooperacion-estrateg
   xiPutinArticleTranslations.ru;
 contentTranslations.zh.articles["xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global"] =
   xiPutinArticleTranslations.zh;
+contentTranslations.en.articles["foro-de-seguridad-multipolar-en-moscu"] =
+  foroSeguridadMultipolarMoscuTranslations.en;
+contentTranslations.ru.articles["foro-de-seguridad-multipolar-en-moscu"] =
+  foroSeguridadMultipolarMoscuTranslations.ru;
+contentTranslations.zh.articles["foro-de-seguridad-multipolar-en-moscu"] =
+  foroSeguridadMultipolarMoscuTranslations.zh;
