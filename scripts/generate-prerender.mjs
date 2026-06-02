@@ -20,8 +20,8 @@ import {
 } from "../data/i18n.js";
 
 const projectRoot = fileURLToPath(new URL("../", import.meta.url));
-const appVersion = "20260522a";
-const stylesVersion = "20260522b";
+const appVersion = "20260601c";
+const stylesVersion = "20260601d";
 const faviconVersion = "20260428c";
 const siteBaseUrl = String(siteBase.url || "https://geo-scope.online").replace(/\/+$/, "");
 const ogLocaleMap = {
