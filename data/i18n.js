@@ -1,4 +1,4 @@
-import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260602c";
+import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260603c";
 
 function russianPlural(count, one, few, many) {
   const mod10 = count % 10;
@@ -98,6 +98,7 @@ export const uiCopy = {
       radar: "Radar semanal",
       regions: "Regiones",
       sectors: "Sectores",
+      experts: "Expertos",
       about: "Sobre Geo Scope",
       contact: "Contacto",
       subscription: "Suscripción",
@@ -105,6 +106,7 @@ export const uiCopy = {
       regionNotFound: "Región no encontrada",
       sectorNotFound: "Sector no encontrado",
       articleNotFound: "Artículo no encontrado",
+      expertNotFound: "Experto no encontrado",
     },
     header: {
       menu: "Menú",
@@ -259,6 +261,7 @@ export const uiCopy = {
     },
     articlePage: {
       back: "Volver",
+      byline: (name) => `Escrito por ${name}`,
       save: "Guardar",
       saved: "Guardado",
       copyLink: "Copiar enlace",
@@ -335,6 +338,25 @@ export const uiCopy = {
       panelTitle: "Suscripción editorial",
       panelDescription:
         "Elige tus intereses temáticos y construye una experiencia más afín con tu agenda de lectura.",
+    },
+    expertsPage: {
+      eyebrow: "Expertos",
+      title: "El experto fundador y la visión editorial de Geo Scope.",
+      text:
+        "Conoce a Javier Salazar Segales, Director General & Fundador de Geo Scope, sus áreas de especialidad y su enfoque de análisis.",
+      searchPlaceholder: "Buscar por nombre o especialidad",
+      all: "Todos",
+      noResults: "No hay expertos que coincidan con esta búsqueda.",
+      openProfile: "Ver perfil",
+    },
+    expertPage: {
+      eyebrow: "Expertos",
+      about: "Biografía",
+      affiliations: "Afiliaciones",
+      expertise: "Áreas de especialidad",
+      languages: "Idiomas",
+      education: "Formación",
+      directory: "Volver al directorio",
     },
     editorPage: {
       eyebrow: "Panel editorial demo",
@@ -446,6 +468,7 @@ export const uiCopy = {
       radar: "Weekly radar",
       regions: "Regions",
       sectors: "Sectors",
+      experts: "Experts",
       about: "About Geo Scope",
       contact: "Contact",
       subscription: "Subscribe",
@@ -453,6 +476,7 @@ export const uiCopy = {
       regionNotFound: "Region not found",
       sectorNotFound: "Sector not found",
       articleNotFound: "Article not found",
+      expertNotFound: "Expert not found",
     },
     header: {
       menu: "Menu",
@@ -605,6 +629,7 @@ export const uiCopy = {
     },
     articlePage: {
       back: "Back",
+      byline: (name) => `By ${name}`,
       save: "Save",
       saved: "Saved",
       copyLink: "Copy link",
@@ -680,6 +705,25 @@ export const uiCopy = {
       panelTitle: "Editorial subscription",
       panelDescription:
         "Choose your thematic interests and build a reading experience better aligned with your agenda.",
+    },
+    expertsPage: {
+      eyebrow: "Experts",
+      title: "The founding expert and editorial vision of Geo Scope.",
+      text:
+        "Meet Javier Salazar Segales, Geo Scope's General Director & Founder, and the areas where he concentrates his analysis.",
+      searchPlaceholder: "Search by name or specialty",
+      all: "All",
+      noResults: "No experts match this search.",
+      openProfile: "View profile",
+    },
+    expertPage: {
+      eyebrow: "Experts",
+      about: "Biography",
+      affiliations: "Affiliations",
+      expertise: "Areas of expertise",
+      languages: "Languages",
+      education: "Education",
+      directory: "Back to directory",
     },
     editorPage: {
       eyebrow: "Demo editorial desk",
@@ -791,6 +835,7 @@ export const uiCopy = {
       radar: "Ezhenedelnyy radar",
       regions: "Regiony",
       sectors: "Sektory",
+      experts: "Eksperty",
       about: "O Geo Scope",
       contact: "Kontakt",
       subscription: "Podpiska",
@@ -798,6 +843,7 @@ export const uiCopy = {
       regionNotFound: "Region ne nayden",
       sectorNotFound: "Sektor ne nayden",
       articleNotFound: "Statya ne naydena",
+      expertNotFound: "Ekspert ne nayden",
     },
     header: {
       menu: "Menyu",
@@ -952,6 +998,7 @@ export const uiCopy = {
     },
     articlePage: {
       back: "Nazad",
+      byline: (name) => `Avtor: ${name}`,
       save: "Sokhranit",
       saved: "Sokhraneno",
       copyLink: "Kopirovat ssylku",
@@ -1029,6 +1076,25 @@ export const uiCopy = {
       panelTitle: "Redaktsionnaya podpiska",
       panelDescription:
         "Vyberite tematicheskie interesy i soberite chtenie, luchshe sootvetstvuyushchee vashey povestke.",
+    },
+    expertsPage: {
+      eyebrow: "Eksperty",
+      title: "Osnovnoy ekspert i redaktsionnoe videnie Geo Scope.",
+      text:
+        "Poznakomtes s Khavierom Salazarom Segalesom, generalnym direktorom i osnovatelem Geo Scope, a takzhe s oblastyami, na kotorykh sosredotochena ego analitika.",
+      searchPlaceholder: "Poisk po imeni ili spetsializatsii",
+      all: "Vse",
+      noResults: "Po etomu zaprosu ekspertov ne naydeno.",
+      openProfile: "Otkryt profil",
+    },
+    expertPage: {
+      eyebrow: "Eksperty",
+      about: "Biografiya",
+      affiliations: "Affiliatsii",
+      expertise: "Oblasti ekspertizy",
+      languages: "Yazyki",
+      education: "Obrazovanie",
+      directory: "Nazad k katalogu",
     },
     editorPage: {
       eyebrow: "Demo-redaktsionnaya panel",
@@ -1142,6 +1208,7 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
     radar: "每周雷达",
     regions: "地区",
     sectors: "板块",
+    experts: "专家",
     about: "关于 Geo Scope",
     contact: "联系",
     subscription: "订阅",
@@ -1149,6 +1216,7 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
     regionNotFound: "未找到地区",
     sectorNotFound: "未找到板块",
     articleNotFound: "未找到文章",
+    expertNotFound: "未找到该专家",
   },
   header: {
     menu: "菜单",
@@ -1291,6 +1359,7 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
   },
   articlePage: {
     back: "返回",
+    byline: (name) => `作者：${name}`,
     save: "收藏",
     saved: "已收藏",
     copyLink: "复制链接",
@@ -1361,6 +1430,25 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
     panelTitle: "编辑订阅",
     panelDescription:
       "选择你的主题兴趣，构建更符合你阅读议程的体验。",
+  },
+  expertsPage: {
+    eyebrow: "专家",
+    title: "Geo Scope 的创始专家与编辑视角。",
+    text:
+      "认识 Javier Salazar Segales，Geo Scope 总经理兼创始人，了解他的专长领域与分析重点。",
+    searchPlaceholder: "按姓名或专长搜索",
+    all: "全部",
+    noResults: "没有符合当前搜索条件的专家。",
+    openProfile: "查看资料",
+  },
+  expertPage: {
+    eyebrow: "专家",
+    about: "个人简介",
+    affiliations: "所属与职务",
+    expertise: "专长领域",
+    languages: "语言",
+    education: "教育背景",
+    directory: "返回专家目录",
   },
   editorPage: {
     eyebrow: "演示编辑台",
@@ -1976,6 +2064,7 @@ export const contentTranslations = {
       radar: "Weekly radar",
       regions: "Regions",
       sectors: "Sectors",
+      experts: "Experts",
       about: "About Geo Scope",
       contact: "Contact",
       subscription: "Subscribe",
@@ -2011,19 +2100,90 @@ export const contentTranslations = {
     },
     authors: {
       "javier-salazar-segales": {
-        role: "General Director",
+        role: "General Director & Founder",
+        specialty:
+          "Specialist in Geopolitics, Diplomacy, BRICS, Latin America, AI & Technology, Energy, and International Trade",
+        summary:
+          "Bolivian international analyst and founder of Geo Scope, focused on geopolitics, diplomacy, BRICS, technology, and the transformation of global order.",
+        affiliations: ["General Directorate", "Founder", "Geo Scope"],
+        expertise: [
+          "Geopolitics",
+          "Diplomacy",
+          "BRICS",
+          "Latin America",
+          "AI & Technology",
+          "Energy",
+          "International Trade",
+        ],
+        languages: ["Spanish", "English", "Russian", "Chinese"],
+        education:
+          "Training in computer science, information technologies, international business, and business management, with experience in diplomacy, international cooperation, applied political analysis, and geopolitics.",
+        biography: [
+          "Javier Jonathan Salazar Segales is a Bolivian international analyst and founder of Geo Scope, a platform dedicated to geopolitical analysis, strategic intelligence, the BRICS, Latin America, technology, energy, and the transformation of global order. With training and experience in diplomacy, international business, and technology, his work examines how emerging powers, new economic blocs, artificial intelligence, and geopolitical competition are reshaping global governance and international relations.",
+          "Javier Salazar Segales has professional experience in diplomatic affairs, the drafting of political and economic reports, institutional coordination, and international cooperation. His areas of interest include the role of the BRICS in the Global South, Latin America's position in a multipolar world, technological sovereignty, energy security, and the impact of artificial intelligence on state power and strategic decision-making.",
+          "Through Geo Scope, he seeks to offer clear, accessible, and future-oriented analysis of the main forces shaping the twenty-first century, with particular attention to the intersection of geopolitics, economics, technology, and regional development.",
+        ],
       },
       "tomas-velez": {
         role: "Geoeconomics editor",
+        specialty: "Geoeconomics and international finance",
+        summary:
+          "Tracks value chains, financial flows, and currency competition across the international board.",
+        affiliations: ["Geoeconomics Desk", "Geo Scope"],
+        expertise: ["Global geoeconomics", "Financial markets", "Trade", "Currencies"],
+        education:
+          "International economics, political finance, and systemic-risk analysis.",
+        biography: [
+          "Tomas Velez examines the interaction between trade, debt, liquidity, and geoeconomic rivalry. At Geo Scope he follows the evolution of the dollar system, monetary diversification strategies, and shocks affecting the international financial architecture.",
+          "His editorial work aims to connect market readings with the logic of state power, explaining how rates, bonds, logistics chains, and industrial policy belong to the same strategic competition.",
+        ],
       },
       "clara-ibanez": {
         role: "Technology and power analyst",
+        specialty: "Strategic technology, AI, and regulatory competition",
+        summary:
+          "Works on digital standards, artificial intelligence, and state power within the platform economy.",
+        affiliations: ["Technology and Power Lab", "Geo Scope"],
+        expertise: [
+          "Technology and geopolitics",
+          "Artificial intelligence",
+          "Semiconductors",
+          "Digital regulation",
+        ],
+        education:
+          "Technology policy, digital governance, and comparative innovation analysis.",
+        biography: [
+          "Clara Ibanez covers technological competition among major powers, with special attention to semiconductors, artificial intelligence, digital infrastructure, and regulation. Her central interest is how technology becomes both an instrument of state capacity and a lever of international projection.",
+          "At Geo Scope she develops analytical frameworks to understand the relationship between innovation, economic security, and global governance, comparing the United States, China, Europe, and industrial Asia.",
+        ],
       },
       "adrian-rivas": {
         role: "Senior international security researcher",
+        specialty: "International security, defense, and deterrence",
+        summary:
+          "Analyzes security architecture, military industry, and strategic rivalry among major powers.",
+        affiliations: ["International Security Program", "Geo Scope"],
+        expertise: ["Defense and security", "Deterrence", "Russia and Eurasia", "Alliances"],
+        education:
+          "Security studies, comparative defense, and contemporary military strategy.",
+        biography: [
+          "Adrian Rivas follows the transformation of the global security architecture, from alliance competition to deterrence dynamics, military doctrines, and the defense industrial base. At Geo Scope he contributes a strategic reading of conflicts, capabilities, and balances of power.",
+          "His work emphasizes Eurasia, European security, and institutional adaptation in a more fragmented, militarized, and technologically demanding international environment.",
+        ],
       },
       "lucia-ferrer": {
         role: "Regions and diplomacy editor",
+        specialty: "Comparative diplomacy and regional analysis",
+        summary:
+          "Coordinates regional coverage and analyzes diplomatic positioning, mediation, and strategic autonomy.",
+        affiliations: ["Regions and Diplomacy Desk", "Geo Scope"],
+        expertise: ["Diplomacy", "Latin America", "Middle East", "Strategic autonomy"],
+        education:
+          "Foreign policy, multilateral diplomacy, and comparative regional studies.",
+        biography: [
+          "Lucia Ferrer coordinates Geo Scope's comparative regional coverage and works on diplomacy, flexible alignments, and autonomy strategies. Her approach identifies how middle and regional actors negotiate room for maneuver inside a more competitive international order.",
+          "Her work connects regional scenarios with global implications, especially in Latin America, the Middle East, and mediation spaces where diplomacy is again becoming a central instrument of power and adaptation.",
+        ],
       },
     },
     regions: {
@@ -3170,6 +3330,7 @@ export const contentTranslations = {
       radar: "Radar nedeli",
       regions: "Regiony",
       sectors: "Sektory",
+      experts: "Eksperty",
       about: "O Geo Scope",
       contact: "Kontakt",
       subscription: "Podpiska",
@@ -3205,19 +3366,90 @@ export const contentTranslations = {
     },
     authors: {
       "javier-salazar-segales": {
-        role: "Generalnyy direktor",
+        role: "Generalnyy direktor i osnovatel",
+        specialty:
+          "Spetsialist po geopolitike, diplomatii, BRICS, Latinskoy Amerike, AI & Technology, energetike i mezhdunarodnoy torgovle",
+        summary:
+          "Boliviyskiy mezhdunarodnyy analitik i osnovatel Geo Scope, s fokusom na geopolitiku, diplomatiyu, BRICS, tekhnologii i transformatsiyu globalnogo poryadka.",
+        affiliations: ["Generalnaya direktsiya", "Osnovatel", "Geo Scope"],
+        expertise: [
+          "Geopolitika",
+          "Diplomatiya",
+          "BRICS",
+          "Latinskaya Amerika",
+          "AI & Technology",
+          "Energetika",
+          "Mezhdunarodnaya torgovlya",
+        ],
+        languages: ["Ispanskiy", "Angliyskiy", "Russkiy", "Kitayskiy"],
+        education:
+          "Podgotovka v oblasti informatiki, informatsionnykh tekhnologiy, mezhdunarodnogo biznesa i upravleniya biznesom, a takzhe opyt v diplomatii, mezhdunarodnom sotrudnichestve, prikladnom politicheskom analize i geopolitike.",
+        biography: [
+          "Khavier Dzhonatan Salazar Segales - boliviyskiy mezhdunarodnyy analitik i osnovatel Geo Scope, platformy, posvyashchennoy geopoliticheskomu analizu, strategicheskomu intellektu, BRICS, Latinskoy Amerike, tekhnologiyam, energetike i transformatsii globalnogo poryadka. Imeia podgotovku i opyt v oblasti diplomatii, mezhdunarodnogo biznesa i tekhnologiy, on izuchaet, kak voznikayushchie derzhavy, novye ekonomicheskie bloki, iskusstvennyy intellekt i geopoliticheskaya konkurentsiya perestraivayut globalnoe upravlenie i mezhdunarodnye otnosheniya.",
+          "Khavier Salazar Segales imeet professionalnyy opyt v diplomaticheskikh voprosakh, podgotovke politicheskikh i ekonomicheskikh dokladov, institutsionalnoy koordinatsii i mezhdunarodnom sotrudnichestve. V krug ego interesov vkhodyat rol BRICS v Globalnom Yuge, polozhenie Latinskoy Ameriki v mnogopolyarnom mire, tekhnologicheskiy suverenitet, energeticheskaya bezopasnost i vliyanie iskusstvennogo intellekta na gosudarstvennuyu vlast i strategicheskoe prinyatie resheniy.",
+          "Cherez Geo Scope on stremitsya predlagat yasnyy, dostupnyy i orientirovannyy na budushchee analiz glavnykh sil, formiruyushchikh XXI vek, s osobym vnimaniem k peresecheniyu geopolitiki, ekonomiki, tekhnologiy i regionalnogo razvitiya.",
+        ],
       },
       "tomas-velez": {
         role: "Redaktor po geoekonomike",
+        specialty: "Geoekonomika i mezhdunarodnye finansy",
+        summary:
+          "Otslezhivaet tsepochki stoimosti, finansovye potoki i valyutnuyu konkurentsiyu v mezhdunarodnom prostranstve.",
+        affiliations: ["Geoekonomicheskaya redaktsiya", "Geo Scope"],
+        expertise: ["Globalnaya geoekonomika", "Finansovye rynki", "Torgovlya", "Valyuty"],
+        education:
+          "Mezhdunarodnaya ekonomika, politicheskie finansy i analiz sistemnykh riskov.",
+        biography: [
+          "Tomas Veles analiziruet vzaimodeystvie mezhdu torgovley, dolgom, likvidnostyu i geoekonomicheskim sopernichestvom. V Geo Scope on sledit za evolyutsiey dollarovoy sistemy, strategiyami monetarnoy diversifikatsii i shokami, vliyayushchimi na mezhdunarodnuyu finansovuyu arkhitekturu.",
+          "Ego redaktsionnaya rabota svyazyvaet chtenie rynkov s logikoy gosudarstvennoy vlasti, obyasnyaya, kak stavki, obligatsii, logisticheskie tsepochki i promyshlennaya politika prinadlezhat odnoi i toy zhe strategicheskoy konkurentsii.",
+        ],
       },
       "clara-ibanez": {
         role: "Analitik po tekhnologiyam i vlasti",
+        specialty: "Strategicheskie tekhnologii, II i normativnaya konkurentsiya",
+        summary:
+          "Rabotaet nad tsifrovymi standartami, iskusstvennym intellektom i gosudarstvennoy vlastyu v ekonomike platform.",
+        affiliations: ["Laboratoriya tekhnologiy i vlasti", "Geo Scope"],
+        expertise: [
+          "Tekhnologii i geopolitika",
+          "Iskusstvennyy intellekt",
+          "Poluprovodniki",
+          "Tsifrovoe regulirovanie",
+        ],
+        education:
+          "Tekhnologicheskaya politika, tsifrovoe upravlenie i sravnitelnyy analiz innovatsiy.",
+        biography: [
+          "Klara Ibanyes osveshchaet tekhnologicheskuyu konkurentsiyu mezhdu krupnymi derzhavami, osobenno v sferakh poluprovodnikov, iskusstvennogo intellekta, tsifrovoy infrastruktury i regulirovaniya. Ee osnovnoy interes v tom, kak tekhnologiya stanovitsya instrumentom gosudarstvennoy moshchi i mezhdunarodnogo proektirovaniya.",
+          "V Geo Scope ona razrabatyvaet analiticheskie ramki dlya ponimaniya svyazi mezhdu innovatsiyami, ekonomicheskoy bezopasnostyu i globalnym upravleniem, sravnivaya SShA, Kitay, Evropu i industrialnuyu Aziyu.",
+        ],
       },
       "adrian-rivas": {
         role: "Starshiy issledovatel mezhdunarodnoy bezopasnosti",
+        specialty: "Mezhdunarodnaya bezopasnost, oborona i sderzhivanie",
+        summary:
+          "Analiziruet arkhitekturu bezopasnosti, voennuyu promyshlennost i strategicheskoe sopernichestvo mezhdu derzhavami.",
+        affiliations: ["Programma mezhdunarodnoy bezopasnosti", "Geo Scope"],
+        expertise: ["Oborona i bezopasnost", "Sderzhivanie", "Rossiya i Evraziya", "Soyuzy"],
+        education:
+          "Issledovaniya bezopasnosti, sravnitelnaya oborona i sovremennaya voennaya strategiya.",
+        biography: [
+          "Adrian Rivas sledit za transformatsiey globalnoy arkhitektury bezopasnosti: ot konkurentsii alyansov do dinamiki sderzhivaniya, voennykh doktrin i oboronno-promyshlennoy bazy. V Geo Scope on predlagaet strategicheskoe chtenie konfliktov, vozmozhnostey i balansov sily.",
+          "Ego rabota osobenno podcherkivaet Evraziyu, evropeyskuyu bezopasnost i institutsionalnuyu adaptatsiyu v bolee fragmentirovannoy, militarizovannoy i tekhnologicheski slozhnoy mezhdunarodnoy srede.",
+        ],
       },
       "lucia-ferrer": {
         role: "Redaktor po regionam i diplomatii",
+        specialty: "Sravnitelnaya diplomatiya i regionalnyy analiz",
+        summary:
+          "Koordiniruet regionalnye pokrytiya i analiziruet diplomaticheskoe pozitsionirovanie, mediatsiyu i strategicheskuyu avtonomiyu.",
+        affiliations: ["Redaktsiya regionov i diplomatii", "Geo Scope"],
+        expertise: ["Diplomatiya", "Latinskaya Amerika", "Blizhniy Vostok", "Strategicheskaya avtonomiya"],
+        education:
+          "Vneshnyaya politika, mnogostoronnyaya diplomatiya i sravnitelnye regionalnye issledovaniya.",
+        biography: [
+          "Lusiya Ferrer koordiniruet sravnitelnoe regionalnoe osveshchenie v Geo Scope i rabotaet nad diplomatiey, gibkimi vyravnivaniyami i strategiyami avtonomii. Ee podkhod pokazyvaet, kak srednie i regionalnye aktery vyigryvayut prostranstvo dlya manevra v bolee konkurentnom mezhdunarodnom poryadke.",
+          "Ee rabota svyazyvaet regionalnye stszenarii s globalnymi posledstviyami, osobenno v Latinskoy Amerike, na Blizhnem Vostoke i v prostranstvakh mediatsii, gde diplomatiya snova stanovitsya tsentralnym instrumentom vlasti i adaptatsii.",
+        ],
       },
     },
     regions: {
@@ -4357,6 +4589,7 @@ contentTranslations.zh = mergeLocaleData(contentTranslations.en, {
     radar: "每周雷达",
     regions: "地区",
     sectors: "板块",
+    experts: "专家",
     about: "关于 Geo Scope",
     contact: "联系",
     subscription: "订阅",
@@ -4386,19 +4619,77 @@ contentTranslations.zh = mergeLocaleData(contentTranslations.en, {
   },
   authors: {
     "javier-salazar-segales": {
-      role: "总经理",
+      role: "总经理兼创始人",
+      specialty:
+        "地缘政治、外交、BRICS、拉丁美洲、AI & Technology、能源与国际贸易专家",
+      summary:
+        "玻利维亚国际问题分析师、Geo Scope 创始人，聚焦地缘政治、外交、BRICS、技术与全球秩序转型。",
+      affiliations: ["总管理处", "创始人", "Geo Scope"],
+      expertise: ["地缘政治", "外交", "BRICS", "拉丁美洲", "AI & Technology", "能源", "国际贸易"],
+      languages: ["西班牙语", "英语", "俄语", "中文"],
+      education:
+        "拥有计算机科学、信息技术、国际商务与企业管理方面的教育背景，并具备外交、国际合作、应用政治分析和地缘政治方面的实践经验。",
+      biography: [
+        "Javier Jonathan Salazar Segales 是玻利维亚国际问题分析师，也是 Geo Scope 的创始人。Geo Scope 致力于地缘政治分析、战略情报、BRICS、拉丁美洲、技术、能源以及全球秩序转型研究。凭借在外交、国际商务和技术领域的学习与实践经验，他的工作关注新兴大国、新经济集团、人工智能以及地缘政治竞争如何重塑全球治理与国际关系。",
+        "Javier Salazar Segales 在外交事务、政治与经济报告撰写、机构协调以及国际合作方面拥有专业经验。他的重点兴趣包括 BRICS 在全球南方中的作用、拉丁美洲在多极世界中的位置、技术主权、能源安全，以及人工智能对国家权力和战略决策的影响。",
+        "通过 Geo Scope，他希望就塑造二十一世纪的关键力量提供清晰、易懂并面向未来的分析，尤其关注地缘政治、经济、技术与区域发展之间的交汇。",
+      ],
     },
     "tomas-velez": {
       role: "地缘经济编辑",
+      specialty: "地缘经济与国际金融",
+      summary:
+        "跟踪价值链、金融流动与国际格局中的货币竞争。",
+      affiliations: ["地缘经济编辑台", "Geo Scope"],
+      expertise: ["全球地缘经济", "金融市场", "贸易", "货币"],
+      education:
+        "国际经济、政治金融与系统性风险分析。",
+      biography: [
+        "Tomas Velez 研究贸易、债务、流动性与地缘经济竞争之间的相互作用。在 Geo Scope，他重点追踪美元体系的演变、货币多元化战略，以及冲击国际金融架构的关键变化。",
+        "他的编辑工作致力于把市场逻辑与国家权力联系起来，解释利率、债券、物流链与产业政策如何共同构成同一场战略竞争。",
+      ],
     },
     "clara-ibanez": {
       role: "技术与权力分析师",
+      specialty: "战略技术、人工智能与监管竞争",
+      summary:
+        "研究数字标准、人工智能以及平台经济中的国家能力与权力投射。",
+      affiliations: ["技术与权力实验室", "Geo Scope"],
+      expertise: ["技术与地缘政治", "人工智能", "半导体", "数字监管"],
+      education:
+        "技术政策、数字治理与比较创新分析。",
+      biography: [
+        "Clara Ibanez 关注大国之间的技术竞争，重点涉及半导体、人工智能、数字基础设施与监管。她的核心问题是：技术如何同时成为国家能力建设的工具，以及国际投射的杠杆。",
+        "在 Geo Scope，她构建分析框架，以理解创新、经济安全与全球治理之间的关系，并比较美国、中国、欧洲与工业化亚洲的不同路径。",
+      ],
     },
     "adrian-rivas": {
       role: "国际安全高级研究员",
+      specialty: "国际安全、国防与威慑",
+      summary:
+        "分析安全架构、军工体系以及大国之间的战略竞争。",
+      affiliations: ["国际安全项目", "Geo Scope"],
+      expertise: ["国防与安全", "威慑", "俄罗斯与欧亚", "联盟体系"],
+      education:
+        "安全研究、比较国防与当代军事战略。",
+      biography: [
+        "Adrian Rivas 跟踪全球安全架构的转型，从联盟竞争到威慑动态、军事 doctrine 与国防工业基础。在 Geo Scope，他提供关于冲突、能力与力量平衡的战略性解读。",
+        "他的工作特别强调欧亚、欧洲安全，以及在一个更碎片化、更军事化、也更依赖技术的国际环境中，制度如何进行调整与适应。",
+      ],
     },
     "lucia-ferrer": {
       role: "地区与外交编辑",
+      specialty: "比较外交与地区分析",
+      summary:
+        "统筹地区报道，分析外交定位、调解机制与战略自主。",
+      affiliations: ["地区与外交编辑台", "Geo Scope"],
+      expertise: ["外交", "拉丁美洲", "中东", "战略自主"],
+      education:
+        "外交政策、多边外交与比较地区研究。",
+      biography: [
+        "Lucia Ferrer 负责 Geo Scope 的比较地区报道，并研究外交、灵活结盟与自主战略。她的分析重点在于，中等规模与地区性行为体如何在更具竞争性的国际秩序中争取更大回旋空间。",
+        "她的工作将地区场景与全球影响连接起来，尤其聚焦拉丁美洲、中东以及那些使外交重新成为权力与适应核心工具的调解空间。",
+      ],
     },
   },
   regions: {

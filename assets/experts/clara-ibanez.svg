@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Clara Ibanez</title>
+  <desc id="desc">Retrato editorial estilizado de Clara Ibanez.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9fbff" />
+      <stop offset="100%" stop-color="#e3edff" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" rx="240" fill="url(#bg)" />
+  <circle cx="240" cy="188" r="86" fill="#f0c5b2" />
+  <path d="M132 190c0-61 45-111 108-111 68 0 108 51 108 114-18-19-33-34-48-42-15-7-33-9-52-6-20 4-37 15-50 30-20 9-42 14-66 15Z" fill="#253447" />
+  <path d="M172 238c20 32 45 48 68 48 23 0 46-16 68-48-9 48-33 76-68 76-36 0-60-28-68-76Z" fill="#253447" opacity="0.18" />
+  <circle cx="209" cy="196" r="6" fill="#233041" />
+  <circle cx="276" cy="196" r="6" fill="#233041" />
+  <path d="M220 225c11 10 29 10 40 0" stroke="#c67667" stroke-width="7" stroke-linecap="round" fill="none" />
+  <path d="M178 258h124l20 46-82 41-82-41 20-46Z" fill="#c5d4ef" />
+  <path d="M170 306c18 28 42 44 70 44 28 0 52-16 70-44l34 126H136l34-126Z" fill="#36507a" />
+  <path d="M218 261h44l-10 28-12 31-12-31-10-28Z" fill="#ffffff" />
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Tomas Velez</title>
+  <desc id="desc">Retrato editorial estilizado de Tomas Velez.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7fbff" />
+      <stop offset="100%" stop-color="#e8f1ff" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" rx="240" fill="url(#bg)" />
+  <circle cx="240" cy="190" r="88" fill="#e8b898" />
+  <path d="M144 183c12-58 47-97 98-97 54 0 90 37 102 100-22-19-44-30-67-34-19 8-36 13-53 14-23 10-49 16-80 17Z" fill="#3b2f2a" />
+  <path d="M184 182c18-10 35-10 54-1" stroke="#3b2f2a" stroke-width="8" stroke-linecap="round" />
+  <path d="M257 181c17-9 33-8 48 2" stroke="#3b2f2a" stroke-width="8" stroke-linecap="round" />
+  <circle cx="208" cy="196" r="6" fill="#2a1f1a" />
+  <circle cx="279" cy="196" r="6" fill="#2a1f1a" />
+  <path d="M220 226c11 9 29 9 40 0" stroke="#bd725a" stroke-width="7" stroke-linecap="round" fill="none" />
+  <path d="M181 262h118l25 48-84 38-84-38 25-48Z" fill="#7b8dac" />
+  <path d="M172 309c18 26 44 42 68 42s50-16 68-42l36 123H136l36-123Z" fill="#4d5f83" />
+  <path d="M214 263h52l-11 31-15 36-15-36-11-31Z" fill="#f8fbff" />
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Lucia Ferrer</title>
+  <desc id="desc">Retrato editorial estilizado de Lucia Ferrer.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f9fbff" />
+      <stop offset="100%" stop-color="#e2edff" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" rx="240" fill="url(#bg)" />
+  <circle cx="240" cy="190" r="86" fill="#efc4b3" />
+  <path d="M132 201c2-67 42-118 108-118 67 0 108 49 108 119-17-24-34-44-51-57-18-13-38-19-58-16-22 2-43 14-64 37-14 12-29 24-43 35Z" fill="#302938" />
+  <path d="M165 242c18 34 43 52 75 52 31 0 55-18 74-52-6 52-33 85-74 85-42 0-69-33-75-85Z" fill="#302938" opacity="0.18" />
+  <circle cx="210" cy="198" r="6" fill="#231d2a" />
+  <circle cx="276" cy="198" r="6" fill="#231d2a" />
+  <path d="M221 227c10 9 28 9 38 0" stroke="#c57267" stroke-width="7" stroke-linecap="round" fill="none" />
+  <path d="M178 262h124l20 44-82 42-82-42 20-44Z" fill="#d6deef" />
+  <path d="M168 308c20 28 44 44 72 44 28 0 52-16 72-44l32 124H136l32-124Z" fill="#5a6d90" />
+  <path d="M218 264h44l-9 28-13 33-13-33-9-28Z" fill="#ffffff" />
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Javier Salazar Segales</title>
+  <desc id="desc">Retrato editorial estilizado de Javier Salazar Segales.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f7fbff" />
+      <stop offset="100%" stop-color="#dce8ff" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" rx="240" fill="url(#bg)" />
+  <circle cx="240" cy="188" r="88" fill="#f3c9b0" />
+  <path d="M142 166c14-57 50-92 98-92 45 0 82 30 100 82-22-9-44-12-69-10-23-18-48-14-78 20-16 1-33 1-51 0Z" fill="#26344a" />
+  <path d="M174 174c0-28 26-50 66-50 37 0 66 20 66 48 0 5-1 10-3 14h-126c-2-4-3-8-3-12Z" fill="#334764" />
+  <rect x="165" y="181" width="56" height="30" rx="12" fill="none" stroke="#344b6d" stroke-width="8" />
+  <rect x="259" y="181" width="56" height="30" rx="12" fill="none" stroke="#344b6d" stroke-width="8" />
+  <rect x="221" y="191" width="38" height="8" rx="4" fill="#344b6d" />
+  <circle cx="201" cy="196" r="5" fill="#1f2a3c" />
+  <circle cx="279" cy="196" r="5" fill="#1f2a3c" />
+  <path d="M221 223c12 8 27 8 38 0" stroke="#cf8167" stroke-width="7" stroke-linecap="round" fill="none" />
+  <path d="M184 258h112l22 48-78 35-78-35 22-48Z" fill="#58729d" />
+  <path d="M178 309c22 26 48 38 62 38s40-12 62-38l40 123H138l40-123Z" fill="#274367" />
+  <path d="M219 261h42l-10 28-11 27-11-27-10-28Z" fill="#ffffff" />
+</svg>
