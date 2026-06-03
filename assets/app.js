@@ -7,14 +7,14 @@ import {
   regions as regionsBase,
   sectors as sectorsBase,
   site as siteBase,
-} from "../data/content.js?v=20260602c";
+} from "../data/content.js?v=20260603f";
 import {
   contentTranslations,
   defaultLocale,
   localeOptions,
   supportedLocales,
   uiCopy,
-} from "../data/i18n.js?v=20260602c";
+} from "../data/i18n.js?v=20260603f";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -313,6 +313,7 @@ function buildStaticRoutePath(pageKey, locale = currentLocale, params = new URLS
     radar: ["radar"],
     regions: ["regions"],
     sectors: ["sectors"],
+    experts: ["experts"],
     about: ["about"],
     contact: ["contact"],
     subscription: ["subscription"],
@@ -350,6 +351,10 @@ function buildSectorRoutePath(slug, locale = currentLocale, region = "") {
   );
 }
 
+function buildExpertRoutePath(slug, locale = currentLocale) {
+  return buildCleanPath(["experts", slug], locale);
+}
+
 function currentRouteParams() {
   switch (page) {
     case "analysis":
@@ -368,6 +373,8 @@ function currentRouteParams() {
       return params;
     }
     case "article":
+      return new URLSearchParams(routeValue("slug") ? { slug: routeValue("slug") } : {});
+    case "expert":
       return new URLSearchParams(routeValue("slug") ? { slug: routeValue("slug") } : {});
     default:
       return new URLSearchParams();
@@ -461,6 +468,14 @@ function renderPage() {
       break;
     case "sector":
       app.innerHTML = renderSectorDetailPage();
+      break;
+    case "experts":
+      document.title = `${ui.pageTitles.experts} | ${site.name}`;
+      applyStaticPageMeta("experts", ui.expertsPage.text, authors.flatMap((author) => [author.name, author.specialty, author.expertise]));
+      app.innerHTML = renderExpertsPage();
+      break;
+    case "expert":
+      app.innerHTML = renderExpertProfilePage();
       break;
     case "article":
       app.innerHTML = renderArticlePage();
@@ -1405,6 +1420,168 @@ function renderSectorDetailPage() {
   `;
 }
 
+function renderExpertsPage() {
+  const listedExperts = [...authors].sort((left, right) => left.name.localeCompare(right.name));
+  const featuredTopics = unique(listedExperts.flatMap((author) => author.expertise || [])).slice(0, 8);
+
+  return `
+    <section class="section section-tight">
+      <div class="container experts-directory">
+        <div class="experts-toolbar card reveal">
+          <label class="experts-search" for="experts-search">
+            <span>${ui.header.search}</span>
+            <input id="experts-search" type="search" placeholder="${ui.expertsPage.searchPlaceholder}" />
+          </label>
+          <div class="tag-list experts-filter-list">
+            <button class="pill-link is-active" type="button" data-expert-filter="all">${ui.expertsPage.all}</button>
+            ${featuredTopics
+              .map(
+                (topic) => `<button class="pill-link" type="button" data-expert-filter="${escapeAttribute(topic)}">${topic}</button>`,
+              )
+              .join("")}
+          </div>
+        </div>
+
+        <div class="experts-results reveal">
+          <span id="experts-count">${listedExperts.length}</span>
+        </div>
+
+        <div class="expert-list" id="experts-list">
+          ${listedExperts.map((author) => renderExpertCard(author)).join("")}
+        </div>
+
+        <div class="empty-state empty-state--compact is-hidden" id="experts-empty">
+          <p>${ui.expertsPage.noResults}</p>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderExpertCard(author) {
+  const searchable = [author.name, author.role, author.specialty, ...(author.expertise || [])]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+
+  return `
+    <article
+      class="card expert-card reveal"
+      data-expert-card="true"
+      data-expert-search="${escapeAttribute(searchable)}"
+      data-expert-tags="${escapeAttribute((author.expertise || []).join("|").toLowerCase())}"
+    >
+      <a class="expert-card__link" href="${expertUrl(author.slug)}">
+        <div class="expert-card__media">
+          <img class="expert-card__photo" src="${author.photo}" alt="${author.name}" loading="lazy" />
+        </div>
+        <div class="expert-card__copy">
+          <div class="expert-card__header">
+            <div>
+              <h2>${author.name}</h2>
+              <p class="expert-card__role">${author.role}</p>
+            </div>
+            <span class="inline-link">${ui.expertsPage.openProfile}</span>
+          </div>
+          <p class="expert-card__specialty">${author.specialty}</p>
+          <p>${author.summary}</p>
+          <div class="tag-list">
+            ${(author.expertise || []).map((item) => `<span class="tag tag--large">${item}</span>`).join("")}
+          </div>
+        </div>
+      </a>
+    </article>
+  `;
+}
+
+function renderExpertProfilePage() {
+  const expert = authorMap.get(routeValue("slug"));
+
+  if (!expert) {
+    document.title = `${ui.pageTitles.expertNotFound} | ${site.name}`;
+    applyHeadMeta({
+      description: site.description,
+      keywords: defaultKeywordSeed,
+    });
+    applySocialMeta({
+      title: document.title,
+      description: site.description,
+      path: "experts.html",
+    });
+    return renderNotFound();
+  }
+
+  document.title = `${expert.name} | ${ui.pageTitles.experts} | ${site.name}`;
+  applyHeadMeta({
+    description: expert.summary || site.description,
+    keywords: normalizeKeywords([site.name, expert.name, expert.role, expert.specialty, expert.expertise]),
+  });
+  applySocialMeta({
+    title: document.title,
+    description: expert.summary || site.description,
+    type: "profile",
+    path: "expert.html",
+    params: { slug: expert.slug },
+    image: expert.photo || socialImagePath,
+    imageAlt: expert.name,
+  });
+
+  return `
+    <section class="expert-hero section">
+      <div class="container expert-hero__grid">
+        <div class="expert-hero__copy reveal">
+          <span class="eyebrow">${ui.expertPage.eyebrow}</span>
+          <h1 class="expert-hero__title">${expert.name}</h1>
+          <p class="expert-hero__role">${expert.role}</p>
+          <p class="expert-hero__summary">${expert.summary}</p>
+          <div class="tag-list">
+            ${(expert.expertise || []).map((item) => `<span class="tag tag--large">${item}</span>`).join("")}
+          </div>
+        </div>
+        <div class="expert-hero__visual reveal">
+          <div class="expert-portrait-shell">
+            <img class="expert-portrait-shell__image" src="${expert.photo}" alt="${expert.name}" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tight">
+      <div class="container expert-profile-grid">
+        <article class="card expert-profile__body reveal">
+          <a class="back-link" href="${withLocale("experts.html")}">${ui.expertPage.directory}</a>
+          <h2>${ui.expertPage.about}</h2>
+          ${(expert.biography || []).map((paragraph) => `<p>${paragraph}</p>`).join("")}
+        </article>
+        <aside class="expert-profile__sidebar">
+          <div class="card expert-panel reveal">
+            <span class="eyebrow">${ui.expertPage.affiliations}</span>
+            <div class="pill-row">
+              ${(expert.affiliations || []).map((item) => `<span class="tag tag--large">${item}</span>`).join("")}
+            </div>
+          </div>
+          <div class="card expert-panel reveal">
+            <span class="eyebrow">${ui.expertPage.expertise}</span>
+            <div class="pill-row">
+              ${(expert.expertise || []).map((item) => `<span class="tag tag--large">${item}</span>`).join("")}
+            </div>
+          </div>
+          <div class="card expert-panel reveal">
+            <span class="eyebrow">${ui.expertPage.languages}</span>
+            <div class="pill-row">
+              ${(expert.languages || []).map((item) => `<span class="tag tag--large">${item}</span>`).join("")}
+            </div>
+          </div>
+          <div class="card expert-panel reveal">
+            <span class="eyebrow">${ui.expertPage.education}</span>
+            <p>${expert.education}</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+  `;
+}
+
 function renderArticlePage() {
   const slug = routeValue("slug") || orderedArticles[0].slug;
   const article = articleMap.get(slug);
@@ -1476,10 +1653,7 @@ function renderArticlePage() {
           <h1 class="article-title">${article.title}</h1>
           <p class="article-subtitle">${article.subtitle}</p>
           <div class="article-author-row">
-            <div>
-              <strong>${author.name}</strong>
-              <span>${author.role}</span>
-            </div>
+            <strong>${ui.articlePage.byline(author.name)}</strong>
             <span>${formatDate(article.date)}</span>
           </div>
         </div>
@@ -2243,6 +2417,51 @@ function bindPageInteractions() {
     });
   }
 
+  const expertsSearch = app.querySelector("#experts-search");
+  const expertCards = [...app.querySelectorAll("[data-expert-card]")];
+  const expertFilterButtons = [...app.querySelectorAll("[data-expert-filter]")];
+  const expertsCount = app.querySelector("#experts-count");
+  const expertsEmpty = app.querySelector("#experts-empty");
+
+  if (expertsSearch && expertCards.length) {
+    let activeFilter = "all";
+
+    const syncExperts = () => {
+      const term = String(expertsSearch.value || "").trim().toLowerCase();
+      let visibleCount = 0;
+
+      expertCards.forEach((card) => {
+        const searchValue = card.getAttribute("data-expert-search") || "";
+        const tagValue = card.getAttribute("data-expert-tags") || "";
+        const matchesTerm = !term || searchValue.includes(term);
+        const matchesFilter = activeFilter === "all" || tagValue.includes(activeFilter.toLowerCase());
+        const visible = matchesTerm && matchesFilter;
+        card.classList.toggle("is-hidden", !visible);
+        if (visible) {
+          visibleCount += 1;
+        }
+      });
+
+      if (expertsCount) {
+        expertsCount.textContent = String(visibleCount);
+      }
+
+      if (expertsEmpty) {
+        expertsEmpty.classList.toggle("is-hidden", visibleCount !== 0);
+      }
+    };
+
+    expertsSearch.addEventListener("input", syncExperts);
+    expertFilterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        activeFilter = button.getAttribute("data-expert-filter") || "all";
+        expertFilterButtons.forEach((item) => item.classList.toggle("is-active", item === button));
+        syncExperts();
+      });
+    });
+    syncExperts();
+  }
+
   const favoriteButton = app.querySelector("[data-favorite]");
   if (favoriteButton) {
     favoriteButton.addEventListener("click", () => {
@@ -2399,6 +2618,10 @@ function resolveActiveNavigationKey() {
     return "sectors";
   }
 
+  if (page === "expert") {
+    return "experts";
+  }
+
   return {
     home: "home",
     analysis: "analysis",
@@ -2409,6 +2632,7 @@ function resolveActiveNavigationKey() {
     contact: "contact",
     subscription: "subscription",
     sectors: "sectors",
+    experts: "experts",
   }[page];
 }
 
@@ -2445,6 +2669,8 @@ function cleanLocalizedPath(basePath, locale, params) {
       return buildStaticRoutePath("contact", locale, params);
     case "subscription.html":
       return buildStaticRoutePath("subscription", locale, params);
+    case "experts.html":
+      return buildStaticRoutePath("experts", locale, params);
     case "editor.html":
       return buildStaticRoutePath("editor", locale, params);
     case "article.html": {
@@ -2461,6 +2687,10 @@ function cleanLocalizedPath(basePath, locale, params) {
       return slug
         ? buildSectorRoutePath(slug, locale, region)
         : buildStaticRoutePath("sectors", locale, params);
+    }
+    case "expert.html": {
+      const slug = params.get("slug") || routeValue("slug");
+      return slug ? buildExpertRoutePath(slug, locale) : buildStaticRoutePath("experts", locale);
     }
     default:
       return "";
@@ -2907,6 +3137,10 @@ function sectorUrl(slug) {
   return localizedUrl("sector.html", { slug });
 }
 
+function expertUrl(slug) {
+  return localizedUrl("expert.html", { slug });
+}
+
 function pagePath(currentPage) {
   return localizedUrl(basePathForPage(currentPage));
 }
@@ -2921,6 +3155,8 @@ function basePathForPage(currentPage) {
     region: "region.html",
     sectors: "sectors.html",
     sector: "sector.html",
+    experts: "experts.html",
+    expert: "expert.html",
     article: "article.html",
     about: "about.html",
     contact: "contact.html",

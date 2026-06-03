@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" role="img" aria-labelledby="title desc">
+  <title id="title">Adrian Rivas</title>
+  <desc id="desc">Retrato editorial estilizado de Adrian Rivas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6f9ff" />
+      <stop offset="100%" stop-color="#dfe8ff" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="480" rx="240" fill="url(#bg)" />
+  <circle cx="240" cy="188" r="86" fill="#d7a67e" />
+  <path d="M142 184c10-61 44-103 97-103 52 0 89 36 103 101-18-14-38-24-59-29-22 2-39 6-51 13-22 8-52 14-90 18Z" fill="#1f2433" />
+  <path d="M184 182c15-9 32-10 48-4" stroke="#1f2433" stroke-width="8" stroke-linecap="round" />
+  <path d="M258 181c17-8 33-7 47 3" stroke="#1f2433" stroke-width="8" stroke-linecap="round" />
+  <circle cx="209" cy="197" r="6" fill="#191d29" />
+  <circle cx="279" cy="197" r="6" fill="#191d29" />
+  <path d="M219 226c11 8 30 8 41 0" stroke="#b56d57" stroke-width="7" stroke-linecap="round" fill="none" />
+  <path d="M180 258h120l25 47-85 40-85-40 25-47Z" fill="#7e8596" />
+  <path d="M169 305c19 29 45 45 71 45s52-16 71-45l33 127H136l33-127Z" fill="#2d3f5c" />
+  <path d="M216 261h48l-10 29-14 34-14-34-10-29Z" fill="#fbfcff" />
+</svg>
