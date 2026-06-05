@@ -68,7 +68,7 @@ export const authors = [
       "Especialista en Geopolítica, Diplomacia, BRICS, América Latina, AI & Technology, Energía y Comercio Internacional",
     summary:
       "Analista internacional boliviano y fundador de Geo Scope, con foco en geopolítica, diplomacia, BRICS, tecnología y transformación del orden global.",
-    photo: "/assets/experts/javier-salazar-segales.jpeg",
+    photo: "/assets/experts/javier-salazar-segales.jpeg?v=20260603g",
     affiliations: ["Dirección General", "Fundador", "Geo Scope"],
     expertise: [
       "Geopolítica",
