@@ -7,14 +7,14 @@ import {
   regions as regionsBase,
   sectors as sectorsBase,
   site as siteBase,
-} from "../data/content.js?v=20260603g";
+} from "../data/content.js?v=20260607a";
 import {
   contentTranslations,
   defaultLocale,
   localeOptions,
   supportedLocales,
   uiCopy,
-} from "../data/i18n.js?v=20260603g";
+} from "../data/i18n.js?v=20260607a";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
