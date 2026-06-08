@@ -1,4 +1,5 @@
-import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260603c";
+import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260607a";
+import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260607a";
 
 function russianPlural(count, one, few, many) {
   const mod10 = count % 10;
@@ -5593,6 +5594,12 @@ contentTranslations.ru.articles["xi-y-putin-en-beijing-y-la-cooperacion-estrateg
   xiPutinArticleTranslations.ru;
 contentTranslations.zh.articles["xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global"] =
   xiPutinArticleTranslations.zh;
+contentTranslations.en.articles["america-latina-y-la-crisis-organica"] =
+  americaLatinaCrisisOrganicaTranslations.en;
+contentTranslations.ru.articles["america-latina-y-la-crisis-organica"] =
+  americaLatinaCrisisOrganicaTranslations.ru;
+contentTranslations.zh.articles["america-latina-y-la-crisis-organica"] =
+  americaLatinaCrisisOrganicaTranslations.zh;
 contentTranslations.en.articles["foro-de-seguridad-multipolar-en-moscu"] =
   foroSeguridadMultipolarMoscuTranslations.en;
 contentTranslations.ru.articles["foro-de-seguridad-multipolar-en-moscu"] =
