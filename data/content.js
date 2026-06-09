@@ -1,4 +1,4 @@
-import { modularArticles } from "./articles/index.js?v=20260607a";
+import { modularArticles } from "./articles/index.js?v=20260609a";
 
 export const site = {
   name: "Geo Scope",

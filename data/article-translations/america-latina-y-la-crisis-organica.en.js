@@ -1,0 +1,228 @@
+export const americaLatinaCrisisOrganicaEn = {
+  title:
+    "Latin America and the organic crisis: when the State can no longer manage social conflict",
+  subtitle:
+    "The region is not going through only a succession of political crises. In several countries, the problem is deeper: loss of institutional legitimacy, economic exhaustion, social fragmentation, and the absence of national projects capable of ordering the future.",
+  excerpt:
+    "Latin America is living through a period of persistent unease. Social protests, weak governments, electoral polarization, economic crises, insecurity, corruption, labor informality, and institutional distrust appear again and again across the region.",
+  tags: [
+    "Latin America",
+    "organic crisis",
+    "State",
+    "governability",
+    "corruption",
+    "Brazil",
+    "Bolivia",
+    "Peru",
+    "multipolarity",
+  ],
+  bodySections: [
+    {
+      paragraphs: [
+        "Latin America is living through a period of persistent unease. Social protests, weak governments, electoral polarization, economic crises, insecurity, corruption, labor informality, and institutional distrust appear again and again in different countries across the region. At first glance, these problems seem like separate crises. But seen together, they reveal something deeper: an organic crisis.",
+        "An organic crisis is not simply a crisis of government. It is a crisis of historical direction. It occurs when institutions can no longer channel social demands, when the economy stops offering expectations of mobility, when parties lose their capacity for representation, and when society stops believing that the political system can resolve its contradictions.",
+        "In Latin America, this crisis does not unfold in the same way in every country. In Bolivia it appears as political fracture, disputes over legitimacy, and the exhaustion of a state model that for years managed social conflicts and governed through pacts, balances, and negotiations with different social groups. In Peru it appears as permanent institutional instability. In Ecuador, as a security crisis and the expansion of organized crime. In Argentina, as the breakdown of economic consensus and rejection of traditional elites. In Brazil, as structural polarization between opposing national projects. In Chile and Colombia, as difficulty turning social demands into lasting political pacts.",
+        "The central thesis is clear: Latin America is not living only a crisis of governability. It is living a crisis of mediation between State, society, and future.",
+      ],
+    },
+    {
+      heading: "What is an organic crisis",
+      paragraphs: [
+        "The concept of organic crisis is associated with the thought of Antonio Gramsci. It describes a moment in which the old order loses legitimacy, but a new project capable of replacing it has not yet appeared. This is not a passing crisis or an administrative problem. It is a deeper rupture between the political, economic, and social structures that once gave stability to a country.",
+        "In an organic crisis, governments may change, but the unease remains. Elections may produce alternation, but not necessarily a way out. Institutions continue to function formally, but they lose social authority. Parties compete for power, but they represent society less and less. The State keeps legality, but loses its capacity for arbitration.",
+        "The classic phrase that summarizes this kind of crisis is that 'the old does not finish dying and the new does not finish being born.' In Latin America, that tension can be seen in the growing distance between citizens and institutions, in the fragmentation of party systems, and in the recurrent search for disruptive leaderships.",
+        "The problem is not only that governments lose popularity. The problem is that societies stop believing that the system can resolve its contradictions.",
+      ],
+    },
+    {
+      heading: "Organic crisis: beyond left and right",
+      paragraphs: [
+        "An organic crisis is not the exclusive problem of a left-wing or right-wing government. It can appear under progressive, conservative, nationalist, liberal, or technocratic administrations. Its root lies not only in the ideological orientation of a government, but in the loss of the political system's capacity to organize social conflict, produce legitimacy, and offer a horizon for the future.",
+        "In Latin America, this distinction is fundamental. Governments of opposite ideological signs have faced similar problems: institutional distrust, low reform capacity, social fragmentation, economic pressure, insecurity, informality, deterioration of public services, and the loss of expectations of social mobility. This shows that the problem is not solved simply by replacing one political force with another if the underlying structures remain intact.",
+        "Electoral alternation can change a country's discourse, priorities, or international allies. But by itself it does not resolve an organic crisis. If the State does not recover management capacity, if the economy does not generate social mobility, if institutions do not channel demands, and if society does not perceive a project for the future, the crisis reappears in new forms.",
+        "In this context, corruption acts as an accelerator of the crisis. It does not belong to a single ideology or a single party. It can grow in left, right, or center governments when oversight institutions are weak, justice is politicized, public administration is captured by private or partisan interests, and power is used to distribute benefits among elites instead of solving collective problems.",
+        "Corruption aggravates almost every symptom of an organic crisis. It reduces trust in institutions, weakens public investment, deteriorates basic services, fuels anti-system discourses, facilitates the advance of organized crime, and turns politics into a struggle for access to state rents. When citizens perceive that the system protects its own actors before the public interest, democratic legitimacy erodes from within.",
+        "That is why an organic crisis is not overcome simply by winning elections. It is overcome by rebuilding legitimacy, state capacity, political representation, institutional control, and a national project capable of connecting social expectations with concrete results.",
+      ],
+    },
+    {
+      heading: "Bolivia as a regional symptom",
+      paragraphs: [
+        "Bolivia is one of the cases in which the idea of an organic crisis helps explain the political moment more clearly. The country is not facing only an electoral dispute or a temporary economic crisis. It is facing a combination of political fracture, institutional exhaustion, social pressure, political controversies, and the loss of state capacity to order conflict.",
+        "For years, the Bolivian political model rested on a combination of popular legitimacy, expansion of the State, redistribution of extractive rent, and negotiation with social, union, peasant, indigenous, and territorial organizations. That model allowed stability for an important period. But it also generated dependence on natural resources, political concentration, regional tensions, and difficulties in building institutions beyond personal leaderships or dominant party structures.",
+        "Today, MAS no longer controls state power as it did for almost two decades. Yet its weakening has not automatically led to a new governability. Rodrigo Paz's government, after almost seven months in office, is facing a crisis marked by protests, blockades, social pressure, economic difficulties, political controversies, and the loss of support among sectors that initially backed his arrival in government.",
+        "In this context, speaking of a simple 'resurgence of MAS' may be insufficient. What is emerging is something broader: the persistence of social, territorial, and political structures that no government has managed to fully reorganize. The old power bloc lost centrality, but the new government has not yet built a stable architecture of governability.",
+        "Conflict is no longer processed only in Congress, parties, or elections. It is also expressed in streets, highways, regions, social organizations, indigenous sectors, guilds, and territorial structures.",
+        "Bolivia shows a central feature of Latin America's organic crisis: when a political bloc stops organizing public life and the new government fails to build enough legitimacy, social conflict fragments and reappears in multiple forms.",
+      ],
+    },
+    {
+      heading: "Peru, Ecuador, and politics without a center",
+      paragraphs: [
+        "Peru represents an extreme form of institutional fragmentation. Presidential instability, weak parties, low trust in Congress, and the difficulty of building stable majorities show a political system that functions formally but fails to produce direction. There are elections, institutions, and formal legality. But there is no capacity for leadership.",
+        "The presidential runoff confirmed that crisis of representation. The election between Keiko Fujimori and Roberto Sánchez ended in a scenario of virtual technical tie, with an extremely narrow count and a result that remained open. With around 94.9% of the votes counted, Sánchez held a minimal lead of 50.10% against 49.90%, while overseas voting - traditionally more favorable to the right - could still alter the final result. A difference of only a few thousand votes and the complexity of the count reflect the depth of Peru's political division.",
+        "Beyond who wins, the election shows a politically divided society. Fujimori represents a demand for order, security, and conservative continuity, marked by the historical weight of Fujimorism. Sánchez channels a demand for change from rural, popular, and informal sectors, with political links to Pedro Castillo's space. The polarization cannot be explained only by ideology: it expresses a fracture between Lima and the regions, between security and reform, between institutional continuity and rejection of the traditional political system.",
+        "The fact that the next president will be the country's ninth in a decade confirms that Peru's problem is not merely electoral. The problem is that the political system can no longer stabilize authority or produce minimum agreements of governability. In an organic crisis, the political center weakens. Parties stop organizing conflict and become temporary electoral vehicles. Citizens vote, but do not necessarily feel represented. Governments take office, but do not consolidate authority. Politics becomes the administration of survival.",
+        "Ecuador shows another dimension: the security crisis. The expansion of organized crime, violence, and territorial disputes reveal that the State no longer faces only governability problems, but challenges to its internal sovereignty. When criminal organizations control routes, prisons, neighborhoods, or illegal economies, the crisis stops being only political. It becomes territorial.",
+        "Peru and Ecuador show that the organic crisis can be expressed in two different ways: as institutional blockage or as the loss of state control over security.",
+      ],
+    },
+    {
+      heading: "Argentina: adjustment, inflation, and the breakdown of social consensus",
+      paragraphs: [
+        "Argentina represents another variant of the organic crisis: the exhaustion of an economic model and the breakdown of trust between society, the State, and political elites.",
+        "Persistent inflation, indebtedness, falling purchasing power, frustration with the traditional political class, and rejection of previous consensuses opened space for rupture leaderships. In that context, society is not only seeking a change of government. It is seeking a rupture with a way of doing politics that it perceives as incapable of solving accumulated problems.",
+        "The Argentine experience shows that an organic crisis can produce a demand for order, shock, or radical transformation. When the traditional system loses credibility, society can accept exits that previously seemed politically unviable.",
+        "The key point is not whether those exits will be successful or not. The point is that their emergence reveals the level of exhaustion of the previous pact.",
+      ],
+    },
+    {
+      heading: "Brazil: polarization, governability, and the dispute over the regional course",
+      paragraphs: [
+        "Brazil represents one of the clearest expressions of structural political polarization in Latin America. The dispute between the progressive camp linked to Lula da Silva and the conservative bloc associated with Bolsonarism is not only an electoral competition. It is a deeper fracture over the model of State, economic policy, the relationship with China and the United States, the environmental agenda, public security, the role of the Armed Forces, and the country's international position.",
+        "Brazil does not express an organic crisis because of the absence of the State. It expresses a partial or latent organic crisis because of blocked consensuses. The country retains institutions, a diversified economy, diplomatic capacity, and regional weight. But polarization turns every election into a dispute between national projects that are difficult to reconcile.",
+        "The 2026 presidential election reflects that division. Different polls showed a close competition between Lula and Flávio Bolsonaro, with moments of technical tie and scenarios in which Lula regained the lead in a possible runoff. This confirms that Brazil remains organized around two major and highly polarized political camps.",
+        "This scenario confirms that Brazil is not living only a dispute between government and opposition. It is living a competition between two social, cultural, and geopolitical coalitions. One part of the country bets on an active State, South-South integration, an environmental agenda, and a more autonomous foreign policy. Another part prioritizes security, cultural conservatism, economic liberalism, alignment with the United States, and rejection of the traditional political system.",
+        "Polarization also affects the ability to govern. Even when a president wins, he faces a fragmented Congress, regional pressures, the power of governors, the influence of agribusiness, judicial tensions, and a highly divided public opinion. In that context, electoral alternation does not automatically resolve the crisis of representation. It can even deepen it if each election is interpreted as an existential battle between incompatible models.",
+        "Brazil matters because its internal crisis has a regional impact. If it manages to build governability, it can act as a Latin American articulator within BRICS, CELAC, Mercosur, and the global climate agenda. If it remains trapped in permanent polarization, Latin America loses one of its main centers of coordination.",
+        "Can Brazil transform its polarization into stable democratic competition, or will the dispute between projects of country continue blocking its capacity for regional leadership?",
+      ],
+    },
+    {
+      heading: "Colombia and Chile: difficult reforms and alternation without stable consensus",
+      paragraphs: [
+        "Colombia and Chile show that the organic crisis does not affect only countries with weak institutions. It also appears in societies with more consolidated state structures, but crossed by demands for change that the political system cannot process easily.",
+        "Chile experienced a strong demand for social and institutional transformation. After a cycle of right-wing government, the country shifted to the left with Gabriel Boric, but later tilted back to the right with José Antonio Kast. This turn reflects concerns over security, migration, and exhaustion with the progressive cycle, but also a deeper difficulty in building long-term consensuses.",
+        "The Chilean case matters because it shows a crisis of consensus, not necessarily a crisis of collapse. Society may agree that something must change, but it does not necessarily agree on what should replace it. The constitutional process showed that difficulty: there was demand for reform, but no solid agreement on the new political pact.",
+        "Colombia faces a similar tension. The country is heading toward a presidential runoff between left-wing senator Iván Cepeda and right-wing lawyer Abelardo de la Espriella, after no candidate obtained a sufficient majority in the first round. The campaign is marked by polarization, security, anti-incumbent voting, and an intense dispute over the direction after the progressive cycle.",
+        "De la Espriella's candidacy reflects a broader regional trend: hard-right outsiders, a discourse of order, criticism of traditional elites, and promises of drastic measures against crime. Cepeda, by contrast, seeks to preserve a left-wing space in a context of weariness with the outgoing government.",
+        "Chile and Colombia show that the organic crisis does not always produce collapse. Sometimes it produces a blocked transition: everyone recognizes the need for change, but no project manages to order the whole. Electoral alternation exists, but it does not necessarily generate a long-term consensus.",
+      ],
+    },
+    {
+      heading: "The economy of discontent",
+      paragraphs: [
+        "The organic crisis has a material basis. Latin America has spent years trapped in a pattern of low growth, high informality, persistent inequality, low productivity, and dependence on raw materials.",
+        "ECLAC has warned that the region is going through a prolonged period of low growth. Its estimates point to an expansion close to 2.4% in 2025 and around 2.3% in 2026, a trajectory insufficient to absorb social demands, create formal employment, and sustain expectations of mobility.",
+        "This point is crucial. A democracy can withstand tensions if it offers expectations of social mobility. But when growth is low, employment is precarious, wages are insufficient, public services deteriorate, and young people see no future, institutional legitimacy weakens.",
+        "The region grows, but it does not transform. It exports raw materials, but imports technology. It produces food, but coexists with poverty. It has elections, but not always effective representation. It has natural resources, but not always the state capacity to turn them into development.",
+        "Latin American discontent does not arise only from political discourses. It comes from the distance between promises of inclusion and insufficient material outcomes.",
+      ],
+    },
+    {
+      heading: "Weak institutions and eroded trust",
+      paragraphs: [
+        "The organic crisis is also fueled by the loss of trust. When citizens stop trusting parties, congresses, courts, police, media, and governments, the system loses its capacity for mediation.",
+        "This paradox is central: many citizens still value democracy as an ideal, but distrust the concrete institutions that should make it work. They want rights, participation, and stability, but do not believe that parties, parliaments, or courts can guarantee them.",
+        "When that gap widens, two risks appear. The first is apathy: citizens withdraw from politics because they expect no results. The second is rupture: citizens look for solutions outside the system, even if those solutions weaken democratic checks and balances.",
+        "The organic crisis occurs precisely when formal democracy still exists, but its capacity to produce legitimacy deteriorates.",
+      ],
+    },
+    {
+      heading: "Security, crime, and the fragmented State",
+      paragraphs: [
+        "The expansion of organized crime is one of the most serious signs of an organic crisis. When the State does not guarantee security, employment, justice, or basic services, other actors occupy the vacuum.",
+        "This is visible in parts of Mexico, Ecuador, Central America, Colombia, Brazil, and Haiti. Organized crime is no longer only a policing problem. In many cases it functions as a territorial power, an economic actor, an informal provider of order, and a competitor to the State.",
+        "Security ceases to be a sectoral agenda and becomes a dispute over internal sovereignty. A State may have a flag, a Constitution, and elections, but if it does not control prisons, borders, ports, neighborhoods, or logistical routes, its real authority becomes limited.",
+        "The organic crisis deepens when citizens perceive that the State is incapable of protecting them. In that context, demands for hardline policies, militarization, or exceptional solutions can grow.",
+        "The problem is that security without legitimacy may produce temporary order, but it does not necessarily rebuild the State.",
+      ],
+    },
+    {
+      heading: "The geopolitics of the Latin American crisis",
+      paragraphs: [
+        "The Latin American organic crisis unfolds in an increasingly competitive world. The United States, China, Russia, Europe, and BRICS view the region as a space of natural resources, food, critical minerals, energy, markets, infrastructure, ports, data, and diplomatic positions.",
+        "Latin America has lithium, copper, fresh water, biodiversity, gas, oil, food, and renewable potential. But a fragmented region negotiates from a weaker position. Without a common strategy, countries can be pressured by different centers of power and end up competing with one another for investment, financing, access to markets, or political backing.",
+        "Geopolitical competition for influence in Latin America is not the main cause of the region's organic crisis, but it can deepen its effects. Internal fractures arise from domestic problems - weak institutions, corruption, low growth, insecurity, informality, and lack of representation - but external powers can operate on those vulnerabilities through financing, diplomatic pressure, trade agreements, strategic investments, technology, military cooperation, or control over key resources.",
+        "This happens in different ways. One power may offer infrastructure financing; another may condition access to markets; another may apply pressure through sanctions, military cooperation, or technology; another may position itself as an energy partner, buyer of raw materials, or provider of security. For countries with low state capacity, high polarization, and urgent economic needs, these offers can expand options, but they can also generate new dependencies.",
+        "The dispute over the region is not expressed only through military bases or formal alliances. It also appears in ports, 5G networks, lithium, copper, food, gas, oil, logistical corridors, trade agreements, financing, digital platforms, artificial intelligence, satellites, and votes in international organizations.",
+        "In a context of rivalry between the United States and China, trade fragmentation, energy transition, and competition for critical minerals, Latin America could gain room for maneuver. But to do so it needs state capacity, regional integration, and strategic vision.",
+        "Without its own project, multipolarity does not produce autonomy. It only multiplies pressures.",
+      ],
+    },
+    {
+      heading: "Corruption as symptom and accelerator",
+      paragraphs: [
+        "Corruption is not a phenomenon separate from the organic crisis. It is one of its symptoms and, at the same time, one of its accelerators.",
+        "When corruption becomes normalized, citizens stop seeing the State as an instrument of the common good and begin to see it as spoils. Politics is interpreted as access to privileges, offices, contracts, judicial protection, or public rents. That perception destroys legitimacy.",
+        "Corruption also weakens state capacity. It reduces the quality of public investment, raises the cost of projects, deteriorates services, facilitates criminal networks, and diminishes the trust of citizens and investors. In contexts of low growth, each corruption case has a greater political effect because it confirms the perception that social sacrifices are not shared by elites.",
+        "For that reason, fighting corruption is not only a moral agenda. It is a condition for rebuilding the State.",
+        "But the fight against corruption can also be instrumentalized. In several countries, anti-corruption discourse is used to destroy opponents, judicialize politics, or justify authoritarian projects. A real solution requires independent oversight institutions, credible justice, public transparency, and professionalized administration.",
+      ],
+    },
+    {
+      heading: "What way out does an organic crisis have?",
+      paragraphs: [
+        "An organic crisis is not resolved only through elections. Elections are necessary, but not sufficient. They can renew authorities, but they do not automatically rebuild legitimacy, state capacity, or a national project.",
+        "The way out requires a new pact. Not necessarily a formal pact signed by all actors, but a new way of organizing expectations, resources, institutions, and priorities.",
+        "Latin America needs to rebuild state capacity. That means better public services, reliable justice, territorial security, professional administration, efficient public investment, and a real state presence in peripheral regions.",
+        "It also needs a productive strategy. Without growth, formal employment, selective industrialization, technological integration, and social mobility, democracy loses its material foundation.",
+        "The region also needs new forms of representation. Parties must reconnect with informal workers, young people, regions, indigenous peoples, indebted middle classes, productive business sectors, and urban popular sectors. Without representation, conflict shifts to the streets, violence, or anti-system rejection.",
+        "Finally, Latin America needs to think geopolitically. It cannot face the organic crisis as if it lived in a stable world. Competition over energy, technology, food, critical minerals, and supply chains requires both national and regional strategy.",
+      ],
+    },
+    {
+      heading: "Possible scenarios",
+      subsections: [
+        {
+          heading: "1. Democratic reorganization",
+          paragraphs: [
+            "Countries manage to rebuild institutional legitimacy through reforms, social pacts, improved public services, effective anti-corruption efforts, and long-term productive strategies.",
+          ],
+        },
+        {
+          heading: "2. Alternation without transformation",
+          paragraphs: [
+            "Left-wing and right-wing governments alternate in power, but none manages to modify the structures of low growth, informality, insecurity, and distrust. The crisis reappears under new discourses.",
+          ],
+        },
+        {
+          heading: "3. Authoritarian or hardline exits",
+          paragraphs: [
+            "Social frustration opens space for leaderships that promise quick order, lower crime, and rupture with elites. They may offer temporary stability, but at the cost of democratic checks.",
+          ],
+        },
+        {
+          heading: "4. Territorial fragmentation of the State",
+          paragraphs: [
+            "Organized crime, clientelist networks, illegal economies, or regional powers occupy spaces where the State does not reach. Internal sovereignty becomes uneven.",
+          ],
+        },
+        {
+          heading: "5. Multipolarity without strategy",
+          paragraphs: [
+            "Latin America receives offers from China, the United States, Europe, Russia, and BRICS, but without regional coordination or a project of its own. The region gains options, but also new dependencies.",
+          ],
+        },
+        {
+          heading: "6. A new productive and regional pact",
+          paragraphs: [
+            "Some countries manage to turn natural resources, energy, food, and critical minerals into industrial development, regional integration, and strategic autonomy.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Conclusion",
+      paragraphs: [
+        "Latin America is not going through only a succession of political crises. It is living an organic crisis. The problem is not only the weakness of a government, the unpopularity of a president, or the polarization of an election. The problem is deeper: institutions lose legitimacy, the economy does not generate enough mobility, parties do not represent, corruption erodes trust, and the State fails to manage social conflict.",
+        "This crisis does not belong to the left or the right. It cuts across governments of different signs because its causes are structural. Changing governments can alter the course, but it is not enough if state capacities, oversight institutions, security, formal employment, and a horizon of future are not rebuilt.",
+        "Bolivia, Peru, Ecuador, Argentina, Brazil, Chile, and Colombia show different symptoms of the same regional crisis: the difficulty of rebuilding governability, turning social demands into sustainable national projects, and sustaining legitimacy beyond electoral alternation.",
+        "Protest appears when institutions do not channel demands. Hardline politics appears when the State does not protect. Disruptive leadership appears when traditional elites lose credibility. Polarization appears when societies no longer share even a minimal horizon for the future.",
+        "Organic crisis does not mean inevitable collapse. It means transition. But every transition has one central question: who will be capable of building the new consensus?",
+        "Latin America has resources, population, energy, food, critical minerals, and geopolitical position. But those assets do not automatically become power. Without State, without institutions, without a productive strategy, and without regional integration, the region can remain a territory of dispute between powers.",
+        "The way out will not be nostalgic or purely ideological. It will be institutional, productive, social, and geopolitical. Latin America needs a new pact capable of rebuilding legitimacy and turning resources into future.",
+      ],
+    },
+    {
+      heading: "Open questions",
+      bullets: [
+        "Can Latin America emerge from the organic crisis without building a new model of development?",
+        "Are disruptive leaderships a solution or a symptom of institutional exhaustion?",
+        "Can the region recover state capacity without falling into authoritarianism?",
+        "Can regional integration be a way out, or will national fragmentation continue blocking any common project?",
+        "Will Latin America become a strategic actor in the new world order, or will it remain a territory disputed by major powers?",
+      ],
+    },
+  ],
+};
