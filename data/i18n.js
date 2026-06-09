@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260607a";
-import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260607a";
-=======
 import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260609a";
 import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260609a";
->>>>>>> develop
 
 function russianPlural(count, one, few, many) {
   const mod10 = count % 10;

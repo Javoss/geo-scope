@@ -7,22 +7,14 @@ import {
   regions as regionsBase,
   sectors as sectorsBase,
   site as siteBase,
-<<<<<<< HEAD
-} from "../data/content.js?v=20260607a";
-=======
 } from "../data/content.js?v=20260609a";
->>>>>>> develop
 import {
   contentTranslations,
   defaultLocale,
   localeOptions,
   supportedLocales,
   uiCopy,
-<<<<<<< HEAD
-} from "../data/i18n.js?v=20260607a";
-=======
 } from "../data/i18n.js?v=20260609a";
->>>>>>> develop
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -2316,10 +2308,29 @@ function bindShellInteractions() {
   const navStack = header.querySelector(".nav-stack");
 
   if (menuToggle && navStack) {
+    const closeMenu = () => {
+      menuToggle.setAttribute("aria-expanded", "false");
+      navStack.classList.remove("is-open");
+    };
+
     menuToggle.addEventListener("click", () => {
       const expanded = menuToggle.getAttribute("aria-expanded") === "true";
       menuToggle.setAttribute("aria-expanded", String(!expanded));
       navStack.classList.toggle("is-open");
+    });
+
+    navStack.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        if (window.innerWidth <= 1120) {
+          closeMenu();
+        }
+      });
+    });
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 1120) {
+        closeMenu();
+      }
     });
   }
 

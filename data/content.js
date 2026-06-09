@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import { modularArticles } from "./articles/index.js?v=20260607a";
-=======
 import { modularArticles } from "./articles/index.js?v=20260609a";
->>>>>>> develop
 
 export const site = {
   name: "Geo Scope",
