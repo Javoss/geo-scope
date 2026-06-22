@@ -17,7 +17,7 @@ export const articleForoDeSeguridadMultipolarEnMoscu = {
   author: "javier-salazar-segales",
   date: "2026-06-01",
   readTime: 22,
-  homeFeature: 2,
+  homeFeature: 3,
   tone: "midnight",
   tags: [
     "Moscú",

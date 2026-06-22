@@ -7,14 +7,14 @@ import {
   regions as regionsBase,
   sectors as sectorsBase,
   site as siteBase,
-} from "../data/content.js?v=20260609a";
+} from "../data/content.js?v=20260623a";
 import {
   contentTranslations,
   defaultLocale,
   localeOptions,
   supportedLocales,
   uiCopy,
-} from "../data/i18n.js?v=20260609a";
+} from "../data/i18n.js?v=20260623a";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -1606,6 +1606,7 @@ function renderArticlePage() {
     name: ui.articlePage.fallbackAuthorName,
     role: ui.articlePage.fallbackAuthorRole,
   };
+  const authorName = article.authorName || author.name;
   const region = regionMap.get(article.region);
   const regionName = region?.name || ui.articlePage.fallbackRegionName;
   const regionDescription =
@@ -1628,7 +1629,7 @@ function renderArticlePage() {
       regionName,
       sectorNames,
       article.tags,
-      author.name,
+      authorName,
     ]),
   });
   applySocialMeta({
@@ -1653,7 +1654,7 @@ function renderArticlePage() {
           <h1 class="article-title">${article.title}</h1>
           <p class="article-subtitle">${article.subtitle}</p>
           <div class="article-author-row">
-            <strong>${ui.articlePage.byline(author.name)}</strong>
+            <strong>${ui.articlePage.byline(authorName)}</strong>
             <span>${formatDate(article.date)}</span>
           </div>
         </div>
