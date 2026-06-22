@@ -1,4 +1,4 @@
-import { modularArticles } from "./articles/index.js?v=20260609a";
+import { modularArticles } from "./articles/index.js?v=20260622c";
 
 export const site = {
   name: "Geo Scope",
@@ -68,7 +68,7 @@ export const authors = [
       "Especialista en Geopolítica, Diplomacia, BRICS, América Latina, AI & Technology, Energía y Comercio Internacional",
     summary:
       "Analista internacional boliviano y fundador de Geo Scope, con foco en geopolítica, diplomacia, BRICS, tecnología y transformación del orden global.",
-    photo: "/assets/experts/javier-salazar-segales.jpeg?v=20260603g",
+    photo: "/assets/experts/javier-salazar-segales.jpeg?v=20260623a",
     affiliations: ["Dirección General", "Fundador", "Geo Scope"],
     expertise: [
       "Geopolítica",
@@ -86,6 +86,24 @@ export const authors = [
       "Javier Jonathan Salazar Segales es analista internacional boliviano y fundador de Geo Scope, una plataforma dedicada al análisis geopolítico, la inteligencia estratégica, los BRICS, América Latina, la tecnología, la energía y la transformación del orden global. Con formación y experiencia en diplomacia, negocios internacionales y tecnología, su trabajo examina cómo las potencias emergentes, los nuevos bloques económicos, la inteligencia artificial y la competencia geopolítica están reconfigurando la gobernanza global y las relaciones internacionales.",
       "Javier Salazar Segales cuenta con experiencia profesional en asuntos diplomáticos, elaboración de informes políticos y económicos, coordinación institucional y cooperación internacional. Sus áreas de interés incluyen el papel de los BRICS en el Sur Global, la posición de América Latina en un mundo multipolar, la soberanía tecnológica, la seguridad energética y el impacto de la inteligencia artificial en el poder estatal y la toma de decisiones estratégicas.",
       "A través de Geo Scope, busca ofrecer análisis claros, accesibles y orientados al futuro sobre las principales fuerzas que están moldeando el siglo XXI, con especial atención a la intersección entre geopolítica, economía, tecnología y desarrollo regional.",
+    ],
+  },
+  {
+    slug: "maria-luisa-ramos-urzagaste",
+    name: "Maria Luisa Ramos Urzagaste",
+    role: "Analista colaboradora",
+    specialty:
+      "Especialista en Rusia y Eurasia, ASEAN, diplomacia y multipolaridad",
+    summary:
+      "Autora colaboradora en Geo Scope, con foco en Rusia y Eurasia, ASEAN, diplomacia y reordenamiento multipolar.",
+    photo: "/assets/experts/maria-luisa-ramos-urzagaste.webp?v=20260623a",
+    affiliations: ["Colaboradora", "Geo Scope"],
+    expertise: ["Rusia y Eurasia", "ASEAN", "Diplomacia", "Multipolaridad"],
+    languages: ["Español"],
+    education: "Perfil biográfico en actualización.",
+    biography: [
+      "Maria Luisa Ramos Urzagaste es colaboradora de Geo Scope y autora de análisis sobre Rusia, Eurasia, ASEAN, diplomacia y multipolaridad.",
+      "Su perfil editorial se encuentra en actualización y será ampliado con nueva información biográfica.",
     ],
   },
 ];
@@ -299,7 +317,7 @@ const legacyArticles = [
     author: "javier-salazar-segales",
     date: "2026-04-21",
     readTime: 11,
-    homeFeature: 8,
+    homeFeature: 9,
     tone: "midnight",
     tags: ["BRICS", "IA", "estándares", "capacidad industrial"],
     thesis:
@@ -326,7 +344,7 @@ const legacyArticles = [
     author: "javier-salazar-segales",
     date: "2026-04-20",
     readTime: 9,
-    homeFeature: 9,
+    homeFeature: 10,
     tone: "jade",
     tags: ["nearshoring", "América Latina", "logística", "industria"],
     thesis:
@@ -353,7 +371,7 @@ const legacyArticles = [
     author: "javier-salazar-segales",
     date: "2026-04-18",
     readTime: 10,
-    homeFeature: 10,
+    homeFeature: 11,
     tone: "indigo",
     tags: ["Eurasia", "seguridad", "sanciones", "corredores"],
     thesis:
@@ -380,7 +398,7 @@ const legacyArticles = [
     author: "javier-salazar-segales",
     date: "2026-04-16",
     readTime: 8,
-    homeFeature: 11,
+    homeFeature: 12,
     tone: "gold",
     tags: ["energia", "corredores", "geoeconomía", "puertos"],
     thesis:

@@ -1,0 +1,72 @@
+export const articleRusiaAseanUnidadDiversidadKazan = {
+  slug: "rusia-asean-unidad-diversidad-kazan",
+  title: "Rusia-países ASEAN: unidad en la diversidad - 35 años juntos",
+  subtitle:
+    "La Cumbre Rusia-ASEAN en Kazán mostró cómo la multipolaridad busca traducirse en cooperación concreta en energía, seguridad alimentaria, logística, tecnología y acción estratégica.",
+  excerpt:
+    "Representantes de Rusia y de los países de la ASEAN se reunieron en Kazán para profundizar una relación multidimensional basada en cooperación energética, seguridad alimentaria, logística, tecnología y un Plan Integral de Acción 2026-2030.",
+  type: "analysis",
+  region: "rusia-eurasia",
+  sectors: [
+    "geopolitica",
+    "energia",
+    "comercio-cadenas-logisticas",
+    "tecnologia-geopolitica",
+    "diplomacia",
+    "multipolaridad-gobernanza-global",
+  ],
+  author: "maria-luisa-ramos-urzagaste",
+  date: "2026-06-22",
+  readTime: 5,
+  homeFeature: 1,
+  tone: "midnight",
+  tags: [
+    "Rusia",
+    "ASEAN",
+    "Kazán",
+    "Multipolaridad",
+    "Energía",
+    "Seguridad alimentaria",
+    "Eurasia",
+    "Asia-Pacífico",
+  ],
+  bodySections: [
+    {
+      paragraphs: [
+        "El deseo común de construir un mundo multipolar más justo, basado en el derecho internacional, la Carta de las Naciones Unidas y la cooperación mutuamente beneficiosa sobre la base del respeto mutuo, reunió en Kazán a representantes de Rusia y de los países de la ASEAN. Sin embargo, la importancia de la cumbre no estuvo solo en su lenguaje diplomático, sino en su traducción práctica: energía, seguridad alimentaria, logística, tecnología y un Plan Integral de Acción para profundizar la asociación estratégica entre Rusia y ASEAN.",
+        "En un acto de soberanía y autonomía, los países de la Asociación de países de Asia Sudoriental ASEAN han dejado plasmada su decisión de profundizar la relación multidimensional con Rusia, y esto se patenta en la Declaración de Kazán y fundamentalmente en su “Plan de acción Integral para la implementación de la asociación estratégica entre la Federación de Rusia y la asociación de Naciones de Asia Sudoriental (2026-2030) con el objetivo de promover y ampliar la cooperación multifacética y mutuamente beneficiosa”.",
+        "Es importante subrayar lo dicho por Kao Kim Hourn, Secretario General de ASEAN durante el Foro de Negocios ASEAN-Rusia, quien remarcó que hoy día:",
+        "“La resiliencia económica ya no se define únicamente por las tasas de crecimiento. Está conformada por la seguridad energética, resiliencia alimentaria, confiabilidad de la cadena de suministro, capacidad tecnológica y capacidad para absorber las turbulencias, la disrupción, especialmente en una economía global cada vez más compleja y dinámica.”",
+        "En palabras del secretario “A medida que la demanda de energía de la ASEAN continúa aumentando, garantizar la fiabilidad, el suministro asequible, accesible y diversificado sigue siendo un imperativo estratégico. La amplia experiencia de Rusia en producción de energía, desarrollo de infraestructura y soluciones industriales energéticas, junto con la Unión Económica Euroasiática la posiciona bien para apoyar iniciativas regionales como la Red Eléctrica de la ASEAN, que se estima que requerirá aproximadamente USD 764 mil millones en inversión. La ASEAN da la bienvenida a un mayor compromiso con las empresas rusas en GNL y gas infraestructura, energía renovable, tecnologías de generación de energía y modernización de la red”.",
+        "En relación a la seguridad alimentaria indicó que “se ha convertido en una prioridad económica, social y estratégica, no meramente agrícola. El acceso confiable a los productos básicos, los fertilizantes, la capacidad de procesamiento y la logística eficiente son cada vez más importantes para la resiliencia a largo plazo”.",
+        "En este sentido el secretario de ASEAN dejó claro que “Las fortalezas de Rusia en producción agrícola, suministro de fertilizantes, tecnología agrícola y logística se adaptan bien a los crecientes sectores agroindustrial y de procesamiento de alimentos de la ASEAN”.",
+        "Esta cumbre una vez más patenta el hecho que Rusia no está aislada, y que los lideres gubernamentales de dichos países, sus instituciones educativas, culturales y empresariales entienden la importancia de su relacionamiento con Rusia, que es de mutuo beneficio.",
+        "Es remarcable que los países confirmaron su disposición a promover sus relaciones de amistad, confianza mutua y respeto, así como una visión común de un futuro pacífico, estable y seguro para una región más amplia que incluye Asia-Pacífico, el océano Índico y Eurasia.",
+        "Por su parte el presidente de Filipinas Ferdinando Marcos, en su calidad de copresidente de la cumbre Rusia-ASEAN, junto al presidente ruso Vladimir Putin, expresó que “Necesitamos incrementar la cooperación en el ámbito de la paz y la seguridad para que nuestros esfuerzos conjuntos contribuyan a la paz y la seguridad y respondan oportunamente a todas las amenazas.”",
+        "Durante el acto principal de la cumbre del 18 de junio se firmaron varios documentos: La Declaración de Kazán; El Plan Integral de Acción para 2026-2030; la Declaración conjunta sobre energía.",
+        "Las relaciones entre Rusia y la ASEAN se remontan a 1991 y en 2018, durante la cumbre de Singapur, las partes elevaron sus vínculos al nivel de asociación estratégica. Esto muestra la solidez y estabilidad de dicha relación en un “contexto de los desafíos globales cada vez más complejos que surgen de los cambios geopolíticos y geoeconómicos”.",
+        "Mientras que, en Francia, en la cumbre del G7 sus lideres hacían sonar tambores de guerra, por otro lado, la Cumbre Rusia-ASEAN nos muestra que es necesario hablar de cooperación y diplomacia para superar juntos los problemas y mejores días para los ciudadanos de los países.",
+      ],
+    },
+    {
+      heading: "Pegruntas abiertas",
+      paragraphs: [
+        "¿La multipolaridad se está construyendo realmente en declaraciones políticas o en infraestructura, energía, alimentos y tecnología?",
+        "¿Puede ASEAN mantener su autonomía estratégica frente a la competencia simultánea entre Estados Unidos, China, Rusia, Japón e India?",
+        "¿La red eléctrica de ASEAN será una nueva arquitectura de poder regional?",
+        "¿Qué puede aprender América Latina de una región que busca diversificar socios sin quedar atrapada en una lógica de bloques?",
+      ],
+    },
+    {
+      heading: "Fuentes",
+      paragraphs: [
+        "1. Declaración de Kazán 2026<br>https://asean.org/wp-content/uploads/2026/06/Kazan-Declaration-2026.pdf<br>http://kremlin.ru/supplement/6516",
+        "2. ASEAN — Asociación de Naciones de Asia Sudoriental. La ASEAN se estableció en 1967 y está integrada por 11 países: Brunei, Camboya, Filipinas, Indonesia, Laos, Malasia, Myanmar, Singapur, Tailandia y Viet Nam.<br>https://asean.org/",
+        "3. Secretary-General of ASEAN delivers opening remarks at the ASEAN-Russia Business Forum 2026 in Kazan<br>https://asean.org/secretary-general-of-asean-delivers-opening-remarks-at-the-asean-russia-business-forum-2026-in-kazan/",
+        "4. Russia-ASEAN<br>https://www.russia-asean.com",
+        "5. Comprehensive Plan of Action to Implement ASEAN-Russian Federation Strategic Partnership 2026-2030<br>https://asean.org/comprehensive-plan-of-action-to-implement-asean-russian-federation-strategic-partnership-2026-2030/",
+        "6. Kremlin<br>http://kremlin.ru/events/president/news/80057",
+      ],
+    },
+  ],
+};

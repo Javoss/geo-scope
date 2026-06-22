@@ -1,5 +1,6 @@
-import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260609a";
-import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260609a";
+import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260622a";
+import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260622a";
+import { rusiaAseanUnidadDiversidadKazanTranslations } from "./article-translations/rusia-asean-unidad-diversidad-kazan.js?v=20260622a";
 
 function russianPlural(count, one, few, many) {
   const mod10 = count % 10;
@@ -2125,6 +2126,21 @@ export const contentTranslations = {
           "Through Geo Scope, he seeks to offer clear, accessible, and future-oriented analysis of the main forces shaping the twenty-first century, with particular attention to the intersection of geopolitics, economics, technology, and regional development.",
         ],
       },
+      "maria-luisa-ramos-urzagaste": {
+        role: "Contributing analyst",
+        specialty:
+          "Specialist in Russia and Eurasia, ASEAN, diplomacy, and multipolarity",
+        summary:
+          "Contributing author at Geo Scope, focused on Russia and Eurasia, ASEAN, diplomacy, and multipolar reordering.",
+        affiliations: ["Contributor", "Geo Scope"],
+        expertise: ["Russia and Eurasia", "ASEAN", "Diplomacy", "Multipolarity"],
+        languages: ["Spanish"],
+        education: "Biographical profile currently being updated.",
+        biography: [
+          "Maria Luisa Ramos Urzagaste is a Geo Scope contributor and author of analysis on Russia, Eurasia, ASEAN, diplomacy, and multipolarity.",
+          "Her editorial profile is currently being updated and will be expanded with additional biographical information.",
+        ],
+      },
       "tomas-velez": {
         role: "Geoeconomics editor",
         specialty: "Geoeconomics and international finance",
@@ -3391,6 +3407,21 @@ export const contentTranslations = {
           "Cherez Geo Scope on stremitsya predlagat yasnyy, dostupnyy i orientirovannyy na budushchee analiz glavnykh sil, formiruyushchikh XXI vek, s osobym vnimaniem k peresecheniyu geopolitiki, ekonomiki, tekhnologiy i regionalnogo razvitiya.",
         ],
       },
+      "maria-luisa-ramos-urzagaste": {
+        role: "Analitik-sotrudnik",
+        specialty:
+          "Spetsialist po Rossii i Evrazii, ASEAN, diplomatii i mnogopolyarnosti",
+        summary:
+          "Avtor-sotrudnik Geo Scope s fokusom na Rossii i Evrazii, ASEAN, diplomatii i mnogopolyarnom pereustroystve.",
+        affiliations: ["Sotrudnik", "Geo Scope"],
+        expertise: ["Rossiya i Evraziya", "ASEAN", "Diplomatiya", "Mnogopolyarnost"],
+        languages: ["Ispanskiy"],
+        education: "Biograficheskiy profil nakhoditsya v protsesse obnovleniya.",
+        biography: [
+          "Maria Luisa Ramos Urzagaste - sotrudnik Geo Scope i avtor analizov o Rossii, Evrazii, ASEAN, diplomatii i mnogopolyarnosti.",
+          "Ee redaktsionnyy profil nakhoditsya v protsesse obnovleniya i budet rasshiren dopolnitelnoy biograficheskoy informatsiey.",
+        ],
+      },
       "tomas-velez": {
         role: "Redaktor po geoekonomike",
         specialty: "Geoekonomika i mezhdunarodnye finansy",
@@ -4636,6 +4667,20 @@ contentTranslations.zh = mergeLocaleData(contentTranslations.en, {
         "通过 Geo Scope，他希望就塑造二十一世纪的关键力量提供清晰、易懂并面向未来的分析，尤其关注地缘政治、经济、技术与区域发展之间的交汇。",
       ],
     },
+    "maria-luisa-ramos-urzagaste": {
+      role: "合作分析员",
+      specialty: "俄罗斯与欧亚、东盟、外交与多极化专家",
+      summary:
+        "Geo Scope 合作作者，聚焦俄罗斯与欧亚、东盟、外交以及多极秩序重组。",
+      affiliations: ["合作作者", "Geo Scope"],
+      expertise: ["俄罗斯与欧亚", "东盟", "外交", "多极化"],
+      languages: ["西班牙语"],
+      education: "个人履历信息正在更新中。",
+      biography: [
+        "Maria Luisa Ramos Urzagaste 是 Geo Scope 的合作作者，撰写关于俄罗斯、欧亚、东盟、外交和多极化的分析。",
+        "她的编辑简介目前正在更新，后续将补充更完整的个人背景信息。",
+      ],
+    },
     "tomas-velez": {
       role: "地缘经济编辑",
       specialty: "地缘经济与国际金融",
@@ -5606,3 +5651,9 @@ contentTranslations.ru.articles["foro-de-seguridad-multipolar-en-moscu"] =
   foroSeguridadMultipolarMoscuTranslations.ru;
 contentTranslations.zh.articles["foro-de-seguridad-multipolar-en-moscu"] =
   foroSeguridadMultipolarMoscuTranslations.zh;
+contentTranslations.en.articles["rusia-asean-unidad-diversidad-kazan"] =
+  rusiaAseanUnidadDiversidadKazanTranslations.en;
+contentTranslations.ru.articles["rusia-asean-unidad-diversidad-kazan"] =
+  rusiaAseanUnidadDiversidadKazanTranslations.ru;
+contentTranslations.zh.articles["rusia-asean-unidad-diversidad-kazan"] =
+  rusiaAseanUnidadDiversidadKazanTranslations.zh;
