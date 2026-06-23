@@ -49,7 +49,7 @@ export const articleRusiaAseanUnidadDiversidadKazan = {
       ],
     },
     {
-      heading: "Pegruntas abiertas",
+      heading: "Preguntas abiertas",
       paragraphs: [
         "¿La multipolaridad se está construyendo realmente en declaraciones políticas o en infraestructura, energía, alimentos y tecnología?",
         "¿Puede ASEAN mantener su autonomía estratégica frente a la competencia simultánea entre Estados Unidos, China, Rusia, Japón e India?",
