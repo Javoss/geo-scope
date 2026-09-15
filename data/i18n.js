@@ -1,4 +1,5 @@
 import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260622a";
+import { elMundoMultipolarParadigmaBricsTranslations } from "./article-translations/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics.js?v=20260915a";
 import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260622a";
 import { rusiaAseanUnidadDiversidadKazanTranslations } from "./article-translations/rusia-asean-unidad-diversidad-kazan.js?v=20260622a";
 
@@ -5657,3 +5658,12 @@ contentTranslations.ru.articles["rusia-asean-unidad-diversidad-kazan"] =
   rusiaAseanUnidadDiversidadKazanTranslations.ru;
 contentTranslations.zh.articles["rusia-asean-unidad-diversidad-kazan"] =
   rusiaAseanUnidadDiversidadKazanTranslations.zh;
+contentTranslations.en.articles[
+  "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics"
+] = elMundoMultipolarParadigmaBricsTranslations.en;
+contentTranslations.ru.articles[
+  "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics"
+] = elMundoMultipolarParadigmaBricsTranslations.ru;
+contentTranslations.zh.articles[
+  "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics"
+] = elMundoMultipolarParadigmaBricsTranslations.zh;

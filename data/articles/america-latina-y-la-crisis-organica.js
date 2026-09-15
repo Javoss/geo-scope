@@ -17,7 +17,7 @@ export const articleAmericaLatinaYLaCrisisOrganica = {
   author: "javier-salazar-segales",
   date: "2026-06-09",
   readTime: 24,
-  homeFeature: 2,
+  homeFeature: 3,
   tone: "midnight",
   tags: [
     "América Latina",
