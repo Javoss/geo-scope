@@ -458,57 +458,6 @@ pre {
   font-size: 0.9rem;
 }
 
-.hero-context-grid {
-  display: grid;
-  gap: 12px;
-  margin-top: 28px;
-}
-
-.hero-context-card {
-  display: grid;
-  gap: 6px;
-  padding: 18px 20px;
-  border-radius: var(--radius-md);
-  background: var(--paper-strong);
-  border: 1px solid var(--line);
-  box-shadow: var(--shadow-soft);
-  color: var(--ink);
-  transition:
-    border-color 0.2s ease,
-    transform 0.2s ease;
-}
-
-.hero-context-card:hover,
-.hero-context-card:focus-visible {
-  border-color: var(--surface-blue-border);
-  transform: translateY(-2px);
-}
-
-.hero-context-card__eyebrow {
-  color: var(--blue-800);
-  font-size: 0.74rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.hero-context-card strong {
-  font-size: 1.05rem;
-  line-height: 1.35;
-}
-
-.hero-context-card p {
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 0.95rem;
-  line-height: 1.55;
-}
-
-.hero-context-card .inline-link {
-  margin-top: 4px;
-  font-size: 0.92rem;
-}
-
 .hero-panel,
 .page-hero__aside {
   position: relative;
@@ -526,10 +475,137 @@ pre {
 }
 
 .hero-panel--home {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 28px 30px 26px;
+  background: linear-gradient(165deg, rgba(29, 70, 155, 0.1), rgba(47, 100, 255, 0.05) 46%, rgba(255, 255, 255, 0.98));
+}
+
+.hero-panel--home .panel-header {
+  margin-bottom: 18px;
+}
+
+.hero-panel--home .eyebrow {
+  white-space: nowrap;
+}
+
+.hero-feature {
   display: grid;
-  grid-template-columns: minmax(0, 1.42fr) minmax(220px, 0.72fr);
+  gap: 14px;
+  color: inherit;
+}
+
+.hero-feature .hero-feature__chips {
+  margin: 0;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.hero--home .hero-grid {
+  align-items: center;
+}
+
+.hero-feature__title {
+  font-size: clamp(1.55rem, 2.1vw, 2.05rem);
+  line-height: 1.12;
+  letter-spacing: -0.015em;
+  color: var(--blue-950);
+  text-wrap: balance;
+  hyphens: none;
+  overflow-wrap: normal;
+  transition: color 0.2s ease;
+}
+
+.hero-feature:hover .hero-feature__title,
+.hero-feature:focus-visible .hero-feature__title {
+  color: var(--blue-900);
+}
+
+.hero-feature__text {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.62;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
+}
+
+.hero-feature__byline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.hero-feature__byline strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.hero-feature__cta {
+  justify-self: start;
+  margin-top: 4px;
+}
+
+.hero-panel__footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 18px;
-  align-items: start;
+  align-items: end;
+  margin-top: 24px;
+  padding: 18px 20px;
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--surface-blue-border);
+}
+
+.hero-radar {
+  display: grid;
+  gap: 6px;
+  min-width: 0;
+}
+
+.hero-radar strong {
+  color: var(--ink);
+  font-size: 0.98rem;
+  line-height: 1.4;
+}
+
+.hero-radar .inline-link {
+  font-size: 0.9rem;
+}
+
+.hero-stats {
+  display: flex;
+  gap: 18px;
+  margin: 0;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+}
+
+.hero-stats dd {
+  margin: 0;
+  color: var(--blue-950);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.hero-stats dt {
+  margin-top: 2px;
+  color: var(--ink-soft);
+  font-size: 0.78rem;
 }
 
 .panel-header {
@@ -1906,9 +1982,7 @@ pre {
     grid-template-columns: 1fr;
   }
 
-  .hero-panel--home {
-    grid-template-columns: 1fr;
-  }
+
 
   .hero-panel__side {
     grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
@@ -1969,9 +2043,7 @@ pre {
     gap: 22px;
   }
 
-  .hero-panel--home {
-    grid-template-columns: minmax(0, 1.08fr) minmax(228px, 0.92fr);
-  }
+
 }
 
 @media (min-width: 1121px) and (max-width: 1480px) {
@@ -2115,5 +2187,15 @@ pre {
 
   .metric-grid--hero {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .hero-panel--home {
+    padding: 22px 20px;
+  }
+
+  .hero-panel__footer {
+    grid-template-columns: 1fr;
   }
 }

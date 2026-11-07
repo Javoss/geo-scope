@@ -1,7 +1,7 @@
 export const elMundoMultipolarParadigmaBricsTranslations = {
   en: {
     title:
-      "THE MULTIPOLAR WORLD: THE PARADIGM THAT ADVANCES AND STRENGTHENS WITH BRICS",
+      "The multipolar world: the paradigm that advances and strengthens with BRICS",
     subtitle:
       "BRICS is consolidating an alternative framework of cooperation, sovereignty, and global governance for an expanding multipolar world.",
     excerpt:
@@ -40,7 +40,7 @@ export const elMundoMultipolarParadigmaBricsTranslations = {
   },
   ru: {
     title:
-      "МНОГОПОЛЯРНЫЙ МИР: ПАРАДИГМА, КОТОРАЯ ПРОДВИГАЕТСЯ И УКРЕПЛЯЕТСЯ С БРИКС",
+      "Многополярный мир: парадигма, которая продвигается и укрепляется с БРИКС",
     subtitle:
       "БРИКС укрепляет альтернативную рамку сотрудничества, суверенитета и глобального управления для расширяющегося многополярного мира.",
     excerpt:

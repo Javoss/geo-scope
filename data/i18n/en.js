@@ -2376,7 +2376,7 @@ export const content = {
       ],
     },
     "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics": {
-      title: "THE MULTIPOLAR WORLD: THE PARADIGM THAT ADVANCES AND STRENGTHENS WITH BRICS",
+      title: "The multipolar world: the paradigm that advances and strengthens with BRICS",
       subtitle: "BRICS is consolidating an alternative framework of cooperation, sovereignty, and global governance for an expanding multipolar world.",
       excerpt: "Two decades later, BRICS is no longer only an emerging acronym: it is an architecture of cooperation that promotes national currencies, technological sovereignty, food security, energy, and new spaces for decision-making in the Global South.",
       tags: [
