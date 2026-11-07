@@ -170,12 +170,16 @@ function startServer(routesByUrl, versions) {
 // <body> tal como lo dejó app.js, sin el estado que solo existe en el navegador.
 async function snapshot(page) {
   return page.evaluate(() => {
-    const keepHead = (node) => node.nodeType === 1 && !["SCRIPT", "STYLE"].includes(node.tagName);
+    const keepHead = (node) =>
+      node.nodeType === 1 &&
+      node.tagName !== "STYLE" &&
+      (node.tagName !== "SCRIPT" || node.type === "application/ld+json");
     const head = [...document.head.childNodes].filter(keepHead).map((node) => {
       const clone = node.cloneNode(true);
       clone.removeAttribute("data-hreflang-link");
       const markup = clone.outerHTML;
-      return `    ${node.tagName === "TITLE" ? markup : markup.replace(/>$/, " />")}`;
+      const paired = node.tagName === "TITLE" || node.tagName === "SCRIPT";
+      return `    ${paired ? markup : markup.replace(/>$/, " />")}`;
     });
 
     const body = document.body.cloneNode(true);
@@ -187,7 +191,15 @@ async function snapshot(page) {
     if (!body.getAttribute("class")) body.removeAttribute("class");
 
     const attrs = [...body.attributes].map((a) => ` ${a.name}="${a.value}"`).join("");
+    const text = (selector) => document.querySelector(selector)?.textContent.trim().replace(/\s+/g, " ") || "";
     return {
+      card: {
+        title: text(".article-title"),
+        type: text(".article-hero .meta-chip"),
+        region: text(".article-hero .meta-chip:nth-child(2)"),
+        byline: text(".article-author-row strong"),
+        date: text(".article-author-row span"),
+      },
       lang: document.documentElement.lang,
       head: head.join("\n"),
       title: document.title,
@@ -243,15 +255,170 @@ ${entries.join("\n")}
 `;
 }
 
+// Traducciones por idioma. data/i18n.js sigue siendo el archivo que se edita;
+// el build genera data/i18n/<idioma>.js para que cada visitante descargue solo
+// su idioma, y data/i18n/locales.js con la lista de idiomas.
+async function generateLocaleBundles() {
+  const sourceFile = path.join(ROOT, "data/i18n.js");
+  const source = await readFile(sourceFile, "utf8");
+  const i18n = await import(`${pathToFileURL(sourceFile).href}?build=${Date.now()}`);
+  const helper = source.match(/function russianPlural\([\s\S]*?\n}\n/)?.[0] || "";
+  const dir = path.join(ROOT, "data/i18n");
+  await mkdir(dir, { recursive: true });
+  const header = "// Archivo GENERADO por scripts/build.mjs a partir de data/i18n.js. No editar a mano.\n";
+  const versions = {};
+
+  for (const locale of i18n.supportedLocales) {
+    const body = `${header}\n${helper}\nexport const ui = ${serialize(i18n.uiCopy[locale] || i18n.uiCopy[i18n.defaultLocale])};\n\nexport const content = ${serialize(i18n.contentTranslations[locale] || {})};\n`;
+    await writeFile(path.join(dir, `${locale}.js`), body);
+    versions[locale] = createHash("sha1").update(body).digest("hex").slice(0, 10);
+    const generated = await import(`${pathToFileURL(path.join(dir, `${locale}.js`)).href}?check=${Date.now()}`);
+    assertSame(generated.ui, i18n.uiCopy[locale] || i18n.uiCopy[i18n.defaultLocale], `ui.${locale}`);
+    assertSame(generated.content, i18n.contentTranslations[locale] || {}, `content.${locale}`);
+  }
+
+  await writeFile(
+    path.join(dir, "locales.js"),
+    `${header}\nexport const supportedLocales = ${serialize(i18n.supportedLocales)};\nexport const defaultLocale = ${serialize(i18n.defaultLocale)};\nexport const localeOptions = ${serialize(i18n.localeOptions)};\nexport const localeVersions = ${serialize(versions)};\n`,
+  );
+}
+
+function serialize(value, indent = "") {
+  const next = `${indent}  `;
+  if (typeof value === "function") {
+    const code = value.toString();
+    return /^(async\s+)?(function\b|\(|[\w$]+\s*=>)/.test(code) ? code : `function ${code}`;
+  }
+  if (Array.isArray(value)) {
+    if (!value.length) return "[]";
+    return `[\n${value.map((item) => `${next}${serialize(item, next)}`).join(",\n")},\n${indent}]`;
+  }
+  if (value && typeof value === "object") {
+    const entries = Object.entries(value);
+    if (!entries.length) return "{}";
+    return `{\n${entries
+      .map(([key, item]) => `${next}${/^[A-Za-z_$][\w$]*$/.test(key) ? key : JSON.stringify(key)}: ${serialize(item, next)}`)
+      .join(",\n")},\n${indent}}`;
+  }
+  return value === undefined ? "undefined" : JSON.stringify(value);
+}
+
+function assertSame(actual, expected, where) {
+  if (typeof expected === "function") {
+    for (const sample of [0, 1, 2, 3, 5, 11, 21, 22, "x"]) {
+      if (String(actual(sample, sample)) !== String(expected(sample, sample))) {
+        throw new Error(`Traducción generada distinta en ${where}(${sample})`);
+      }
+    }
+    return;
+  }
+  if (expected && typeof expected === "object") {
+    const keys = new Set([...Object.keys(expected), ...Object.keys(actual || {})]);
+    keys.forEach((key) => assertSame(actual?.[key], expected[key], `${where}.${key}`));
+    return;
+  }
+  if (actual !== expected) {
+    throw new Error(`Traducción generada distinta en ${where}`);
+  }
+}
+
+// Imágenes para redes sociales (1200×630): una por artículo e idioma, más una
+// genérica. Solo se rehacen cuando cambia su contenido (assets/og/manifest.json).
+async function renderSocialImages(context, cards) {
+  const dir = path.join(ROOT, "assets/og");
+  const manifestFile = path.join(dir, "manifest.json");
+  let manifest = {};
+  try {
+    manifest = JSON.parse(await readFile(manifestFile, "utf8"));
+  } catch {}
+  const logo = `data:image/png;base64,${(await readFile(path.join(ROOT, "assets/geoscope-logo.png"))).toString("base64")}`;
+  const jobs = [
+    { file: "default.jpg", card: { title: "Análisis estratégico sobre geopolítica, tecnología, economía y el nuevo orden global.", type: "", region: "", byline: "", date: "" } },
+    ...cards.map((card) => ({ file: `${card.locale}/${card.slug}.jpg`, card })),
+  ];
+  const page = await context.newPage();
+  await page.setViewportSize({ width: 1200, height: 630 });
+  let made = 0;
+
+  for (const job of jobs) {
+    const key = createHash("sha1").update(JSON.stringify([job.card, OG_VERSION])).digest("hex").slice(0, 12);
+    const target = path.join(dir, job.file);
+    let exists = true;
+    try {
+      await stat(target);
+    } catch {
+      exists = false;
+    }
+    if (exists && manifest[job.file] === key) continue;
+
+    await page.setContent(socialCardHtml(job.card, logo), { waitUntil: "load" });
+    await page.evaluate(() => document.fonts.ready);
+    await page.evaluate(() => {
+      const title = document.querySelector(".title");
+      let size = 72;
+      while (title.scrollHeight > title.clientHeight && size > 34) {
+        size -= 2;
+        title.style.fontSize = `${size}px`;
+      }
+    });
+    await mkdir(path.dirname(target), { recursive: true });
+    await page.screenshot({ path: target, type: "jpeg", quality: 82 });
+    manifest[job.file] = key;
+    made += 1;
+  }
+
+  await page.close();
+  await writeFile(manifestFile, `${JSON.stringify(manifest, null, 2)}\n`);
+  return made;
+}
+
+const OG_VERSION = 2;
+
+function escapeHtml(value) {
+  return String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function socialCardHtml(card, logo) {
+  const chips = [card.type, card.region].filter(Boolean).map((chip) => `<span class="chip">${escapeHtml(chip)}</span>`).join("");
+  const footer = [card.byline, card.date].filter(Boolean).map(escapeHtml).join(" · ");
+  return `<!doctype html><html><head><meta charset="utf-8"><style>
+  * { box-sizing: border-box; margin: 0; }
+  body { width: 1200px; height: 630px; font-family: Inter, "Noto Sans CJK SC", "Noto Sans CJK TC", "IPAGothic", "DejaVu Sans", sans-serif;
+    background: #f6f9ff; color: #1b2a40; display: flex; }
+  .band { width: 22px; background: linear-gradient(180deg, #1d469b, #2f64ff); }
+  .wrap { flex: 1; padding: 56px 72px 52px 64px; display: flex; flex-direction: column; }
+  .top { display: flex; align-items: center; justify-content: space-between; }
+  .logo { height: 76px; }
+  .chips { display: flex; gap: 10px; }
+  .chip { font-size: 22px; font-weight: 600; color: #1c4799; background: rgba(47,100,255,.09); border: 1px solid rgba(33,79,191,.18);
+    padding: 7px 16px; border-radius: 999px; }
+  .title { margin: 36px 0 0; flex: 1; display: flex; align-items: center; font-size: 72px; line-height: 1.12; font-weight: 700; letter-spacing: -0.01em; color: #112c66; overflow: hidden; }
+  .foot { margin-top: 24px; padding-top: 22px; border-top: 2px solid rgba(27,42,64,.1); font-size: 24px; color: #5e6e84; display: flex; justify-content: space-between; }
+  .foot b { color: #1c4799; font-weight: 600; }
+  </style></head><body><div class="band"></div><div class="wrap">
+  <div class="top"><img class="logo" src="${logo}"><div class="chips">${chips}</div></div>
+  <div class="title">${escapeHtml(card.title)}</div>
+  <div class="foot"><span>${footer}</span><b>geo-scope.online</b></div>
+  </div></body></html>`;
+}
+
 async function main() {
+  await generateLocaleBundles();
   const { routes } = await loadRoutes();
-  const selected = only ? routes.filter((route) => route.url.includes(only)) : routes;
+  const selected = only ? routes.filter((route) => route.url.includes(only)) : [...routes];
   const versions = {
     js: await assetVersion("assets/app.js"),
     css: await assetVersion("assets/styles.css"),
     favicon: await assetVersion("assets/favicon-geoscope.png"),
   };
-  const routesByUrl = new Map(routes.map((route) => [route.url.normalize("NFC"), route]));
+  const notFound = { page: "notfound", locale: DEFAULT_LOCALE, slug: "", url: "/404.html", file: "404.html" };
+  if (!only) selected.push(notFound);
+  const routesByUrl = new Map([...routes, notFound].map((route) => [route.url.normalize("NFC"), route]));
+  const cards = [];
   const server = await startServer(routesByUrl, versions);
   const base = `http://127.0.0.1:${server.address().port}`;
   const browser = await chromium.launch();
@@ -267,14 +434,18 @@ async function main() {
       await page.waitForFunction(() => document.getElementById("app")?.children.length > 0, null, {
         timeout: 15000,
       });
-      const html = renderDocument(await snapshot(page));
-      const file = outputFile(route.url);
+      const snap = await snapshot(page);
+      const html = renderDocument(snap);
+      const file = route.file ? path.join(ROOT, route.file) : outputFile(route.url);
+      if (route.page === "article") cards.push({ ...snap.card, locale: route.locale, slug: route.slug });
       await mkdir(path.dirname(file), { recursive: true });
       await writeFile(file, html);
       await page.close();
       done += 1;
       if (done % 25 === 0) console.log(`  ${done}/${selected.length} páginas`);
     }
+    const made = await renderSocialImages(context, cards);
+    console.log(`Imágenes para redes: ${made} nuevas o actualizadas.`);
   } finally {
     await browser.close();
     server.close();

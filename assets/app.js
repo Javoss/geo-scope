@@ -9,12 +9,11 @@ import {
   site as siteBase,
 } from "../data/content.js?v=20260915a";
 import {
-  contentTranslations,
   defaultLocale,
   localeOptions,
+  localeVersions,
   supportedLocales,
-  uiCopy,
-} from "../data/i18n.js?v=20260915a";
+} from "../data/i18n/locales.js?v=20261107a";
 
 const page = document.body.dataset.page;
 const app = document.getElementById("app");
@@ -22,6 +21,10 @@ const header = document.getElementById("site-header");
 const footer = document.getElementById("site-footer");
 let query = new URLSearchParams(window.location.search);
 const currentLocale = resolveLocale(query);
+// Solo se descarga el idioma activo (archivos generados por scripts/build.mjs).
+const { ui: uiSource, content: contentSource } = await import(
+  `../data/i18n/${currentLocale}.js?v=${localeVersions[currentLocale] || ""}`
+);
 const ui = buildLocalizedUi(currentLocale);
 const localeMeta = localeOptions[currentLocale] || localeOptions[defaultLocale];
 const brandLogoSrc = "/assets/geoscope-logo.png";
@@ -43,7 +46,7 @@ const pageCopy = ui.pageCopy;
 const siteBaseUrl = normalizeSiteBaseUrl(site.url || window.location.origin);
 
 const defaultKeywordSeed = [site.name, ...newsletterInterests.slice(0, 6)];
-const socialImagePath = site.socialImage || brandLogoSrc;
+const socialImagePath = site.socialImage || "/assets/og/default.jpg";
 const ogLocaleMap = {
   es: "es_ES",
   en: "en_US",
@@ -254,6 +257,85 @@ function applySocialMeta({
   applyAlternateLocaleLinks(path, params);
 }
 
+function articleSocialImage(article) {
+  return `/assets/og/${currentLocale}/${article.slug}.jpg`;
+}
+
+function publisherStructuredData() {
+  return {
+    "@type": "Organization",
+    name: site.name,
+    url: `${siteBaseUrl}/`,
+    logo: {
+      "@type": "ImageObject",
+      url: absoluteSiteUrl(brandLogoSrc),
+    },
+  };
+}
+
+function siteStructuredData() {
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      name: site.name,
+      url: absoluteSiteUrl(localizedUrlForLocale("index.html", currentLocale)),
+      inLanguage: currentLocale,
+      description: site.description,
+      publisher: publisherStructuredData(),
+    },
+  ];
+}
+
+function applyArticleMeta(article, authorName, sectorNames = []) {
+  const author = authorMap.get(article.author);
+  const published = article.date ? `${article.date}T00:00:00Z` : "";
+  const url = absoluteSiteUrl(
+    localizedUrlForLocale("article.html", currentLocale, new URLSearchParams({ slug: article.slug })),
+  );
+
+  if (published) {
+    ensureMetaTag("property", "article:published_time").setAttribute("content", published);
+  }
+  ensureMetaTag("property", "article:author").setAttribute("content", authorName);
+  ensureMetaTag("property", "article:section").setAttribute("content", labelForType(article.type));
+
+  applyStructuredData({
+    "@context": "https://schema.org",
+    "@type": article.type === "opinion" ? "OpinionNewsArticle" : "NewsArticle",
+    headline: article.title,
+    description: article.excerpt || article.subtitle || site.description,
+    image: [absoluteSiteUrl(articleSocialImage(article))],
+    datePublished: published || undefined,
+    dateModified: published || undefined,
+    inLanguage: currentLocale,
+    mainEntityOfPage: url,
+    url,
+    articleSection: labelForType(article.type),
+    keywords: normalizeKeywords([article.tags, sectorNames]).join(", "),
+    author: {
+      "@type": "Person",
+      name: authorName,
+      ...(author
+        ? { url: absoluteSiteUrl(localizedUrlForLocale("expert.html", currentLocale, new URLSearchParams({ slug: author.slug }))) }
+        : {}),
+    },
+    publisher: publisherStructuredData(),
+  });
+}
+
+function applyStructuredData(data) {
+  let tag = document.head.querySelector('script[type="application/ld+json"]');
+
+  if (!tag) {
+    tag = document.createElement("script");
+    tag.type = "application/ld+json";
+    document.head.appendChild(tag);
+  }
+
+  tag.textContent = JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 function pageKeywords(pageKey, extra = []) {
   return normalizeKeywords([site.name, ui.pageTitles[pageKey], defaultKeywordSeed, extra]);
 }
@@ -402,6 +484,7 @@ function renderPage() {
         ui.home.heroLead,
         ui.home.heroSubtitle,
       ]);
+      applyStructuredData(siteStructuredData());
       app.innerHTML = renderHomePage();
       break;
     case "analysis":
@@ -518,6 +601,7 @@ function renderPage() {
         description: site.description,
         path: "index.html",
       });
+      ensureMetaTag("name", "robots").setAttribute("content", "noindex");
       app.innerHTML = renderNotFound();
       break;
   }
@@ -1638,10 +1722,12 @@ function renderArticlePage() {
     title: document.title,
     description: article.excerpt || article.subtitle || site.description,
     type: "article",
+    image: articleSocialImage(article),
     path: "article.html",
     params: { slug: article.slug },
     imageAlt: article.title,
   });
+  applyArticleMeta(article, authorName, sectorNames);
 
   return `
     <section class="article-hero section">
@@ -2723,7 +2809,7 @@ function withLocale(href) {
 }
 
 function buildLocalizedData(locale) {
-  const overridesSource = contentTranslations[locale] || {};
+  const overridesSource = locale === currentLocale ? contentSource : {};
   const overrides = locale === "ru" ? cyrillicizeValue(overridesSource) : overridesSource;
 
   return {
@@ -2750,7 +2836,7 @@ function buildLocalizedData(locale) {
 }
 
 function buildLocalizedUi(locale) {
-  const source = uiCopy[locale] || uiCopy[defaultLocale];
+  const source = uiSource;
   return locale === "ru" ? cyrillicizeValue(source) : source;
 }
 
