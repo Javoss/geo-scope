@@ -736,30 +736,7 @@ function renderHomePage() {
     .filter((article) => article.type === "radar")
     .slice(0, 2);
   const leadSignal = radarItems[0]?.signals?.[0];
-  const heroFeatureText = summarizeText(mainFeature.excerpt || mainFeature.subtitle, 210);
-  const heroGuides = [
-    {
-      eyebrow: ui.home.latest.eyebrow,
-      title: ui.home.latest.title,
-      text: ui.home.latest.text,
-      href: withLocale("analysis.html"),
-      action: ui.home.latest.action,
-    },
-    {
-      eyebrow: ui.home.regionsSection.eyebrow,
-      title: ui.home.regionsSection.title,
-      text: ui.home.regionsSection.text,
-      href: withLocale("regions.html"),
-      action: ui.home.regionsSection.action,
-    },
-    {
-      eyebrow: ui.home.radar.eyebrow,
-      title: ui.home.radar.title,
-      text: ui.home.radar.text,
-      href: withLocale("radar.html"),
-      action: ui.home.radar.action,
-    },
-  ];
+  const featureAuthor = authorMap.get(mainFeature.author);
   const homeSectors = [...sectors]
     .sort(
       (left, right) =>
@@ -793,59 +770,36 @@ function renderHomePage() {
           <div class="hero-trust-row">
             ${ui.home.trust.map((item) => `<span>${item}</span>`).join("")}
           </div>
-          <div class="hero-context-grid">
-            ${heroGuides
-              .map(
-                (guide) => `
-                  <a class="hero-context-card" href="${guide.href}">
-                    <span class="hero-context-card__eyebrow">${guide.eyebrow}</span>
-                    <strong>${guide.title}</strong>
-                    <p>${guide.text}</p>
-                    <span class="inline-link">${guide.action}</span>
-                  </a>
-                `,
-              )
-              .join("")}
-          </div>
         </div>
         <aside class="hero-panel hero-panel--home reveal">
-          <div class="hero-panel__main">
-            <div class="panel-header">
-              <span class="eyebrow">${ui.home.focus}</span>
-              <span class="panel-index">${ui.home.edition} / 01</span>
-            </div>
-            <a class="hero-panel__link" href="${articleUrl(mainFeature.slug)}">
-              <h2 class="hero-panel__title">${mainFeature.title}</h2>
-              <p class="hero-panel__text">${heroFeatureText}</p>
-            </a>
-            <div class="meta-row hero-panel__meta">
+          <div class="panel-header">
+            <span class="eyebrow">${ui.home.focus}</span>
+            <span class="panel-index">${ui.home.edition} 01</span>
+          </div>
+          <a class="hero-feature" href="${articleUrl(mainFeature.slug)}">
+            <div class="meta-row hero-feature__chips">
               <span class="meta-chip">${labelForType(mainFeature.type)}</span>
               <span class="meta-chip">${nameForRegion(mainFeature.region)}</span>
             </div>
-          </div>
-          <div class="hero-panel__side">
-            <div class="metric-grid metric-grid--hero">
-              <div class="metric-card">
-                <strong>${articles.length}</strong>
-                <span>${ui.home.dossiers}</span>
-              </div>
-              <div class="metric-card">
-                <strong>${regions.length}</strong>
-                <span>${ui.home.regions}</span>
-              </div>
-              <div class="metric-card">
-                <strong>${sectors.length}</strong>
-                <span>${ui.home.sectorsMetric}</span>
-              </div>
+            <h2 class="hero-feature__title">${mainFeature.title}</h2>
+            <p class="hero-feature__text">${mainFeature.excerpt || mainFeature.subtitle || ""}</p>
+            <div class="hero-feature__byline">
+              ${featureAuthor ? `<strong>${featureAuthor.name}</strong>` : ""}
+              <span>${formatDate(mainFeature.date)} · ${ui.meta.shortMinutes(mainFeature.readTime)}</span>
             </div>
-            <div class="signal-panel signal-panel--compact">
+            <span class="btn btn-primary hero-feature__cta">${ui.articlePage.readArticle}</span>
+          </a>
+          <div class="hero-panel__footer">
+            <div class="hero-radar">
               <span class="eyebrow">${ui.home.globalRadar}</span>
-              <div class="signal-panel__card">
-                <strong>${leadSignal?.title || ui.home.weeklyPriority}</strong>
-                <span>${leadSignal?.detail || ui.home.weeklyPriorityFallback}</span>
-              </div>
+              <strong>${leadSignal?.title || ui.home.weeklyPriority}</strong>
               <a class="inline-link" href="${radarItems[0] ? articleUrl(radarItems[0].slug) : withLocale("radar.html")}">${ui.home.openWeeklyRadar}</a>
             </div>
+            <dl class="hero-stats">
+              <div><dt>${ui.home.dossiers}</dt><dd>${articles.length}</dd></div>
+              <div><dt>${ui.home.regions}</dt><dd>${regions.length}</dd></div>
+              <div><dt>${ui.home.sectorsMetric}</dt><dd>${sectors.length}</dd></div>
+            </dl>
           </div>
         </aside>
       </div>
@@ -3387,16 +3341,6 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
-}
-
-function summarizeText(value, max = 210) {
-  const text = String(value || "").trim();
-  if (text.length <= max) {
-    return text;
-  }
-  const cut = text.slice(0, max);
-  const lastSpace = cut.lastIndexOf(" ");
-  return `${(lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trimEnd()}…`;
 }
 
 function escapeAttribute(value) {

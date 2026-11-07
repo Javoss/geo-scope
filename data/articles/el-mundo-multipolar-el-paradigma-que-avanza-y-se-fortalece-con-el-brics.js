@@ -1,7 +1,7 @@
 export const articleElMundoMultipolarParadigmaBrics = {
   slug: "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics",
   title:
-    "EL MUNDO MULTIPOLAR: EL PARADIGMA QUE AVANZA Y SE FORTALECE CON EL BRICS",
+    "El mundo multipolar: el paradigma que avanza y se fortalece con el BRICS",
   subtitle:
     "El BRICS consolida una alternativa de cooperación, soberanía y gobernanza global para un mundo multipolar en expansión.",
   excerpt:
