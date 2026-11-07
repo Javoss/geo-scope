@@ -156,7 +156,7 @@ export const uiCopy = {
         eyebrow: "Portada",
         title: "Una lectura principal y tres ejes de contexto.",
         text:
-          "La home combina un artículo destacado con piezas complementarias para construir una lectura más completa del tablero global.",
+          "Empieza por la lectura principal y sigue con las piezas que la ponen en contexto.",
       },
       latest: {
         eyebrow: "Últimos análisis",
@@ -290,7 +290,7 @@ export const uiCopy = {
       eyebrow: "Sobre Geo Scope",
       title:
         "Un proyecto editorial para interpretar cambios globales con profundidad, criterio y claridad.",
-      text: "Geo Scope combina la disciplina de un think tank independiente.",
+      text: "Geo Scope combina la disciplina de un think tank independiente con la claridad de una publicación editorial: análisis con fuentes, contexto histórico y lectura estratégica de largo plazo.",
       mission: "Misión",
       vision: "Visión",
       approach: "Enfoque",
@@ -526,7 +526,7 @@ export const uiCopy = {
         eyebrow: "Front page",
         title: "One lead read and three context lines.",
         text:
-          "The homepage combines a featured article with complementary pieces to build a fuller reading of the global board.",
+          "Start with the lead piece, then follow the related reads that put it in context.",
       },
       latest: {
         eyebrow: "Latest analysis",
@@ -658,7 +658,7 @@ export const uiCopy = {
       eyebrow: "About Geo Scope",
       title:
         "An editorial project for interpreting global change with depth, judgment, and clarity.",
-      text: "Geo Scope combines the discipline of an independent think tank.",
+      text: "Geo Scope combines the discipline of an independent think tank with the clarity of an editorial publication: sourced analysis, historical context and long-term strategic reading.",
       mission: "Mission",
       vision: "Vision",
       approach: "Approach",
@@ -893,7 +893,7 @@ export const uiCopy = {
         eyebrow: "Pervaya polosa",
         title: "Odin glavniy material i tri linii konteksta.",
         text:
-          "Glavnaya stranitsa sochetaet vedushchuyu statyu i dopolnyayushchie materialy, chtoby dat bolee polnuyu kartinu globalnogo polya.",
+          "Начните с главного материала, а затем прочитайте тексты, которые дают ему контекст.",
       },
       latest: {
         eyebrow: "Poslednyaya analitika",
@@ -1027,7 +1027,7 @@ export const uiCopy = {
       eyebrow: "O Geo Scope",
       title:
         "Redaktsionnyy proekt dlya interpretatsii globalnykh peremen s glubinoy, strategicheskim suzhdeniem i yasnostyu.",
-      text: "Geo Scope sochetaet distsiplinu nezavisimogo think tank.",
+      text: "Geo Scope сочетает дисциплину независимого аналитического центра с ясностью редакционного издания: анализ с опорой на источники, исторический контекст и долгосрочное стратегическое видение.",
       mission: "Missiya",
       vision: "Videnie",
       approach: "Podkhod",
@@ -1261,7 +1261,7 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
       eyebrow: "首页封面",
       title: "一篇主读与三条背景线索。",
       text:
-        "首页将一篇重点文章与补充内容并置，帮助你更完整地理解全球棋盘。",
+        "先读主文，再通过相关文章了解其背景。",
     },
     latest: {
       eyebrow: "最新分析",
@@ -1386,7 +1386,7 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
   aboutPage: {
     eyebrow: "关于 Geo Scope",
     title: "一个以深度、判断力与清晰度解读全球变化的编辑项目。",
-    text: "Geo Scope 结合了独立智库的纪律性。",
+    text: "Geo Scope 将独立智库的严谨与编辑出版的清晰相结合：有据可查的分析、历史背景与长期战略视角。",
     mission: "使命",
     vision: "愿景",
     approach: "方法",

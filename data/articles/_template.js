@@ -1,8 +1,8 @@
 export const articleTemplate = {
   slug: "titulo-del-articulo",
-  title: "Título del articulo",
-  subtitle: "Subtítulo del articulo",
-  excerpt: "Resumen corto para tarjetas, portada y metadescripcion.",
+  title: "Título del artículo",
+  subtitle: "Subtítulo del artículo",
+  excerpt: "Resumen corto para tarjetas, portada y metadescripción.",
   type: "analysis",
   region: "global",
   sectors: ["geopolitica"],
@@ -14,17 +14,17 @@ export const articleTemplate = {
   bodySections: [
     {
       paragraphs: [
-        "Apertura del articulo sin encabezado, ideal para uno o dos parrafos iniciales.",
+        "Apertura del artículo sin encabezado, ideal para uno o dos párrafos iniciales.",
       ],
     },
     {
       heading: "Primera sección",
       paragraphs: [
-        "Primer parrafo de la sección.",
-        "Segundo parrafo de la sección.",
+        "Primer párrafo de la sección.",
+        "Segundo párrafo de la sección.",
       ],
       callouts: [
-        "Frase destacada, idea de sintesis o bloque de alto impacto visual.",
+        "Frase destacada, idea de síntesis o bloque de alto impacto visual.",
       ],
     },
     {

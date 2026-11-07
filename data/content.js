@@ -150,7 +150,7 @@ export const regions = [
     name: "China y Asia",
     strap: "Escala productiva, estándares técnicos y competencia por la manufactura.",
     description:
-      "Seguimiento de la centralidad asiática en tecnología, comercio, infraestructura y arquitectura financiera del siglo XXI.",
+      "Seguimiento de la centralidad asíática en tecnología, comercio, infraestructura y arquitectura financiera del siglo XXI.",
     tags: ["semiconductores", "conectividad", "manufactura", "digital"],
     accent: "jade",
   },
@@ -304,9 +304,9 @@ const legacyArticles = [
     slug: "brics-y-el-nuevo-equilibrio-tecnológico-global",
     title: "BRICS y el nuevo equilibrio tecnológico global",
     subtitle:
-      "La competencia por estándares, plataformas industriales y capacidad de cómputo esta redefiniendo el peso relativo del bloque.",
+      "La competencia por estándares, plataformas industriales y capacidad de cómputo está redefiniendo el peso relativo del bloque.",
     excerpt:
-      "El debate sobre los BRICS ya no gira solo en torno a monedas o representacion institucional. La nueva pregunta es quien controla los nodos tecnológicos que estructuran la siguiente fase del poder global.",
+      "El debate sobre los BRICS ya no gira solo en torno a monedas o representación institucional. La nueva pregunta es quién controla los nodos tecnológicos que estructuran la siguiente fase del poder global.",
     type: "analysis",
     region: "brics",
     sectors: [
@@ -321,9 +321,9 @@ const legacyArticles = [
     tone: "midnight",
     tags: ["BRICS", "IA", "estándares", "capacidad industrial"],
     thesis:
-      "La disputa tecnologica entre potencias se ha desplazado de la retórica de bloques hacia la construcción de ecosistemas concretos: centros de datos, talento, manufactura avanzada y normas técnicas.",
+      "La disputa tecnológica entre potencias se ha desplazado de la retórica de bloques hacia la construcción de ecosistemas concretos: centros de datos, talento, manufactura avanzada y normas técnicas.",
     whyItMatters: [
-      "Para el bloque BRICS, la coordinación tecnologica funciona como multiplicador de peso geopolitico incluso cuando no existe una arquitectura plenamente integrada.",
+      "Para el bloque BRICS, la coordinación tecnológica funciona como multiplicador de peso geopolítico incluso cuando no existe una arquitectura plenamente integrada.",
       "El acceso a infraestructura digital, semiconductores maduros, servicios en la nube y cadenas de valor industriales define hoy una parte creciente de la autonomía estratégica.",
     ],
     regionalLens:
@@ -333,11 +333,11 @@ const legacyArticles = [
   },
   {
     slug: "que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina",
-    title: "Qué significa la fragmentacion del comercio mundial para América Latina",
+    title: "Qué significa la fragmentación del comercio mundial para América Latina",
     subtitle:
       "Nearshoring, friendshoring y seguridad económica abren oportunidades, pero también exigen estrategia industrial y coordinación regional.",
     excerpt:
-      "La fragmentacion del comercio global no implica una desglobalizacion total. Implica una geografía más política del comercio, donde América Latina puede ganar relevancia si evita una insercion puramente extractiva.",
+      "La fragmentación del comercio global no implica una desglobalización total. Implica una geografía más política del comercio, donde América Latina puede ganar relevancia si evita una inserción puramente extractiva.",
     type: "analysis",
     region: "america-latina",
     sectors: ["comercio-cadenas-logisticas", "economia-internacional"],
@@ -348,23 +348,23 @@ const legacyArticles = [
     tone: "jade",
     tags: ["nearshoring", "América Latina", "logística", "industria"],
     thesis:
-      "La fragmentacion comercial no significa el fin del intercambio global, sino una reorganizacion basada en resiliencia, proximidad política y control de riesgos.",
+      "La fragmentación comercial no significa el fin del intercambio global, sino una reorganización basada en resiliencia, proximidad política y control de riesgos.",
     whyItMatters: [
       "Para América Latina, el escenario abre espacio en manufactura, agroindustria, minerales y servicios, pero solo si hay capacidad de coordinación público-privada y mejoras logísticas.",
-      "La region corre el riesgo de convertirse en proveedor de contingencia sin capturar eslabones de mayor valor si no fortalece infraestructura, talento y reglas estables.",
+      "La región corre el riesgo de convertirse en proveedor de contingencia sin capturar eslabones de mayor valor si no fortalece infraestructura, talento y reglas estables.",
     ],
     regionalLens:
-      "Mexico, Brasil, Chile, Colombia y el corredor del Cono Sur enfrentan oportunidades distintas. El punto comun es la necesidad de traducir coyuntura geopolítica en política económica consistente.",
+      "México, Brasil, Chile, Colombia y el corredor del Cono Sur enfrentan oportunidades distintas. El punto común es la necesidad de traducir coyuntura geopolítica en política económica consistente.",
     outlook:
-      "El proximo ciclo premiara a quienes ofrezcan previsibilidad regulatoria, energía competitiva y nodos logísticos confiables. La ventaja geografica, por si sola, ya no alcanza.",
+      "El próximo ciclo premiará a quienes ofrezcan previsibilidad regulatoria, energía competitiva y nodos logísticos confiables. La ventaja geográfica, por si sola, ya no alcanza.",
   },
   {
     slug: "rusia-y-eurasia-en-la-reconfiguracion-del-poder-global",
-    title: "Rusia y Eurasia en la reconfiguracion del poder global",
+    title: "Rusia y Eurasia en la reconfiguración del poder global",
     subtitle:
       "Entre sanciones, corredores terrestres y capacidad militar-industrial, Eurasia vuelve a ocupar un lugar estructural en el tablero internacional.",
     excerpt:
-      "Eurasia ya no puede leerse solo desde el lente del conflicto. Tambien debe analizarse como espacio logístico, energético y político en plena reordenacion.",
+      "Eurasia ya no puede leerse solo desde el lente del conflicto. También debe analizarse como espacio logístico, energético y político en plena reordenación.",
     type: "analysis",
     region: "rusia-eurasia",
     sectors: ["geopolitica", "defensa-seguridad"],
@@ -375,23 +375,23 @@ const legacyArticles = [
     tone: "indigo",
     tags: ["Eurasia", "seguridad", "sanciones", "corredores"],
     thesis:
-      "La centralidad eurasica surge de la convergencia entre geografía, seguridad y conectividad. Incluso bajo presión, la region sigue condicionando rutas, energía y posturas diplomáticas.",
+      "La centralidad eurasiática surge de la convergencia entre geografía, seguridad y conectividad. Incluso bajo presión, la región sigue condicionando rutas, energía y posturas diplomáticas.",
     whyItMatters: [
       "Las sanciones aceleraron ajustes financieros y logísticos que alteraron flujos comerciales, nodos de transporte y alianzas tacticas.",
-      "La capacidad militar-industrial y la profundidad territorial siguen siendo variables determinantes en cualquier lectura sobre seguridad europea y asiática.",
+      "La capacidad militar-industrial y la profundidad territorial siguen siendo variables determinantes en cualquier lectura sobre seguridad europea y asíática.",
     ],
     regionalLens:
-      "Desde el Caspio hasta el Ártico, la region combina vulnerabilidades operativas con ventajas de posición geográfico que ningún actor externo puede ignorar.",
+      "Desde el Caspio hasta el Ártico, la región combina vulnerabilidades operativas con ventajas de posición geográfica que ningún actor externo puede ignorar.",
     outlook:
-      "La proxima etapa dependerá menos de comunicados y más de la resistencia productiva, la apertura de corredores alternativos y la densidad de acuerdos con Asia, Medio Oriente y el sur global.",
+      "La próxima etapa dependerá menos de comunicados y más de la resistencia productiva, la apertura de corredores alternativos y la densidad de acuerdos con Asia, Medio Oriente y el sur global.",
   },
   {
     slug: "energia-corredores-logisticos-y-competencia-geoeconomica",
     title: "Energía, corredores logísticos y competencia geoeconómica",
     subtitle:
-      "Los cuellos de botella del suministro ya no son un asunto técnico: son un tema de poder, financiamiento y capacidad de anticipacion.",
+      "Los cuellos de botella del suministro ya no son un asunto técnico: son un tema de poder, financiamiento y capacidad de anticipación.",
     excerpt:
-      "Corredores, puertos, estrechos y terminales energéticas forman una sola geografía estratégica. Quien reduce friccion logística gana margen político.",
+      "Corredores, puertos, estrechos y terminales energéticas forman una sola geografía estratégica. Quien reduce fricción logística gana margen político.",
     type: "analysis",
     region: "medio-oriente",
     sectors: ["energia", "infraestructura-estrategica"],
@@ -400,15 +400,15 @@ const legacyArticles = [
     readTime: 8,
     homeFeature: 13,
     tone: "gold",
-    tags: ["energia", "corredores", "geoeconomía", "puertos"],
+    tags: ["energía", "corredores", "geoeconomía", "puertos"],
     thesis:
       "La competencia geoeconómica actual se organiza alrededor de infraestructura física concreta: puertos, redes eléctricas, ductos, cables y plataformas logísticas.",
     whyItMatters: [
       "Los actores que combinan financiamiento, seguridad y capacidad operativa sobre esos nodos obtienen influencia muy superior a su peso nominal.",
-      "La energía sigue siendo el lenguaje comun entre seguridad nacional, política industrial y diplomacia económica.",
+      "La energía sigue siendo el lenguaje común entre seguridad nacional, política industrial y diplomacia económica.",
     ],
     regionalLens:
-      "Medio Oriente conserva centralidad no solo por hidrocarburos, sino por su función como bisagra entre Asia, Europa y Africa.",
+      "Medio Oriente conserva centralidad no solo por hidrocarburos, sino por su función como bisagra entre Asia, Europa y África.",
     outlook:
       "Las disputas futuras se medirán menos por volumen de comercio agregado y más por control de cuellos de botella, redundancias y tiempo de respuesta ante crisis.",
   },
@@ -416,9 +416,9 @@ const legacyArticles = [
     slug: "la-inteligencia-artificial-como-herramienta-de-poder-estatal",
     title: "La inteligencia artificial como herramienta de poder estatal",
     subtitle:
-      "La carrera por la IA no es solo una competencia empresarial. Es una disputa por administracion, defensa, productividad y capacidad de gobierno.",
+      "La carrera por la IA no es solo una competencia empresarial. Es una disputa por administración, defensa, productividad y capacidad de gobierno.",
     excerpt:
-      "La IA se está integrando al corazón del aparato estatal: inteligencia, gestión fiscal, industria, defensa y servicios publicos. El punto no es solo innovar, sino gobernar mejor y más rápido.",
+      "La IA se está integrando al corazón del aparato estatal: inteligencia, gestión fiscal, industria, defensa y servicios públicos. El punto no es solo innovar, sino gobernar mejor y más rápido.",
     type: "opinión",
     region: "estados-unidos-occidente",
     sectors: [
@@ -431,21 +431,21 @@ const legacyArticles = [
     tone: "midnight",
     tags: ["IA", "Estado", "gobernanza", "productividad"],
     thesis:
-      "La narrativa dominante presenta la inteligencia artificial como disrupcion de mercado, cuando en realidad su impacto más profundo se juega en la capacidad estatal.",
+      "La narrativa dominante presenta la inteligencia artificial como disrupción de mercado, cuando en realidad su impacto más profundo se juega en la capacidad estatal.",
     whyItMatters: [
-      "Quienes integren IA en burocracias, defensa, supervisión financiera y planificación estratégica elevaran su productividad institucional y su margen de acción exterior.",
-      "La brecha futura no será solo entre empresas lideres y rezagadas, sino entre Estados capaces de absorber tecnología y Estados que solo la consumen.",
+      "Quienes integren IA en burocracias, defensa, supervisión financiera y planificación estratégica elevarán su productividad institucional y su margen de acción exterior.",
+      "La brecha futura no será solo entre empresas líderes y rezagadas, sino entre Estados capaces de absorber tecnología y Estados que solo la consumen.",
     ],
     regionalLens:
       "Estados Unidos y sus aliados conservan ventaja en capital, cómputo y ecosistema innovador, pero esa ventaja exige coordinación regulatoria y despliegue público más fino.",
     outlook:
-      "La siguiente gran discusión será sobre interoperabilidad, supervisión y doctrina. La IA que importa geopoliticamente es la que entra en sistemas reales, no la que domina titulares.",
+      "La siguiente gran discusión será sobre interoperabilidad, supervisión y doctrina. La IA que importa geopolíticamente es la que entra en sistemas reales, no la que domina titulares.",
   },
   {
     slug: "tres-señales-que-están-redefiniendo-la-multipolaridad",
     title: "Tres señales que están redefiniendo la multipolaridad",
     subtitle:
-      "Una lectura breve de los movimientos que muestran por donde puede cambiar la arquitectura del poder global.",
+      "Una lectura breve de los movimientos que muestran por dónde puede cambiar la arquitectura del poder global.",
     excerpt:
       "La multipolaridad no aparece de golpe. Se manifiesta en pequeños reajustes financieros, diplomáticos y tecnológicos que, combinados, cambian el terreno de juego.",
     type: "radar",
@@ -458,9 +458,9 @@ const legacyArticles = [
     tags: ["radar", "multipolaridad", "BRICS", "gobernanza"],
     signals: [
       {
-        title: "Mas acuerdos en monedas locales",
+        title: "Más acuerdos en monedas locales",
         detail:
-          "No sustituyen al dolar en el corto plazo, pero si amplian margen de maniobra en comercio bilateral y financiamiento selectivo.",
+          "No sustituyen al dólar en el corto plazo, pero sí amplían margen de maniobra en comercio bilateral y financiamiento selectivo.",
       },
       {
         title: "Instituciones paralelas ganan densidad",
@@ -470,7 +470,7 @@ const legacyArticles = [
       {
         title: "La diplomacia sectorial pesa más que los grandes bloques",
         detail:
-          "Minerales, energía, conectividad e inteligencia artificial generan coaliciones parciales que reordenan prioridades más rápido que los alineamientos ideologicos tradicionales.",
+          "Minerales, energía, conectividad e inteligencia artificial generan coaliciones parciales que reordenan prioridades más rápido que los alineamientos ideológicos tradicionales.",
       },
     ],
     outlook:
@@ -482,7 +482,7 @@ const legacyArticles = [
     subtitle:
       "Nuevas rutas, recursos, seguridad y clima convierten al norte extremo en una de las fronteras estratégicas más sensibles.",
     excerpt:
-      "El Ártico se está volviendo una zona de competencia simultáneamente energetica, comercial, militar y científica. Esa superposición explica su creciente relevancia.",
+      "El Ártico se está volviendo una zona de competencia simultáneamente energética, comercial, militar y científica. Esa superposición explica su creciente relevancia.",
     type: "analysis",
     region: "europa",
     sectors: ["geopolitica", "energia"],
@@ -490,15 +490,15 @@ const legacyArticles = [
     date: "2026-04-13",
     readTime: 8,
     tone: "silver",
-    tags: ["Ártico", "rutas", "energia", "seguridad"],
+    tags: ["Ártico", "rutas", "energía", "seguridad"],
     thesis:
-      "El Ártico concentra una rareza estratégica: es frontera climatica, reservorio energético, corredor potencial y espacio de competencia militar al mismo tiempo.",
+      "El Ártico concentra una rareza estratégica: es frontera climática, reservorio energético, corredor potencial y espacio de competencia militar al mismo tiempo.",
     whyItMatters: [
-      "Cambios en navegabilidad, infraestructura dual y explotacion de recursos alteran calculos de costo, tiempo y presencia militar.",
-      "Europa, Rusia, Norteamérica y Asia observan el Ártico con lentes distintos, pero todos coinciden en que su importancia relativa esta aumentando.",
+      "Cambios en navegabilidad, infraestructura dual y explotación de recursos alteran cálculos de costo, tiempo y presencia militar.",
+      "Europa, Rusia, Norteamérica y Asia observan el Ártico con lentes distintos, pero todos coinciden en que su importancia relativa está aumentando.",
     ],
     regionalLens:
-      "Para Europa, el Ártico combina seguridad energetica, protección de rutas y necesidad de coordinarse con aliados sin perder autonomía regulatoria.",
+      "Para Europa, el Ártico combina seguridad energética, protección de rutas y necesidad de coordinarse con aliados sin perder autonomía regulatoria.",
     outlook:
       "No se trata de una nueva fiebre del oro. Se trata de un espacio que obliga a repensar infraestructura, disuasión y gobernanza antes de que la presión crezca aún más.",
   },
@@ -506,9 +506,9 @@ const legacyArticles = [
     slug: "china-y-asia-estándares-digitales-y-rutas-industriales",
     title: "China y Asia: estándares digitales y rutas industriales",
     subtitle:
-      "La region consolida una ventaja menos visible pero más profunda: definir como se produce, se conecta y se escala la tecnología.",
+      "La región consolida una ventaja menos visible pero más profunda: definir como se produce, se conecta y se escala la tecnología.",
     excerpt:
-      "Asia ya no es solo la fabrica del mundo. Es también un laboratorio de estándares, coordinación industrial e infraestructura digital con impacto global.",
+      "Asia ya no es solo la fábrica del mundo. Es también un laboratorio de estándares, coordinación industrial e infraestructura digital con impacto global.",
     type: "analysis",
     region: "china-asia",
     sectors: ["tecnologia-geopolitica", "infraestructura-estrategica"],
@@ -518,7 +518,7 @@ const legacyArticles = [
     tone: "jade",
     tags: ["Asia", "estándares", "digital", "industria"],
     thesis:
-      "La influencia asiática crece porque combina escala productiva, financiamiento y capacidad para definir normas operativas en sectores estratégicos.",
+      "La influencia asíática crece porque combina escala productiva, financiamiento y capacidad para definir normas operativas en sectores estratégicos.",
     whyItMatters: [
       "Quien fija estándares técnicos también fija costos de entrada, interoperabilidad y dependencia futura.",
       "La integración entre manufactura, logística y conectividad digital le da a Asia una profundidad sistémica difícil de replicar en otras regiones.",
@@ -526,15 +526,15 @@ const legacyArticles = [
     regionalLens:
       "China ocupa el centro del tablero, pero el ecosistema regional depende también de India, ASEAN, Corea, Japón y múltiples arreglos funcionales.",
     outlook:
-      "La proxima batalla por cadenas tecnológicas no será solo por liderazgo de marca, sino por capacidad de imponer reglas practicas de producción y adopción.",
+      "La próxima batalla por cadenas tecnológicas no será solo por liderazgo de marca, sino por capacidad de imponer reglas prácticas de producción y adopción.",
   },
   {
     slug: "europa-seguridad-industrial-y-autonomía-estratégica",
     title: "Europa: seguridad industrial y autonomía estratégica",
     subtitle:
-      "La agenda europea intenta reconciliar apertura de mercado, defensa, energía y reconstruccion productiva sin perder cohesion política.",
+      "La agenda europea intenta reconciliar apertura de mercado, defensa, energía y reconstrucción productiva sin perder cohesión política.",
     excerpt:
-      "Europa enfrenta un dilema estructural: necesita ser más resiliente sin dejar de ser abierta. Esa tensión esta redisenando su política económica y su lenguaje geopolitico.",
+      "Europa enfrenta un dilema estructural: necesita ser más resiliente sin dejar de ser abierta. Esa tensión está rediseñando su política económica y su lenguaje geopolítico.",
     type: "opinión",
     region: "europa",
     sectors: ["economia-internacional", "diplomacia"],
@@ -542,25 +542,25 @@ const legacyArticles = [
     date: "2026-04-11",
     readTime: 7,
     tone: "silver",
-    tags: ["Europa", "autonomía estratégica", "industria", "regulacion"],
+    tags: ["Europa", "autonomía estratégica", "industria", "regulación"],
     thesis:
-      "La autonomía estratégica europea no es un giro ideológico repentino. Es la respuesta acumulada a choques energéticos, presión tecnologica y vulnerabilidad industrial.",
+      "La autonomía estratégica europea no es un giro ideológico repentino. Es la respuesta acumulada a choques energéticos, presión tecnológica y vulnerabilidad industrial.",
     whyItMatters: [
-      "Europa esta redefiniendo subsidios, reglas de competencia y políticas de seguridad económica para reducir dependencia en sectores críticos.",
-      "El desafio es hacerlo sin fragmentar el mercado interno ni deteriorar su capacidad diplomática con socios clave.",
+      "Europa está redefiniendo subsidios, reglas de competencia y políticas de seguridad económica para reducir dependencia en sectores críticos.",
+      "El desafío es hacerlo sin fragmentar el mercado interno ni deteriorar su capacidad diplomática con socios clave.",
     ],
     regionalLens:
-      "La discusión europea es menos binaria de lo que suele creerse: no se trata de elegir entre autonomía o alianza, sino de encontrar una combinacion sostenible de ambas.",
+      "La discusión europea es menos binaria de lo que suele creerse: no se trata de elegir entre autonomía o alianza, sino de encontrar una combinación sostenible de ambas.",
     outlook:
-      "El exito dependerá de ejecutar políticas industriales selectivas con financiamiento creible y de coordinar regulacion con una visión más geopolítica del mercado comun.",
+      "El éxito dependerá de ejecutar políticas industriales selectivas con financiamiento creíble y de coordinar regulación con una visión más geopolítica del mercado común.",
   },
   {
     slug: "africa-minerales-críticos-manufactura-y-poder-negociador",
-    title: "Africa: minerales críticos, manufactura y poder negociador",
+    title: "África: minerales críticos, manufactura y poder negociador",
     subtitle:
-      "El continente gana centralidad en la transición energetica, pero la verdadera pregunta es cuanta captura de valor podrá retener.",
+      "El continente gana centralidad en la transición energética, pero la verdadera pregunta es cuánta captura de valor podrá retener.",
     excerpt:
-      "Africa se ha vuelto indispensable para minerales críticos, corredores y demanda futura. El desafio es convertir esa centralidad en capacidad industrial propia.",
+      "África se ha vuelto indispensable para minerales críticos, corredores y demanda futura. El desafío es convertir esa centralidad en capacidad industrial propia.",
     type: "analysis",
     region: "africa",
     sectors: ["infraestructura-estrategica", "economia-internacional"],
@@ -568,23 +568,23 @@ const legacyArticles = [
     date: "2026-04-10",
     readTime: 9,
     tone: "forest",
-    tags: ["Africa", "minerales críticos", "manufactura", "negociacion"],
+    tags: ["África", "minerales críticos", "manufactura", "negociación"],
     thesis:
-      "La nueva centralidad africana no se explica solo por recursos. Se explica por la combinacion entre minerales, mercados urbanos, conectividad y posición geografica.",
+      "La nueva centralidad africana no se explica solo por recursos. Se explica por la combinación entre minerales, mercados urbanos, conectividad y posición geográfica.",
     whyItMatters: [
-      "La transición energetica y la competencia por baterías aumentan el valor estratégico de cobalto, cobre, manganeso y tierras raras.",
+      "La transición energética y la competencia por baterías aumentan el valor estratégico de cobalto, cobre, manganeso y tierras raras.",
       "La oportunidad real está en transformar contratos extractivos en plataformas de procesamiento, formación de talento e infraestructura compartida.",
     ],
     regionalLens:
       "Los gobiernos africanos negocian ahora con un margen algo mayor porque existe más competencia entre oferentes de financiamiento, tecnología y seguridad.",
     outlook:
-      "El punto de inflexion vendra si esa competencia externa se traduce en agendas nacionales de industrializacion con instituciones capaces de sostenerlas.",
+      "El punto de inflexion vendra si esa competencia externa se traduce en agendas nacionales de industrialización con instituciones capaces de sostenerlas.",
   },
   {
     slug: "estados-unidos-alianzas-y-política-industrial-de-segunda-ola",
     title: "Estados Unidos, alianzas y política industrial de segunda ola",
     subtitle:
-      "Washington intenta pasar de la reaccion a una estrategia más durable basada en industria, seguridad económica y coordinación con aliados.",
+      "Washington intenta pasar de la reacción a una estrategia más durable basada en industria, seguridad económica y coordinación con aliados.",
     excerpt:
       "La política industrial estadounidense ya no es un paréntesis. Se está convirtiendo en la gramática económica de una nueva etapa de competencia sistémica.",
     type: "analysis",
@@ -602,7 +602,7 @@ const legacyArticles = [
       "La coordinación con aliados ya no se mide solo en defensa, sino en subsidios, minerales, chips y protección de tecnología sensible.",
     ],
     regionalLens:
-      "Occidente avanza hacia un modelo menos ingenuo sobre interdependencia. La cuestion es si lograra coordinar prioridades sin multiplicar fricciones internas.",
+      "Occidente avanza hacia un modelo menos ingenuo sobre interdependencia. La cuestion es si logrará coordinar prioridades sin multiplicar fricciones internas.",
     outlook:
       "La segunda ola industrial será evaluada por resultados tangibles: tiempo de construcción, acceso a insumos, estabilidad política y capacidad de generar ecosistemas completos.",
   },
@@ -610,7 +610,7 @@ const legacyArticles = [
     slug: "diplomacia-de-media-potencia-en-america-latina",
     title: "Diplomacia de media potencia en América Latina",
     subtitle:
-      "La region puede ganar influencia si combina ambición selectiva, consistencia institucional y lectura realista del entorno.",
+      "La región puede ganar influencia si combina ambición selectiva, consistencia institucional y lectura realista del entorno.",
     excerpt:
       "En un mundo más fragmentado, las potencias medianas tienen una ventaja: pueden negociar con flexibilidad. La desventaja aparece cuando esa flexibilidad carece de estrategia.",
     type: "opinión",
@@ -622,21 +622,21 @@ const legacyArticles = [
     tone: "bronze",
     tags: ["América Latina", "diplomacia", "potencias medianas", "autonomía"],
     thesis:
-      "La diplomacia latinoamericana puede ser más influyente si abandona la falsa opcion entre neutralidad retórica y alineamiento pasivo.",
+      "La diplomacia latinoamericana puede ser más influyente si abandona la falsa opción entre neutralidad retórica y alineamiento pasivo.",
     whyItMatters: [
       "El espacio para negociar existe, pero requiere prioridades nacionales claras, equipos técnicos consistentes y una agenda de intereses concretos.",
-      "La region tiene activos valiosos en alimentos, energía, minerales y posición geografica, aunque todavía los comunica y coordina de forma fragmentada.",
+      "La región tiene activos valiosos en alimentos, energía, minerales y posición geográfica, aunque todavía los comunica y coordina de forma fragmentada.",
     ],
     regionalLens:
-      "Brasil, Mexico, Chile, Colombia y otros actores medianos no necesitan hablar igual para generar peso. Necesitan saber donde cooperar y donde diferenciarse.",
+      "Brasil, México, Chile, Colombia y otros actores medianos no necesitan hablar igual para generar peso. Necesitan saber dónde cooperar y dónde diferenciarse.",
     outlook:
-      "La proxima decada premiara a los países capaces de ofrecer confiabilidad diplomática y claridad estratégica, no solo retórica de autonomía.",
+      "La próxima década premiará a los países capaces de ofrecer confiabilidad diplomática y claridad estratégica, no solo retórica de autonomía.",
   },
   {
     slug: "medio-oriente-finanzas-energia-y-el-orden-postpetrolero",
     title: "Medio Oriente: finanzas, energía y el orden postpetrolero",
     subtitle:
-      "La region está utilizando capital soberano, infraestructura y diplomacia económica para preparar una influencia más amplia que la petrolera.",
+      "La región está utilizando capital soberano, infraestructura y diplomacia económica para preparar una influencia más amplia que la petrolera.",
     excerpt:
       "Hablar de un orden postpetrolero no implica que el petróleo pierda relevancia. Implica que la región busca diversificar su poder antes de que el mercado cambie del todo.",
     type: "analysis",
@@ -646,23 +646,23 @@ const legacyArticles = [
     date: "2026-04-07",
     readTime: 8,
     tone: "gold",
-    tags: ["Medio Oriente", "fondos soberanos", "energia", "logística"],
+    tags: ["Medio Oriente", "fondos soberanos", "energía", "logística"],
     thesis:
-      "Los grandes actores del Golfo están transformando renta energetica en capacidad financiera, conectividad y proyección diplomática.",
+      "Los grandes actores del Golfo están transformando renta energética en capacidad financiera, conectividad y proyección diplomática.",
     whyItMatters: [
-      "Esa conversion de liquidez en posición estratégica altera rutas de inversión, cadenas logísticas y alianzas con Asia, Europa y Africa.",
-      "La region ya no compite solo por producción de energía, sino por control de infraestructura, servicios y plataformas de capital.",
+      "Esa conversión de liquidez en posición estratégica altera rutas de inversión, cadenas logísticas y alianzas con Asia, Europa y África.",
+      "La región ya no compite solo por producción de energía, sino por control de infraestructura, servicios y plataformas de capital.",
     ],
     regionalLens:
       "Medio Oriente se mueve como puente entre regiones y como actor con agenda propia. Esa dualidad eleva su capacidad de arbitraje.",
     outlook:
-      "La influencia futura dependerá de cuan rápido pueda traducir visiones de diversificación en sectores productivos resilientes y capital humano avanzado.",
+      "La influencia futura dependerá de cuán rápido pueda traducir visiones de diversificación en sectores productivos resilientes y capital humano avanzado.",
   },
   {
     slug: "infraestructura-corredores-y-poder-en-eurasia",
     title: "Infraestructura, corredores y poder en Eurasia",
     subtitle:
-      "Rutas ferroviarias, puertos secos y nuevas conexiones terrestres modifican los calculos estratégicos de actores publicos y privados.",
+      "Rutas ferroviarias, puertos secos y nuevas conexiones terrestres modifican los cálculos estratégicos de actores públicos y privados.",
     excerpt:
       "La infraestructura no es neutra. En Eurasia, cada corredor reorganiza costos, dependencias y alianzas con efectos que van mucho más allá del comercio.",
     type: "analysis",
@@ -676,7 +676,7 @@ const legacyArticles = [
     thesis:
       "Los corredores eurasiaticos son dispositivos de poder porque conectan mercados, financiamiento, seguridad física y opciones diplomáticas.",
     whyItMatters: [
-      "Cada ruta alternativa reduce vulnerabilidad ante sanciones, cuellos de botella o crisis maritimas.",
+      "Cada ruta alternativa reduce vulnerabilidad ante sanciones, cuellos de botella o crisis marítimas.",
       "Las empresas también ajustan sus estrategias cuando la política altera tiempos, seguros, costos y disponibilidad de infraestructura.",
     ],
     regionalLens:
@@ -690,7 +690,7 @@ const legacyArticles = [
     subtitle:
       "Cuatro movimientos discretos que ayudan a leer tensiones logísticas y políticas más amplias.",
     excerpt:
-      "La semana deja señales que conectan seguridad maritima, regulacion tecnologica y abastecimiento alimentario. Ninguna es aislada.",
+      "La semana deja señales que conectan seguridad marítima, regulación tecnológica y abastecimiento alimentario. Ninguna es aislada.",
     type: "radar",
     region: "africa",
     sectors: ["energia", "comercio-cadenas-logisticas", "diplomacia"],
@@ -698,10 +698,10 @@ const legacyArticles = [
     date: "2026-04-05",
     readTime: 4,
     tone: "forest",
-    tags: ["radar", "estrechos", "alimentos", "regulacion"],
+    tags: ["radar", "estrechos", "alimentos", "regulación"],
     signals: [
       {
-        title: "Mas presión sobre rutas maritimas sensibles",
+        title: "Más presión sobre rutas marítimas sensibles",
         detail:
           "Los desvios elevan tiempos, seguros y consumo de combustible, con impacto directo sobre costos finales.",
       },
@@ -713,12 +713,12 @@ const legacyArticles = [
       {
         title: "Seguridad alimentaria vuelve al centro",
         detail:
-          "Clima, financiamiento y logística están estrechamente vinculados. Las tensiones en uno de esos frentes contagian rapidamente al resto.",
+          "Clima, financiamiento y logística están estrechamente vinculados. Las tensiones en uno de esos frentes contagian rápidamente al resto.",
       },
       {
-        title: "Africa gana margen de negociacion",
+        title: "África gana margen de negociación",
         detail:
-          "La combinacion de puertos, minerales y demanda interna otorga a varios países africanos una voz más relevante en conversaciones multilaterales.",
+          "La combinación de puertos, minerales y demanda interna otorga a varios países africanos una voz más relevante en conversaciones multilaterales.",
       },
     ],
     outlook:
@@ -730,7 +730,7 @@ const legacyArticles = [
     subtitle:
       "Tres señales breves para leer como se acoplan tecnología, finanzas y capacidad estatal.",
     excerpt:
-      "En el corto plazo, las transformaciones globales se filtran por medidas aparentemente técnicas. En el largo, esas medidas redefinen jerarquias.",
+      "En el corto plazo, las transformaciones globales se filtran por medidas aparentemente técnicas. En el largo, esas medidas redefinen jerarquías.",
     type: "radar",
     region: "china-asia",
     sectors: [
@@ -745,23 +745,23 @@ const legacyArticles = [
     tags: ["radar", "IA", "sanciones", "monedas"],
     signals: [
       {
-        title: "La IA entra en regulacion sectorial",
+        title: "La IA entra en regulación sectorial",
         detail:
-          "El debate ya no es abstracto. Los gobiernos empiezan a exigir trazabilidad, evaluacion de riesgo y gobernanza concreta por sector.",
+          "El debate ya no es abstracto. Los gobiernos empiezan a exigir trazabilidad, evaluación de riesgo y gobernanza concreta por sector.",
       },
       {
         title: "Las sanciones generan sistemas de redundancia",
         detail:
-          "Pagos, seguros, proveedores y redes logísticas se adaptan para sobrevivir en entornos de mayor friccion política.",
+          "Pagos, seguros, proveedores y redes logísticas se adaptan para sobrevivir en entornos de mayor fricción política.",
       },
       {
-        title: "Las monedas locales ganan uso tactico",
+        title: "Las monedas locales ganan uso táctico",
         detail:
-          "No reemplazan al sistema dominante, pero si abren espacios de transaccion y financiamiento menos expuestos a volatilidad geopolítica.",
+          "No reemplazan al sistema dominante, pero si abren espacios de transacción y financiamiento menos expuestos a volatilidad geopolítica.",
       },
     ],
     outlook:
-      "La leccion comun es clara: tecnología y finanzas ya operan como parte del mismo tablero estratégico.",
+      "La lección común es clara: tecnología y finanzas ya operan como parte del mismo tablero estratégico.",
   },
 ];
 
