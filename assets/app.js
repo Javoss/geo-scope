@@ -3048,7 +3048,7 @@ function buildResultsDescription({ type, region, sector, term }) {
     parts.push(nameForSector(sector));
   }
   if (term) {
-    parts.push(`${ui.archive.searchLabel}: "${term}"`);
+    parts.push(`${ui.archive.searchLabel}: "${escapeHtml(term)}"`);
   }
 
   return parts.length ? parts.join(" / ") : ui.archive.fullView;
@@ -3306,6 +3306,16 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+}
+
+function summarizeText(value, max = 210) {
+  const text = String(value || "").trim();
+  if (text.length <= max) {
+    return text;
+  }
+  const cut = text.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${(lastSpace > 0 ? cut.slice(0, lastSpace) : cut).trimEnd()}…`;
 }
 
 function escapeAttribute(value) {
