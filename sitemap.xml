@@ -1,947 +1,2127 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://geo-scope.online/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/" />
   </url>
   <url>
     <loc>https://geo-scope.online/analysis/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/analysis/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/analysis/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/analysis/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/analysis/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/analysis/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/analysis/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/analysis/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/analysis/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/analysis/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/analysis/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/analysis/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/analysis/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/analysis/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/analysis/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/analysis/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/analysis/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/analysis/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/analysis/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/analysis/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/analysis/" />
   </url>
   <url>
     <loc>https://geo-scope.online/opinion/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/opinion/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/opinion/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/opinion/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/opinion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/opinion/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/opinion/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/opinion/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/opinion/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/opinion/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/opinion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/opinion/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/opinion/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/opinion/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/opinion/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/opinion/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/opinion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/opinion/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/opinion/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/opinion/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/opinion/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/opinion/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/opinion/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/opinion/" />
   </url>
   <url>
     <loc>https://geo-scope.online/radar/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/radar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/radar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/radar/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/radar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/radar/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/radar/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/radar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/radar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/radar/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/radar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/radar/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/radar/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/radar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/radar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/radar/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/radar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/radar/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/radar/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/radar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/radar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/radar/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/radar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/radar/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/" />
   </url>
   <url>
     <loc>https://geo-scope.online/experts/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/experts/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/experts/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/experts/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/" />
   </url>
   <url>
     <loc>https://geo-scope.online/about/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/about/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/about/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/about/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/about/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/about/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/about/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/about/" />
   </url>
   <url>
     <loc>https://geo-scope.online/contact/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/contact/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/contact/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/contact/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/contact/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/contact/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/contact/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/contact/" />
   </url>
   <url>
     <loc>https://geo-scope.online/subscription/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/subscription/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/subscription/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/subscription/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/subscription/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/subscription/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/subscription/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/subscription/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/subscription/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/subscription/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/subscription/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/subscription/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/subscription/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/subscription/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/subscription/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/subscription/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/subscription/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/subscription/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/subscription/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/subscription/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/subscription/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/subscription/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/subscription/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/subscription/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/</loc>
     <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/</loc>
     <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/</loc>
     <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/</loc>
     <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/</loc>
     <lastmod>2026-06-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/rusia-asean-unidad-diversidad-kazan/</loc>
     <lastmod>2026-06-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/rusia-asean-unidad-diversidad-kazan/</loc>
     <lastmod>2026-06-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/rusia-asean-unidad-diversidad-kazan/</loc>
     <lastmod>2026-06-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-asean-unidad-diversidad-kazan/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-asean-unidad-diversidad-kazan/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/america-latina-y-la-crisis-organica/</loc>
     <lastmod>2026-06-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/america-latina-y-la-crisis-organica/</loc>
     <lastmod>2026-06-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/america-latina-y-la-crisis-organica/</loc>
     <lastmod>2026-06-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/america-latina-y-la-crisis-organica/</loc>
     <lastmod>2026-06-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/america-latina-y-la-crisis-organica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/america-latina-y-la-crisis-organica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/</loc>
     <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/foro-de-seguridad-multipolar-en-moscu/</loc>
     <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/foro-de-seguridad-multipolar-en-moscu/</loc>
     <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/foro-de-seguridad-multipolar-en-moscu/</loc>
     <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/foro-de-seguridad-multipolar-en-moscu/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/foro-de-seguridad-multipolar-en-moscu/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/</loc>
     <lastmod>2026-05-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/</loc>
     <lastmod>2026-05-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/</loc>
     <lastmod>2026-05-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/</loc>
     <lastmod>2026-05-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/</loc>
     <lastmod>2026-05-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-visita-de-trump-a-china-y-la-rivalidad-administrada/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/</loc>
     <lastmod>2026-05-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/la-nueva-carrera-lunar-ya-comenzo/</loc>
     <lastmod>2026-05-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/la-nueva-carrera-lunar-ya-comenzo/</loc>
     <lastmod>2026-05-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/la-nueva-carrera-lunar-ya-comenzo/</loc>
     <lastmod>2026-05-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-nueva-carrera-lunar-ya-comenzo/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-nueva-carrera-lunar-ya-comenzo/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/</loc>
     <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/estamos-ante-una-burbuja-puntocom-2-0/</loc>
     <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/estamos-ante-una-burbuja-puntocom-2-0/</loc>
     <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/estamos-ante-una-burbuja-puntocom-2-0/</loc>
     <lastmod>2026-05-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estamos-ante-una-burbuja-puntocom-2-0/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estamos-ante-una-burbuja-puntocom-2-0/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/</loc>
     <lastmod>2026-04-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/</loc>
     <lastmod>2026-04-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/</loc>
     <lastmod>2026-04-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/</loc>
     <lastmod>2026-04-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-produce-estados-unidos-se-endeuda-y-wall-street-gana/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/</loc>
     <lastmod>2026-04-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/</loc>
     <lastmod>2026-04-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/</loc>
     <lastmod>2026-04-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/</loc>
     <lastmod>2026-04-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/brics-y-el-nuevo-equilibrio-tecnol%C3%B3gico-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/</loc>
     <lastmod>2026-04-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/</loc>
     <lastmod>2026-04-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/</loc>
     <lastmod>2026-04-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/</loc>
     <lastmod>2026-04-20</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/que-significa-la-fragmentacion-del-comercio-mundial-para-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/</loc>
     <lastmod>2026-04-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/</loc>
     <lastmod>2026-04-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/</loc>
     <lastmod>2026-04-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/</loc>
     <lastmod>2026-04-18</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/rusia-y-eurasia-en-la-reconfiguracion-del-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/</loc>
     <lastmod>2026-04-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/energia-corredores-logisticos-y-competencia-geoeconomica/</loc>
     <lastmod>2026-04-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/energia-corredores-logisticos-y-competencia-geoeconomica/</loc>
     <lastmod>2026-04-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/energia-corredores-logisticos-y-competencia-geoeconomica/</loc>
     <lastmod>2026-04-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/energia-corredores-logisticos-y-competencia-geoeconomica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/</loc>
     <lastmod>2026-04-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/</loc>
     <lastmod>2026-04-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/</loc>
     <lastmod>2026-04-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/</loc>
     <lastmod>2026-04-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/</loc>
     <lastmod>2026-04-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/</loc>
     <lastmod>2026-04-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/</loc>
     <lastmod>2026-04-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/</loc>
     <lastmod>2026-04-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/tres-se%C3%B1ales-que-est%C3%A1n-redefiniendo-la-multipolaridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/</loc>
     <lastmod>2026-04-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/</loc>
     <lastmod>2026-04-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/</loc>
     <lastmod>2026-04-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/</loc>
     <lastmod>2026-04-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/por-que-el-%C3%A1rtico-importa-cada-vez-m%C3%A1s/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/</loc>
     <lastmod>2026-04-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/</loc>
     <lastmod>2026-04-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/</loc>
     <lastmod>2026-04-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/</loc>
     <lastmod>2026-04-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/china-y-asia-est%C3%A1ndares-digitales-y-rutas-industriales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/</loc>
     <lastmod>2026-04-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/</loc>
     <lastmod>2026-04-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/</loc>
     <lastmod>2026-04-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/</loc>
     <lastmod>2026-04-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/europa-seguridad-industrial-y-autonom%C3%ADa-estrat%C3%A9gica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/</loc>
     <lastmod>2026-04-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/</loc>
     <lastmod>2026-04-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/</loc>
     <lastmod>2026-04-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/</loc>
     <lastmod>2026-04-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/africa-minerales-cr%C3%ADticos-manufactura-y-poder-negociador/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/</loc>
     <lastmod>2026-04-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/</loc>
     <lastmod>2026-04-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/</loc>
     <lastmod>2026-04-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/</loc>
     <lastmod>2026-04-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/estados-unidos-alianzas-y-pol%C3%ADtica-industrial-de-segunda-ola/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/</loc>
     <lastmod>2026-04-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/diplomacia-de-media-potencia-en-america-latina/</loc>
     <lastmod>2026-04-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/diplomacia-de-media-potencia-en-america-latina/</loc>
     <lastmod>2026-04-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/diplomacia-de-media-potencia-en-america-latina/</loc>
     <lastmod>2026-04-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/diplomacia-de-media-potencia-en-america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/diplomacia-de-media-potencia-en-america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/</loc>
     <lastmod>2026-04-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/</loc>
     <lastmod>2026-04-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/</loc>
     <lastmod>2026-04-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/</loc>
     <lastmod>2026-04-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/</loc>
     <lastmod>2026-04-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/infraestructura-corredores-y-poder-en-eurasia/</loc>
     <lastmod>2026-04-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/infraestructura-corredores-y-poder-en-eurasia/</loc>
     <lastmod>2026-04-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/infraestructura-corredores-y-poder-en-eurasia/</loc>
     <lastmod>2026-04-06</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/infraestructura-corredores-y-poder-en-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/infraestructura-corredores-y-poder-en-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/</loc>
     <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/</loc>
     <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/</loc>
     <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/</loc>
     <lastmod>2026-04-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-estrechos-est%C3%A1ndares-y-alimentos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/</loc>
     <lastmod>2026-04-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/article/radar-semanal-ia-sanciones-y-monedas/</loc>
     <lastmod>2026-04-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/article/radar-semanal-ia-sanciones-y-monedas/</loc>
     <lastmod>2026-04-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/article/radar-semanal-ia-sanciones-y-monedas/</loc>
     <lastmod>2026-04-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/article/radar-semanal-ia-sanciones-y-monedas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/article/radar-semanal-ia-sanciones-y-monedas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/brics/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/brics/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/brics/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/brics/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/brics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/brics/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/america-latina/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/america-latina/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/america-latina/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/america-latina/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/america-latina/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/america-latina/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/rusia-eurasia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/rusia-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/rusia-eurasia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/rusia-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/rusia-eurasia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/rusia-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/rusia-eurasia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/rusia-eurasia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/rusia-eurasia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/china-asia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/china-asia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/china-asia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/china-asia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/china-asia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/china-asia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/china-asia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/china-asia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/china-asia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/europa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/europa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/europa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/europa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/europa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/europa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/europa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/europa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/europa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/medio-oriente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/medio-oriente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/medio-oriente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/medio-oriente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/medio-oriente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/medio-oriente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/medio-oriente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/medio-oriente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/medio-oriente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/africa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/africa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/africa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/africa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/africa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/africa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/africa/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/africa/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/africa/" />
   </url>
   <url>
     <loc>https://geo-scope.online/regions/estados-unidos-occidente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/regions/estados-unidos-occidente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/regions/estados-unidos-occidente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/regions/estados-unidos-occidente/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/regions/estados-unidos-occidente/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/regions/estados-unidos-occidente/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/geoeconomia-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geoeconomia-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/geoeconomia-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geoeconomia-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/geoeconomia-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geoeconomia-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/geoeconomia-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geoeconomia-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geoeconomia-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/mercados-financieros/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/mercados-financieros/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/mercados-financieros/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/mercados-financieros/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/mercados-financieros/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/mercados-financieros/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/mercados-financieros/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/mercados-financieros/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/mercados-financieros/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/china-estados-unidos/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/china-estados-unidos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/china-estados-unidos/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/china-estados-unidos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/china-estados-unidos/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/china-estados-unidos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/china-estados-unidos/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/china-estados-unidos/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/china-estados-unidos/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/economia-internacional/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/economia-internacional/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/economia-internacional/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/economia-internacional/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/economia-internacional/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/economia-internacional/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/economia-internacional/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/economia-internacional/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/economia-internacional/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/tecnologia-geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/tecnologia-geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/tecnologia-geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/tecnologia-geopolitica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/tecnologia-geopolitica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/tecnologia-geopolitica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/energia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/energia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/energia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/energia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/energia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/energia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/energia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/energia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/energia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/comercio-cadenas-logisticas/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/comercio-cadenas-logisticas/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/comercio-cadenas-logisticas/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/comercio-cadenas-logisticas/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/comercio-cadenas-logisticas/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/comercio-cadenas-logisticas/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/defensa-seguridad/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/defensa-seguridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/defensa-seguridad/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/defensa-seguridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/defensa-seguridad/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/defensa-seguridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/defensa-seguridad/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/defensa-seguridad/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/defensa-seguridad/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/diplomacia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/diplomacia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/diplomacia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/diplomacia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/diplomacia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/diplomacia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/diplomacia/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/diplomacia/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/diplomacia/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/infraestructura-estrategica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/infraestructura-estrategica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/infraestructura-estrategica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/infraestructura-estrategica/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/infraestructura-estrategica/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/infraestructura-estrategica/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/inteligencia-artificial-poder-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/inteligencia-artificial-poder-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/inteligencia-artificial-poder-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/inteligencia-artificial-poder-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/inteligencia-artificial-poder-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/inteligencia-artificial-poder-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/sectors/multipolaridad-gobernanza-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/sectors/multipolaridad-gobernanza-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/sectors/multipolaridad-gobernanza-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/sectors/multipolaridad-gobernanza-global/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/sectors/multipolaridad-gobernanza-global/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/sectors/multipolaridad-gobernanza-global/" />
   </url>
   <url>
     <loc>https://geo-scope.online/experts/javier-salazar-segales/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/javier-salazar-segales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/experts/javier-salazar-segales/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/javier-salazar-segales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/experts/javier-salazar-segales/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/javier-salazar-segales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/experts/javier-salazar-segales/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/javier-salazar-segales/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/javier-salazar-segales/" />
   </url>
   <url>
     <loc>https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
   </url>
   <url>
     <loc>https://geo-scope.online/en/experts/maria-luisa-ramos-urzagaste/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
   </url>
   <url>
     <loc>https://geo-scope.online/ru/experts/maria-luisa-ramos-urzagaste/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
   </url>
   <url>
     <loc>https://geo-scope.online/zh/experts/maria-luisa-ramos-urzagaste/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <lastmod>2026-11-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/experts/maria-luisa-ramos-urzagaste/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/experts/maria-luisa-ramos-urzagaste/" />
   </url>
 </urlset>

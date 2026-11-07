@@ -557,14 +557,16 @@ function renderHeader() {
             ${supportedLocales
               .map(
                 (locale) => `
-                  <button
+                  <a
                     class="header-language__button ${locale === currentLocale ? "is-active" : ""}"
-                    type="button"
+                    href="${localizedUrlForLocale(basePathForPage(page), locale, currentRouteParams())}"
+                    hreflang="${locale}"
+                    lang="${locale}"
                     data-locale="${locale}"
-                    aria-pressed="${locale === currentLocale ? "true" : "false"}"
+                    aria-current="${locale === currentLocale ? "true" : "false"}"
                   >
                     ${localeOptions[locale].label}
-                  </button>
+                  </a>
                 `,
               )
               .join("")}
@@ -2339,16 +2341,9 @@ function bindShellInteractions() {
     button.addEventListener("click", () => {
       const locale = normalizeLocale(button.getAttribute("data-locale"));
 
-      if (!locale || locale === currentLocale) {
-        return;
+      if (locale) {
+        setStoredLocale(locale);
       }
-
-      setStoredLocale(locale);
-      window.location.href = localizedUrlForLocale(
-        basePathForPage(page),
-        locale,
-        currentRouteParams(),
-      );
     });
   });
 
@@ -2624,7 +2619,7 @@ function initRevealObserver() {
 
 function resolveActiveNavigationKey() {
   if (page === "article") {
-    const article = articleMap.get(query.get("slug") || "");
+    const article = articleMap.get(routeValue("slug") || "");
     if (article) {
       return article.type === "analysis" ? "analysis" : pageFromType(article.type);
     }

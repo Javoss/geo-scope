@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Аналитика | Geo Scope</title>
     <meta name="description" content="Изучаыте польный архив Geo Scope с филтрами по регионам, секторам и форматам, чтобы видет не толко заголовки, но и повторяющиеся узоры." />
+    <link rel="stylesheet" href="/assets/styles.css?v=99c3a902b6" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=bf066e4b74" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-geoscope.png?v=bf066e4b74" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=bf066e4b74" />
     <meta name="keywords" content="Geo Scope, Аналитика, Геополитика, Международная економика, Технологии и геополитика, Енергетика, Торговля и цепочки поставок, Оборона и безопасност, Все регионы, Все секторы" />
-    <link rel="canonical" href="https://geo-scope.online/ru/analysis/" />
-    <link rel="alternate" hreflang="es" href="https://geo-scope.online/analysis/" />
-    <link rel="alternate" hreflang="en" href="https://geo-scope.online/en/analysis/" />
-    <link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/analysis/" />
-    <link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/analysis/" />
-    <link rel="alternate" hreflang="x-default" href="https://geo-scope.online/analysis/" />
     <meta property="og:site_name" content="Geo Scope" />
     <meta property="og:title" content="Аналитика | Geo Scope" />
     <meta property="og:description" content="Изучаыте польный архив Geo Scope с филтрами по регионам, секторам и форматам, чтобы видет не толко заголовки, но и повторяющиеся узоры." />
@@ -25,17 +23,23 @@
     <meta name="twitter:description" content="Изучаыте польный архив Geo Scope с филтрами по регионам, секторам и форматам, чтобы видет не толко заголовки, но и повторяющиеся узоры." />
     <meta name="twitter:image" content="https://geo-scope.online/assets/geoscope-logo.png" />
     <meta name="twitter:site" content="@geoscope" />
-    <link rel="stylesheet" href="/assets/styles.css?v=20260605a" />
-    <link rel="icon" type="image/png" href="/assets/favicon-geoscope.png?v=20260428c" />
+    <link rel="canonical" href="https://geo-scope.online/ru/analysis/" />
+    <link rel="alternate" hreflang="es" href="https://geo-scope.online/analysis/" />
+    <link rel="alternate" hreflang="en" href="https://geo-scope.online/en/analysis/" />
+    <link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/analysis/" />
+    <link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/analysis/" />
+    <link rel="alternate" hreflang="x-default" href="https://geo-scope.online/analysis/" />
   </head>
   <body data-page="analysis" data-locale="ru">
     <div class="site-shell">
       <header id="site-header">
     <div class="nav-frame">
       <a class="brand" href="/ru/" aria-label="Geo Scope">
-        <span class="brand-mark brand-mark--header">
-          <img class="brand-logo" src="/assets/geoscope-logo.png" alt="Geo Scope" />
-        </span>
+        
+      <span class="brand-mark brand-mark--header">
+        <img class="brand-logo" src="/assets/geoscope-logo.png" alt="Geo Scope">
+      </span>
+    
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         Меню
@@ -85,35 +89,19 @@
           <span class="header-utility__divider" aria-hidden="true"></span>
           <div class="header-language" role="group" aria-label="Язык">
             
-                  <a
-                    class="header-language__button "
-                    href="/analysis/"
-                    aria-current="false"
-                  >
+                  <a class="header-language__button " href="/analysis/" hreflang="es" lang="es" data-locale="es" aria-current="false">
                     ES
                   </a>
                 
-                  <a
-                    class="header-language__button "
-                    href="/en/analysis/"
-                    aria-current="false"
-                  >
+                  <a class="header-language__button " href="/en/analysis/" hreflang="en" lang="en" data-locale="en" aria-current="false">
                     EN
                   </a>
                 
-                  <a
-                    class="header-language__button is-active"
-                    href="/ru/analysis/"
-                    aria-current="true"
-                  >
+                  <a class="header-language__button is-active" href="/ru/analysis/" hreflang="ru" lang="ru" data-locale="ru" aria-current="true">
                     RU
                   </a>
                 
-                  <a
-                    class="header-language__button "
-                    href="/zh/analysis/"
-                    aria-current="false"
-                  >
+                  <a class="header-language__button " href="/zh/analysis/" hreflang="zh" lang="zh" data-locale="zh" aria-current="false">
                     中文
                   </a>
                 
@@ -132,16 +120,198 @@
         </div>
         <div class="page-hero__aside reveal">
           <div class="aside-line">
-            <strong>18</strong>
+            <strong>25</strong>
             <span>видимых резултатов при текущих филтрах.</span>
           </div>
+          <div class="aside-line">
+            <strong>9</strong>
+            <span>9 регионов и 13 секторов в редакционной структуре.</span>
+          </div>
+          <a class="btn btn-secondary" href="/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/">
+            Открыт ведущий материал
+          </a>
         </div>
       </div>
     </section>
+
     <section class="section section-tight">
       <div class="container">
-        <div class="card-grid card-grid--three">
-          
+        <form class="filter-shell reveal" id="archive-filters">
+          <div class="filter-grid">
+            <label class="field">
+              <span>Поиск</span>
+              <input type="search" name="q" value="" placeholder="Заголовок, регион, метка или сектор">
+            </label>
+            
+                  <label class="field">
+                    <span>Формат</span>
+                    <select name="type">
+                      
+        <option value="all" selected="">
+          Все форматы
+        </option>
+      
+        <option value="analysis">
+          Аналитика
+        </option>
+      
+        <option value="opinion">
+          Мнение
+        </option>
+      
+        <option value="radar">
+          Еженедельный радар
+        </option>
+      
+                    </select>
+                  </label>
+                
+            <label class="field">
+              <span>Регион</span>
+              <select name="region">
+                <option value="">Все регионы</option>
+                
+                      <option value="global">
+                        Глобальный уровен
+                      </option>
+                    
+                      <option value="brics">
+                        БРИКС
+                      </option>
+                    
+                      <option value="america-latina">
+                        Латинская Америка
+                      </option>
+                    
+                      <option value="rusia-eurasia">
+                        Россия и Евразия
+                      </option>
+                    
+                      <option value="china-asia">
+                        Китай и Азия
+                      </option>
+                    
+                      <option value="europa">
+                        Европа
+                      </option>
+                    
+                      <option value="medio-oriente">
+                        Ближний Восток
+                      </option>
+                    
+                      <option value="africa">
+                        Африка
+                      </option>
+                    
+                      <option value="estados-unidos-occidente">
+                        США и Запад
+                      </option>
+                    
+              </select>
+            </label>
+            <label class="field">
+              <span>Сектор</span>
+              <select name="sector">
+                <option value="">Все секторы</option>
+                
+                      <option value="geoeconomia-global">
+                        Глобальная геоекономика
+                      </option>
+                    
+                      <option value="mercados-financieros">
+                        Финансове рынки
+                      </option>
+                    
+                      <option value="china-estados-unidos">
+                        Китай и Соединенне Штаты
+                      </option>
+                    
+                      <option value="geopolitica">
+                        Geopolítica
+                      </option>
+                    
+                      <option value="economia-internacional">
+                        Международная економика
+                      </option>
+                    
+                      <option value="tecnologia-geopolitica">
+                        Технологии и геополитика
+                      </option>
+                    
+                      <option value="energia">
+                        Energía
+                      </option>
+                    
+                      <option value="comercio-cadenas-logisticas">
+                        Торговля и цепочки поставок
+                      </option>
+                    
+                      <option value="defensa-seguridad">
+                        Оборона и безопасност
+                      </option>
+                    
+                      <option value="diplomacia">
+                        Дипломатия
+                      </option>
+                    
+                      <option value="infraestructura-estrategica">
+                        Стратегическая инфраструктура
+                      </option>
+                    
+                      <option value="inteligencia-artificial-poder-global">
+                        Искусственный интеллект и глобальная власт
+                      </option>
+                    
+                      <option value="multipolaridad-gobernanza-global">
+                        Многополярност и глобальное управление
+                      </option>
+                    
+              </select>
+            </label>
+          </div>
+          <div class="filter-actions">
+            <button class="btn btn-primary" type="submit">Применит филтры</button>
+            <a class="btn btn-ghost" href="/ru/analysis/">Сбросит</a>
+          </div>
+        </form>
+
+        <div class="results-meta">
+          <strong>25 статей</strong>
+          <span>
+            Польный вид редакционного архива.
+          </span>
+        </div>
+
+        
+              <div class="card-grid card-grid--three">
+                
+    <article class="card article-card article-card--standard reveal">
+      <a class="article-card__link" href="/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/">
+        
+    <div class="cover-art tone-midnight ">
+      <div class="cover-art__info">
+        <span class="cover-art__eyebrow">БРИКС</span>
+        <strong>МНОГОПОЛЯРНЫЙ МИР: ПАРАДИГМА, КОТОРАЯ ПРОДВИГАЕТСЯ И УКРЕПЛЯЕТСЯ С БРИКС</strong>
+        <span>Geopolítica / Дипломатия</span>
+      </div>
+    </div>
+  
+        <div class="article-card__body">
+          <div class="meta-row">
+            <span class="meta-chip">Мнение</span>
+            <span class="meta-chip">БРИКС</span>
+          </div>
+          <h3>МНОГОПОЛЯРНЫЙ МИР: ПАРАДИГМА, КОТОРАЯ ПРОДВИГАЕТСЯ И УКРЕПЛЯЕТСЯ С БРИКС</h3>
+          <p>Два десятилетия спустя БРИКС уже не просто новая аббревиатура: это архитектура сотрудничества, продвигающая национальные валюты, технологический суверенитет, продовольственную безопасность, энергетику и новые пространства принятия решений для Глобального Юга.</p>
+          <span class="inline-link article-card__cta">Читат статю</span>
+          <div class="article-card__footer">
+            <span>15 сентября 2026 г.</span>
+            <span>7 мин</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
     <article class="card article-card article-card--standard reveal">
       <a class="article-card__link" href="/ru/article/rusia-asean-unidad-diversidad-kazan/">
         
@@ -467,6 +637,60 @@
     </article>
   
     <article class="card article-card article-card--standard reveal">
+      <a class="article-card__link" href="/ru/article/la-inteligencia-artificial-como-herramienta-de-poder-estatal/">
+        
+    <div class="cover-art tone-midnight ">
+      <div class="cover-art__info">
+        <span class="cover-art__eyebrow">США и Запад</span>
+        <strong>Искусственный интеллект как инструмент государственной власти</strong>
+        <span>Искусственный интеллект и глобальная власт / Технологии и геополитика</span>
+      </div>
+    </div>
+  
+        <div class="article-card__body">
+          <div class="meta-row">
+            <span class="meta-chip">Материал</span>
+            <span class="meta-chip">США и Запад</span>
+          </div>
+          <h3>Искусственный интеллект как инструмент государственной власти</h3>
+          <p>II встраиваеця в ядро государственного аппарата: разведку, фискальное управление, промышленност, оборону и государственне услуги. Вопрос не толко в инновации, но и в том, чтобы управлят лучше и быстрее.</p>
+          <span class="inline-link article-card__cta">Читат статю</span>
+          <div class="article-card__footer">
+            <span>15 апреля 2026 г.</span>
+            <span>7 мин</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
+    <article class="card article-card article-card--standard reveal">
+      <a class="article-card__link" href="/ru/article/tres-señales-que-están-redefiniendo-la-multipolaridad/">
+        
+    <div class="cover-art tone-steel ">
+      <div class="cover-art__info">
+        <span class="cover-art__eyebrow">БРИКС</span>
+        <strong>Три сигнала, переопределяющие многополярност</strong>
+        <span>Многополярност и глобальное управление / Дипломатия</span>
+      </div>
+    </div>
+  
+        <div class="article-card__body">
+          <div class="meta-row">
+            <span class="meta-chip">Еженедельный радар</span>
+            <span class="meta-chip">БРИКС</span>
+          </div>
+          <h3>Три сигнала, переопределяющие многополярност</h3>
+          <p>Многополярност не появляеця мгновенно. Она проявляеця в неболших финансовых, дипломатических и технологических подстроыках, которе вместе меняют правила игры.</p>
+          <span class="inline-link article-card__cta">Читат статю</span>
+          <div class="article-card__footer">
+            <span>14 апреля 2026 г.</span>
+            <span>5 мин</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
+    <article class="card article-card article-card--standard reveal">
       <a class="article-card__link" href="/ru/article/por-que-el-ártico-importa-cada-vez-más/">
         
     <div class="cover-art tone-silver ">
@@ -515,6 +739,33 @@
           <div class="article-card__footer">
             <span>12 апреля 2026 г.</span>
             <span>10 мин</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
+    <article class="card article-card article-card--standard reveal">
+      <a class="article-card__link" href="/ru/article/europa-seguridad-industrial-y-autonomía-estratégica/">
+        
+    <div class="cover-art tone-silver ">
+      <div class="cover-art__info">
+        <span class="cover-art__eyebrow">Европа</span>
+        <strong>Европа: промышленная безопасност и стратегическая автономия</strong>
+        <span>Международная економика / Дипломатия</span>
+      </div>
+    </div>
+  
+        <div class="article-card__body">
+          <div class="meta-row">
+            <span class="meta-chip">Материал</span>
+            <span class="meta-chip">Европа</span>
+          </div>
+          <h3>Европа: промышленная безопасност и стратегическая автономия</h3>
+          <p>Европа сталкиваеця со структурной дилемой: ей нужно стат более устоичивой, не перестав быт открытой. Ето напряжение перестроивает ее економическую политику и геополитический язык.</p>
+          <span class="inline-link article-card__cta">Читат статю</span>
+          <div class="article-card__footer">
+            <span>11 апреля 2026 г.</span>
+            <span>7 мин</span>
           </div>
         </div>
       </a>
@@ -575,6 +826,33 @@
     </article>
   
     <article class="card article-card article-card--standard reveal">
+      <a class="article-card__link" href="/ru/article/diplomacia-de-media-potencia-en-america-latina/">
+        
+    <div class="cover-art tone-bronze ">
+      <div class="cover-art__info">
+        <span class="cover-art__eyebrow">Латинская Америка</span>
+        <strong>Дипломатия средних держав в Латинской Америке</strong>
+        <span>Дипломатия / Geopolítica</span>
+      </div>
+    </div>
+  
+        <div class="article-card__body">
+          <div class="meta-row">
+            <span class="meta-chip">Материал</span>
+            <span class="meta-chip">Латинская Америка</span>
+          </div>
+          <h3>Дипломатия средних держав в Латинской Америке</h3>
+          <p>В более фрагментированном мире средние державы имеют преимущество: они могут гибко вести переговоры. Недостаток возникает тогда, когда етой гибкости не хватает стратегии.</p>
+          <span class="inline-link article-card__cta">Читат статю</span>
+          <div class="article-card__footer">
+            <span>8 апреля 2026 г.</span>
+            <span>6 мин</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
+    <article class="card article-card article-card--standard reveal">
       <a class="article-card__link" href="/ru/article/medio-oriente-finanzas-energia-y-el-orden-postpetrolero/">
         
     <div class="cover-art tone-gold ">
@@ -628,7 +906,62 @@
       </a>
     </article>
   
+    <article class="card article-card article-card--standard reveal">
+      <a class="article-card__link" href="/ru/article/radar-semanal-estrechos-estándares-y-alimentos/">
+        
+    <div class="cover-art tone-forest ">
+      <div class="cover-art__info">
+        <span class="cover-art__eyebrow">Африка</span>
+        <strong>Еженедельный радар: проливы, стандарты и продоволствие</strong>
+        <span>Energía / Торговля и цепочки поставок</span>
+      </div>
+    </div>
+  
+        <div class="article-card__body">
+          <div class="meta-row">
+            <span class="meta-chip">Еженедельный радар</span>
+            <span class="meta-chip">Африка</span>
+          </div>
+          <h3>Еженедельный радар: проливы, стандарты и продоволствие</h3>
+          <p>Неделя оставила сигналы, связывающие морскую безопасност, технологическое регулирование и продоволственное обеспечение. Ни один из них не изолирован.</p>
+          <span class="inline-link article-card__cta">Читат статю</span>
+          <div class="article-card__footer">
+            <span>5 апреля 2026 г.</span>
+            <span>4 мин</span>
+          </div>
         </div>
+      </a>
+    </article>
+  
+    <article class="card article-card article-card--standard reveal">
+      <a class="article-card__link" href="/ru/article/radar-semanal-ia-sanciones-y-monedas/">
+        
+    <div class="cover-art tone-jade ">
+      <div class="cover-art__info">
+        <span class="cover-art__eyebrow">Китай и Азия</span>
+        <strong>Еженедельный радар: II, санкции и валюты</strong>
+        <span>Искусственный интеллект и глобальная власт / Международная економика</span>
+      </div>
+    </div>
+  
+        <div class="article-card__body">
+          <div class="meta-row">
+            <span class="meta-chip">Еженедельный радар</span>
+            <span class="meta-chip">Китай и Азия</span>
+          </div>
+          <h3>Еженедельный радар: II, санкции и валюты</h3>
+          <p>В краткосрочном плане глобальные трансформации просачиваюця через кажущиеся техническими меры. В долгосрочном плане ети меры переопределяют иерархии.</p>
+          <span class="inline-link article-card__cta">Читат статю</span>
+          <div class="article-card__footer">
+            <span>4 апреля 2026 г.</span>
+            <span>4 мин</span>
+          </div>
+        </div>
+      </a>
+    </article>
+  
+              </div>
+            
       </div>
     </section>
   </main>
@@ -637,13 +970,21 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <a class="brand brand--footer" href="/ru/">
-            <span class="brand-mark brand-mark--footer">
-              <img class="brand-logo brand-logo--footer" src="/assets/geoscope-logo.png" alt="Geo Scope" />
-            </span>
+            
+    <span class="brand-mark brand-mark--footer">
+      <img class="brand-logo brand-logo--footer" src="/assets/geoscope-logo.png" alt="Geo Scope">
+    </span>
+  
           </a>
           <p>Редакционная платформа и цифровой тхинк танк для интерпретации глобальных изменений с глубиной, суждением и ясностю.</p>
           <div class="social-links">
-            <a href="https://www.linkedin.com/company/geoscope" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://x.com/geoscope" target="_blank" rel="noreferrer">X</a><a href="#" target="_blank" rel="noreferrer">RSS</a>
+            
+                  <a href="https://www.linkedin.com/company/geoscope" target="_blank" rel="noreferrer">LinkedIn</a>
+                
+                  <a href="https://x.com/geoscope" target="_blank" rel="noreferrer">X</a>
+                
+                  <a href="#" target="_blank" rel="noreferrer">RSS</a>
+                
           </div>
         </div>
         <div>
@@ -655,7 +996,7 @@
         <div>
           <h3>Платформа</h3>
           <div class="footer-links">
-            <a href="/ru/about/">О Geo Scope</a><a href="/ru/contact/">Контакт</a><a href="/ru/subscription/">Подписка</a>
+            <a href="/ru/about/">О Geo Scope</a><a href="/ru/contact/">Контакт</a><a href="/ru/subscription/">Подписка</a><a href="/ru/editor/">Редакционная панел</a>
           </div>
           <div class="footer-contact">
             <span>info@geo-scope.online</span>
@@ -664,8 +1005,20 @@
         </div>
         <div>
           <h3>Рассылка</h3>
-          <p class="footer-note">Получаыте стратегическую аналитику и ключеве тексты о новом мировом порядке.</p>
-          <a class="btn btn-secondary" href="/ru/subscription/">Подписка</a>
+          <p class="footer-note">
+            Получаыте стратегическую аналитику и ключеве тексты о новом мировом порядке.
+          </p>
+          
+    <form class="newsletter-form newsletter-form--compact " data-newsletter-form="">
+      
+      <label class="field">
+        <span>Емаил</span>
+        <input type="email" name="email" placeholder="you@email.com" required="">
+      </label>
+      
+      <button class="btn btn-primary" type="submit">Присоединиця</button>
+    </form>
+  
         </div>
       </div>
       <div class="container footer-bottom">
@@ -674,6 +1027,6 @@
     </div>
   </footer>
     </div>
-    <script type="module" src="/assets/app.js?v=20260915a"></script>
+    <script type="module" src="/assets/app.js?v=bbf4ac6711"></script>
   </body>
 </html>

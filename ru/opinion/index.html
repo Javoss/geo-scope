@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мнение | Geo Scope</title>
     <meta name="description" content="Колонки и аргументы для чтения международной системы через интересы, возможности и последствия." />
+    <link rel="stylesheet" href="/assets/styles.css?v=99c3a902b6" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png?v=bf066e4b74" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon-geoscope.png?v=bf066e4b74" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png?v=bf066e4b74" />
     <meta name="keywords" content="Geo Scope, Мнение, Геополитика, Международная економика, Технологии и геополитика, Енергетика, Торговля и цепочки поставок, Оборона и безопасност" />
-    <link rel="canonical" href="https://geo-scope.online/ru/opinion/" />
-    <link rel="alternate" hreflang="es" href="https://geo-scope.online/opinion/" />
-    <link rel="alternate" hreflang="en" href="https://geo-scope.online/en/opinion/" />
-    <link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/opinion/" />
-    <link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/opinion/" />
-    <link rel="alternate" hreflang="x-default" href="https://geo-scope.online/opinion/" />
     <meta property="og:site_name" content="Geo Scope" />
     <meta property="og:title" content="Мнение | Geo Scope" />
     <meta property="og:description" content="Колонки и аргументы для чтения международной системы через интересы, возможности и последствия." />
@@ -25,17 +23,23 @@
     <meta name="twitter:description" content="Колонки и аргументы для чтения международной системы через интересы, возможности и последствия." />
     <meta name="twitter:image" content="https://geo-scope.online/assets/geoscope-logo.png" />
     <meta name="twitter:site" content="@geoscope" />
-    <link rel="stylesheet" href="/assets/styles.css?v=20260605a" />
-    <link rel="icon" type="image/png" href="/assets/favicon-geoscope.png?v=20260428c" />
+    <link rel="canonical" href="https://geo-scope.online/ru/opinion/" />
+    <link rel="alternate" hreflang="es" href="https://geo-scope.online/opinion/" />
+    <link rel="alternate" hreflang="en" href="https://geo-scope.online/en/opinion/" />
+    <link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/opinion/" />
+    <link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/opinion/" />
+    <link rel="alternate" hreflang="x-default" href="https://geo-scope.online/opinion/" />
   </head>
   <body data-page="opinion" data-locale="ru">
     <div class="site-shell">
       <header id="site-header">
     <div class="nav-frame">
       <a class="brand" href="/ru/" aria-label="Geo Scope">
-        <span class="brand-mark brand-mark--header">
-          <img class="brand-logo" src="/assets/geoscope-logo.png" alt="Geo Scope" />
-        </span>
+        
+      <span class="brand-mark brand-mark--header">
+        <img class="brand-logo" src="/assets/geoscope-logo.png" alt="Geo Scope">
+      </span>
+    
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
         Меню
@@ -85,35 +89,19 @@
           <span class="header-utility__divider" aria-hidden="true"></span>
           <div class="header-language" role="group" aria-label="Язык">
             
-                  <a
-                    class="header-language__button "
-                    href="/opinion/"
-                    aria-current="false"
-                  >
+                  <a class="header-language__button " href="/opinion/" hreflang="es" lang="es" data-locale="es" aria-current="false">
                     ES
                   </a>
                 
-                  <a
-                    class="header-language__button "
-                    href="/en/opinion/"
-                    aria-current="false"
-                  >
+                  <a class="header-language__button " href="/en/opinion/" hreflang="en" lang="en" data-locale="en" aria-current="false">
                     EN
                   </a>
                 
-                  <a
-                    class="header-language__button is-active"
-                    href="/ru/opinion/"
-                    aria-current="true"
-                  >
+                  <a class="header-language__button is-active" href="/ru/opinion/" hreflang="ru" lang="ru" data-locale="ru" aria-current="true">
                     RU
                   </a>
                 
-                  <a
-                    class="header-language__button "
-                    href="/zh/opinion/"
-                    aria-current="false"
-                  >
+                  <a class="header-language__button " href="/zh/opinion/" hreflang="zh" lang="zh" data-locale="zh" aria-current="false">
                     中文
                   </a>
                 
@@ -135,13 +123,145 @@
             <strong>1</strong>
             <span>видимых резултатов при текущих филтрах.</span>
           </div>
+          <div class="aside-line">
+            <strong>9</strong>
+            <span>9 регионов и 13 секторов в редакционной структуре.</span>
+          </div>
+          <a class="btn btn-secondary" href="/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/">
+            Открыт ведущий материал
+          </a>
         </div>
       </div>
     </section>
+
     <section class="section section-tight">
       <div class="container">
-        <div class="card-grid card-grid--three">
-          
+        <form class="filter-shell reveal" id="archive-filters">
+          <div class="filter-grid">
+            <label class="field">
+              <span>Поиск</span>
+              <input type="search" name="q" value="" placeholder="Заголовок, регион, метка или сектор">
+            </label>
+            <div class="field field--locked"><span>Формат</span><strong>Мнение</strong></div>
+            <label class="field">
+              <span>Регион</span>
+              <select name="region">
+                <option value="">Все регионы</option>
+                
+                      <option value="global">
+                        Глобальный уровен
+                      </option>
+                    
+                      <option value="brics">
+                        БРИКС
+                      </option>
+                    
+                      <option value="america-latina">
+                        Латинская Америка
+                      </option>
+                    
+                      <option value="rusia-eurasia">
+                        Россия и Евразия
+                      </option>
+                    
+                      <option value="china-asia">
+                        Китай и Азия
+                      </option>
+                    
+                      <option value="europa">
+                        Европа
+                      </option>
+                    
+                      <option value="medio-oriente">
+                        Ближний Восток
+                      </option>
+                    
+                      <option value="africa">
+                        Африка
+                      </option>
+                    
+                      <option value="estados-unidos-occidente">
+                        США и Запад
+                      </option>
+                    
+              </select>
+            </label>
+            <label class="field">
+              <span>Сектор</span>
+              <select name="sector">
+                <option value="">Все секторы</option>
+                
+                      <option value="geoeconomia-global">
+                        Глобальная геоекономика
+                      </option>
+                    
+                      <option value="mercados-financieros">
+                        Финансове рынки
+                      </option>
+                    
+                      <option value="china-estados-unidos">
+                        Китай и Соединенне Штаты
+                      </option>
+                    
+                      <option value="geopolitica">
+                        Geopolítica
+                      </option>
+                    
+                      <option value="economia-internacional">
+                        Международная економика
+                      </option>
+                    
+                      <option value="tecnologia-geopolitica">
+                        Технологии и геополитика
+                      </option>
+                    
+                      <option value="energia">
+                        Energía
+                      </option>
+                    
+                      <option value="comercio-cadenas-logisticas">
+                        Торговля и цепочки поставок
+                      </option>
+                    
+                      <option value="defensa-seguridad">
+                        Оборона и безопасност
+                      </option>
+                    
+                      <option value="diplomacia">
+                        Дипломатия
+                      </option>
+                    
+                      <option value="infraestructura-estrategica">
+                        Стратегическая инфраструктура
+                      </option>
+                    
+                      <option value="inteligencia-artificial-poder-global">
+                        Искусственный интеллект и глобальная власт
+                      </option>
+                    
+                      <option value="multipolaridad-gobernanza-global">
+                        Многополярност и глобальное управление
+                      </option>
+                    
+              </select>
+            </label>
+          </div>
+          <div class="filter-actions">
+            <button class="btn btn-primary" type="submit">Применит филтры</button>
+            <a class="btn btn-ghost" href="/ru/opinion/">Сбросит</a>
+          </div>
+        </form>
+
+        <div class="results-meta">
+          <strong>1 статя</strong>
+          <span>
+            Мнение
+          </span>
+        </div>
+
+        
+              <div class="card-grid card-grid--three">
+                
     <article class="card article-card article-card--standard reveal">
       <a class="article-card__link" href="/ru/article/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics/">
         
@@ -169,7 +289,8 @@
       </a>
     </article>
   
-        </div>
+              </div>
+            
       </div>
     </section>
   </main>
@@ -178,13 +299,21 @@
       <div class="container footer-grid">
         <div class="footer-brand">
           <a class="brand brand--footer" href="/ru/">
-            <span class="brand-mark brand-mark--footer">
-              <img class="brand-logo brand-logo--footer" src="/assets/geoscope-logo.png" alt="Geo Scope" />
-            </span>
+            
+    <span class="brand-mark brand-mark--footer">
+      <img class="brand-logo brand-logo--footer" src="/assets/geoscope-logo.png" alt="Geo Scope">
+    </span>
+  
           </a>
           <p>Редакционная платформа и цифровой тхинк танк для интерпретации глобальных изменений с глубиной, суждением и ясностю.</p>
           <div class="social-links">
-            <a href="https://www.linkedin.com/company/geoscope" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://x.com/geoscope" target="_blank" rel="noreferrer">X</a><a href="#" target="_blank" rel="noreferrer">RSS</a>
+            
+                  <a href="https://www.linkedin.com/company/geoscope" target="_blank" rel="noreferrer">LinkedIn</a>
+                
+                  <a href="https://x.com/geoscope" target="_blank" rel="noreferrer">X</a>
+                
+                  <a href="#" target="_blank" rel="noreferrer">RSS</a>
+                
           </div>
         </div>
         <div>
@@ -196,7 +325,7 @@
         <div>
           <h3>Платформа</h3>
           <div class="footer-links">
-            <a href="/ru/about/">О Geo Scope</a><a href="/ru/contact/">Контакт</a><a href="/ru/subscription/">Подписка</a>
+            <a href="/ru/about/">О Geo Scope</a><a href="/ru/contact/">Контакт</a><a href="/ru/subscription/">Подписка</a><a href="/ru/editor/">Редакционная панел</a>
           </div>
           <div class="footer-contact">
             <span>info@geo-scope.online</span>
@@ -205,8 +334,20 @@
         </div>
         <div>
           <h3>Рассылка</h3>
-          <p class="footer-note">Получаыте стратегическую аналитику и ключеве тексты о новом мировом порядке.</p>
-          <a class="btn btn-secondary" href="/ru/subscription/">Подписка</a>
+          <p class="footer-note">
+            Получаыте стратегическую аналитику и ключеве тексты о новом мировом порядке.
+          </p>
+          
+    <form class="newsletter-form newsletter-form--compact " data-newsletter-form="">
+      
+      <label class="field">
+        <span>Емаил</span>
+        <input type="email" name="email" placeholder="you@email.com" required="">
+      </label>
+      
+      <button class="btn btn-primary" type="submit">Присоединиця</button>
+    </form>
+  
         </div>
       </div>
       <div class="container footer-bottom">
@@ -215,6 +356,6 @@
     </div>
   </footer>
     </div>
-    <script type="module" src="/assets/app.js?v=20260915a"></script>
+    <script type="module" src="/assets/app.js?v=bbf4ac6711"></script>
   </body>
 </html>
