@@ -132,7 +132,6 @@ export const articleInformeMercadoDeAlternativasRusiaAfrica2026 = {
         "9. <a href=\"https://www.telesurtv.net/tercera-cumbre-rusia-africa-multipolar/\" target=\"_blank\" rel=\"noopener\">teleSUR — Moscú recibe al continente como pilar del mundo multipolar</a>",
         "10. <a href=\"https://www.bloomberglinea.com/latinoamerica/bolivia/el-nuevo-gobierno-de-bolivia-quiere-reescribir-las-reglas-del-litio-en-plena-crisis-economica/\" target=\"_blank\" rel=\"noopener\">Bloomberg Línea — El nuevo gobierno de Bolivia quiere reescribir las reglas del litio</a>",
         "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>",
-        "<em>Nota: las páginas del Kremlin y de Chatham House no pudieron abrirse durante la redacción; sus datos proceden de la cobertura que las cita. Las cifras de grano, fertilizantes, pagos y comercio son declaraciones oficiales rusas sin verificación independiente.</em>",
       ],
     },
   ],
