@@ -1729,7 +1729,7 @@ function renderArticlePage() {
     <section class="section section-tight">
       <div class="container article-layout">
         <article class="card prose-card reveal is-visible">
-          <p class="article-lead">${article.excerpt}</p>
+          ${article.excerpt ? `<p class="article-lead">${article.excerpt}</p>` : ""}
           ${
             article.type === "radar"
               ? renderRadarBody(article)
@@ -2076,7 +2076,7 @@ function renderArticleCard(article, variant = "standard") {
             <span class="meta-chip">${nameForRegion(article.region)}</span>
           </div>
           <h3>${article.title}</h3>
-          <p>${article.excerpt}</p>
+          <p>${article.excerpt || article.subtitle || ""}</p>
           <span class="inline-link article-card__cta">${ui.articlePage.readArticle}</span>
           <div class="article-card__footer">
             <span>${formatDate(article.date)}</span>

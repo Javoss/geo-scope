@@ -2,7 +2,6 @@ export const articleInformeMercadoDeAlternativasRusiaAfrica2026 = {
   slug: "informe-mercado-de-alternativas-rusia-africa-2026",
   title: "Un mercado de alternativas: lo que la cumbre Rusia–África revela del nuevo orden",
   subtitle: "Rusia convirtió la seguridad, los alimentos y la energía nuclear en capital diplomático en África. El continente, por su parte, transformó la competencia entre potencias en margen de negociación.",
-  excerpt: "Informe GeoScope sobre la tercera Cumbre Rusia–África: la asimetría comercial, el modelo de seguridad a cambio de recursos, el efecto Ormuz y la estrategia de la Unión Africana.",
   type: "analysis",
   region: "africa",
   extraRegions: [

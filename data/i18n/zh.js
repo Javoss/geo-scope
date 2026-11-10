@@ -2414,7 +2414,6 @@ export const content = {
     "informe-mercado-de-alternativas-rusia-africa-2026": {
       title: "替代选项的市场：俄非峰会揭示的新秩序",
       subtitle: "俄罗斯把安全、粮食和核能变成了在非洲的外交资本；非洲大陆则把大国竞争变成了谈判筹码。",
-      excerpt: "GeoScope 关于第三届俄罗斯—非洲峰会的报告：贸易不对称、“以安全换资源”模式、霍尔木兹效应与非洲联盟的战略。",
       tags: [
         "2026年俄非峰会",
         "俄罗斯在非洲",
