@@ -2414,7 +2414,6 @@ export const content = {
     "informe-mercado-de-alternativas-rusia-africa-2026": {
       title: "A market of alternatives: what the Russia–Africa summit reveals about the new order",
       subtitle: "Russia turned security, food and nuclear energy into diplomatic capital in Africa. The continent, for its part, turned great-power competition into negotiating leverage.",
-      excerpt: "GeoScope report on the third Russia–Africa Summit: the trade asymmetry, the security-for-resources model, the Hormuz effect and the African Union's strategy.",
       tags: [
         "Russia-Africa Summit 2026",
         "Russia in Africa",

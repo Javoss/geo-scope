@@ -2,7 +2,6 @@ export const informeMercadoDeAlternativasRusiaAfricaTranslations = {
   "en": {
     "title": "A market of alternatives: what the Russia–Africa summit reveals about the new order",
     "subtitle": "Russia turned security, food and nuclear energy into diplomatic capital in Africa. The continent, for its part, turned great-power competition into negotiating leverage.",
-    "excerpt": "GeoScope report on the third Russia–Africa Summit: the trade asymmetry, the security-for-resources model, the Hormuz effect and the African Union's strategy.",
     "tags": [
       "Russia-Africa Summit 2026",
       "Russia in Africa",
@@ -124,7 +123,6 @@ export const informeMercadoDeAlternativasRusiaAfricaTranslations = {
   "ru": {
     "title": "Рынок альтернатив: что саммит Россия–Африка говорит о новом мировом порядке",
     "subtitle": "Россия превратила безопасность, продовольствие и атомную энергетику в дипломатический капитал в Африке. Континент, в свою очередь, превратил соперничество держав в пространство для переговоров.",
-    "excerpt": "Доклад GeoScope о третьем саммите Россия–Африка: торговая асимметрия, модель «безопасность в обмен на ресурсы», ормузский эффект и стратегия Африканского союза.",
     "tags": [
       "Саммит Россия–Африка 2026",
       "Россия в Африке",
@@ -246,7 +244,6 @@ export const informeMercadoDeAlternativasRusiaAfricaTranslations = {
   "zh": {
     "title": "替代选项的市场：俄非峰会揭示的新秩序",
     "subtitle": "俄罗斯把安全、粮食和核能变成了在非洲的外交资本；非洲大陆则把大国竞争变成了谈判筹码。",
-    "excerpt": "GeoScope 关于第三届俄罗斯—非洲峰会的报告：贸易不对称、“以安全换资源”模式、霍尔木兹效应与非洲联盟的战略。",
     "tags": [
       "2026年俄非峰会",
       "俄罗斯在非洲",
