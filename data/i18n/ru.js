@@ -2527,7 +2527,6 @@ export const content = {
             "9. <a href=\"https://www.telesurtv.net/tercera-cumbre-rusia-africa-multipolar/\" target=\"_blank\" rel=\"noopener\">teleSUR — Moscú recibe al continente como pilar del mundo multipolar</a>",
             "10. <a href=\"https://www.bloomberglinea.com/latinoamerica/bolivia/el-nuevo-gobierno-de-bolivia-quiere-reescribir-las-reglas-del-litio-en-plena-crisis-economica/\" target=\"_blank\" rel=\"noopener\">Bloomberg Línea — El nuevo gobierno de Bolivia quiere reescribir las reglas del litio</a>",
             "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>",
-            "<em>Примечание: страницы Кремля и Chatham House не удалось открыть при подготовке текста; их данные взяты из цитирующих их публикаций. Данные о зерне, удобрениях, платежах и торговле — официальные российские заявления без независимой проверки.</em>",
           ],
         },
       ],

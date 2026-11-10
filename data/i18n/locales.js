@@ -31,7 +31,7 @@ export const localeOptions = {
 };
 export const localeVersions = {
   es: "105844a5c6",
-  en: "2585f95bbb",
-  ru: "d17d76c910",
-  zh: "d286b7ea44",
+  en: "931bb4c582",
+  ru: "76df5b7604",
+  zh: "710799c755",
 };

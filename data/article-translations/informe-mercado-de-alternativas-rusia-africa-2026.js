@@ -114,8 +114,7 @@ export const informeMercadoDeAlternativasRusiaAfricaTranslations = {
           "8. <a href=\"https://www.deccanchronicle.com/amp/opinion/columnists/gurjit-singh-i-russias-africa-summit-is-a-win-but-no-breakthrough-2001522\" target=\"_blank\" rel=\"noopener\">Deccan Chronicle — Gurjit Singh: Russia’s Africa Summit Is A Win, But No Breakthrough (3 nov)</a>",
           "9. <a href=\"https://www.telesurtv.net/tercera-cumbre-rusia-africa-multipolar/\" target=\"_blank\" rel=\"noopener\">teleSUR — Moscú recibe al continente como pilar del mundo multipolar</a>",
           "10. <a href=\"https://www.bloomberglinea.com/latinoamerica/bolivia/el-nuevo-gobierno-de-bolivia-quiere-reescribir-las-reglas-del-litio-en-plena-crisis-economica/\" target=\"_blank\" rel=\"noopener\">Bloomberg Línea — El nuevo gobierno de Bolivia quiere reescribir las reglas del litio</a>",
-          "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>",
-          "<em>Note: the Kremlin and Chatham House pages could not be opened during drafting; their data come from the coverage that cites them. The figures on grain, fertilizers, payments and trade are official Russian statements without independent verification.</em>"
+          "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>"
         ]
       }
     ]
@@ -235,8 +234,7 @@ export const informeMercadoDeAlternativasRusiaAfricaTranslations = {
           "8. <a href=\"https://www.deccanchronicle.com/amp/opinion/columnists/gurjit-singh-i-russias-africa-summit-is-a-win-but-no-breakthrough-2001522\" target=\"_blank\" rel=\"noopener\">Deccan Chronicle — Gurjit Singh: Russia’s Africa Summit Is A Win, But No Breakthrough (3 nov)</a>",
           "9. <a href=\"https://www.telesurtv.net/tercera-cumbre-rusia-africa-multipolar/\" target=\"_blank\" rel=\"noopener\">teleSUR — Moscú recibe al continente como pilar del mundo multipolar</a>",
           "10. <a href=\"https://www.bloomberglinea.com/latinoamerica/bolivia/el-nuevo-gobierno-de-bolivia-quiere-reescribir-las-reglas-del-litio-en-plena-crisis-economica/\" target=\"_blank\" rel=\"noopener\">Bloomberg Línea — El nuevo gobierno de Bolivia quiere reescribir las reglas del litio</a>",
-          "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>",
-          "<em>Примечание: страницы Кремля и Chatham House не удалось открыть при подготовке текста; их данные взяты из цитирующих их публикаций. Данные о зерне, удобрениях, платежах и торговле — официальные российские заявления без независимой проверки.</em>"
+          "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>"
         ]
       }
     ]
@@ -356,8 +354,7 @@ export const informeMercadoDeAlternativasRusiaAfricaTranslations = {
           "8. <a href=\"https://www.deccanchronicle.com/amp/opinion/columnists/gurjit-singh-i-russias-africa-summit-is-a-win-but-no-breakthrough-2001522\" target=\"_blank\" rel=\"noopener\">Deccan Chronicle — Gurjit Singh: Russia’s Africa Summit Is A Win, But No Breakthrough (3 nov)</a>",
           "9. <a href=\"https://www.telesurtv.net/tercera-cumbre-rusia-africa-multipolar/\" target=\"_blank\" rel=\"noopener\">teleSUR — Moscú recibe al continente como pilar del mundo multipolar</a>",
           "10. <a href=\"https://www.bloomberglinea.com/latinoamerica/bolivia/el-nuevo-gobierno-de-bolivia-quiere-reescribir-las-reglas-del-litio-en-plena-crisis-economica/\" target=\"_blank\" rel=\"noopener\">Bloomberg Línea — El nuevo gobierno de Bolivia quiere reescribir las reglas del litio</a>",
-          "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>",
-          "<em>注：撰写期间无法打开克里姆林宫和查塔姆研究所的页面，其数据来自引用这些页面的报道。有关粮食、化肥、支付和贸易的数据为俄罗斯官方声明，未经独立核实。</em>"
+          "11. <a href=\"https://eju.tv/?p=4790558\" target=\"_blank\" rel=\"noopener\">eju.tv — Contratos de litio con Rusia y China</a>"
         ]
       }
     ]
