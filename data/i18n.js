@@ -1,3 +1,4 @@
+import { informeMercadoDeAlternativasRusiaAfricaTranslations } from "./article-translations/informe-mercado-de-alternativas-rusia-africa-2026.js?v=20261110a";
 import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260622a";
 import { elMundoMultipolarParadigmaBricsTranslations } from "./article-translations/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics.js?v=20260915a";
 import { foroSeguridadMultipolarMoscuTranslations } from "./article-translations/foro-de-seguridad-multipolar-en-moscu.js?v=20260622a";
@@ -5667,3 +5668,9 @@ contentTranslations.ru.articles[
 contentTranslations.zh.articles[
   "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics"
 ] = elMundoMultipolarParadigmaBricsTranslations.zh;
+contentTranslations.en.articles["informe-mercado-de-alternativas-rusia-africa-2026"] =
+  informeMercadoDeAlternativasRusiaAfricaTranslations.en;
+contentTranslations.ru.articles["informe-mercado-de-alternativas-rusia-africa-2026"] =
+  informeMercadoDeAlternativasRusiaAfricaTranslations.ru;
+contentTranslations.zh.articles["informe-mercado-de-alternativas-rusia-africa-2026"] =
+  informeMercadoDeAlternativasRusiaAfricaTranslations.zh;

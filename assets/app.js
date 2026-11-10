@@ -257,6 +257,12 @@ function applySocialMeta({
   applyAlternateLocaleLinks(path, params);
 }
 
+// Un artículo pertenece a su región principal y, opcionalmente, a otras
+// listadas en extraRegions (p. ej. un tema de Rusia en África).
+function articleInRegion(article, slug) {
+  return article.region === slug || (article.extraRegions || []).includes(slug);
+}
+
 function articleSocialImage(article) {
   return `/assets/og/${currentLocale}/${article.slug}.jpg`;
 }
@@ -1191,7 +1197,7 @@ function renderRegionDetailPage() {
     imageAlt: region.name,
   });
 
-  const regionArticles = orderedArticles.filter((article) => article.region === slug);
+  const regionArticles = orderedArticles.filter((article) => articleInRegion(article, slug));
   const featuredArticle = regionArticles[0];
   const latest = regionArticles.slice(1, 4);
   const relatedSectors = unique(regionArticles.flatMap((article) => article.sectors)).slice(0, 4);
@@ -1372,7 +1378,7 @@ function renderSectorDetailPage() {
 
   const relatedArticles = orderedArticles.filter((article) => {
     const sectorMatch = article.sectors.includes(slug);
-    const regionMatch = activeRegion ? article.region === activeRegion : true;
+    const regionMatch = activeRegion ? articleInRegion(article, activeRegion) : true;
     return sectorMatch && regionMatch;
   });
 
@@ -2083,7 +2089,7 @@ function renderArticleCard(article, variant = "standard") {
 }
 
 function renderRegionCard(region, expanded = false) {
-  const regionArticles = orderedArticles.filter((article) => article.region === region.slug);
+  const regionArticles = orderedArticles.filter((article) => articleInRegion(article, region.slug));
 
   return `
     <article class="card region-card reveal">
@@ -2841,6 +2847,13 @@ function cyrillicizeValue(value) {
 
 function transliterateRussianString(text) {
   let output = String(text);
+
+  // Textos ya escritos en cirílico (p. ej. traducciones de artículos) no se
+  // tocan: así se conservan nombres propios, siglas y enlaces en alfabeto latino.
+  if (/[\u0400-\u04FF]/.test(output)) {
+    return output;
+  }
+
   const protectedTokens = [];
   const protect = (pattern, transform) => {
     output = output.replace(pattern, (match) => {
@@ -2850,6 +2863,9 @@ function transliterateRussianString(text) {
     });
   };
 
+  protect(/<a\b[^>]*>[\s\S]*?<\/a>/g);
+  protect(/<[^>]+>/g);
+  protect(/\bhttps?:\/\/[^\s<"]+/g);
   protect(/\bGeo Scope\b/g);
   protect(/\bLinkedIn\b/g);
   protect(/\bRSS\b/g);
@@ -3091,7 +3107,7 @@ function buildResultsDescription({ type, region, sector, term }) {
 
 function matchesArchiveFilters(article, filters) {
   const typeMatch = filters.type && filters.type !== "all" ? article.type === filters.type : true;
-  const regionMatch = filters.region ? article.region === filters.region : true;
+  const regionMatch = filters.region ? articleInRegion(article, filters.region) : true;
   const sectorMatch = filters.sector ? article.sectors.includes(filters.sector) : true;
   const term = filters.term.toLowerCase();
   const searchMatch = term ? articleSearchText(article).includes(term) : true;
@@ -3147,13 +3163,13 @@ function nameForSector(slug) {
 function countArticlesForSector(slug, regionSlug = "") {
   return orderedArticles.filter((article) => {
     const sectorMatch = article.sectors.includes(slug);
-    const regionMatch = regionSlug ? article.region === regionSlug : true;
+    const regionMatch = regionSlug ? articleInRegion(article, regionSlug) : true;
     return sectorMatch && regionMatch;
   }).length;
 }
 
 function countArticlesForRegion(slug) {
-  return orderedArticles.filter((article) => article.region === slug).length;
+  return orderedArticles.filter((article) => articleInRegion(article, slug)).length;
 }
 
 function countDistinctRegions(list) {
