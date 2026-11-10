@@ -17,7 +17,7 @@ export const articleXiYPutinEnBeijingYLaCooperacionEstrategicaGlobal = {
   author: "javier-salazar-segales",
   date: "2026-05-22",
   readTime: 15,
-  homeFeature: 5,
+  homeFeature: 6,
   tone: "indigo",
   tags: [
     "Xi Jinping",

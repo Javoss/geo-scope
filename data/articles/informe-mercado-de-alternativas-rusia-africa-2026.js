@@ -5,6 +5,9 @@ export const articleInformeMercadoDeAlternativasRusiaAfrica2026 = {
   excerpt: "Informe GeoScope sobre la tercera Cumbre Rusia–África: la asimetría comercial, el modelo de seguridad a cambio de recursos, el efecto Ormuz y la estrategia de la Unión Africana.",
   type: "analysis",
   region: "africa",
+  extraRegions: [
+    "rusia-eurasia",
+  ],
   sectors: [
     "geopolitica",
     "defensa-seguridad",
@@ -15,6 +18,7 @@ export const articleInformeMercadoDeAlternativasRusiaAfrica2026 = {
   author: "javier-salazar-segales",
   date: "2026-11-10",
   readTime: 10,
+  homeFeature: 1,
   tone: "bronze",
   tags: [
     "Cumbre Rusia-África 2026",
