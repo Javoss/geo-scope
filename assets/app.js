@@ -399,6 +399,7 @@ function buildStaticRoutePath(pageKey, locale = currentLocale, params = new URLS
     analysis: ["analysis"],
     opinion: ["opinion"],
     radar: ["radar"],
+    newsletter: ["newsletter"],
     regions: ["regions"],
     sectors: ["sectors"],
     experts: ["experts"],
@@ -413,7 +414,7 @@ function buildStaticRoutePath(pageKey, locale = currentLocale, params = new URLS
     return appendRouteQuery(path, pickParams(params, ["type", "region", "sector", "q"]));
   }
 
-  if (pageKey === "opinion") {
+  if (pageKey === "opinion" || pageKey === "newsletter") {
     return appendRouteQuery(path, pickParams(params, ["region", "sector", "q"]));
   }
 
@@ -448,6 +449,7 @@ function currentRouteParams() {
     case "analysis":
       return pickParams(query, ["type", "region", "sector", "q"]);
     case "opinion":
+    case "newsletter":
       return pickParams(query, ["region", "sector", "q"]);
     case "sectors":
       return pickParams(query, ["region"]);
@@ -519,6 +521,19 @@ function renderPage() {
         description: pageCopy.opinion.description,
         lockedType: true,
         defaultType: "opinion",
+      });
+      break;
+    case "newsletter":
+      document.title = `${ui.pageTitles.newsletter} | ${site.name}`;
+      applyStaticPageMeta("newsletter", pageCopy.newsletter.description, [
+        ui.pageTitles.newsletter,
+      ]);
+      app.innerHTML = renderArchivePage({
+        title: pageCopy.newsletter.title,
+        eyebrow: pageCopy.newsletter.eyebrow,
+        description: pageCopy.newsletter.description,
+        lockedType: true,
+        defaultType: "newsletter",
       });
       break;
     case "explainers":
@@ -668,7 +683,7 @@ function renderHeader() {
 }
 
 function renderFooter() {
-  const sectionLinks = navigation.slice(0, 7);
+  const sectionLinks = navigation.slice(0, 8);
   const institutionalLinks = [
     { label: navigation.find((item) => item.key === "about")?.label || ui.pageTitles.about, href: "about.html" },
     { label: navigation.find((item) => item.key === "contact")?.label || ui.pageTitles.contact, href: "contact.html" },
@@ -2688,6 +2703,7 @@ function resolveActiveNavigationKey() {
     analysis: "analysis",
     opinion: "opinion",
     radar: "radar",
+    newsletter: "newsletter",
     regions: "regions",
     about: "about",
     contact: "contact",
@@ -2702,6 +2718,7 @@ function pageFromType(type) {
     analysis: "analysis",
     opinion: "opinion",
     radar: "radar",
+    newsletter: "newsletter",
   }[type];
 }
 
@@ -2720,6 +2737,8 @@ function cleanLocalizedPath(basePath, locale, params) {
       return buildStaticRoutePath("opinion", locale, params);
     case "radar.html":
       return buildStaticRoutePath("radar", locale, params);
+    case "newsletter.html":
+      return buildStaticRoutePath("newsletter", locale, params);
     case "regions.html":
       return buildStaticRoutePath("regions", locale, params);
     case "sectors.html":
@@ -3135,6 +3154,7 @@ function renderTypeOptions(selectedType, omitAll = false) {
     { value: "analysis", label: ui.articleTypes.analysis },
     { value: "opinion", label: ui.articleTypes.opinion },
     { value: "radar", label: ui.articleTypes.radar },
+    { value: "newsletter", label: ui.articleTypes.newsletter },
   ].filter(Boolean);
 
   return options
@@ -3222,6 +3242,7 @@ function basePathForPage(currentPage) {
     analysis: "analysis.html",
     opinion: "opinion.html",
     radar: "radar.html",
+    newsletter: "newsletter.html",
     regions: "regions.html",
     region: "region.html",
     sectors: "sectors.html",
@@ -3241,6 +3262,7 @@ function backLinkForArticle(article) {
     analysis: "analysis.html",
     opinion: "opinion.html",
     radar: "radar.html",
+    newsletter: "newsletter.html",
   }[article.type]);
 }
 

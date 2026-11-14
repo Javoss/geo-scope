@@ -20,6 +20,7 @@ export const ui = {
     analysis: "Analysis",
     opinion: "Opinion",
     radar: "Weekly radar",
+    newsletter: "Newsletter",
   },
   pageCopy: {
     analysis: {
@@ -37,12 +38,18 @@ export const ui = {
       title: "Global radar to spot signals before consensus forms.",
       description: "Brief reads on moves that anticipate geopolitical, geoeconomic, and technological shifts.",
     },
+    newsletter: {
+      eyebrow: "Editorial dispatch",
+      title: "Newsletter: what happened and why it matters.",
+      description: "Issues of the Geo Scope newsletter: one event of the week explained with context, sources and open questions.",
+    },
   },
   pageTitles: {
     home: "Global strategic analysis",
     analysis: "Analysis",
     opinion: "Opinion",
     radar: "Weekly radar",
+    newsletter: "Newsletter",
     regions: "Regions",
     sectors: "Sectors",
     experts: "Experts",
@@ -354,6 +361,7 @@ export const content = {
     analysis: "Analysis",
     opinion: "Opinion",
     radar: "Weekly radar",
+    newsletter: "Newsletter",
     regions: "Regions",
     sectors: "Sectors",
     experts: "Experts",

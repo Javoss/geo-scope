@@ -24,6 +24,7 @@ const STATIC_PAGES = {
   analysis: ["analysis"],
   opinion: ["opinion"],
   radar: ["radar"],
+  newsletter: ["newsletter"],
   regions: ["regions"],
   sectors: ["sectors"],
   experts: ["experts"],

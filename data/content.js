@@ -20,6 +20,7 @@ export const navigation = [
   { label: "Análisis", href: "analysis.html", key: "analysis" },
   { label: "Opinión", href: "opinion.html", key: "opinion" },
   { label: "Radar semanal", href: "radar.html", key: "radar" },
+  { label: "Newsletter", href: "newsletter.html", key: "newsletter" },
   { label: "Regiones", href: "regions.html", key: "regions" },
   { label: "Sectores", href: "sectors.html", key: "sectors" },
   { label: "Expertos", href: "experts.html", key: "experts" },

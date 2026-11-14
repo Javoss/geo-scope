@@ -20,6 +20,7 @@ export const ui = {
     analysis: "Analitika",
     opinion: "Mnenie",
     radar: "Ezhenedelnyy radar",
+    newsletter: "Рассылка",
   },
   pageCopy: {
     analysis: {
@@ -37,12 +38,18 @@ export const ui = {
       title: "Globalnyy radar dlya poiska signalov do togo, kak slozhitsya konsensus.",
       description: "Kratkie materialy o dvizheniyakh, kotorye predvoshchayut geopoliticheskie, geoekonomicheskie i tekhnologicheskie sdvigi.",
     },
+    newsletter: {
+      eyebrow: "Редакционный выпуск",
+      title: "Рассылка: что произошло и почему это важно.",
+      description: "Выпуски рассылки Geo Scope: одно событие недели, объяснённое с контекстом, источниками и открытыми вопросами.",
+    },
   },
   pageTitles: {
     home: "Globalnaya strategicheskaya analitika",
     analysis: "Analitika",
     opinion: "Mnenie",
     radar: "Ezhenedelnyy radar",
+    newsletter: "Рассылка",
     regions: "Regiony",
     sectors: "Sektory",
     experts: "Eksperty",
@@ -354,6 +361,7 @@ export const content = {
     analysis: "Analitika",
     opinion: "Mnenie",
     radar: "Radar nedeli",
+    newsletter: "Рассылка",
     regions: "Regiony",
     sectors: "Sektory",
     experts: "Eksperty",

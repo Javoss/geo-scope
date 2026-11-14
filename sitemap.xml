@@ -145,6 +145,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/radar/" />
   </url>
   <url>
+    <loc>https://geo-scope.online/newsletter/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/newsletter/" />
+  </url>
+  <url>
+    <loc>https://geo-scope.online/en/newsletter/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/newsletter/" />
+  </url>
+  <url>
+    <loc>https://geo-scope.online/ru/newsletter/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/newsletter/" />
+  </url>
+  <url>
+    <loc>https://geo-scope.online/zh/newsletter/</loc>
+    <lastmod>2026-11-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://geo-scope.online/en/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://geo-scope.online/ru/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://geo-scope.online/zh/newsletter/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://geo-scope.online/newsletter/" />
+  </url>
+  <url>
     <loc>https://geo-scope.online/regions/</loc>
     <lastmod>2026-11-14</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://geo-scope.online/regions/" />
