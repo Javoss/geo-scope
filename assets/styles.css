@@ -924,6 +924,11 @@ pre {
   font-size: 0.9rem;
 }
 
+/* Dentro de una tarjeta, la portada ocupa el borde superior y la tarjeta ya la recorta. */
+.article-card .cover-art {
+  border-radius: 0;
+}
+
 .article-card--outline .cover-art,
 .article-card--compact .cover-art {
   min-height: 148px;
@@ -1294,6 +1299,8 @@ pre {
   position: relative;
   min-height: 204px;
   overflow: hidden;
+  border-radius: var(--radius-lg);
+  isolation: isolate;
   background:
     linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 45%),
     linear-gradient(
