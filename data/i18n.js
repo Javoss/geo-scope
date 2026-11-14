@@ -1,3 +1,4 @@
+import { uenoBankTranslations } from "./article-translations/ueno-bank-el-banco-que-derribo-a-un-presidente.js?v=20261114a";
 import { informeMercadoDeAlternativasRusiaAfricaTranslations } from "./article-translations/informe-mercado-de-alternativas-rusia-africa-2026.js?v=20261110a";
 import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260622a";
 import { elMundoMultipolarParadigmaBricsTranslations } from "./article-translations/el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics.js?v=20260915a";
@@ -5674,3 +5675,9 @@ contentTranslations.ru.articles["informe-mercado-de-alternativas-rusia-africa-20
   informeMercadoDeAlternativasRusiaAfricaTranslations.ru;
 contentTranslations.zh.articles["informe-mercado-de-alternativas-rusia-africa-2026"] =
   informeMercadoDeAlternativasRusiaAfricaTranslations.zh;
+contentTranslations.en.articles["ueno-bank-el-banco-que-derribo-a-un-presidente"] =
+  uenoBankTranslations.en;
+contentTranslations.ru.articles["ueno-bank-el-banco-que-derribo-a-un-presidente"] =
+  uenoBankTranslations.ru;
+contentTranslations.zh.articles["ueno-bank-el-banco-que-derribo-a-un-presidente"] =
+  uenoBankTranslations.zh;

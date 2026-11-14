@@ -18,7 +18,7 @@ export const articleRusiaAseanUnidadDiversidadKazan = {
   author: "maria-luisa-ramos-urzagaste",
   date: "2026-06-22",
   readTime: 5,
-  homeFeature: 3,
+  homeFeature: 4,
   tone: "midnight",
   tags: [
     "Rusia",

@@ -18,7 +18,7 @@ export const articleElMundoMultipolarParadigmaBrics = {
   author: "maria-luisa-ramos-urzagaste",
   date: "2026-09-15",
   readTime: 7,
-  homeFeature: 2,
+  homeFeature: 3,
   tone: "midnight",
   tags: [
     "BRICS",
