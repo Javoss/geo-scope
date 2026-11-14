@@ -17,7 +17,7 @@ export const articleInformeMercadoDeAlternativasRusiaAfrica2026 = {
   author: "javier-salazar-segales",
   date: "2026-11-10",
   readTime: 10,
-  homeFeature: 1,
+  homeFeature: 2,
   tone: "bronze",
   tags: [
     "Cumbre Rusia-África 2026",

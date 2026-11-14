@@ -1,3 +1,4 @@
+import { articleUenoBank } from "./ueno-bank-el-banco-que-derribo-a-un-presidente.js?v=20261114a";
 import { articleInformeMercadoDeAlternativasRusiaAfrica2026 } from "./informe-mercado-de-alternativas-rusia-africa-2026.js?v=20261110a";
 import { articleAmericaLatinaYLaCrisisOrganica } from "./america-latina-y-la-crisis-organica.js?v=20260915a";
 import { articleChinaProduceEstadosUnidosWallStreetGana } from "./china-produce-estados-unidos-se-endeuda-y-wall-street-gana.js?v=20260915a";
@@ -10,6 +11,7 @@ import { articleRusiaAseanUnidadDiversidadKazan } from "./rusia-asean-unidad-div
 import { articleXiYPutinEnBeijingYLaCooperacionEstrategicaGlobal } from "./xi-y-putin-en-beijing-y-la-cooperacion-estrategica-global.js?v=20260915a";
 
 export const modularArticles = [
+  articleUenoBank,
   articleInformeMercadoDeAlternativasRusiaAfrica2026,
   articleElMundoMultipolarParadigmaBrics,
   articleRusiaAseanUnidadDiversidadKazan,
