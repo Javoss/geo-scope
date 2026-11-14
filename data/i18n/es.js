@@ -20,6 +20,7 @@ export const ui = {
     analysis: "Análisis",
     opinion: "Opinión",
     radar: "Radar semanal",
+    newsletter: "Newsletter",
   },
   pageCopy: {
     analysis: {
@@ -37,12 +38,18 @@ export const ui = {
       title: "Radar global para detectar señales antes del consenso.",
       description: "Lecturas breves sobre movimientos que anticipan cambios geopolíticos, geoeconómicos y tecnológicos.",
     },
+    newsletter: {
+      eyebrow: "Envío editorial",
+      title: "Newsletter: lo que pasó y por qué importa.",
+      description: "Las ediciones de la newsletter de Geo Scope: un acontecimiento de la semana explicado con contexto, fuentes y preguntas abiertas.",
+    },
   },
   pageTitles: {
     home: "Análisis estratégico global",
     analysis: "Análisis",
     opinion: "Opinión",
     radar: "Radar semanal",
+    newsletter: "Newsletter",
     regions: "Regiones",
     sectors: "Sectores",
     experts: "Expertos",

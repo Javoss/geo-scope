@@ -75,6 +75,7 @@ export const uiCopy = {
       analysis: "Análisis",
       opinion: "Opinión",
       radar: "Radar semanal",
+      newsletter: "Newsletter",
     },
     pageCopy: {
       analysis: {
@@ -95,12 +96,19 @@ export const uiCopy = {
         description:
           "Lecturas breves sobre movimientos que anticipan cambios geopolíticos, geoeconómicos y tecnológicos.",
       },
+      newsletter: {
+        eyebrow: "Envío editorial",
+        title: "Newsletter: lo que pasó y por qué importa.",
+        description:
+          "Las ediciones de la newsletter de Geo Scope: un acontecimiento de la semana explicado con contexto, fuentes y preguntas abiertas.",
+      },
     },
     pageTitles: {
       home: "Análisis estratégico global",
       analysis: "Análisis",
       opinion: "Opinión",
       radar: "Radar semanal",
+      newsletter: "Newsletter",
       regions: "Regiones",
       sectors: "Sectores",
       experts: "Expertos",
@@ -445,6 +453,7 @@ export const uiCopy = {
       analysis: "Analysis",
       opinion: "Opinion",
       radar: "Weekly radar",
+      newsletter: "Newsletter",
     },
     pageCopy: {
       analysis: {
@@ -465,12 +474,19 @@ export const uiCopy = {
         description:
           "Brief reads on moves that anticipate geopolitical, geoeconomic, and technological shifts.",
       },
+      newsletter: {
+        eyebrow: "Editorial dispatch",
+        title: "Newsletter: what happened and why it matters.",
+        description:
+          "Issues of the Geo Scope newsletter: one event of the week explained with context, sources and open questions.",
+      },
     },
     pageTitles: {
       home: "Global strategic analysis",
       analysis: "Analysis",
       opinion: "Opinion",
       radar: "Weekly radar",
+      newsletter: "Newsletter",
       regions: "Regions",
       sectors: "Sectors",
       experts: "Experts",
@@ -812,6 +828,7 @@ export const uiCopy = {
       analysis: "Analitika",
       opinion: "Mnenie",
       radar: "Ezhenedelnyy radar",
+      newsletter: "Рассылка",
     },
     pageCopy: {
       analysis: {
@@ -832,12 +849,19 @@ export const uiCopy = {
         description:
           "Kratkie materialy o dvizheniyakh, kotorye predvoshchayut geopoliticheskie, geoekonomicheskie i tekhnologicheskie sdvigi.",
       },
+      newsletter: {
+        eyebrow: "Редакционный выпуск",
+        title: "Рассылка: что произошло и почему это важно.",
+        description:
+          "Выпуски рассылки Geo Scope: одно событие недели, объяснённое с контекстом, источниками и открытыми вопросами.",
+      },
     },
     pageTitles: {
       home: "Globalnaya strategicheskaya analitika",
       analysis: "Analitika",
       opinion: "Mnenie",
       radar: "Ezhenedelnyy radar",
+      newsletter: "Рассылка",
       regions: "Regiony",
       sectors: "Sektory",
       experts: "Eksperty",
@@ -1185,6 +1209,7 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
     analysis: "分析",
     opinion: "观点",
     radar: "每周雷达",
+    newsletter: "简报",
   },
   pageCopy: {
     analysis: {
@@ -1205,12 +1230,19 @@ uiCopy.zh = mergeLocaleData(uiCopy.en, {
       description:
         "简短阅读，捕捉预示地缘政治、地缘经济和技术变化的动态。",
     },
+    newsletter: {
+      eyebrow: "编辑简报",
+      title: "简报：发生了什么，为什么重要。",
+      description:
+        "Geo Scope 简报各期：用背景、资料来源和开放问题解读每周的一个重要事件。",
+    },
   },
   pageTitles: {
     home: "全球战略分析",
     analysis: "分析",
     opinion: "观点",
     radar: "每周雷达",
+    newsletter: "简报",
     regions: "地区",
     sectors: "板块",
     experts: "专家",
@@ -2067,6 +2099,7 @@ export const contentTranslations = {
       analysis: "Analysis",
       opinion: "Opinion",
       radar: "Weekly radar",
+      newsletter: "Newsletter",
       regions: "Regions",
       sectors: "Sectors",
       experts: "Experts",
@@ -3348,6 +3381,7 @@ export const contentTranslations = {
       analysis: "Analitika",
       opinion: "Mnenie",
       radar: "Radar nedeli",
+      newsletter: "Рассылка",
       regions: "Regiony",
       sectors: "Sektory",
       experts: "Eksperty",
@@ -4622,6 +4656,7 @@ contentTranslations.zh = mergeLocaleData(contentTranslations.en, {
     analysis: "分析",
     opinion: "观点",
     radar: "每周雷达",
+    newsletter: "简报",
     regions: "地区",
     sectors: "板块",
     experts: "专家",

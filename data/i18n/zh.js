@@ -20,6 +20,7 @@ export const ui = {
     analysis: "分析",
     opinion: "观点",
     radar: "每周雷达",
+    newsletter: "简报",
   },
   pageCopy: {
     analysis: {
@@ -37,12 +38,18 @@ export const ui = {
       title: "在共识形成之前识别信号的全球雷达。",
       description: "简短阅读，捕捉预示地缘政治、地缘经济和技术变化的动态。",
     },
+    newsletter: {
+      eyebrow: "编辑简报",
+      title: "简报：发生了什么，为什么重要。",
+      description: "Geo Scope 简报各期：用背景、资料来源和开放问题解读每周的一个重要事件。",
+    },
   },
   pageTitles: {
     home: "全球战略分析",
     analysis: "分析",
     opinion: "观点",
     radar: "每周雷达",
+    newsletter: "简报",
     regions: "地区",
     sectors: "板块",
     experts: "专家",
@@ -354,6 +361,7 @@ export const content = {
     analysis: "分析",
     opinion: "观点",
     radar: "每周雷达",
+    newsletter: "简报",
     regions: "地区",
     sectors: "板块",
     experts: "专家",

@@ -2,7 +2,7 @@ export const articleUenoBank = {
   slug: "ueno-bank-el-banco-que-derribo-a-un-presidente",
   title: "UENO BANK: el banco que derribó a un presidente",
   subtitle: "La caída del banco con más clientes de Paraguay no fue solo una quiebra financiera. Mostró lo que ocurre cuando el banco, quien debe supervisarlo y el poder político están conectados, y en cuatro días le costó la presidencia a Santiago Peña.",
-  type: "analysis",
+  type: "newsletter",
   region: "america-latina",
   sectors: [
     "mercados-financieros",
