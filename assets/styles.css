@@ -506,6 +506,13 @@ pre {
   align-items: center;
 }
 
+@media (min-width: 1121px) {
+  .hero--home .hero-grid {
+    grid-template-columns: minmax(0, 0.92fr) minmax(360px, 1.08fr);
+    gap: 44px;
+  }
+}
+
 .hero-feature__title {
   font-size: clamp(1.55rem, 2.1vw, 2.05rem);
   line-height: 1.12;
@@ -1297,7 +1304,11 @@ pre {
 
 .cover-art {
   position: relative;
-  min-height: 204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 16px;
   overflow: hidden;
   border-radius: var(--radius-lg);
   isolation: isolate;
@@ -1332,11 +1343,43 @@ pre {
   opacity: 1;
 }
 
+.cover-art > * {
+  position: relative;
+  z-index: 1;
+}
+
+.cover-art__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  padding: 2px 2px 0;
+  color: rgba(247, 251, 255, 0.88);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.cover-art__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cover-art__tags li {
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(247, 251, 255, 0.95);
+  font-size: 0.82rem;
+}
+
 .cover-art__info {
-  position: absolute;
-  left: 16px;
-  right: 16px;
-  bottom: 16px;
   display: grid;
   gap: 6px;
   padding: 15px 16px 14px;
@@ -1365,12 +1408,30 @@ pre {
   font-size: 0.7rem;
 }
 
-.cover-art--compact {
-  min-height: 156px;
+@media (min-width: 1121px) {
+  .article-hero__grid {
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.article-hero .meta-row {
+  justify-content: flex-start;
+  gap: 8px;
 }
 
 .cover-art--article {
-  min-height: 356px;
+  gap: 22px;
+  padding: 22px;
+}
+
+.cover-art--article .cover-art__info {
+  padding: 18px 20px;
+}
+
+.cover-art--article .cover-art__info strong {
+  font-size: clamp(1.2rem, 1rem + 0.9vw, 1.55rem);
+  line-height: 1.14;
 }
 
 .tone-midnight {
@@ -2229,10 +2290,6 @@ pre {
 
   .expert-portrait-shell {
     width: min(100%, 280px);
-  }
-
-  .cover-art--article {
-    min-height: 280px;
   }
 
   .prose-card,
