@@ -633,7 +633,11 @@ function renderPage() {
 
 function renderHeader() {
   const activeKey = resolveActiveNavigationKey();
-  const headerNavigation = navigation.filter((item) => item.key !== "subscription");
+  // Regiones y Sectores no van en el menú superior: se llega a ellos por el pie,
+  // la portada y los filtros del archivo.
+  const headerNavigation = navigation.filter(
+    (item) => !["subscription", "regions", "sectors"].includes(item.key),
+  );
 
   return `
     <div class="nav-frame">
