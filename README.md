@@ -8,10 +8,10 @@ Sitio estático de [geo-scope.online](https://geo-scope.online), publicado con G
 | --- | --- | --- |
 | `data/content.js` | Regiones, sectores, autores y artículos antiguos (en español) | Sí |
 | `data/articles/*.js` | Un archivo por artículo nuevo (en español); registro en `data/articles/index.js` | Sí |
-| `data/i18n.js` | Textos de la interfaz y traducciones EN / RU / ZH | Sí |
+| `data/i18n.js` | Textos de la interfaz y traducciones EN / RU / ZH. El ruso se escribe directamente en cirílico | Sí |
 | `data/article-translations/*.js` | Traducciones largas de algunos artículos | Sí |
 | `assets/app.js`, `assets/styles.css` | Código y estilos del sitio | Sí |
-| `data/i18n/*.js` | Traducciones separadas por idioma (cada visitante descarga solo la suya) | **No: las genera el build** |
+| `data/i18n/*.js` y `data/i18n/<idioma>/` | Traducciones separadas por idioma; el cuerpo de cada artículo traducido va en su propio archivo y solo se descarga al abrirlo | **No: las genera el build** |
 | `*/index.html`, `404.html`, `sitemap.xml` | Páginas estáticas para buscadores y primera carga | **No: las genera el build** |
 | `assets/og/` | Imágenes para compartir en redes (1200×630), una por artículo e idioma | **No: las genera el build** |
 

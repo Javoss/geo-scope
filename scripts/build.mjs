@@ -270,12 +270,33 @@ async function generateLocaleBundles() {
   const versions = {};
 
   for (const locale of i18n.supportedLocales) {
-    const body = `${header}\n${helper}\nexport const ui = ${serialize(i18n.uiCopy[locale] || i18n.uiCopy[i18n.defaultLocale])};\n\nexport const content = ${serialize(i18n.contentTranslations[locale] || {})};\n`;
+    const fullContent = i18n.contentTranslations[locale] || {};
+    // El cuerpo traducido de cada artículo va en su propio archivo
+    // (data/i18n/<idioma>/<id>.js) y solo se descarga al abrir ese artículo.
+    const articleBodies = {};
+    const lightArticles = {};
+    await mkdir(path.join(dir, locale), { recursive: true });
+    for (const [slug, article] of Object.entries(fullContent.articles || {})) {
+      const { bodySections, ...light } = article;
+      lightArticles[slug] = light;
+      if (!bodySections) continue;
+      const id = createHash("sha1").update(slug).digest("hex").slice(0, 12);
+      const code = `${header}\nexport const bodySections = ${serialize(bodySections)};\n`;
+      await writeFile(path.join(dir, locale, `${id}.js`), code);
+      articleBodies[slug] = `${id}.js?v=${createHash("sha1").update(code).digest("hex").slice(0, 10)}`;
+      const loaded = await import(`${pathToFileURL(path.join(dir, locale, `${id}.js`)).href}?check=${Date.now()}`);
+      assertSame(loaded.bodySections, bodySections, `content.${locale}.articles.${slug}.bodySections`);
+    }
+    const lightContent = fullContent.articles
+      ? { ...fullContent, articles: lightArticles, articleBodies }
+      : fullContent;
+
+    const body = `${header}\n${helper}\nexport const ui = ${serialize(i18n.uiCopy[locale] || i18n.uiCopy[i18n.defaultLocale])};\n\nexport const content = ${serialize(lightContent)};\n`;
     await writeFile(path.join(dir, `${locale}.js`), body);
     versions[locale] = createHash("sha1").update(body).digest("hex").slice(0, 10);
     const generated = await import(`${pathToFileURL(path.join(dir, `${locale}.js`)).href}?check=${Date.now()}`);
     assertSame(generated.ui, i18n.uiCopy[locale] || i18n.uiCopy[i18n.defaultLocale], `ui.${locale}`);
-    assertSame(generated.content, i18n.contentTranslations[locale] || {}, `content.${locale}`);
+    assertSame(generated.content, lightContent, `content.${locale}`);
   }
 
   await writeFile(
