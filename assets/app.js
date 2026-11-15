@@ -2351,12 +2351,24 @@ function renderArticleSubsections(subsections = [], level = 3) {
 }
 
 function coverArt(article, modifier = "") {
+  const isArticle = modifier.includes("cover-art--article");
+  const sectorNames = article.sectors.map(nameForSector);
+
   return `
     <div class="cover-art tone-${article.tone} ${modifier}">
+      <div class="cover-art__top">
+        <span>${labelForType(article.type)}</span>
+        <span>${formatDate(article.date)}${isArticle ? ` · ${ui.meta.shortMinutes(article.readTime)}` : ""}</span>
+      </div>
+      ${
+        isArticle
+          ? `<ul class="cover-art__tags">${sectorNames.map((name) => `<li>${name}</li>`).join("")}</ul>`
+          : ""
+      }
       <div class="cover-art__info">
         <span class="cover-art__eyebrow">${nameForRegion(article.region)}</span>
         <strong>${article.title}</strong>
-        <span>${article.sectors.slice(0, 2).map(nameForSector).join(" / ")}</span>
+        ${isArticle ? "" : `<span>${sectorNames.slice(0, 2).join(" / ")}</span>`}
       </div>
     </div>
   `;
