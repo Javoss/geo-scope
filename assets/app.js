@@ -668,7 +668,7 @@ function renderHeader() {
                 (locale) => `
                   <a
                     class="header-language__button ${locale === currentLocale ? "is-active" : ""}"
-                    href="${localizedUrlForLocale(basePathForPage(page), locale, currentRouteParams())}"
+                    href="${escapeAttribute(localizedUrlForLocale(basePathForPage(page), locale, currentRouteParams()))}"
                     hreflang="${locale}"
                     lang="${locale}"
                     data-locale="${locale}"
