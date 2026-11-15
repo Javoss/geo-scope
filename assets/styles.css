@@ -1907,6 +1907,12 @@ pre {
 }
 
 @media (min-width: 1241px) {
+  /* Menú pegado a la derecha, junto al buscador y los idiomas. */
+  .nav-stack {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
   .nav-link {
     padding: 8px 6px;
     font-size: 0.84rem;
