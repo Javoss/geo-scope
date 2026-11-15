@@ -25,6 +25,15 @@ const currentLocale = resolveLocale(query);
 const { ui: uiSource, content: contentSource } = await import(
   `../data/i18n/${currentLocale}.js?v=${localeVersions[currentLocale] || ""}`
 );
+// El cuerpo traducido del artículo abierto se descarga aparte.
+if (page === "article") {
+  const articleSlug = routeValue("slug");
+  const bodyFile = contentSource.articleBodies?.[articleSlug];
+  if (bodyFile && contentSource.articles?.[articleSlug]) {
+    const { bodySections } = await import(`../data/i18n/${currentLocale}/${bodyFile}`);
+    contentSource.articles[articleSlug] = { ...contentSource.articles[articleSlug], bodySections };
+  }
+}
 const ui = buildLocalizedUi(currentLocale);
 const localeMeta = localeOptions[currentLocale] || localeOptions[defaultLocale];
 const brandLogoSrc = "/assets/geoscope-logo.png";
@@ -692,7 +701,6 @@ function renderFooter() {
     { label: navigation.find((item) => item.key === "about")?.label || ui.pageTitles.about, href: "about.html" },
     { label: navigation.find((item) => item.key === "contact")?.label || ui.pageTitles.contact, href: "contact.html" },
     { label: navigation.find((item) => item.key === "subscription")?.label || ui.pageTitles.subscription, href: "subscription.html" },
-    { label: ui.footer.editorialPanel, href: "editor.html" },
   ];
 
   return `
@@ -1225,7 +1233,7 @@ function renderRegionDetailPage() {
     <section class="page-hero section region-hero">
       <div class="container page-hero__grid">
         <div class="reveal">
-          <span class="eyebrow">Region</span>
+          <span class="eyebrow">${ui.generic.regionFallback}</span>
           <h1 class="page-title">${region.name}</h1>
           <p class="page-text">${region.description}</p>
           <p class="region-strap">${region.strap}</p>
@@ -1895,7 +1903,6 @@ function renderContactPage() {
           <div class="footer-links">
             <a href="mailto:${site.email}">${site.email}</a>
             <a href="${withLocale("subscription.html")}">${navigation.find((item) => item.key === "subscription")?.label || ui.pageTitles.subscription}</a>
-            <a href="${withLocale("editor.html")}">${ui.footer.editorialPanel}</a>
           </div>
         </div>
         <form class="card contact-form reveal" id="contact-form">
@@ -2793,7 +2800,7 @@ function withLocale(href) {
 
 function buildLocalizedData(locale) {
   const overridesSource = locale === currentLocale ? contentSource : {};
-  const overrides = locale === "ru" ? cyrillicizeValue(overridesSource) : overridesSource;
+  const overrides = overridesSource;
 
   return {
     site: mergeLocalized(siteBase, overrides.site),
@@ -2820,7 +2827,7 @@ function buildLocalizedData(locale) {
 
 function buildLocalizedUi(locale) {
   const source = uiSource;
-  return locale === "ru" ? cyrillicizeValue(source) : source;
+  return source;
 }
 
 function mergeLocalized(base, override) {
@@ -2844,177 +2851,6 @@ function mergeLocalized(base, override) {
 
 function isPlainObject(value) {
   return Boolean(value) && typeof value === "object" && !Array.isArray(value);
-}
-
-function cyrillicizeValue(value) {
-  if (Array.isArray(value)) {
-    return value.map((item) => cyrillicizeValue(item));
-  }
-
-  if (typeof value === "function") {
-    return (...args) => cyrillicizeValue(value(...args));
-  }
-
-  if (isPlainObject(value)) {
-    return Object.fromEntries(
-      Object.entries(value).map(([key, entry]) => [key, cyrillicizeValue(entry)]),
-    );
-  }
-
-  if (typeof value === "string") {
-    return transliterateRussianString(value);
-  }
-
-  return value;
-}
-
-function transliterateRussianString(text) {
-  let output = String(text);
-
-  // Textos ya escritos en cirílico (p. ej. traducciones de artículos) no se
-  // tocan: así se conservan nombres propios, siglas y enlaces en alfabeto latino.
-  if (/[\u0400-\u04FF]/.test(output)) {
-    return output;
-  }
-
-  const protectedTokens = [];
-  const protect = (pattern, transform) => {
-    output = output.replace(pattern, (match) => {
-      const token = `¤${protectedTokens.length}¤`;
-      protectedTokens.push(transform ? transform(match) : match);
-      return token;
-    });
-  };
-
-  protect(/<a\b[^>]*>[\s\S]*?<\/a>/g);
-  protect(/<[^>]+>/g);
-  protect(/\bhttps?:\/\/[^\s<"]+/g);
-  protect(/\bGeo Scope\b/g);
-  protect(/\bLinkedIn\b/g);
-  protect(/\bRSS\b/g);
-  protect(/\bheadless CMS\b/g);
-  protect(/\bCMS\b/g);
-  protect(/\b[\w.+-]+@[\w.-]+\.[A-Za-z]{2,}\b/g);
-  protect(/\bdata\/[\w./-]+\b/g);
-  protect(/\bS&P 500\b/g);
-  protect(/\bWall Street\b/g, () => "Уолл-стрит");
-  protect(/\b[IVXLCDM]{2,}\b/g);
-
-  output = output.replace(/\bBRICS\b/g, "БРИКС");
-  output = output.replace(/\bAI\b/g, "ИИ");
-
-  output = output.replace(/[A-Za-z][A-Za-z'-]*/g, (word) => transliterateRussianWord(word));
-
-  protectedTokens.forEach((value, index) => {
-    output = output.replace(`¤${index}¤`, value);
-  });
-
-  return output;
-}
-
-function transliterateRussianWord(word) {
-  const isAllCaps = /^[A-Z]+$/.test(word);
-  const isCapitalized = /^[A-Z]/.test(word);
-  let next = word.toLowerCase();
-
-  const replacements = [
-    [/shch/g, "щ"],
-    [/skiy\b/g, "ский"],
-    [/skaya\b/g, "ская"],
-    [/skie\b/g, "ские"],
-    [/skikh\b/g, "ских"],
-    [/skogo\b/g, "ского"],
-    [/skomu\b/g, "скому"],
-    [/tsiya\b/g, "ция"],
-    [/tsii\b/g, "ции"],
-    [/tsiyu\b/g, "цию"],
-    [/tsiey\b/g, "цией"],
-    [/lnyy\b/g, "льный"],
-    [/lnaya\b/g, "льная"],
-    [/lnoe\b/g, "льное"],
-    [/lnye\b/g, "льные"],
-    [/lnogo\b/g, "льного"],
-    [/lnomu\b/g, "льному"],
-    [/lnom\b/g, "льном"],
-    [/naya\b/g, "ная"],
-    [/nyy\b/g, "ный"],
-    [/ogo\b/g, "ого"],
-    [/omu\b/g, "ому"],
-    [/emu\b/g, "ему"],
-    [/uyu\b/g, "ую"],
-    [/iya\b/g, "ия"],
-    [/iy\b/g, "ий"],
-    [/yy\b/g, "ый"],
-    [/oy\b/g, "ой"],
-    [/ey\b/g, "ей"],
-    [/ay\b/g, "ай"],
-    [/uy\b/g, "уй"],
-    [/zh/g, "ж"],
-    [/kh/g, "х"],
-    [/ts/g, "ц"],
-    [/ch/g, "ч"],
-    [/sh/g, "ш"],
-    [/yu/g, "ю"],
-    [/ya/g, "я"],
-    [/yo/g, "ё"],
-    [/ye/g, "е"],
-  ];
-
-  replacements.forEach(([pattern, replacement]) => {
-    next = next.replace(pattern, replacement);
-  });
-
-  const singleMap = {
-    a: "а",
-    b: "б",
-    c: "к",
-    d: "д",
-    e: "е",
-    f: "ф",
-    g: "г",
-    h: "х",
-    i: "и",
-    j: "дж",
-    k: "к",
-    l: "л",
-    m: "м",
-    n: "н",
-    o: "о",
-    p: "п",
-    q: "к",
-    r: "р",
-    s: "с",
-    t: "т",
-    u: "у",
-    v: "в",
-    w: "в",
-    x: "кс",
-    y: "ы",
-    z: "з",
-  };
-
-  next = next
-    .split("")
-    .map((character) => singleMap[character] || character)
-    .join("");
-
-  next = next
-    .replace(/ъи/g, "ьи")
-    .replace(/лны/g, "льны")
-    .replace(/лна/g, "льна")
-    .replace(/лно/g, "льно")
-    .replace(/тх/g, "тх")
-    .replace(/йы/g, "ый");
-
-  if (isAllCaps) {
-    return next.toUpperCase();
-  }
-
-  if (isCapitalized) {
-    return next.charAt(0).toUpperCase() + next.slice(1);
-  }
-
-  return next;
 }
 
 function resolveLocale(currentQuery = new URLSearchParams(window.location.search)) {

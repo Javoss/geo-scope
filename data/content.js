@@ -420,7 +420,7 @@ const legacyArticles = [
       "La carrera por la IA no es solo una competencia empresarial. Es una disputa por administración, defensa, productividad y capacidad de gobierno.",
     excerpt:
       "La IA se está integrando al corazón del aparato estatal: inteligencia, gestión fiscal, industria, defensa y servicios públicos. El punto no es solo innovar, sino gobernar mejor y más rápido.",
-    type: "opinión",
+    type: "opinion",
     region: "estados-unidos-occidente",
     sectors: [
       "inteligencia-artificial-poder-global",
@@ -536,7 +536,7 @@ const legacyArticles = [
       "La agenda europea intenta reconciliar apertura de mercado, defensa, energía y reconstrucción productiva sin perder cohesión política.",
     excerpt:
       "Europa enfrenta un dilema estructural: necesita ser más resiliente sin dejar de ser abierta. Esa tensión está rediseñando su política económica y su lenguaje geopolítico.",
-    type: "opinión",
+    type: "opinion",
     region: "europa",
     sectors: ["economia-internacional", "diplomacia"],
     author: "javier-salazar-segales",
@@ -614,7 +614,7 @@ const legacyArticles = [
       "La región puede ganar influencia si combina ambición selectiva, consistencia institucional y lectura realista del entorno.",
     excerpt:
       "En un mundo más fragmentado, las potencias medianas tienen una ventaja: pueden negociar con flexibilidad. La desventaja aparece cuando esa flexibilidad carece de estrategia.",
-    type: "opinión",
+    type: "opinion",
     region: "america-latina",
     sectors: ["diplomacia", "geopolitica"],
     author: "javier-salazar-segales",
