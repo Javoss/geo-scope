@@ -1162,6 +1162,61 @@ export const content = {
         "Pedro Alliana",
       ],
     },
+    "radar-semanal-2026-11-16": {
+      title: "Weekly radar: Shenzhen, Nvidia and Venezuela",
+      subtitle: "Ten signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
+      excerpt: "Beijing confirms the first Xi–Putin–Trump meeting, Nvidia loses its founder in the middle of the chip dispute, and Bolivia certifies its lowest gas reserves in twenty years. Ten signals for reading the week.",
+      tags: [
+        "radar",
+        "Shenzhen",
+        "Nvidia",
+        "Bolivia",
+        "Venezuela",
+        "Hormuz",
+      ],
+      signals: [
+        {
+          title: "Beijing confirms the Shenzhen trilateral, with no agenda",
+          detail: "China's Foreign Ministry confirmed on Monday 16 November that Xi Jinping will meet Vladimir Putin and Donald Trump on 19 November in Shenzhen, on the sidelines of the APEC summit, without specifying the topics. According to US officials cited by AFP, Washington wants to discuss reducing nuclear arsenals and the war with Iran, and does not expect to address Ukraine. It matters because China is lending the stage without sharing the script: it has long held that the United States and Russia must cut their arsenals first, and the format leaves out India and Brazil.",
+        },
+        {
+          title: "Nvidia without Huang: chips become a national security matter",
+          detail: "Jensen Huang resigned on 12 November as chief executive and board member of Nvidia after 33 years at the helm; the chief financial officer, Colette Kress, takes over on an interim basis. US media attribute to intelligence sources the suspicion, unproven and rejected by Beijing, that a former executive of the Singapore-based firm Megaspeed linked to Huang was working for Chinese intelligence. Treasury Secretary Scott Bessent called on 15 November for an outside successor and for answers from the board within ten days, while China's Foreign Ministry restated its opposition to the “abuse” of export controls: chip controls are no longer a purely commercial matter.",
+        },
+        {
+          title: "Bolivia certifies 2.30 TCF of gas, a twenty-year low",
+          detail: "On 13 November, YPFB presented the certification by the Canadian consultancy GLJ: 2.30 TCF of proven gas reserves as of 31 December 2025, compared with 10.1 TCF in 2013. Its president, Sebastián Daroca, warned that without investment the country would stop exporting in 2030 and face a deficit in the domestic market, and put at about 2 billion dollars the amount needed to secure supply until 2035. Around 70% of oil and gas revenue comes from exports, so losing exportable gas means, above all, losing hard currency.",
+        },
+        {
+          title: "Venezuela reopens its oil to the Western majors",
+          detail: "ExxonMobil signed a non-binding memorandum with PDVSA on 9 November, its first step back since the 2007 expropriation, with one year of exclusive negotiation over seven areas; on 12 November, PDVSA and Shell signed five operational agreements. According to EFE, the state company is aiming to produce 3 million barrels per day within ten years, compared with 1.22 million in October, and no investment amounts have been published. It matters because these are the world's largest crude reserves, and because Exxon makes any investment conditional on “stable policies”.",
+        },
+        {
+          title: "Brazil asks to become a full ASEAN partner",
+          detail: "At the Manila summit, Lula asked on 15 November to raise Brazil's relationship with ASEAN to a full Dialogue Partnership, after the first state visit by a Brazilian president to the Philippines, with which two memorandums were signed. Trade between Brazil and the bloc was 38.4 billion dollars in 2025, according to Agência Brasil. The results are modest, but they show a founding member of BRICS looking to Asia so as not to depend, in Lula's words, “on just one country”.",
+        },
+        {
+          title: "Trump threatens to double tariffs on Mexico",
+          detail: "Donald Trump warned on 12 November that tariffs on Mexico “will be doubled immediately” if the country does not stop the migrant caravans; no order or rate has been published. President Claudia Sheinbaum replied the same day that no caravan has reached the northern border since Trump took office. The threat comes in the middle of the USMCA review and again uses trade as migration leverage over one of the United States' main trading partners.",
+        },
+        {
+          title: "Hormuz: less premium in the price, more risk at sea",
+          detail: "The UN told the Security Council that at least 25 seafarers have been killed in and around Hormuz since February; using IMO data, Al Jazeera counts 136 incidents between 1 March and 11 November, 35 of them in October. Even so, the IEA expects fourth-quarter supply of 105 million barrels per day, 1.7 million above demand, and Brent is trading at around 95 dollars. The market is prioritising the surplus over a maritime risk that has not gone away.",
+        },
+        {
+          title: "Ukraine: a swap in principle, and Europe asks for a seat",
+          detail: "The trilateral round in Abu Dhabi on 10 and 11 November ended with an agreement in principle on a large prisoner exchange, with no progress on a ceasefire or on territory. On 13 November, António Costa announced in Dublin a European team made up of the EU, the United Kingdom, France, Germany, Italy and Poland for the next round; the Kremlin does not confirm that it accepted an expanded format, and its spokesman makes it conditional on Europe's readiness to contribute to the process. The next meeting has no date: who sits at the table is still part of the negotiation.",
+        },
+        {
+          title: "Russia is paid in roubles: de-dollarisation changes shape",
+          detail: "The rouble reached a record 69.7% of payments for Russian exports in June, and 69.1% for sales to Asia, according to data reported by RIA Novosti. According to Bloomberg, the yuan's weight in those payments fell in parallel to about half its 2024 peak, a decline the agency attributes to US secondary sanctions on banks since June 2024. If that reading is confirmed, Russian de-dollarisation is moving towards the national currency rather than the yuan, with the banking system as its limit.",
+        },
+        {
+          title: "Manila: the Code of Conduct is left for 2027",
+          detail: "At the 49th ASEAN Summit, the Philippine foreign ministry acknowledged that there is “not enough time” to conclude the South China Sea Code of Conduct under its chairmanship. About 80% of the text has been provisionally agreed, but it remains open, among other points, whether it will be legally binding; the negotiation passes to Singapore, which chairs the bloc in 2027. The region is hosting this week's great-power diplomacy, yet its main security dossier is postponed once again.",
+        },
+      ],
+    },
   },
   articleBodies: {
     "china-produce-estados-unidos-se-endeuda-y-wall-street-gana": "b37b934f6c67.js?v=3e72547282",
@@ -1175,5 +1230,6 @@ export const content = {
     "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics": "6c16635c19ed.js?v=951837cb73",
     "informe-mercado-de-alternativas-rusia-africa-2026": "aa9b807617b0.js?v=d37d191d9a",
     "ueno-bank-el-banco-que-derribo-a-un-presidente": "0b2bad9ed965.js?v=5314c1af42",
+    "radar-semanal-2026-11-16": "adf227596c74.js?v=53e9945e7a",
   },
 };

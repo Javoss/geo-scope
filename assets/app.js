@@ -1729,7 +1729,7 @@ function renderArticlePage() {
           <h1 class="article-title">${article.title}</h1>
           <p class="article-subtitle">${article.subtitle}</p>
           <div class="article-author-row">
-            <strong>${ui.articlePage.byline(authorName)}</strong>
+            ${article.author || article.authorName ? `<strong>${ui.articlePage.byline(authorName)}</strong>` : ""}
             <span>${formatDate(article.date)}</span>
           </div>
         </div>
@@ -2251,7 +2251,7 @@ function renderStructuredEssayBody(article) {
 function renderRadarBody(article) {
   return `
     <section class="article-section">
-      <h2>${ui.essaySections.signals}</h2>
+      ${article.compact ? "" : `<h2>${ui.essaySections.signals}</h2>`}
       <div class="signal-stack">
         ${article.signals
           .map(
@@ -2265,10 +2265,14 @@ function renderRadarBody(article) {
           .join("")}
       </div>
     </section>
-    <section class="article-section">
+    ${
+      article.outlook
+        ? `<section class="article-section">
       <h2>${ui.essaySections.why}</h2>
       <p>${article.outlook}</p>
-    </section>
+    </section>`
+        : ""
+    }
   `;
 }
 
