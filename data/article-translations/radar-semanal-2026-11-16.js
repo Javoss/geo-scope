@@ -51,7 +51,7 @@ const sources = (locale, heading) => ({
 
 export const radarSemanal20261116Translations = {
   en: {
-    title: "Weekly radar: Shenzhen, Nvidia and Bolivia's gas",
+    title: "Weekly radar: Shenzhen, Nvidia and Venezuela",
     subtitle:
       "Ten signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
     excerpt:
@@ -109,12 +109,10 @@ export const radarSemanal20261116Translations = {
           "At the 49th ASEAN Summit, the Philippine foreign ministry acknowledged that there is “not enough time” to conclude the South China Sea Code of Conduct under its chairmanship. About 80% of the text has been provisionally agreed, but it remains open, among other points, whether it will be legally binding; the negotiation passes to Singapore, which chairs the bloc in 2027. The region is hosting this week's great-power diplomacy, yet its main security dossier is postponed once again.",
       },
     ],
-    outlook:
-      "Read together, the signals show an order negotiated among a few capitals and on separate tracks: arms and Iran in Shenzhen, Ukraine in Abu Dhabi, chips in Washington. This shows us that multipolarity does not by itself widen the room for manoeuvre of mid-sized countries, which depend on concrete assets, whether gas reserves, banks willing to take on risk or access to computing power. The question for the coming week is whether Shenzhen produces anything more than an image.",
     bodySections: [sources("en", "Sources")],
   },
   ru: {
-    title: "Еженедельный радар: Шэньчжэнь, Nvidia и боливийский газ",
+    title: "Еженедельный радар: Шэньчжэнь, Nvidia и Венесуэла",
     subtitle:
       "Десять сигналов недели с 10 по 16 ноября: великие державы вновь договариваются в узком кругу столиц, а средним странам приходится считаться с собственными пределами в энергетике, валюте и технологиях.",
     excerpt:
@@ -172,12 +170,10 @@ export const radarSemanal20261116Translations = {
           "На 49-м саммите АСЕАН МИД Филиппин признал, что «времени недостаточно», чтобы при филиппинском председательстве завершить Кодекс поведения в Южно-Китайском море. Около 80 % текста предварительно согласовано, но открытым остаётся, в частности, вопрос о том, будет ли он юридически обязывающим; переговоры переходят к Сингапуру, который председательствует в блоке в 2027 году. На этой неделе регион стал местом дипломатии великих держав, но его главное досье в сфере безопасности вновь отложено.",
       },
     ],
-    outlook:
-      "Взятые вместе, эти сигналы показывают порядок, о котором договариваются несколько столиц и по отдельным направлениям: вооружения и Иран — в Шэньчжэне, Украина — в Абу-Даби, чипы — в Вашингтоне. Это показывает нам, что многополярность сама по себе не расширяет пространство манёвра средних стран: оно зависит от конкретных активов — запасов газа, банков, готовых брать на себя риск, или доступа к вычислительным мощностям. Вопрос наступающей недели — даст ли Шэньчжэнь что-то большее, чем общую фотографию.",
     bodySections: [sources("ru", "Источники")],
   },
   zh: {
-    title: "每周雷达：深圳、英伟达与玻利维亚天然气",
+    title: "每周雷达：深圳、英伟达与委内瑞拉",
     subtitle:
       "11月10日至16日的十个信号：大国重新回到少数几个首都之间的谈判，而中等国家则在能源、外汇和技术上应对各自的限度。",
     excerpt:
@@ -235,8 +231,6 @@ export const radarSemanal20261116Translations = {
           "在第49届东盟峰会上，菲律宾外交部承认“时间不够”，无法在其担任轮值主席期间完成《南海行为准则》。约80%的案文已初步达成一致，但准则是否具有法律约束力等问题仍未解决；谈判将交给2027年担任东盟轮值主席的新加坡。本周这一地区汇聚了大国外交，但其最主要的安全议题再次被推迟。",
       },
     ],
-    outlook:
-      "综合来看，这些信号显示出一种在少数几个首都之间、按不同议题分别谈判的秩序：军控与伊朗在深圳，乌克兰在阿布扎比，芯片在华盛顿。这让我们看到，多极化本身并不会扩大中等国家的回旋空间；这种空间取决于具体的资产，无论是天然气储量、愿意承担风险的银行，还是获得算力的机会。新一周的问题是，深圳能否带来比一张合影更多的东西。",
     bodySections: [sources("zh", "资料来源")],
   },
 };

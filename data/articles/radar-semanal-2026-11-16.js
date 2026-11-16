@@ -3,15 +3,15 @@ const source = (url, label) =>
 
 export const articleRadarSemanal20261116 = {
   slug: "radar-semanal-2026-11-16",
-  title: "Radar semanal: Shenzhen, Nvidia y el gas boliviano",
+  title: "Radar semanal: Shenzhen, Nvidia y Venezuela",
   subtitle:
     "Diez señales de la semana del 10 al 16 de noviembre: las grandes potencias vuelven a negociar entre pocas capitales mientras los países medianos administran sus límites en energía, divisas y tecnología.",
   excerpt:
     "Pekín confirma el primer encuentro Xi–Putin–Trump, Nvidia pierde a su fundador en plena disputa por los chips y Bolivia certifica sus reservas de gas más bajas en veinte años. Diez señales para leer la semana.",
   type: "radar",
+  compact: true,
   region: "global",
   sectors: ["geopolitica", "energia", "tecnologia-geopolitica", "diplomacia"],
-  author: "javier-salazar-segales",
   date: "2026-11-16",
   readTime: 6,
   tone: "midnight",
@@ -68,8 +68,6 @@ export const articleRadarSemanal20261116 = {
         "En la 49.ª Cumbre de la ASEAN, la Cancillería filipina reconoció que «no hay tiempo suficiente» para cerrar bajo su presidencia el Código de Conducta del Mar de China Meridional. Alrededor del 80 % del texto está pactado de forma provisional, pero sigue abierto, entre otros puntos, si será jurídicamente vinculante; la negociación pasa a Singapur, que preside el bloque en 2027. La región concentra esta semana la diplomacia de las potencias, pero su principal expediente de seguridad vuelve a aplazarse.",
     },
   ],
-  outlook:
-    "Leídas en conjunto, las señales muestran un orden que se negocia entre pocas capitales y por expedientes separados: armas e Irán en Shenzhen, Ucrania en Abu Dabi, chips en Washington. Esto nos muestra que la multipolaridad no amplía por sí sola el margen de los países medianos, que dependen de activos concretos, sean reservas de gas, bancos dispuestos a asumir riesgo o acceso a cómputo. La pregunta de la semana que empieza es si Shenzhen produce algo más que una imagen.",
   bodySections: [
     {
       heading: "Fuentes",

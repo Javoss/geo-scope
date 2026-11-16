@@ -1163,7 +1163,7 @@ export const content = {
       ],
     },
     "radar-semanal-2026-11-16": {
-      title: "Weekly radar: Shenzhen, Nvidia and Bolivia's gas",
+      title: "Weekly radar: Shenzhen, Nvidia and Venezuela",
       subtitle: "Ten signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
       excerpt: "Beijing confirms the first Xi–Putin–Trump meeting, Nvidia loses its founder in the middle of the chip dispute, and Bolivia certifies its lowest gas reserves in twenty years. Ten signals for reading the week.",
       tags: [
@@ -1216,7 +1216,6 @@ export const content = {
           detail: "At the 49th ASEAN Summit, the Philippine foreign ministry acknowledged that there is “not enough time” to conclude the South China Sea Code of Conduct under its chairmanship. About 80% of the text has been provisionally agreed, but it remains open, among other points, whether it will be legally binding; the negotiation passes to Singapore, which chairs the bloc in 2027. The region is hosting this week's great-power diplomacy, yet its main security dossier is postponed once again.",
         },
       ],
-      outlook: "Read together, the signals show an order negotiated among a few capitals and on separate tracks: arms and Iran in Shenzhen, Ukraine in Abu Dhabi, chips in Washington. This shows us that multipolarity does not by itself widen the room for manoeuvre of mid-sized countries, which depend on concrete assets, whether gas reserves, banks willing to take on risk or access to computing power. The question for the coming week is whether Shenzhen produces anything more than an image.",
     },
   },
   articleBodies: {
