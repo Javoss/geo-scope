@@ -1164,15 +1164,15 @@ export const content = {
     },
     "radar-semanal-2026-11-16": {
       title: "Weekly radar: Shenzhen, Nvidia and Bolivia's gas",
-      subtitle: "Seven signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
-      excerpt: "Beijing confirms the first Xi–Putin–Trump meeting, Nvidia loses its founder in the middle of the chip dispute, and Bolivia certifies its lowest gas reserves in twenty years. Seven signals for reading the week.",
+      subtitle: "Ten signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
+      excerpt: "Beijing confirms the first Xi–Putin–Trump meeting, Nvidia loses its founder in the middle of the chip dispute, and Bolivia certifies its lowest gas reserves in twenty years. Ten signals for reading the week.",
       tags: [
         "radar",
         "Shenzhen",
         "Nvidia",
         "Bolivia",
+        "Venezuela",
         "Hormuz",
-        "de-dollarisation",
       ],
       signals: [
         {
@@ -1186,6 +1186,18 @@ export const content = {
         {
           title: "Bolivia certifies 2.30 TCF of gas, a twenty-year low",
           detail: "On 13 November, YPFB presented the certification by the Canadian consultancy GLJ: 2.30 TCF of proven gas reserves as of 31 December 2025, compared with 10.1 TCF in 2013. Its president, Sebastián Daroca, warned that without investment the country would stop exporting in 2030 and face a deficit in the domestic market, and put at about 2 billion dollars the amount needed to secure supply until 2035. Around 70% of oil and gas revenue comes from exports, so losing exportable gas means, above all, losing hard currency.",
+        },
+        {
+          title: "Venezuela reopens its oil to the Western majors",
+          detail: "ExxonMobil signed a non-binding memorandum with PDVSA on 9 November, its first step back since the 2007 expropriation, with one year of exclusive negotiation over seven areas; on 12 November, PDVSA and Shell signed five operational agreements. According to EFE, the state company is aiming to produce 3 million barrels per day within ten years, compared with 1.22 million in October, and no investment amounts have been published. It matters because these are the world's largest crude reserves, and because Exxon makes any investment conditional on “stable policies”.",
+        },
+        {
+          title: "Brazil asks to become a full ASEAN partner",
+          detail: "At the Manila summit, Lula asked on 15 November to raise Brazil's relationship with ASEAN to a full Dialogue Partnership, after the first state visit by a Brazilian president to the Philippines, with which two memorandums were signed. Trade between Brazil and the bloc was 38.4 billion dollars in 2025, according to Agência Brasil. The results are modest, but they show a founding member of BRICS looking to Asia so as not to depend, in Lula's words, “on just one country”.",
+        },
+        {
+          title: "Trump threatens to double tariffs on Mexico",
+          detail: "Donald Trump warned on 12 November that tariffs on Mexico “will be doubled immediately” if the country does not stop the migrant caravans; no order or rate has been published. President Claudia Sheinbaum replied the same day that no caravan has reached the northern border since Trump took office. The threat comes in the middle of the USMCA review and again uses trade as migration leverage over one of the United States' main trading partners.",
         },
         {
           title: "Hormuz: less premium in the price, more risk at sea",
@@ -1219,6 +1231,6 @@ export const content = {
     "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics": "6c16635c19ed.js?v=951837cb73",
     "informe-mercado-de-alternativas-rusia-africa-2026": "aa9b807617b0.js?v=d37d191d9a",
     "ueno-bank-el-banco-que-derribo-a-un-presidente": "0b2bad9ed965.js?v=5314c1af42",
-    "radar-semanal-2026-11-16": "adf227596c74.js?v=3afae4e072",
+    "radar-semanal-2026-11-16": "adf227596c74.js?v=53e9945e7a",
   },
 };

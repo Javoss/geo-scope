@@ -5,17 +5,17 @@ export const articleRadarSemanal20261116 = {
   slug: "radar-semanal-2026-11-16",
   title: "Radar semanal: Shenzhen, Nvidia y el gas boliviano",
   subtitle:
-    "Siete señales de la semana del 10 al 16 de noviembre: las grandes potencias vuelven a negociar entre pocas capitales mientras los países medianos administran sus límites en energía, divisas y tecnología.",
+    "Diez señales de la semana del 10 al 16 de noviembre: las grandes potencias vuelven a negociar entre pocas capitales mientras los países medianos administran sus límites en energía, divisas y tecnología.",
   excerpt:
-    "Pekín confirma el primer encuentro Xi–Putin–Trump, Nvidia pierde a su fundador en plena disputa por los chips y Bolivia certifica sus reservas de gas más bajas en veinte años. Siete señales para leer la semana.",
+    "Pekín confirma el primer encuentro Xi–Putin–Trump, Nvidia pierde a su fundador en plena disputa por los chips y Bolivia certifica sus reservas de gas más bajas en veinte años. Diez señales para leer la semana.",
   type: "radar",
   region: "global",
   sectors: ["geopolitica", "energia", "tecnologia-geopolitica", "diplomacia"],
   author: "javier-salazar-segales",
   date: "2026-11-16",
-  readTime: 4,
+  readTime: 6,
   tone: "midnight",
-  tags: ["radar", "Shenzhen", "Nvidia", "Bolivia", "Ormuz", "desdolarización"],
+  tags: ["radar", "Shenzhen", "Nvidia", "Bolivia", "Venezuela", "Ormuz"],
   signals: [
     {
       title: "Pekín confirma el trilateral de Shenzhen, sin agenda",
@@ -31,6 +31,21 @@ export const articleRadarSemanal20261116 = {
       title: "Bolivia certifica 2,30 TCF de gas, mínimo en veinte años",
       detail:
         "YPFB presentó el 13 de noviembre la certificación de la consultora canadiense GLJ: 2,30 TCF de reservas probadas de gas al 31 de diciembre de 2025, frente a 10,1 TCF en 2013. Su presidente, Sebastián Daroca, advirtió que sin inversiones el país dejaría de exportar en 2030 y tendría déficit en el mercado interno, y estimó en unos 2.000 millones de dólares lo necesario para asegurar el suministro hasta 2035. Cerca del 70 % de la renta petrolera proviene de las exportaciones, de modo que perder el gas exportable es, sobre todo, perder divisas.",
+    },
+    {
+      title: "Venezuela reabre su petróleo a las grandes petroleras occidentales",
+      detail:
+        "ExxonMobil firmó el 9 de noviembre un memorando no vinculante con PDVSA, su primer paso de regreso desde la expropiación de 2007, con un año de negociación exclusiva sobre siete áreas; el 12 de noviembre, PDVSA y Shell firmaron cinco acuerdos operativos. Según EFE, la estatal apunta a producir 3 millones de barriles diarios en diez años, frente a 1,22 millones en octubre, sin que se hayan publicado montos de inversión. Importa porque se trata de las mayores reservas de crudo del mundo, y porque Exxon condiciona cualquier inversión a «políticas estables».",
+    },
+    {
+      title: "Brasil pide ser socio pleno de la ASEAN",
+      detail:
+        "En la cumbre de Manila, Lula pidió el 15 de noviembre elevar la relación de Brasil con la ASEAN a una asociación de diálogo plena, tras la primera visita de Estado de un presidente brasileño a Filipinas, con la que se firmaron dos memorandos. El comercio entre Brasil y el bloque fue de 38.400 millones de dólares en 2025, según Agência Brasil. Los resultados son modestos, pero muestran a un miembro fundador de BRICS que busca en Asia, en palabras de Lula, no depender «de un solo país».",
+    },
+    {
+      title: "Trump amenaza con duplicar los aranceles a México",
+      detail:
+        "Donald Trump advirtió el 12 de noviembre que los aranceles a México «se duplicarán inmediatamente» si el país no detiene las caravanas de migrantes; no se ha publicado ninguna orden ni tasa. La presidenta Claudia Sheinbaum respondió ese mismo día que ninguna caravana ha llegado a la frontera norte desde que Trump asumió el gobierno. La amenaza llega en plena revisión del T-MEC y vuelve a usar el comercio como palanca migratoria sobre uno de los principales socios comerciales de Estados Unidos.",
     },
     {
       title: "Ormuz: menos prima en el precio, más riesgo en el mar",
@@ -78,6 +93,14 @@ export const articleRadarSemanal20261116 = {
         `17. ${source("https://meduza.io/en/news/2026/11/11/russia-s-plan-to-replace-the-dollar-with-the-yuan-failed-because-of-u-s-secondary-sanctions", "Meduza (resume a Bloomberg), «Russia's plan to replace the dollar with the yuan failed because of U.S. secondary sanctions», 11-nov-2026")}`,
         `18. ${source("https://aninews.in/news/world/asia/pm-modi-set-to-visit-manila-for-high-stake-asean-summit-as-world-leaders-converge-to-shape-indo-pacifics-security-economic-future20261116064203/", "ANI, «PM Modi set to visit Manila for high-stake ASEAN Summit as world leaders converge to shape Indo-Pacific's security, economic future», 16-nov-2026")}`,
         `19. ${source("https://www.arabnews.pk/world/global-powers-converge-on-manila-as-asean-summit-kicks-off-3007067", "Arab News / AFP, «Global powers converge on Manila as ASEAN summit kicks off», 15-nov-2026")}`,
+        `20. ${source("https://www.worldoil.com/news/2026/11/13/exxonmobil-signs-mou-with-pdvsa-in-first-step-toward-venezuela-return/", "World Oil, «ExxonMobil signs MoU with PDVSA in first step toward Venezuela return», 13-nov-2026")}`,
+        `21. ${source("https://www.bicmagazine.com/industry/refining-petrochem/exxon-assessing-7-areas-in-venezuela-for-possible-energy-projects/", "Reuters vía BIC Magazine, «Exxon assessing 7 areas in Venezuela for possible energy projects», 12-nov-2026")}`,
+        `22. ${source("https://www.infobae.com/america/agencias/2026/11/14/venezuela-proyecta-producir-tres-millones-de-barriles-diarios-de-petroleo-en-diez-anos/", "EFE vía Infobae, «Venezuela proyecta producir tres millones de barriles diarios de petróleo en diez años», 14-nov-2026")}`,
+        `23. ${source("https://www.infobae.com/america/agencias/2026/11/13/pdvsa-y-shell-firman-cinco-acuerdos-operativos-para-consolidar-desarrollo-e-inversiones/", "EFE vía Infobae, «PDVSA y Shell firman cinco acuerdos operativos para consolidar desarrollo e inversiones», 13-nov-2026")}`,
+        `24. ${source("https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/lula-quer-ampliar-relacoes-comerciais-com-paises-da-asean", "Agência Brasil, «Lula quer ampliar relações comerciais com países da Asean», 15-nov-2026")}`,
+        `25. ${source("https://newswav.com/article/brazil-wants-stronger-partnership-with-asean-A2611_cT09i0", "The Manila Times vía Newswav, «Brazil wants stronger partnership with Asean», 15-nov-2026")}`,
+        `26. ${source("https://www.proceso.com.mx/nacional/2026/11/12/asi-respondio-sheinbaum-a-la-amenaza-de-trump-de-duplicar-los-aranceles-si-no-detiene-la-caravana-migrante-383585.html", "AP vía Proceso, «Así respondió Sheinbaum a la amenaza de Trump de duplicar los aranceles si no detiene la caravana migrante», 12-nov-2026")}`,
+        `27. ${source("https://www.informador.mx/mexico/sheinbaum-responde-a-la-amenaza-de-aranceles-de-trump-ninguna-caravana-migrante-ha-llegado-a-la-frontera-20261112-0066.html", "EFE vía El Informador, «Sheinbaum responde a la amenaza de aranceles de Trump: “Ninguna caravana migrante ha llegado a la frontera”», 12-nov-2026")}`,
       ],
     },
   ],

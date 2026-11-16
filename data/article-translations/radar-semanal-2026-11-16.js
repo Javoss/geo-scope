@@ -20,6 +20,14 @@ const sourceList = [
   ["https://meduza.io/en/news/2026/11/11/russia-s-plan-to-replace-the-dollar-with-the-yuan-failed-because-of-u-s-secondary-sanctions", "Meduza (Bloomberg)", "Russia's plan to replace the dollar with the yuan failed because of U.S. secondary sanctions", "2026-11-11"],
   ["https://aninews.in/news/world/asia/pm-modi-set-to-visit-manila-for-high-stake-asean-summit-as-world-leaders-converge-to-shape-indo-pacifics-security-economic-future20261116064203/", "ANI", "PM Modi set to visit Manila for high-stake ASEAN Summit as world leaders converge to shape Indo-Pacific's security, economic future", "2026-11-16"],
   ["https://www.arabnews.pk/world/global-powers-converge-on-manila-as-asean-summit-kicks-off-3007067", "Arab News / AFP", "Global powers converge on Manila as ASEAN summit kicks off", "2026-11-15"],
+  ["https://www.worldoil.com/news/2026/11/13/exxonmobil-signs-mou-with-pdvsa-in-first-step-toward-venezuela-return/", "World Oil", "ExxonMobil signs MoU with PDVSA in first step toward Venezuela return", "2026-11-13"],
+  ["https://www.bicmagazine.com/industry/refining-petrochem/exxon-assessing-7-areas-in-venezuela-for-possible-energy-projects/", "Reuters / BIC Magazine", "Exxon assessing 7 areas in Venezuela for possible energy projects", "2026-11-12"],
+  ["https://www.infobae.com/america/agencias/2026/11/14/venezuela-proyecta-producir-tres-millones-de-barriles-diarios-de-petroleo-en-diez-anos/", "EFE / Infobae", "Venezuela proyecta producir tres millones de barriles diarios de petróleo en diez años", "2026-11-14"],
+  ["https://www.infobae.com/america/agencias/2026/11/13/pdvsa-y-shell-firman-cinco-acuerdos-operativos-para-consolidar-desarrollo-e-inversiones/", "EFE / Infobae", "PDVSA y Shell firman cinco acuerdos operativos para consolidar desarrollo e inversiones", "2026-11-13"],
+  ["https://agenciabrasil.ebc.com.br/internacional/noticia/2026-11/lula-quer-ampliar-relacoes-comerciais-com-paises-da-asean", "Agência Brasil", "Lula quer ampliar relações comerciais com países da Asean", "2026-11-15"],
+  ["https://newswav.com/article/brazil-wants-stronger-partnership-with-asean-A2611_cT09i0", "The Manila Times / Newswav", "Brazil wants stronger partnership with Asean", "2026-11-15"],
+  ["https://www.proceso.com.mx/nacional/2026/11/12/asi-respondio-sheinbaum-a-la-amenaza-de-trump-de-duplicar-los-aranceles-si-no-detiene-la-caravana-migrante-383585.html", "AP / Proceso", "Así respondió Sheinbaum a la amenaza de Trump de duplicar los aranceles si no detiene la caravana migrante", "2026-11-12"],
+  ["https://www.informador.mx/mexico/sheinbaum-responde-a-la-amenaza-de-aranceles-de-trump-ninguna-caravana-migrante-ha-llegado-a-la-frontera-20261112-0066.html", "EFE / El Informador", "Sheinbaum responde a la amenaza de aranceles de Trump: “Ninguna caravana migrante ha llegado a la frontera”", "2026-11-12"],
 ];
 
 const enMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -45,10 +53,10 @@ export const radarSemanal20261116Translations = {
   en: {
     title: "Weekly radar: Shenzhen, Nvidia and Bolivia's gas",
     subtitle:
-      "Seven signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
+      "Ten signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
     excerpt:
-      "Beijing confirms the first Xi–Putin–Trump meeting, Nvidia loses its founder in the middle of the chip dispute, and Bolivia certifies its lowest gas reserves in twenty years. Seven signals for reading the week.",
-    tags: ["radar", "Shenzhen", "Nvidia", "Bolivia", "Hormuz", "de-dollarisation"],
+      "Beijing confirms the first Xi–Putin–Trump meeting, Nvidia loses its founder in the middle of the chip dispute, and Bolivia certifies its lowest gas reserves in twenty years. Ten signals for reading the week.",
+    tags: ["radar", "Shenzhen", "Nvidia", "Bolivia", "Venezuela", "Hormuz"],
     signals: [
       {
         title: "Beijing confirms the Shenzhen trilateral, with no agenda",
@@ -64,6 +72,21 @@ export const radarSemanal20261116Translations = {
         title: "Bolivia certifies 2.30 TCF of gas, a twenty-year low",
         detail:
           "On 13 November, YPFB presented the certification by the Canadian consultancy GLJ: 2.30 TCF of proven gas reserves as of 31 December 2025, compared with 10.1 TCF in 2013. Its president, Sebastián Daroca, warned that without investment the country would stop exporting in 2030 and face a deficit in the domestic market, and put at about 2 billion dollars the amount needed to secure supply until 2035. Around 70% of oil and gas revenue comes from exports, so losing exportable gas means, above all, losing hard currency.",
+      },
+      {
+        title: "Venezuela reopens its oil to the Western majors",
+        detail:
+          "ExxonMobil signed a non-binding memorandum with PDVSA on 9 November, its first step back since the 2007 expropriation, with one year of exclusive negotiation over seven areas; on 12 November, PDVSA and Shell signed five operational agreements. According to EFE, the state company is aiming to produce 3 million barrels per day within ten years, compared with 1.22 million in October, and no investment amounts have been published. It matters because these are the world's largest crude reserves, and because Exxon makes any investment conditional on “stable policies”.",
+      },
+      {
+        title: "Brazil asks to become a full ASEAN partner",
+        detail:
+          "At the Manila summit, Lula asked on 15 November to raise Brazil's relationship with ASEAN to a full Dialogue Partnership, after the first state visit by a Brazilian president to the Philippines, with which two memorandums were signed. Trade between Brazil and the bloc was 38.4 billion dollars in 2025, according to Agência Brasil. The results are modest, but they show a founding member of BRICS looking to Asia so as not to depend, in Lula's words, “on just one country”.",
+      },
+      {
+        title: "Trump threatens to double tariffs on Mexico",
+        detail:
+          "Donald Trump warned on 12 November that tariffs on Mexico “will be doubled immediately” if the country does not stop the migrant caravans; no order or rate has been published. President Claudia Sheinbaum replied the same day that no caravan has reached the northern border since Trump took office. The threat comes in the middle of the USMCA review and again uses trade as migration leverage over one of the United States' main trading partners.",
       },
       {
         title: "Hormuz: less premium in the price, more risk at sea",
@@ -93,10 +116,10 @@ export const radarSemanal20261116Translations = {
   ru: {
     title: "Еженедельный радар: Шэньчжэнь, Nvidia и боливийский газ",
     subtitle:
-      "Семь сигналов недели с 10 по 16 ноября: великие державы вновь договариваются в узком кругу столиц, а средним странам приходится считаться с собственными пределами в энергетике, валюте и технологиях.",
+      "Десять сигналов недели с 10 по 16 ноября: великие державы вновь договариваются в узком кругу столиц, а средним странам приходится считаться с собственными пределами в энергетике, валюте и технологиях.",
     excerpt:
-      "Пекин подтверждает первую встречу Си Цзиньпина, Путина и Трампа, Nvidia теряет основателя в разгар спора о чипах, а Боливия сертифицирует самые низкие запасы газа за двадцать лет. Семь сигналов, чтобы прочитать неделю.",
-    tags: ["радар", "Шэньчжэнь", "Nvidia", "Боливия", "Ормуз", "дедолларизация"],
+      "Пекин подтверждает первую встречу Си Цзиньпина, Путина и Трампа, Nvidia теряет основателя в разгар спора о чипах, а Боливия сертифицирует самые низкие запасы газа за двадцать лет. Десять сигналов, чтобы прочитать неделю.",
+    tags: ["радар", "Шэньчжэнь", "Nvidia", "Боливия", "Венесуэла", "Ормуз"],
     signals: [
       {
         title: "Пекин подтверждает трёхстороннюю встречу в Шэньчжэне — без повестки",
@@ -112,6 +135,21 @@ export const radarSemanal20261116Translations = {
         title: "Боливия сертифицирует 2,30 трлн куб. футов газа — минимум за двадцать лет",
         detail:
           "13 ноября YPFB представила сертификацию канадской консалтинговой компании GLJ: 2,30 трлн куб. футов (TCF) доказанных запасов газа на 31 декабря 2025 года против 10,1 TCF в 2013 году. Президент компании Себастьян Дарока предупредил, что без инвестиций страна в 2030 году прекратит экспорт и столкнётся с дефицитом на внутреннем рынке, и оценил примерно в 2 млрд долларов сумму, необходимую, чтобы обеспечить поставки до 2035 года. Около 70 % нефтегазовой ренты дают экспортные поставки, так что потерять экспортный газ — значит прежде всего потерять валюту.",
+      },
+      {
+        title: "Венесуэла вновь открывает свою нефть для западных нефтяных гигантов",
+        detail:
+          "9 ноября ExxonMobil подписала с PDVSA необязывающий меморандум — первый шаг к возвращению после экспроприации 2007 года — с годом эксклюзивных переговоров по семи участкам; 12 ноября PDVSA и Shell подписали пять операционных соглашений. По данным агентства EFE, госкомпания намерена за десять лет выйти на добычу 3 млн баррелей в сутки против 1,22 млн в октябре, при этом объёмы инвестиций не раскрываются. Это важно, потому что речь идёт о крупнейших в мире запасах нефти и потому что Exxon ставит любые инвестиции в зависимость от «стабильной политики».",
+      },
+      {
+        title: "Бразилия просит статус полноправного партнёра АСЕАН",
+        detail:
+          "На саммите в Маниле Лула 15 ноября попросил повысить отношения Бразилии с АСЕАН до полноформатного диалогового партнёрства — после первого государственного визита бразильского президента на Филиппины, с которыми были подписаны два меморандума. По данным Agência Brasil, товарооборот Бразилии с блоком в 2025 году составил 38,4 млрд долларов. Результаты скромные, но они показывают, что страна — основательница БРИКС ищет в Азии возможность, по словам Лулы, не зависеть «только от одной страны».",
+      },
+      {
+        title: "Трамп угрожает удвоить пошлины для Мексики",
+        detail:
+          "Дональд Трамп 12 ноября предупредил, что пошлины для Мексики «будут немедленно удвоены», если страна не остановит караваны мигрантов; ни указа, ни ставки не опубликовано. Президент Клаудия Шейнбаум в тот же день ответила, что с момента прихода Трампа к власти ни один караван не дошёл до северной границы. Угроза прозвучала в разгар пересмотра соглашения ЮСМКА и вновь превращает торговлю в рычаг миграционного давления на одного из главных торговых партнёров США.",
       },
       {
         title: "Ормуз: меньше премии в цене, больше риска на море",
@@ -141,10 +179,10 @@ export const radarSemanal20261116Translations = {
   zh: {
     title: "每周雷达：深圳、英伟达与玻利维亚天然气",
     subtitle:
-      "11月10日至16日的七个信号：大国重新回到少数几个首都之间的谈判，而中等国家则在能源、外汇和技术上应对各自的限度。",
+      "11月10日至16日的十个信号：大国重新回到少数几个首都之间的谈判，而中等国家则在能源、外汇和技术上应对各自的限度。",
     excerpt:
-      "北京确认习近平、普京与特朗普的首次三方会晤，英伟达在芯片争端之中失去创始人，玻利维亚认证的天然气储量降至二十年来最低。七个信号，读懂这一周。",
-    tags: ["雷达", "深圳", "英伟达", "玻利维亚", "霍尔木兹", "去美元化"],
+      "北京确认习近平、普京与特朗普的首次三方会晤，英伟达在芯片争端之中失去创始人，玻利维亚认证的天然气储量降至二十年来最低。十个信号，读懂这一周。",
+    tags: ["雷达", "深圳", "英伟达", "玻利维亚", "委内瑞拉", "霍尔木兹"],
     signals: [
       {
         title: "北京确认深圳三方会晤，但未公布议程",
@@ -160,6 +198,21 @@ export const radarSemanal20261116Translations = {
         title: "玻利维亚认证天然气储量2.30万亿立方英尺，为二十年来最低",
         detail:
           "玻利维亚国家石油公司（YPFB）11月13日公布了加拿大咨询公司 GLJ 的认证结果：截至2025年12月31日，天然气探明储量为2.30万亿立方英尺（TCF），而2013年为10.1 TCF。公司总裁塞巴斯蒂安·达罗卡警告说，如果没有投资，该国将在2030年停止出口，国内市场也会出现缺口；他估计，要把供应保障到2035年需要约20亿美元。约70%的油气收入来自出口，因此失去可供出口的天然气，首先意味着失去外汇。",
+      },
+      {
+        title: "委内瑞拉向西方石油巨头重新开放石油",
+        detail:
+          "埃克森美孚11月9日与委内瑞拉国家石油公司（PDVSA）签署了一份不具约束力的备忘录，这是该公司自2007年资产被征收以来重返的第一步，备忘录给予其就七个区块进行为期一年的独家谈判权；11月12日，PDVSA 与壳牌签署了五项运营协议。据埃菲社报道，PDVSA 的目标是在十年内把产量提高到每日300万桶，而10月的产量为122万桶，投资金额尚未公布。其意义在于，这是全球最大的原油储量，而埃克森美孚把任何投资都与“稳定的政策”挂钩。",
+      },
+      {
+        title: "巴西要求成为东盟全面对话伙伴",
+        detail:
+          "在马尼拉峰会上，卢拉于11月15日提出把巴西与东盟的关系提升为全面对话伙伴关系；此前他对菲律宾进行了巴西总统的首次国事访问，双方签署了两份备忘录。据巴西通讯社（Agência Brasil）报道，2025年巴西与东盟的贸易额为384亿美元。成果有限，但显示出一个金砖国家创始成员正在亚洲寻找出路，用卢拉的话说，就是不要“只依赖一个国家”。",
+      },
+      {
+        title: "特朗普威胁将对墨西哥的关税提高一倍",
+        detail:
+          "特朗普11月12日警告说，如果墨西哥不阻止移民大篷车队，对墨西哥的关税将“立即翻倍”；目前尚未公布任何行政令或税率。墨西哥总统克劳迪娅·辛鲍姆当天回应称，自特朗普上任以来，没有任何大篷车队抵达北部边境。这一威胁发生在《美墨加协定》（USMCA）审议期间，再次把贸易当作移民问题上的筹码，施压对象是美国最主要的贸易伙伴之一。",
       },
       {
         title: "霍尔木兹：价格中的溢价减少，海上风险上升",
