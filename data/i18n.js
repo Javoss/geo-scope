@@ -1,3 +1,4 @@
+import { radarSemanal20261116Translations } from "./article-translations/radar-semanal-2026-11-16.js?v=20261116a";
 import { uenoBankTranslations } from "./article-translations/ueno-bank-el-banco-que-derribo-a-un-presidente.js?v=20261114a";
 import { informeMercadoDeAlternativasRusiaAfricaTranslations } from "./article-translations/informe-mercado-de-alternativas-rusia-africa-2026.js?v=20261110a";
 import { americaLatinaCrisisOrganicaTranslations } from "./article-translations/america-latina-y-la-crisis-organica.js?v=20260622a";
@@ -5718,3 +5719,9 @@ contentTranslations.ru.articles["ueno-bank-el-banco-que-derribo-a-un-presidente"
   uenoBankTranslations.ru;
 contentTranslations.zh.articles["ueno-bank-el-banco-que-derribo-a-un-presidente"] =
   uenoBankTranslations.zh;
+contentTranslations.en.articles["radar-semanal-2026-11-16"] =
+  radarSemanal20261116Translations.en;
+contentTranslations.ru.articles["radar-semanal-2026-11-16"] =
+  radarSemanal20261116Translations.ru;
+contentTranslations.zh.articles["radar-semanal-2026-11-16"] =
+  radarSemanal20261116Translations.zh;

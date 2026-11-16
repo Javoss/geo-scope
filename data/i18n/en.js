@@ -1162,6 +1162,50 @@ export const content = {
         "Pedro Alliana",
       ],
     },
+    "radar-semanal-2026-11-16": {
+      title: "Weekly radar: Shenzhen, Nvidia and Bolivia's gas",
+      subtitle: "Seven signals from the week of 10–16 November: the major powers are again negotiating among a handful of capitals, while mid-sized countries manage their limits in energy, hard currency and technology.",
+      excerpt: "Beijing confirms the first Xi–Putin–Trump meeting, Nvidia loses its founder in the middle of the chip dispute, and Bolivia certifies its lowest gas reserves in twenty years. Seven signals for reading the week.",
+      tags: [
+        "radar",
+        "Shenzhen",
+        "Nvidia",
+        "Bolivia",
+        "Hormuz",
+        "de-dollarisation",
+      ],
+      signals: [
+        {
+          title: "Beijing confirms the Shenzhen trilateral, with no agenda",
+          detail: "China's Foreign Ministry confirmed on Monday 16 November that Xi Jinping will meet Vladimir Putin and Donald Trump on 19 November in Shenzhen, on the sidelines of the APEC summit, without specifying the topics. According to US officials cited by AFP, Washington wants to discuss reducing nuclear arsenals and the war with Iran, and does not expect to address Ukraine. It matters because China is lending the stage without sharing the script: it has long held that the United States and Russia must cut their arsenals first, and the format leaves out India and Brazil.",
+        },
+        {
+          title: "Nvidia without Huang: chips become a national security matter",
+          detail: "Jensen Huang resigned on 12 November as chief executive and board member of Nvidia after 33 years at the helm; the chief financial officer, Colette Kress, takes over on an interim basis. US media attribute to intelligence sources the suspicion, unproven and rejected by Beijing, that a former executive of the Singapore-based firm Megaspeed linked to Huang was working for Chinese intelligence. Treasury Secretary Scott Bessent called on 15 November for an outside successor and for answers from the board within ten days, while China's Foreign Ministry restated its opposition to the “abuse” of export controls: chip controls are no longer a purely commercial matter.",
+        },
+        {
+          title: "Bolivia certifies 2.30 TCF of gas, a twenty-year low",
+          detail: "On 13 November, YPFB presented the certification by the Canadian consultancy GLJ: 2.30 TCF of proven gas reserves as of 31 December 2025, compared with 10.1 TCF in 2013. Its president, Sebastián Daroca, warned that without investment the country would stop exporting in 2030 and face a deficit in the domestic market, and put at about 2 billion dollars the amount needed to secure supply until 2035. Around 70% of oil and gas revenue comes from exports, so losing exportable gas means, above all, losing hard currency.",
+        },
+        {
+          title: "Hormuz: less premium in the price, more risk at sea",
+          detail: "The UN told the Security Council that at least 25 seafarers have been killed in and around Hormuz since February; using IMO data, Al Jazeera counts 136 incidents between 1 March and 11 November, 35 of them in October. Even so, the IEA expects fourth-quarter supply of 105 million barrels per day, 1.7 million above demand, and Brent is trading at around 95 dollars. The market is prioritising the surplus over a maritime risk that has not gone away.",
+        },
+        {
+          title: "Ukraine: a swap in principle, and Europe asks for a seat",
+          detail: "The trilateral round in Abu Dhabi on 10 and 11 November ended with an agreement in principle on a large prisoner exchange, with no progress on a ceasefire or on territory. On 13 November, António Costa announced in Dublin a European team made up of the EU, the United Kingdom, France, Germany, Italy and Poland for the next round; the Kremlin does not confirm that it accepted an expanded format, and its spokesman makes it conditional on Europe's readiness to contribute to the process. The next meeting has no date: who sits at the table is still part of the negotiation.",
+        },
+        {
+          title: "Russia is paid in roubles: de-dollarisation changes shape",
+          detail: "The rouble reached a record 69.7% of payments for Russian exports in June, and 69.1% for sales to Asia, according to data reported by RIA Novosti. According to Bloomberg, the yuan's weight in those payments fell in parallel to about half its 2024 peak, a decline the agency attributes to US secondary sanctions on banks since June 2024. If that reading is confirmed, Russian de-dollarisation is moving towards the national currency rather than the yuan, with the banking system as its limit.",
+        },
+        {
+          title: "Manila: the Code of Conduct is left for 2027",
+          detail: "At the 49th ASEAN Summit, the Philippine foreign ministry acknowledged that there is “not enough time” to conclude the South China Sea Code of Conduct under its chairmanship. About 80% of the text has been provisionally agreed, but it remains open, among other points, whether it will be legally binding; the negotiation passes to Singapore, which chairs the bloc in 2027. The region is hosting this week's great-power diplomacy, yet its main security dossier is postponed once again.",
+        },
+      ],
+      outlook: "Read together, the signals show an order negotiated among a few capitals and on separate tracks: arms and Iran in Shenzhen, Ukraine in Abu Dhabi, chips in Washington. This shows us that multipolarity does not by itself widen the room for manoeuvre of mid-sized countries, which depend on concrete assets, whether gas reserves, banks willing to take on risk or access to computing power. The question for the coming week is whether Shenzhen produces anything more than an image.",
+    },
   },
   articleBodies: {
     "china-produce-estados-unidos-se-endeuda-y-wall-street-gana": "b37b934f6c67.js?v=3e72547282",
@@ -1175,5 +1219,6 @@ export const content = {
     "el-mundo-multipolar-el-paradigma-que-avanza-y-se-fortalece-con-el-brics": "6c16635c19ed.js?v=951837cb73",
     "informe-mercado-de-alternativas-rusia-africa-2026": "aa9b807617b0.js?v=d37d191d9a",
     "ueno-bank-el-banco-que-derribo-a-un-presidente": "0b2bad9ed965.js?v=5314c1af42",
+    "radar-semanal-2026-11-16": "adf227596c74.js?v=3afae4e072",
   },
 };

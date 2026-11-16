@@ -1,0 +1,28 @@
+// Archivo GENERADO por scripts/build.mjs a partir de data/i18n.js. No editar a mano.
+
+export const bodySections = [
+  {
+    heading: "Источники",
+    paragraphs: [
+      "1. <a href=\"https://www.koreatimes.co.kr/world/20261116/china-confirms-first-xi-trump-putin-summit-on-thursday\" target=\"_blank\" rel=\"noopener\">The Korea Times / AFP, «China confirms first Xi-Trump-Putin summit on Thursday», 16.11.2026</a>",
+      "2. <a href=\"https://tass.com/world/2218433\" target=\"_blank\" rel=\"noopener\">TASS, «Xi Jinping to hold trilateral meeting with Putin, Trump on November 19 — Chinese MFA», 16.11.2026</a>",
+      "3. <a href=\"https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress\" target=\"_blank\" rel=\"noopener\">Al Jazeera / Reuters, «Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress?», 12.11.2026</a>",
+      "4. <a href=\"https://www.aljazeera.com/news/2026/11/15/us-treasury-chief-calls-for-outsider-to-lead-embattled-tech-firm-nvidia\" target=\"_blank\" rel=\"noopener\">Al Jazeera / Reuters, «US Treasury chief calls for outsider to lead embattled tech firm Nvidia», 15.11.2026</a>",
+      "5. <a href=\"https://www.cbsnews.com/news/china-us-export-controls-chips-nvidia-huang-scandal/\" target=\"_blank\" rel=\"noopener\">CBS News / AFP, «China warns against new U.S. export controls on chips in wake of Nvidia's Huang scandal», 13.11.2026</a>",
+      "6. <a href=\"https://informeexclusivo.com.bo/glj-ltd-certifica-que-las-reservas-de-gas-de-bolivia-al-31-de-diciembre-de-2025-alcanzan-230-tcf-en-categoria-1p/\" target=\"_blank\" rel=\"noopener\">Informe Exclusivo (ANH-YPFB), «GLJ Ltd. certifica que las reservas de gas de Bolivia al 31 de diciembre de 2025 alcanzan 2,30 TCF en categoría 1P», 13.11.2026</a>",
+      "7. <a href=\"https://www.opinion.com.bo/pais/ypfb-bolivia-tiene-230-tcf-reservas-gas-probadas-nivel-mas-ultimos-20-anos/20261113144250999110.html\" target=\"_blank\" rel=\"noopener\">Opinión, «YPFB. Bolivia tiene 2,30 TCF de reservas de gas probadas, “nivel más bajo de los últimos 20 años”», 13.11.2026</a>",
+      "8. <a href=\"https://www.eldia.com.bo/2026-11-13/economia/ypfb-sin-reactivacion-bolivia-dejara-de-exportar-gas-en-el-2030-y-habra-deficit-en-el-mercado-interno.html\" target=\"_blank\" rel=\"noopener\">El Día, «YPFB: sin reactivación Bolivia dejará de exportar gas en el 2030 y habrá déficit en el mercado interno», 13.11.2026</a>",
+      "9. <a href=\"https://asuntoscentrales.com/bolivia-necesita-us-2-000-millones-para-garantizar-gas-hasta-2035/\" target=\"_blank\" rel=\"noopener\">Asuntos Centrales, «Bolivia necesita US$ 2.000 millones para garantizar gas hasta 2035», 15.11.2026</a>",
+      "10. <a href=\"https://www.aljazeera.com/news/2026/11/14/un-says-25-seafarers-killed-in-around-hormuz-since-february\" target=\"_blank\" rel=\"noopener\">Al Jazeera, «UN says 25 seafarers killed in, around Hormuz since US-Israel war on Iran», 14.11.2026</a>",
+      "11. <a href=\"https://www.bnnbloomberg.ca/markets/oil/2026/11/13/world-oil-market-is-returning-to-surplus-as-gulf-exports-recover-iea-says/\" target=\"_blank\" rel=\"noopener\">Reuters / BNN Bloomberg, «World oil market is returning to surplus as Gulf exports recover, IEA says», 13.11.2026</a>",
+      "12. <a href=\"https://www.newswire.lk/2026/11/16/oil-prices-fall-on-expectations-of-coming-supply-surplus/\" target=\"_blank\" rel=\"noopener\">Reuters / Newswire, «Oil prices fall on expectations of coming supply surplus», 16.11.2026</a>",
+      "13. <a href=\"https://www.euronews.com/2026/11/11/abu-dhabi-peace-talks-end-with-prisoner-exchange-agreement-as-us-envoys-prepare-to-meet-pu\" target=\"_blank\" rel=\"noopener\">Euronews, «Abu Dhabi peace talks end with prisoner exchange agreement as US envoys prepare to meet Putin», 11.11.2026</a>",
+      "14. <a href=\"https://www.aljazeera.com/news/2026/11/13/europe-seeks-seat-at-ukraine-peace-talks-but-lacks-unified-voice\" target=\"_blank\" rel=\"noopener\">Al Jazeera, «EU agrees on five countries to represent Europe in Ukraine peace talks», 13.11.2026</a>",
+      "15. <a href=\"https://www.rferl.org/a/ukraine-russia-us-peace-talks/33897813.html\" target=\"_blank\" rel=\"noopener\">RFE/RL, «After US Says Russia Agreed To European Role In Ukraine Talks, Kremlin Refuses To Confirm», 13.11.2026</a>",
+      "16. <a href=\"https://investfuture.ru/articles/dolya-rublya-v-raschetakh-za-rossiyskiy-eksport-dostigla-rekordnykh-69-7-1184583978\" target=\"_blank\" rel=\"noopener\">RIA Novosti / InvestFuture, «Доля рубля в расчетах за российский экспорт достигла рекордных 69,7%», 14.08.2026</a>",
+      "17. <a href=\"https://meduza.io/en/news/2026/11/11/russia-s-plan-to-replace-the-dollar-with-the-yuan-failed-because-of-u-s-secondary-sanctions\" target=\"_blank\" rel=\"noopener\">Meduza (Bloomberg), «Russia's plan to replace the dollar with the yuan failed because of U.S. secondary sanctions», 11.11.2026</a>",
+      "18. <a href=\"https://aninews.in/news/world/asia/pm-modi-set-to-visit-manila-for-high-stake-asean-summit-as-world-leaders-converge-to-shape-indo-pacifics-security-economic-future20261116064203/\" target=\"_blank\" rel=\"noopener\">ANI, «PM Modi set to visit Manila for high-stake ASEAN Summit as world leaders converge to shape Indo-Pacific's security, economic future», 16.11.2026</a>",
+      "19. <a href=\"https://www.arabnews.pk/world/global-powers-converge-on-manila-as-asean-summit-kicks-off-3007067\" target=\"_blank\" rel=\"noopener\">Arab News / AFP, «Global powers converge on Manila as ASEAN summit kicks off», 15.11.2026</a>",
+    ],
+  },
+];
